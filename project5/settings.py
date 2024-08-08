@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,8 +27,7 @@ SECRET_KEY = 'django-insecure-$zq_r!zeen#8980gtlf949di4ql0xdai5j(+i4y^t9xu83bphh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net']
-
+ALLOWED_HOSTS = ['8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net', 'localhost']
 
 # Application definition
 
@@ -37,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -59,13 +66,23 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID =1
 
 WSGI_APPLICATION = 'project5.wsgi.application'
 
