@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net']
@@ -61,7 +62,11 @@ ROOT_URLCONF = 'project5.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
