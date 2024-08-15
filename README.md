@@ -220,6 +220,12 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
 
+- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
+
+- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
+
+
+
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
 
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
@@ -250,5 +256,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 # Acknowledgements
 
 - Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, and online content creators.
+
+- Developer understands ...
 
 [Back to the overview](#content)
