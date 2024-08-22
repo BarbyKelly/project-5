@@ -257,6 +257,6 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, and online content creators.
 
-- Developer understands ...
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
 
 [Back to the overview](#content)
