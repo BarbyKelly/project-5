@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
+    
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net']
