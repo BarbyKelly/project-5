@@ -164,7 +164,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ## Bugs
 
-- 
+- Products would not display. Nothing happened when the developer clicked on All Items to see the products.
 
 - 
 
