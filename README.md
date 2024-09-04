@@ -137,7 +137,8 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ## Future Features
 
-- 
+- Registered Site User may save items as their favourites, and see them under their profile
+- If Registered Site User pauses their shopping, shopping bag is saved under their profile (unless their clear cache?)
 
 [Back to the overview](#content)
 
