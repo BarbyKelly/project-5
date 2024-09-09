@@ -138,7 +138,10 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Future Features
 
 - Registered Site User may save items as their favourites, and see them under their profile
+
 - If Registered Site User pauses their shopping, shopping bag is saved under their profile (unless their clear cache?)
+
+- Add an option to search Drawings and Photos by Holiday eg Easter, Christmas, Halloween
 
 [Back to the overview](#content)
 
@@ -167,9 +170,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Products would not display. Nothing happened when the developer clicked on All Items to see the products.
 
-- 
+- Drawings and Photos have same words, for searching specific items, need to ensure unique names?
 
-- 
+- When clicking on "All drawings, All Photos or All Latest", nothing is displayed. Only "All Items" works.
 
 
 ### Known Bugs

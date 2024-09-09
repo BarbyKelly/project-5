@@ -1,4 +1,4 @@
-# this file is based on Boutique Ado walk-through, like all the files and folders
+# this file is based on Code Institute's Boutique Ado walk-through, like all the files and folders in this project
 from django.db import models
 
 
