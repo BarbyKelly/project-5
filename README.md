@@ -172,7 +172,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Drawings and Photos have same words, for searching specific items, need to ensure unique names?
 
-- When clicking on "All drawings, All Photos or All Latest", nothing is displayed. Only "All Items" works.
+- When clicking on "All drawings, All Photos or All Latest", nothing is displayed. Only "All Items"link works.
+
+- 
 
 
 ### Known Bugs
