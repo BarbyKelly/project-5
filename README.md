@@ -230,6 +230,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
 
+- Fontawesome circle-arrow-up icon from: [Fontawesome.com](https://fontawesome.com/icons/circle-arrow-up?f=classic&s=solid)
 
 
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)

@@ -77,6 +77,18 @@ a.category-badge > span.badge:hover {
     color: #ffffff !important;
 }
 
+.btt-button {
+    height: 44px;
+    width: 44;
+    position: fixed;
+    bottom: 13px;
+    right: 13px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -106,7 +118,7 @@ a.category-badge > span.badge:hover {
     .header-container {
         padding-top: 116px;
     }
-    
+
     body {
         height: calc(100vh -116px);
     }
