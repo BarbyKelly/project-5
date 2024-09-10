@@ -1,4 +1,4 @@
-# Code for urls.py from Walk-Through, credit in README
+# Code for urls.py from Code Institute's Walk-Through Boutique Ado, credit in README
 
 """project5 URL Configuration
 

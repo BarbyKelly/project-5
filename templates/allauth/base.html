@@ -24,10 +24,10 @@
             <ul>
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'account_email' %}">Please Change Email</a></li>
-                <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+                <li><a href="{% url 'account_logout' %}">Logout</a></li>
                 {% else %}
-                <li><a href="{% url 'account_login' %}">Sign In</a></li>
-                <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+                <li><a href="{% url 'account_login' %}">Login</a></li>
+                <li><a href="{% url 'account_signup' %}">Register</a></li>
                 {% endif %}
             </ul>
         </div>
