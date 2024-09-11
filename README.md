@@ -139,7 +139,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Registered Site User may save items as their favourites, and see them under their profile
 
-- If Registered Site User pauses their shopping, shopping bag is saved under their profile (unless their clear cache?)
+- If Registered Site User pauses their shopping, they can save the shopping cart items, and return next time
 
 - Add an option to search Drawings and Photos by Holiday eg Easter, Christmas, Halloween
 
@@ -225,6 +225,11 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - General ReadMe template derived from developer's Project 4 [Blog](), that README was originally based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
 - Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
+
+- Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only an option to download items from Kelly's Art & Photo Boutique, no physical items sold
+
+     ![cart-arrow-down](media/readme_images/cart_readme.png)
+
 
 - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
