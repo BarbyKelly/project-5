@@ -13,12 +13,12 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="drawings-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="drawings-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Drawings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drawings-link">
                 <a href="{% url 'products' %}?category=author" class="dropdown-item">By Author</a>
-                <a href="{% url 'products' %}?category=drawings" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?category=price" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?category=author,price" class="dropdown-item">All Drawings</a>
             </div>
         </li>
@@ -28,9 +28,9 @@
                 Photos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photos-link">
-                <a href="{% url 'products' %}?category=author" class="dropdown-item">By Author</a>
-                <a href="{% url 'products' %}?category=price" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?category=author,price" class="dropdown-item">All Photos</a>
+                <a href="{% url 'products' %}?category=name" class="dropdown-item">By Title</a>
+                <a href="{% url 'products' %}?category=theme" class="dropdown-item">By Theme</a>
+                <a href="{% url 'products' %}?category=name,theme" class="dropdown-item">All Photos</a>
             </div>
         </li>
 

@@ -172,7 +172,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Drawings and Photos have same words, for searching specific items, need to ensure unique names?
 
-- When clicking on "All drawings, All Photos or All Latest", nothing is displayed. Only "All Items"link works.
+- When clicking on "Drawings: by price, by author or All drawings, by price, by author, All Photos or latest drawings, latest photos or All Latest", nothing is displayed. Only "All Items"link works.
 
 - 
 
@@ -229,6 +229,10 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only an option to download items from Kelly's Art & Photo Boutique, no physical items sold
 
      ![cart-arrow-down](media/readme_images/cart_readme.png)
+
+- (<i class="fa-solid fa-caret-left"></i>) from font awesome. place all font awesome credits together!! arrow cart.html
+
+- (<i class="fa-solid fa-lock"></i>) secure checkout lock cart.html
 
 
 - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
