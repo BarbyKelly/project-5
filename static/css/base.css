@@ -46,6 +46,13 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -126,6 +133,6 @@ a.category-badge > span.badge:hover {
     }
 
     body {
-        height: calc(100vh -116px);
+        height: calc(100vh - 116px);
     }
 }

@@ -1,16 +1,16 @@
-# Project 5 - Kelly's Art & Photo Boutique
+# Project 5 - The Kelly's Art & Photo Boutique
 
 This project is created as part of Code Institute's Software Development course.
 Layout and code for this project is based on Code Institute's Walk-through project:
 [Boutique Ado]("https://github.com/Code-Institute-Solutions/boutique_ado_v1").
 
-Kelly's Art & Photo Boutique has no commercial intention.
+The Kelly's Art & Photo Boutique has no commercial intention.
 Aim of this project was to create a .... where Site Users can ....,  
 
 ...Boutique's theme:  
 
 
-Deployed site: [Kelly's Art & Photo Boutique](...)
+Deployed site: [The Kelly's Art & Photo Boutique](...)
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
@@ -174,7 +174,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - When clicking on "Drawings: by price, by author or All drawings, by price, by author, All Photos or latest drawings, latest photos or All Latest", nothing is displayed. Only "All Items"link works.
 
-- 
+- nothing in the cart when clicking on add to cart
 
 
 ### Known Bugs
