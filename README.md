@@ -176,6 +176,29 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - nothing in the cart when clicking on add to cart
 
+- cart shows €0.00 on the website, but when you click to open the cart, it has items in
+
+- Plus and minus buttons would not work, when developer tried to adjust item quantities in the cart. 
+  Developer could only increase the item quantities with arrows:
+
+  ![Plus and minus buttons not working](bugplusminus.png)
+
+  Developer thought issue is in base.html, scripts must be not correct. As plus and minus buttons had worked when she followed Boutique Ado walk-through for her walk-through project.
+  Developer used [Diffchecker](https://www.diffchecker.com/) to compare her project 5's code vs Boutique Ado walk-through lesson,
+  and then compared the script codes vs the Boutique Ado version that had worked for the developer:
+
+  ![Comparing codes with Diffchecker](bug_fix_plus_minus.png)
+
+  Developer went back to lesson "Base Template Part 1":
+
+  ![Base template changes](walk_through_instructions.png)
+
+  to see where she may have made an error. Developer found that she had used the updated code when she created her walk-through project, but had used different version of code for project 5.
+
+  Developer adjusted block corejs code in her project 5, to match the one that worked for her walk-through project. This fixed the error. Plus and minus buttons were fixed, developer was able to increase or decrease the number of particular item in the cart with plus and minus buttons:
+
+  ![Plus and minus buttons work](plus_minus_work.png)
+
 
 ### Known Bugs
 
