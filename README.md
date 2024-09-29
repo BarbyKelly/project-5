@@ -1,16 +1,16 @@
-# Project 5 - The Kelly's Art & Photo Boutique
+# Project 5 - Kelly's Art & Photo Boutique
 
 This project is created as part of Code Institute's Software Development course.
 Layout and code for this project is based on Code Institute's Walk-through project:
 [Boutique Ado]("https://github.com/Code-Institute-Solutions/boutique_ado_v1").
 
-The Kelly's Art & Photo Boutique has no commercial intention.
+Kelly's Art & Photo Boutique has no commercial intention.
 Aim of this project was to create a .... where Site Users can ....,  
 
 ...Boutique's theme:  
 
 
-Deployed site: [The Kelly's Art & Photo Boutique](...)
+Deployed site: [Kelly's Art & Photo Boutique](...)
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
@@ -172,7 +172,8 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Drawings and Photos have same words, for searching specific items, need to ensure unique names?
 
-- When clicking on "Drawings: by price, by author or All drawings, by price, by author, All Photos or latest drawings, latest photos or All Latest", nothing is displayed. Only "All Items"link works.
+- When clicking on "Drawings: by price, by author or All drawings, by price, by author, All Photos or latest drawings, latest photos or All Latest", 
+  nothing is displayed. Only "All Items"link works.
 
 - nothing in the cart when clicking on add to cart
 
@@ -248,6 +249,12 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - General ReadMe template derived from developer's Project 4 [Blog](), that README was originally based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
 - Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
+
+- Developer used this ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check colors for Website's Logo
+
+- Website's Logo designed by developer's 10 year old daughter Aoife, and Aoife used Balsamiq Wireframes together with the developer, to create the Logo:
+
+add image here!!!
 
 - Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only an option to download items from Kelly's Art & Photo Boutique, no physical items sold
 
