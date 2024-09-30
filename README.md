@@ -34,16 +34,23 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ### Admin can:
 
-- 
+- Add, edit and delete products via django admin
+
+- Follow SKU system already in place: 
+  dr333(add a unique number in the end) for drawings,
+  ph888(add a unique number in the end) for photos
+
+- Admin may change the SKU system if needed
+
 
 
 #### Future Features for Admin:
 
-- 
+- System would suggest a new unique number appropriate for photos and drawings
 
 ### Site User can:
 
-- 
+- Choose drawings based on what tools were used eg pencil, paint, water-color, marker
 
 #### Future Features for Site Users:
 
@@ -250,9 +257,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
 
-- Developer used this ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check colors for Website's Logo
-
-- Website's Logo designed by developer's 10 year old daughter Aoife, and Aoife used Balsamiq Wireframes together with the developer, to create the Logo:
+- As Kelly's Photo & Art Boutique sells drawings made by the developer's kids, the developer asked her kids to come up with a logo. 
+  Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
+  Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval. Website's finalised logo:
 
 add image here!!!
 
@@ -283,26 +290,21 @@ add image here!!!
 
 ## Images
 
-- 
+- All of the photos used for the website, were taken by the developer
 
-- Double rainbow: taken by the developer
+- All of the drawings were made by developer's kids, at school, preschool, or at home
 
-- Flowers drawing by developer's 10 year old daughter Aoife, made in school
-
-- Penguin drawing by developer's 6 year old daughter Ciara, made in school
-
-- Beach: taken by the developer, Fenit, Co. Kerry, Ireland
-
-- Default image clouds taken by the developer, Co. Kerry, Ireland
-
-- Images converted with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-500-kb)
+- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-500-kb)
+  All converted images have 'opt' in the name to show they were optimized.
 
 [Back to the overview](#content)
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, and online content creators.
+- Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, 
+  and online content creators.
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that  
+  secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
 
 [Back to the overview](#content)
