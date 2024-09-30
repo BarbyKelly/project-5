@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/websitebackground.jpg') no-repeat center center fixed;
+    background: url('/media/website_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555555;
@@ -104,10 +104,12 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ----- Bootstrap Toasts from Boutique Ado ------ */
+
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 70px;
+    right: 20px;
     z-index: 99999999999;
 }
 
@@ -116,10 +118,61 @@ a.category-badge > span.badge:hover {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 3px;
 }
 
-/* -------------------------------- Media Queries */
+/* ------ From Boutique Ado walk-through (CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/) Modified by developer ---- */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid cornflowerblue;
+    position: absolute;
+    top: -10px;
+    right: 40px;
+}
+
+/* ------- Convenience Classes from Boutique Ado(colors copied from Bootstrap), edited by developer ------ */
+.arrow-primary {
+    border-bottom-color: cornflowerblue !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #435f78 !important;
+}
+
+.arrow-success {
+    border-bottom-color: #04280c !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #50070e !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #d8a714 !important;
+}
+
+.arrow-info {
+    border-bottom-color: cornflowerblue !important;
+}
+
+.arrow-light {
+    border-bottom-color: #919497 !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #021527 !important;
+}
+
+.cart-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ------ Media Queries from Boutique Ado --------- */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

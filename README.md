@@ -269,7 +269,7 @@ add image here!!!
 
 - (<i class="fa-solid fa-caret-left"></i>) from font awesome. place all font awesome credits together!! arrow cart.html
 
-- (<i class="fa-solid fa-lock"></i>) secure checkout lock cart.html
+- (<i class="fa-solid fa-lock"></i>) secure checkout lock cart.html and toast_success.html
 
 
 - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
@@ -303,6 +303,8 @@ add image here!!!
 
 - Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, 
   and online content creators.
+
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce       website, and for creating a unique Logo
 
 - Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that  
   secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
