@@ -70,7 +70,7 @@ def remove_from_cart(request, item_id):
     """
 
     try:
-        cart = request.session.get('cart', {})
+        product = get_object_or_404(Product, pk=item_id)
 
         if quantity:
             del cart[item_id]
