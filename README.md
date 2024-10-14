@@ -207,6 +207,20 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
   ![Plus and minus buttons work](plus_minus_work.png)
 
+  - Developer noticed how "All Photos" and "All Drawings", showed 0 items, while "All Items" displayed all items. She couldn't find 
+    what was causing the error. Developer's coursemate Patrick Hladun found an error: two of the product categories had the same "pk":9 
+  ![pk error](pk_error.png)
+
+    Developer fixed conflict between pk numbers, and used ![jsonformatter.com](https://jsonformatter.org/) to help her to fix rest of categories.json, as "author": "author" was missing under pk:1, and pk:6 "author": "author" was missing one of these: '}':
+    
+    ![error line 1](error_line1.png)
+    
+    After fixing these errors, json file validation worked as expected:
+
+  ![JSON working ok](fixed_pk.png)
+
+  All Photos and All Drawings still showing 0 products
+
 
 ### Known Bugs
 
@@ -263,7 +277,8 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 add image here!!!
 
-- Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only an option to download items from Kelly's Art & Photo Boutique, no physical items sold
+- Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only 
+  an option to download items from Kelly's Art & Photo Boutique, no physical items sold
 
      ![cart-arrow-down](media/readme_images/cart_readme.png)
 
@@ -272,7 +287,7 @@ add image here!!!
 - (<i class="fa-solid fa-lock"></i>) secure checkout lock cart.html and toast_success.html
 
 
-- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
+- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search& utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
 - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
 
@@ -295,16 +310,22 @@ add image here!!!
 - All of the drawings were made by developer's kids, at school, preschool, or at home
 
 - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-500-kb)
-  All converted images have 'opt' in the name to show they were optimized.
+  All converted images have 'opt' in the name to show they were optimized
+
+- Logo created by Developer's 10 year old daughter Aoife, with wireframe, under developer's guidance and Aoife's design idea. 
+  Screenshot image of the logo:
+  
+  ![Logo by Aoife](media/readme_images/logo_wireframe_by_aoife_ten.png)
 
 [Back to the overview](#content)
 
 # Acknowledgements
 
 - Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, 
-  and online content creators.
+  Coursemate Patrick Hladun, and online content creators.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce       website, and for creating a unique Logo
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce       
+  website, and for creating a unique Logo
 
 - Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that  
   secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
