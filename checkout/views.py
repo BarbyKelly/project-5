@@ -5,8 +5,6 @@ from django.conf import settings
 from .forms import OrderForm
 from cart.contexts import cart_contents
 
-import stripe
-
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
