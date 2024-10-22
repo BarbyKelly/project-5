@@ -20,11 +20,14 @@ def cart_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
+    
+    order_total = order_total
 
     context = {
         'cart_items': cart_items,
         'total': total,
         'product_count': product_count,
+        'order_total': order_total,
     }
 
     return context
