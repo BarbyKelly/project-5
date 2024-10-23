@@ -21,13 +21,13 @@ def cart_contents(request):
                 'product': product,
             })
     
-    order_total = order_total
+    order_total = total
 
     context = {
         'cart_items': cart_items,
         'total': total,
         'product_count': product_count,
-        'order_total': order_total,
+        'order_total': order_total,  
     }
 
     return context
