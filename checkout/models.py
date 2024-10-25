@@ -36,7 +36,7 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for postage costs.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total_sum'] or 0
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_POSTAGE_THRESHOLD:
             self.postage_cost = self.order_total * settings.STANDARD_POSTAGE_PERCENTAGE / 100
         else:
@@ -60,7 +60,7 @@ class Order(models.Model):
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=10, null=True, blank=True) # 13*10cm, 18*13cm, 45*30cm, 30*45cm
+    product_size = models.CharField(max_length=10, null=True, blank=True) # 13x10cm, 10x13cm, 18x13cm, 13x18cm, 45x30cm, 30x45cm
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
