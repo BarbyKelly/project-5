@@ -48,7 +48,7 @@ def cart_contents(request):
         'postage': postage,
         'free_postage_delta': free_postage_delta,
         'free_postage_threshold': settings.FREE_POSTAGE_THRESHOLD,
-        'grand_total': order_total,  
+        'grand_total': grand_total,
     }
 
     return context

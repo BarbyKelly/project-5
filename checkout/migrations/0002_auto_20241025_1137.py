@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='order',
-            name='county_or_similar',
+            name='county',
             field=models.CharField(blank=True, max_length=80, null=True),
         ),
         migrations.AddField(

@@ -76,7 +76,7 @@
                       {% if request.user.is_superuser %}
                           <a href="" class="dropdown-item">Item Management</a>
                       {% endif %}
-                      <a href="" class="dropdown-item">My Account</a>
+                      <a href="" class="dropdown-item">My Profile</a>
                       <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                     {% else %}
                       <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -85,11 +85,11 @@
                 </div>
               </li>
               <li class="list-inline-item">
-                <a class="{% if order_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
                   <div class="text-center">
                     <div><i class="fa-solid fa-cart-arrow-down"></i></div>
                     <p class="my-0">
-                      {% if order_total %}
+                      {% if grand_total %}
                           €{{ grand_total|floatformat:2 }}
                       {% else %}
                           €0.00
@@ -112,7 +112,7 @@
       </div>
       <div id="postage-banner" class="row text-center">
         <div class="col bg-navy text-white">
-          <h4 class="logo-font my-1">Free postage on orders over €{{ free_postage_threshold }}!</h4>
+          <h4 class="logo-font my-1">Free postage on orders over €{{ free_postage_threshold }}</h4>
         </div>
       </div>   
     </header>

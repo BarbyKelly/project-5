@@ -17,7 +17,7 @@ class Order(models.Model):
     town_or_city = models.CharField(max_length=40, null=True, blank=False)
     first_address_line = models.CharField(max_length=80, null=True, blank=True)
     second_address_line = models.CharField(max_length=80, null=True, blank=True)
-    county_or_similar = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     postage_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)

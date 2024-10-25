@@ -64,7 +64,7 @@
                     </div>
                     <div class="col-3">
                         <p class="my-0">€{{ total | floatformat:2 }}</p>
-                        <p class="my-0">€{{ postage | floatformat:2 }}</p>                        
+                        <p class="my-0">€{{ postage | floatformat:2 }}</p>                      
                         <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         {{ order_form.first_address_line | as_crispy_field }}
                         {{ order_form.second_address_line | as_crispy_field }}
                         {{ order_form.town_or_city | as_crispy_field }}
-                        {{ order_form.county_or_similar | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }}
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">

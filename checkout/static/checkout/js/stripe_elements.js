@@ -80,7 +80,7 @@ form.addEventListener('submit', function(ev) {
                         line2: $.trim(form._address_line.value),
                         city: $.trim(form.town_or_city.value),
                         country: $.trim(form.country.value),
-                        county_or_similar: $.trim(form.county_or_similar.value),
+                        county: $.trim(form.county.value),
                     }
                 }
             }

@@ -41,7 +41,20 @@
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
-                        <div class="form-row">
+                        {% with product.has_sizes as s %}
+                        {% if s %}
+                            <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
+                                    <option value="13x10cm">13x10cm</option>
+                                    <option value="10x13cm">10x13cm</option>
+                                    <option value="18x13cm">18x13cm</option>
+                                    <option value="13x18cm">13x18cm</option>
+                                    <option value="45x30cm">45x30cm</option>
+                                    <option value="30x45cm">30x45cm</option>
+                                </select>
+                            </div>
+                        {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
