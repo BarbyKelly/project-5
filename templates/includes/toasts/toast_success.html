@@ -15,7 +15,7 @@
                 <hr class="mt-1 mb-3">
             </div>
         </div>
-        {% if order_total %}
+        {% if grand_total and not on_profile_page %}
             <p class="logo-font bg-white text-black py-1">Your cart ({{ product_count }})</p>
             <div class="cart-notification-wrapper">
                 {% for item in cart_items %}
@@ -32,6 +32,16 @@
             </div>
             <div class="row">
                 <div class="col">
+                    <strong><p class="mt-3 mb-1 text-black">
+                        Total{% if free_postage_delta > 0 %} (Exc. postage){% endif %}:
+                        <span class="float-right">€{{ total|floatformat:2 }}</span>
+                    </p></strong>
+                    {% if free_postage_delta > 0%}
+                        <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
+                            If you spend <strong>€{{ free_postage_delta }}</strong> more \
+                            you can get free postage!
+                        </p>
+                    {% endif %}
                     <a href="{% url 'view_cart' %}" class="btn btn-black btn-block rounded-0">
                         <span class="text-uppercase">Proceed To Secure Checkout</span>
                         <span class="icon">

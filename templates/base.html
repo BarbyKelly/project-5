@@ -33,7 +33,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
-        {% endblock %}
+    {% endblock %}
 
     {% block extra_js %}
     {% endblock %}
@@ -90,7 +90,7 @@
                     <div><i class="fa-solid fa-cart-arrow-down"></i></div>
                     <p class="my-0">
                       {% if order_total %}
-                          €{{ order_total|floatformat:2 }}
+                          €{{ grand_total|floatformat:2 }}
                       {% else %}
                           €0.00
                       {% endif %}
@@ -109,7 +109,12 @@
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %}
           </nav>
-      </div>     
+      </div>
+      <div id="postage-banner" class="row text-center">
+        <div class="col bg-navy text-white">
+          <h4 class="logo-font my-1">Free postage on orders over €{{ free_postage_threshold }}!</h4>
+        </div>
+      </div>   
     </header>
 
     {% if messages %}

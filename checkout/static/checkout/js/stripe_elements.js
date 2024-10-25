@@ -76,11 +76,11 @@ form.addEventListener('submit', function(ev) {
                     phone: $.trim(form.phone_number.value),
                     email: $.trim(form.email.value),
                     address:{
-                        line1: $.trim(form.street_address1.value),
-                        line2: $.trim(form.street_address2.value),
+                        line1: $.trim(form._address_line.value),
+                        line2: $.trim(form._address_line.value),
                         city: $.trim(form.town_or_city.value),
                         country: $.trim(form.country.value),
-                        state: $.trim(form.county.value),
+                        county_or_similar: $.trim(form.county_or_similar.value),
                     }
                 }
             }

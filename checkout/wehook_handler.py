@@ -1,5 +1,10 @@
 from django.http import HttpResponse
 
+from .models import Order, OrderLineItem
+from products.models import Product
+
+import json
+import time
 
 class StripeWH_Handler:
     """
@@ -43,12 +48,14 @@ class StripeWH_Handler:
                     email_iexact=shipping_details.email,
                     phone_number_iexact=shipping_details.phone,
                     country_iexact=shipping_details.country,
-                    postcode_iexact=shipping_details.postal_code,
-                    town_or_city_iexact=shipping_details.city,
-                    street_address1_iexact=shipping_details.line1,
-                    street_address2_iexact=shipping_details.line2,
-                    county_iexact=shipping_details.state,
+                    postcode_iexact=shipping_details.postcode,
+                    town_or_city_iexact=shipping_details.town_or_city,
+                    first_address_line_iexact=shipping_details.first_address_line,
+                    second_address_line_iexact=shipping_details.second_address_line,
+                    county_or_similar_iexact=shipping_details.county_or_similar,
                     grand_total=grand_total,
+                    original_cart=cart,
+                    stripe_pid=pid,
                 )
                 order_exists = True
                 return HttpResponse(
@@ -71,9 +78,11 @@ class StripeWH_Handler:
                     country=shipping_details.country,
                     postcode=shipping_details.postal_code,
                     town_or_city=shipping_details.city,
-                    street_address1=shipping_details.line1,
-                    street_address2=shipping_details.line2,
-                    county=shipping_details.state,
+                    first_address_line=shipping_details.line1,
+                    second_address_line=shipping_details.line2,
+                    county_or_similar=shipping_details.state,
+                    original_cart=cart,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(cart).items():
                     product = Product.objects.get(id=item_id)
