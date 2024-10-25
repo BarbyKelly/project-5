@@ -76,7 +76,7 @@ class StripeWH_Handler:
                     email=shipping_details.email,
                     phone_number=shipping_details.phone,
                     country=shipping_details.country,
-                    postcode=shipping_details.postal_code,
+                    postcode=shipping_details.postcode,
                     town_or_city=shipping_details.city,
                     first_address_line=shipping_details.line1,
                     second_address_line=shipping_details.line2,
