@@ -50,6 +50,7 @@
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -61,10 +62,12 @@
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
+                        <p class="my-0">Postage:</p>
+                        <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
                         <p class="my-0">€{{ total | floatformat:2 }}</p>
-                        <p class="my-0">€{{ postage | floatformat:2 }}</p>                      
+                        <p class="my-0">€{{ postage | floatformat:2 }}</p>            
                         <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
@@ -81,12 +84,12 @@
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Postage</legend>
                         {{ order_form.phone_number | as_crispy_field }}
+                        {{ order_form.country | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
                         {{ order_form.first_address_line | as_crispy_field }}
                         {{ order_form.second_address_line | as_crispy_field }}
-                        {{ order_form.town_or_city | as_crispy_field }}
                         {{ order_form.county | as_crispy_field }}
-                        {{ order_form.postcode | as_crispy_field }}
-                        {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
                                 <label class="form-check-label" for="id-save-info">Save this postage information to my profile</label>
