@@ -1,7 +1,4 @@
-from django.shortcuts import (
-    render, redirect, reverse, get_object_or_404,
-    HttpResponse
-)
+from django.shortcuts import render, redirect, reverse, get_object_or_404,HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -45,8 +42,8 @@ def checkout(request):
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
-            'first_address_line': request.POST['first_address_line'],
-            'second_address_line': request.POST['second_address_line'],
+            'street_address1': request.POST['street_address1'],
+            'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
@@ -77,9 +74,8 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't \
-                            found in our database. \
-                            Please contact us for assistance!")
+                        "One of the products in your cart wasn't found in our database."
+                        "Please contact us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))

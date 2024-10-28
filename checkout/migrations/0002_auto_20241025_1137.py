@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='order',
-            name='first_address_line',
+            name='street_address1',
             field=models.CharField(blank=True, max_length=80, null=True),
         ),
         migrations.AddField(
@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='order',
-            name='second_address_line',
+            name='street_address2',
             field=models.CharField(blank=True, max_length=80, null=True),
         ),
         migrations.AddField(
