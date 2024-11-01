@@ -91,11 +91,11 @@ a.category-badge > span.badge:hover {
 }
 
 .btt-button {
-    height: 44px;
-    width: 44;
+    height: 42px;
+    width: 42px;
     position: fixed;
-    bottom: 13px;
-    right: 13px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .btt-link,
@@ -112,8 +112,8 @@ input[name='q']::placeholder {
 
 .message-container {
     position: fixed;
-    top: 70px;
-    right: 20px;
+    top: 72px;
+    right: 15px;
     z-index: 99999999999;
 }
 
@@ -122,19 +122,19 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 3px;
+    height: 2px;
 }
 
 /* ------ From Boutique Ado walk-through (CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/) Modified by developer ---- */
 .arrow-up {
     width: 0;
     height: 0;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-bottom: 6px solid cornflowerblue;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid cornflowerblue;
     position: absolute;
     top: -10px;
-    right: 40px;
+    right: 36px;
 }
 
 /* ------- Convenience Classes from Boutique Ado(colors copied from Bootstrap), edited by developer ------ */
