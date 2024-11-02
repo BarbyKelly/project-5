@@ -9,6 +9,7 @@ from profiles.models import UserProfile
 
 import json
 import time
+import stripe
 
 class StripeWH_Handler:
     """
@@ -54,9 +55,9 @@ class StripeWH_Handler:
         cart = intent.metadata.cart
         save_info = intent.metadata.save_info
 
-        # Get the Charge object
+        # Get the Charge object - updated
         stripe_charge = stripe.Charge.retrieve(
-            intent.latest_charge
+        intent.latest_charge
         )
 
         billing_details = stripe_charge.billing_details # updated
