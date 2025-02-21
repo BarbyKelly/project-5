@@ -233,9 +233,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ### Known Bugs
 
-- 
+- All 15 items are displayed under 'Categories' for Art, when only Art categories would need to be displayed
 
-- 
+- All 15 items are displayed under 'Categories' for Photos, when only categories of Photos would need to be displayed
 
 ### Forking the repository
 

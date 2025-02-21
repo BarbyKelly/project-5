@@ -17,6 +17,7 @@
                 Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-link">
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?category=author" class="dropdown-item">By Author</a>
                 <a href="{% url 'products' %}?category=price" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?category=author,price" class="dropdown-item">All Art</a>
@@ -28,6 +29,7 @@
                 Photos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photos-link">
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?category=name" class="dropdown-item">By Title</a>
                 <a href="{% url 'products' %}?category=theme" class="dropdown-item">By Theme</a>
                 <a href="{% url 'products' %}?category=name,theme" class="dropdown-item">All Photos</a>
