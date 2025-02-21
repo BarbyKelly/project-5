@@ -24,8 +24,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net',
-    'localhost',
+    '', #heroku url will be here, not deployed yet. 
+    '127.0.0.1', # local preview
     ]
 
 # Application definition
@@ -51,7 +51,10 @@ INSTALLED_APPS = [
     'crispy_forms',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-barbykelly-project5-xt4m6d5c84g.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = [
+    "https://localhost",
+    "https://*.herokuapp.com"
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

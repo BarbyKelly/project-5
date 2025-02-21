@@ -37,7 +37,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Add, edit and delete products via django admin
 
 - Follow SKU system already in place: 
-  dr333(add a unique number in the end) for drawings,
+  dr333(add a unique number in the end) for art,
   ph888(add a unique number in the end) for photos
 
 - Admin may change the SKU system if needed
@@ -46,11 +46,11 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 #### Future Features for Admin:
 
-- System would suggest a new unique number appropriate for photos and drawings
+- System would suggest a new unique number appropriate for photos and art
 
 ### Site User can:
 
-- Choose drawings based on what tools were used eg pencil, paint, water-color, marker
+- Choose art based on what tools were used eg pencil, paint, water-color, marker
 
 #### Future Features for Site Users:
 
@@ -148,7 +148,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - If Registered Site User pauses their shopping, they can save the shopping cart items, and return next time
 
-- Add an option to search Drawings and Photos by Holiday eg Easter, Christmas, Halloween
+- Add an option to search Art and Photos by Holiday eg Easter, Christmas, Halloween
 
 [Back to the overview](#content)
 
@@ -175,11 +175,13 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ## Bugs
 
+## Fixed Bugs
+
 - Products would not display. Nothing happened when the developer clicked on All Items to see the products.
 
-- Drawings and Photos have same words, for searching specific items, need to ensure unique names?
+- Art and Photos have same words, for searching specific items, need to ensure unique names?
 
-- When clicking on "Drawings: by price, by author or All drawings, by price, by author, All Photos or latest drawings, latest photos or All Latest", 
+- When clicking on "Art: by price, by author or All Art, by price, by author, All Photos or latest art, latest photos or All Latest", 
   nothing is displayed. Only "All Items"link works.
 
 - nothing in the cart when clicking on add to cart
@@ -207,7 +209,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
   ![Plus and minus buttons work](plus_minus_work.png)
 
-  - Developer noticed how "All Photos" and "All Drawings", showed 0 items, while "All Items" displayed all items. She couldn't find 
+  - Developer noticed how "All Photos" and "All Art", showed 0 items, while "All Items" displayed all items. She couldn't find 
     what was causing the error. Developer's coursemate Patrick Hladun found an error: two of the product categories had the same "pk":9 
   ![pk error](pk_error.png)
 
@@ -219,7 +221,14 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
   ![JSON working ok](fixed_pk.png)
 
-  All Photos and All Drawings still showing 0 products
+  All Photos and All Art still showing 0 products
+
+
+- Developer noticed Logo had 'Art', while NavLinks had 'Drawings'. Developer replaced 'Drawing' with 'Art' in fixtures: categories.json, in django categories, and in index.html (Home page), and in main.nav html (templates), and then 'Art' was displayed instead of 'Drawings':
+
+![Before: NavLink 'Drawings' instead of Art](<bug, art vs drawings.png>)
+
+![After: NavLink 'Art'](<word drawings replaced with art.png>)
 
 
 ### Known Bugs
@@ -271,7 +280,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
 
-- As Kelly's Photo & Art Boutique sells drawings made by the developer's kids, the developer asked her kids to come up with a logo. 
+- As Kelly's Photo & Art Boutique sells Art made by the developer's kids, the developer asked her kids to come up with a logo. 
   Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
   Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval. Website's finalised logo:
 
@@ -307,7 +316,7 @@ add image here!!!
 
 - All of the photos used for the website, were taken by the developer
 
-- All of the drawings were made by developer's kids, at school, preschool, or at home
+- All of the Art was made by developer's kids, at school, preschool, or at home
 
 - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-500-kb)
   All converted images have 'opt' in the name to show they were optimized
@@ -315,7 +324,7 @@ add image here!!!
 - Logo created by Developer's 10 year old daughter Aoife, with wireframe, under developer's guidance and Aoife's design idea. 
   Screenshot image of the logo:
   
-  ![Logo by Aoife](media/readme_images/logo_wireframe_by_aoife_ten.png)
+  ![Logo by Aoife](media/logo_wireframe_by_aoife_ten_optfifty.png)
 
 [Back to the overview](#content)
 
