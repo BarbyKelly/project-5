@@ -10,7 +10,7 @@ from .forms import ProductForm
 
 def all_products(request):
     """
-    A view to show all items, including sorting and search queries
+    A view to show all products, including sorting and search queries
     """
 
     products = Product.objects.all()
@@ -64,7 +64,7 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """
-    A view to show individual item details
+    A view to show individual product details
     """
 
     product = get_object_or_404(Product, pk=product_id)
@@ -83,9 +83,9 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Success! Product added!')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
@@ -101,7 +101,7 @@ def add_product(request):
 
 def edit_product(request, product_id):
     """
-    Edit a product in the store"""
+    Edit a product in the Boutique"""
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -122,3 +122,13 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """
+    Delete a product from the Boutique
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('products'))
