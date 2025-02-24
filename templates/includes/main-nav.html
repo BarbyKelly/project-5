@@ -17,10 +17,11 @@
                 Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-link">
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}?category=author" class="dropdown-item">By Author</a>
-                <a href="{% url 'products' %}?category=price" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?category=author,price" class="dropdown-item">All Art</a>
+                <a href="{% url 'products' %}?category=animal_art" class="dropdown-item">Animal Art</a>
+                <a href="{% url 'products' %}?category=name_art" class="dropdown-item">Name Art</a>
+                <a href="{% url 'products' %}?category=winter_art" class="dropdown-item">Winter Art</a>
+                <a href="{% url 'products' %}?category=variety_of_art" class="dropdown-item">Variety of Art</a>
+                <a href="{% url 'products' %}?category=animal_art,name_art,winter_art,variety_of_art" class="dropdown-item">All Art</a>
             </div>
         </li>
 
@@ -29,10 +30,12 @@
                 Photos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photos-link">
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}?category=name" class="dropdown-item">By Title</a>
-                <a href="{% url 'products' %}?category=theme" class="dropdown-item">By Theme</a>
-                <a href="{% url 'products' %}?category=name,theme" class="dropdown-item">All Photos</a>
+                <a href="{% url 'products' %}?category=beach" class="dropdown-item">Beach</a>
+                <a href="{% url 'products' %}?category=rainbow" class="dropdown-item">Rainbows</a>
+                <a href="{% url 'products' %}?category=animal" class="dropdown-item">Animals</a>
+                <a href="{% url 'products' %}?category=sky" class="dropdown-item">Sky</a>
+                <a href="{% url 'products' %}?category=variety_of_photos" class="dropdown-item">Variety of Photos</a>
+                <a href="{% url 'products' %}?category=beach,rainbow,animal_photo,sky_photo,variety_of_photos" class="dropdown-item">All Photos</a>
             </div>
         </li>
     </ul>

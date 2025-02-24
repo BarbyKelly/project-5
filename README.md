@@ -178,11 +178,38 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Fixed Bugs
 
 - Products would not display. Nothing happened when the developer clicked on All Items to see the products.
+fixed how-include:
 
-- Art and Photos have same words, for searching specific items, need to ensure unique names?
+- When developer clicked on any of Art or Photos nav-links, 0 items were displayed on all occassions, and NavLinks did not change color, 
+therefore it was hard to know which tab was opened:
 
-- When clicking on "Art: by price, by author or All Art, by price, by author, All Photos or latest art, latest photos or All Latest", 
-  nothing is displayed. Only "All Items"link works.
+![0 items displayed](<docs/readme_images/0 products, and says all items instead of all art.png>)
+
+Developer: 
+1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
+
+![main-nav categories](<docs/readme_images/main-nav categories for art and photos.png>)
+
+![Django categories](<docs/readme_images/django categories.png>)
+
+therefore, Art and Photos categories couldn't display, under Art and Photos NavLinks
+
+2. Developer matched categories in main-nav with Django categories and categories.json
+
+3. Art and Photos displayed now correctly, except for Beach Photos.
+None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' in category in Django:
+
+![beach-photo instead of beach_photo](<docs/readme_images/beach-photo instead of beach_photo.png>)
+
+Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beach Photos were displayed on the website as expected:
+
+![beach photos displayed ok](<docs/readme_images/beach photos displayed ok.png>)
+
+4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
+
+6. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
+
+
 
 - nothing in the cart when clicking on add to cart
 
@@ -191,51 +218,48 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Plus and minus buttons would not work, when developer tried to adjust item quantities in the cart. 
   Developer could only increase the item quantities with arrows:
 
-  ![Plus and minus buttons not working](bugplusminus.png)
+  ![Plus and minus buttons not working](docs/readme_images/bug_plus_minus.png)
 
   Developer thought issue is in base.html, scripts must be not correct. As plus and minus buttons had worked when she followed Boutique Ado walk-through for her walk-through project.
   Developer used [Diffchecker](https://www.diffchecker.com/) to compare her project 5's code vs Boutique Ado walk-through lesson,
   and then compared the script codes vs the Boutique Ado version that had worked for the developer:
 
-  ![Comparing codes with Diffchecker](bug_fix_plus_minus.png)
+  ![Comparing codes with Diffchecker](docs/readme_images/bug_fix_plus_minus.png)
 
   Developer went back to lesson "Base Template Part 1":
 
-  ![Base template changes](walk_through_instructions.png)
+  ![Base template changes](docs/readme_images/walk_through_instructions.png)
 
   to see where she may have made an error. Developer found that she had used the updated code when she created her walk-through project, but had used different version of code for project 5.
 
   Developer adjusted block corejs code in her project 5, to match the one that worked for her walk-through project. This fixed the error. Plus and minus buttons were fixed, developer was able to increase or decrease the number of particular item in the cart with plus and minus buttons:
 
-  ![Plus and minus buttons work](plus_minus_work.png)
+  ![Plus and minus buttons work](docs/readme_images/plus_minus_work.png)
 
   - Developer noticed how "All Photos" and "All Art", showed 0 items, while "All Items" displayed all items. She couldn't find 
     what was causing the error. Developer's coursemate Patrick Hladun found an error: two of the product categories had the same "pk":9 
-  ![pk error](pk_error.png)
+  ![pk error](docs/readme_images/pk_error.png)
 
     Developer fixed conflict between pk numbers, and used ![jsonformatter.com](https://jsonformatter.org/) to help her to fix rest of categories.json, as "author": "author" was missing under pk:1, and pk:6 "author": "author" was missing one of these: '}':
     
-    ![error line 1](error_line1.png)
+    ![error line 1](docs/readme_images/error_line1.png)
     
     After fixing these errors, json file validation worked as expected:
 
-  ![JSON working ok](fixed_pk.png)
-
-  All Photos and All Art still showing 0 products
+  ![JSON working ok](docs/readme_images/fixed_pk.png)
 
 
 - Developer noticed Logo had 'Art', while NavLinks had 'Drawings'. Developer replaced 'Drawing' with 'Art' in fixtures: categories.json, in django categories, and in index.html (Home page), and in main.nav html (templates), and then 'Art' was displayed instead of 'Drawings':
 
-![Before: NavLink 'Drawings' instead of Art](<bug, art vs drawings.png>)
+![Before: NavLink 'Drawings' instead of Art](<docs/readme_images/bug, art vs drawings.png>)
 
-![After: NavLink 'Art'](<word drawings replaced with art.png>)
+
+![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
 
 
 ### Known Bugs
 
-- All 15 items are displayed under 'Categories' for Art, when only Art categories would need to be displayed
 
-- All 15 items are displayed under 'Categories' for Photos, when only categories of Photos would need to be displayed
 
 ### Forking the repository
 
