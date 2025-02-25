@@ -207,10 +207,26 @@ Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beac
 
 4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
 
-6. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
+5. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
+
+6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
+
+- Product amounts were not updating in the basket: 
+developer adjusted <div class="input-group-prepend"> and <div class="input-group-append"> in cart.html. 
+
+Developer was able to update the amount of certain products in the cart, yet couldn't increase or decrease products when putting it into cart:
+
+![Increase/decrease buttons not working](docs/readme_images/buttons_clicking_but_quantity_remains_the_same_opt.png)
+
+Button still didn't work, after adusting cart.html, or quantity_input_script.html:
+
+![Fixed var plusDisabled](<docs/readme_images/fix var plusDisabled.png>)
+
+Arrows up and down in Quantity box, worked ok, and increased or decreased Quantity as needed, and Subtotal accordingly.
 
 
 
+ 
 - nothing in the cart when clicking on add to cart
 
 - cart shows €0.00 on the website, but when you click to open the cart, it has items in
