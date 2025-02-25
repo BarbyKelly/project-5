@@ -82,7 +82,7 @@ def add_product(request):
     Add a product to the boutique
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Only store owner can add a product.')
+        messages.error(request, 'Only store owners can add a product.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -109,7 +109,7 @@ def edit_product(request, product_id):
     Edit a product in the Boutique
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Only store owner can edit products.')
+        messages.error(request, 'Only store owners can edit products.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -139,7 +139,7 @@ def delete_product(request, product_id):
     Delete a product from the Boutique
     """
     if not request.user.is_superuser:
-        messages.error(request, 'Only store owner can delete a product.')
+        messages.error(request, 'Only store owners can delete a product.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
