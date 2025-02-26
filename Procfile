@@ -1,0 +1,1 @@
+web: gunicorn kellys_art_and_photo_boutique.wsgi:application

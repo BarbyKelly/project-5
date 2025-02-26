@@ -25,7 +25,6 @@ class Product(models.Model):
     description = models.TextField(max_length=300)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=False, blank=False)
 
     def __str__(self):

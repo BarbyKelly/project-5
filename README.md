@@ -185,7 +185,8 @@ therefore it was hard to know which tab was opened:
 
 ![0 items displayed](<docs/readme_images/0 products, and says all items instead of all art.png>)
 
-Developer: 
+Developer took these steps to fix main-nav links:
+
 1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
 
 ![main-nav categories](<docs/readme_images/main-nav categories for art and photos.png>)
@@ -210,6 +211,50 @@ Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beac
 5. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
 
 6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
+
+
+### Fixed "django.core.serializers.base.DeserializationError: Problem installing fixture"
+
+- Developer ran command: 'python manage.py loaddata categories' and "django.core.serializers.base.DeserializationError: Problem installing fixture..." appeared in the terminal.
+
+- Earlier that day, tutor Oisin guided developer how to fix 'keyword: title' error, relating to json files
+
+- Developer was able to follow similar steps to figure out the error:
+
+- Developer broke down terminal error messages into 3 main (puzzle) pieces, to understand where was the error located:
+
+#### Keyerror: author:
+
+![keyerror: author](<docs/readme_images/keyerror author.png>)
+
+#### No field_name author:
+
+![no field_name author](<docs/readme_images/no field_name author.png>)
+
+#### Fixtures categories.json:
+
+![fixtures categories.json](<docs/readme_images/fixtures categories.json.png>)
+
+- Developer had been focusing on field 'author' in categories.json file. Seeing 'author' is in categories.json file, so why would it come up as an error, 'no field_name author'
+
+- After looking at these 3 parts of terminal messages, and checking out fields in Django for Adding 'Categories':
+
+#### Django Add Categories:
+
+![Django Add Categories](<docs/readme_images/django admin categories.png>)
+
+developer realised issue was that categories.json had a field 'author', while in admin.py/Django categories there was no 'author' field set up
+
+- Developer removed 'author' field from categories.json and 'python manage.py loaddata categories' command worked then ok:
+
+![load categories command worked](<docs/readme_images/load categories command worked.png>)
+
+- Fixing this bug/error was a great lesson for the developer, she learned how to better understand Terminal messages, and saw more value in them
+
+- This error/bug also helped Developer to realize, she had added products to Django and hadn't updated categories.json accordingly, to reflect
+changes made via Django Products.
+
+
 
 - Product amounts were not updating in the basket: 
 developer adjusted <div class="input-group-prepend"> and <div class="input-group-append"> in cart.html. 
