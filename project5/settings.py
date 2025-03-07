@@ -26,6 +26,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     '127.0.0.1', # local preview
+    'localhost',
     'kellys-art-and-photo-boutique-913058c0223e.herokuapp.com', # heroku application
     ]
 
