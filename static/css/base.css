@@ -293,3 +293,29 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+/* Footer - styling based on previous project: [quiz](https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css)*/
+
+.footer {
+    font-size: 20px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    color: #021527;
+    text-align: center;
+    line-height: 15px;
+}
+#social-networks {
+    text-align: center;
+    padding: auto;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 100%;
+    padding: auto;
+    color: #021527;
+}

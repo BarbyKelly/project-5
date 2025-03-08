@@ -107,12 +107,7 @@
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %}
           </nav>
-        </div>
-      <div id="postage-banner" class="row text-center">
-        <div class="col text-cornflowerblue">
-          <h5 class="logo-font my-1">Free postage on orders over €{{ free_postage_threshold }}</h5>
-        </div>
-      </div>   
+        </div> 
     </header>
 
     {% if messages %}
@@ -147,3 +142,25 @@
 
   </body>
 </html>
+
+{% block footer %}
+<!-- Footer layout followed from LoveRunning index.html-->
+<footer>
+    <ul id="social-newtorks">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+            aria-label="Facebook home page (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener"
+            aria-label="X/Twitter home page (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+            aria-label="YouTube home page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+    </ul>
+</footer>
+{% endblock %}
+
+<!-- Copyright -->
+{% block copyright %}
+    Copyright 2025 Barby Kelly
+{% endblock %}

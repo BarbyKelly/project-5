@@ -2,19 +2,18 @@
 
 This project is created as part of Code Institute's Software Development course.
 Layout and code for this project is based on Code Institute's Walk-through project:
-[Boutique Ado]("https://github.com/Code-Institute-Solutions/boutique_ado_v1").
+[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
 
-Kelly's Art & Photo Boutique has no commercial intention.
-Aim of this project was to create a .... where Site Users can ....,  
+Kelly's Art & Photo Boutique has no commercial intention. 
+Aim of this project was to create a site where various forms of Art and Photos are displayed,
+and Site visitors may choose to purchase them (no real purchases).
 
-...Boutique's theme:  
 
-
-Deployed site: [Kelly's Art & Photo Boutique](...)
+Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
-![Am I Responsive image](...)
+![Am I Responsive image]()
 
 
 # Content
@@ -34,35 +33,53 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ### Admin can:
 
-- Add, edit and delete products via django admin
+- Login
+- Access 'Product Management' once logged in
+- View 'My Profile'
+- Logout
 
+- Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
 - Follow SKU system already in place: 
   dr333(add a unique number in the end) for art,
   ph888(add a unique number in the end) for photos
 
 - Admin may change the SKU system if needed
-
-
+- Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
+- Admin can create test purchases and delete them after
+- Admin may click on all items on the website like other users
 
 #### Future Features for Admin:
 
-- System would suggest a new unique number appropriate for photos and art
+- System would suggest a new unique SKU, based on existing products
 
-### Site User can:
+### Site User may:
 
-- Choose art based on what tools were used eg pencil, paint, water-color, marker
+- Click on Logo, which brings user to Home page (All Items)
+- Click on NavBar links: All Items, Art, Photos
+- Choose to have products displayed by Category, by Price, by Author, or All Items
+- Select Art by: Animal Art, Name Art, Winter Art, Variety of Art, or All Art
+- Choose photos displayed by: Beach, Rainbows, Animals, Sky, Variety of Photos, or All Photos
+- Create an account
+- Login with their username and password
+- Click on My Account, My Profile, Logout, Cart
+- View items in their cart
+- Logout
+
+#### Site User may not:
+
+- Add, edit or delete products
+- Access Product Management
 
 #### Future Features for Site Users:
 
-- 
-
-### Visitor may:
-
-- 
-
-#### Future Features for Visitors:
-
-- 
+- Choose art based on what tools were used eg pencil, paint, water-color, marker
+- Choose Art and photos based on seasons, celebrations
+- See their Username displayed when logged in
+- See their saved details under their account, including name and username
+- Fill in Request Form, what type of Art or Photos they would love to see displayed
+- 'How to ...' option in Nav Menu, where are selection of videos, articles, tips how to create certain art, 
+  or how certain art pieces were created
+- Live classes with Site Visitors, creating Art
 
 [Back to the overview](#content)
 
@@ -71,7 +88,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Ensure env.py is set up properly
 - Check gitignore
-- Set DEBUG=False in settings.py
+- Set "DEBUG = 'DEVELOPMENT' in os.environ" in settings.py
 - Login to Heroku
 - Click on settings in the Menu
 - Click on Reveal Config Vars
@@ -88,33 +105,22 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
-### Homepage
+### "All Items" (Homepage)
 
-![wireframe home page]()
+![wireframe all items (home) page]()
 
-### Shop Here page
+### "Click Here to Shop" page
 
-![wireframe shop here page]()
+![wireframe click here to shop page]()
 
-### Contact page
+### Art page
 
-![wireframe contact page]()
+![wireframe art page]()
 
-### Request page
+### Photos page
 
-![wireframe request page]()
+![wireframe photos page]()
 
-### How To page
-
-![wireframe how to page]()
-
-### Signup page
-
-![wireframe sign up page]()
-
-### Login page
-
-![wireframe login page]()
 
 [Back to the overview](#content)
 
@@ -128,14 +134,21 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ## Common Features
 - **Navigation Menu**
-    - Home
-    - 
-    - Request
-    - Contact
-    - Sign up
-    - Login
+    - All Items (Home page)
+    - Art
+    - Photos
+  **On the right**
+    - My Account
+    - Cart 
 
-- **Footer**
+
+### Future Navigation Menu Features:
+    - Request Form
+    - How to ... 
+    - Sign Up
+    - Sign In
+
+### **Footer**
     - Copyright
     - Social Media links
 
@@ -177,9 +190,6 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ## Fixed Bugs
 
-- Products would not display. Nothing happened when the developer clicked on All Items to see the products.
-fixed how-include:
-
 - When developer clicked on any of Art or Photos nav-links, 0 items were displayed on all occassions, and NavLinks did not change color, 
 therefore it was hard to know which tab was opened:
 
@@ -198,7 +208,7 @@ therefore, Art and Photos categories couldn't display, under Art and Photos NavL
 2. Developer matched categories in main-nav with Django categories and categories.json
 
 3. Art and Photos displayed now correctly, except for Beach Photos.
-None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' in category in Django:
+None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' instead of expected: 'beach_photos' in Django Categories:
 
 ![beach-photo instead of beach_photo](<docs/readme_images/beach-photo instead of beach_photo.png>)
 
@@ -357,43 +367,48 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 # References & Credits
 
-- All of the code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project ["Boutique Ado"](https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
-  The developer has credited Walk-through mainly on top of html files, 
-  due to enourmous number of other files, which are all coded like Walk-through project.
+## Code:
 
-- General ReadMe template derived from developer's Project 4 [Blog](), that README was originally based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
+- Code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project ["Boutique Ado"](https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
+The developer has credited Walk-through mainly on top of html files, 
+due to enourmous number of other files, which are all coded similarl to Walk-through project.
 
-- Search icon from: [fontawesome.com](https://fontawesome.com/v4/icon/search)
+## README:
 
-- As Kelly's Photo & Art Boutique sells Art made by the developer's kids, the developer asked her kids to come up with a logo. 
-  Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
-  Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval. Website's finalised logo:
+- General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
-add image here!!!
+## Icons:
 
-- Developer chose "Cart-arrow-down" icon from [Font Awesome](<i class="fa-solid fa-cart-arrow-down"></i>) to hightlight there's only 
-  an option to download items from Kelly's Art & Photo Boutique, no physical items sold
+- Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
-     ![cart-arrow-down](media/readme_images/cart_readme.png)
+## Logo:
+- As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
+Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
+Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
+Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
+Website's finalised logo:
 
-- (<i class="fa-solid fa-caret-left"></i>) from font awesome. place all font awesome credits together!! arrow cart.html
-
-- (<i class="fa-solid fa-lock"></i>) secure checkout lock cart.html and toast_success.html
+![Logo for Kelly's Art and Photo Boutique](media/logo_wireframe_by_aoife_ten_opt.png)
 
 
-- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search& utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
+## Font:
+- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
 - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
 
-- Fontawesome circle-arrow-up icon from: [Fontawesome.com](https://fontawesome.com/icons/circle-arrow-up?f=classic&s=solid)
 
+## am I responsive:
 
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
 
+
+## Wireframes:
+
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
-- 
- 
+
+## Favicon:
+
 - How to add favicon: [W3 Schools](https://www.w3schools.com/html/html_favicon.asp)
 
 
@@ -401,27 +416,24 @@ add image here!!!
 
 - All of the photos used for the website, were taken by the developer
 
-- All of the Art was made by developer's kids, at school, preschool, or at home
+- All of the Art was made by developer's kids, at school, preschool, in art class, or at home
 
-- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-500-kb)
+- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
   All converted images have 'opt' in the name to show they were optimized
 
-- Logo created by Developer's 10 year old daughter Aoife, with wireframe, under developer's guidance and Aoife's design idea. 
-  Screenshot image of the logo:
-  
-  ![Logo by Aoife](media/logo_wireframe_by_aoife_ten_optfifty.png)
 
 [Back to the overview](#content)
 
 # Acknowledgements
 
 - Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, 
-  Coursemate Patrick Hladun, and online content creators.
+  Coursemates, and online content creators.
 
 - Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce       
-  website, and for creating a unique Logo
+  project, and for creating a unique Logo
 
 - Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that  
-  secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through. Developer changed the key and hid it, as advised by her mentor.
+  secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
+  Developer changed the key and hid it, as advised by her mentor.
 
 [Back to the overview](#content)
