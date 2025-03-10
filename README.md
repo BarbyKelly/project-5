@@ -410,11 +410,6 @@ Website's finalised logo:
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
 
-## Favicon:
-
-- How to add favicon: [W3 Schools](https://www.w3schools.com/html/html_favicon.asp)
-- Favicon created with: [favicon.io](https://favicon.io/favicon-converter/)
-
 
 ## Images
 

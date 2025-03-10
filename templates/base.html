@@ -9,13 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
-    {% block favicon %}
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    {% endblock %}
-
     {% block extra_meta %}
     {% endblock %}
 
@@ -43,25 +36,7 @@
     {% endblock %}
 
     <title>Kelly's Art & Photo Boutique {% block extra_title %}{% endblock %}</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    >
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    >
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    >
+    
   </head>
   <body>
     <!-- Header -->
@@ -74,6 +49,7 @@
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <form method="GET" action="{% url 'products' %}">
+            {% csrf_token %}
             <div class="input-group w-100">
               <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
               <div class="input-group-append">
