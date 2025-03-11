@@ -47,7 +47,7 @@
               <h1 class="logo-font text-black my-0"><italic>Kelly's Art & Photo Boutique</italic></h1>
           </a>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
           <form method="GET" action="{% url 'products' %}">
             {% csrf_token %}
             <div class="input-group w-100">
@@ -63,7 +63,7 @@
           </form>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-          <ul class="list-inline list-unstyled text-center d-none text-lg-right my-0">
+          <ul class="list-inline list-unstyled text-center d-none d-lg-block text-lg-right my-0">
             <li class="list-inline-item dropdown">
               <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
