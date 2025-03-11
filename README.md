@@ -13,7 +13,7 @@ Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-bouti
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
-![Am I Responsive image]()
+![Am I Responsive image](docs/readme_images/am_i_responsive_opt_50.png)
 
 
 # Content
@@ -167,9 +167,16 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 # Testing & Validation
 
-- ![Lighthouse test]()
+- ![Lighthouse test, Home page](docs/readme_images/lighthouse_home_page_opt_50.png)
 
   validated with Google developer tools
+
+- ![Lighthouse test, All Art](docs/readme_images/lighthouse_all_art_opt_50.png)
+
+- ![Lighthouse test, Animal Art](docs/readme_images/lighthouse_animal_art_opt_50.png)
+
+- [Lighthouse test, All Photos](docs/readme_images/lighthouse_all_photos_opt_50.png)
+
 
 - ![HTML validator]()
 
@@ -183,13 +190,16 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
   validated with: [codebeautify](https://codebeautify.org/jsvalidate)
 
-## 
-
-
-
 
 
 ## Bugs
+
+- Images uploading mulitple times
+- + - buttons not working correctly
+- All products not entered into system, only images in Media folder
+- Username not showing up when logged in
+- And many more bugs, which due to time constraint are not listed here
+- Can not add some products into the cart, as cart icon not visible for some products
 
 ## Fixed Bugs
 
