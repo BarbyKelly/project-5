@@ -101,26 +101,29 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 [Back to the overview](#content)
 
 
-## Wireframes
+# Wireframes
 
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
-### "All Items" (Homepage)
+## Home Page
 
-![wireframe all items (home) page]()
+![Wireframe, Homepage](docs/readme_images/home_page_wireframe_boutique_opt_50.png)
 
-### "Click Here to Shop" page
+## All Items Menu
 
-![wireframe click here to shop page]()
+![Wireframe, All Items Menu](docs/readme_images/all_items_menu_wireframe_boutique_opt_50.png)
 
-### Art page
+## Art Menu
 
-![wireframe art page]()
+![Wireframe, Art Menu](docs/readme_images/art_menu_wireframe_boutique_opt_50.png)
 
-### Photos page
+## Photos Menu
 
-![wireframe photos page]()
+![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
+## "Click Here to Shop" page
+
+![Wireframe click here to shop page]()
 
 [Back to the overview](#content)
 
