@@ -1,13 +1,15 @@
 # Project 5 - Kelly's Art & Photo Boutique
 
-This project is created as part of Code Institute's Software Development course.
-Layout and code for this project is based on Code Institute's Walk-through project:
+This e-commerce project was created as part of Code Institute's Software Development course.
+Layout and code for based on Code Institute's Walk-through project:
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
+ 
+Aim of this project:
+- to create a Site where selection of Art and Photos displayed,
+- option for Site users to browse products, search and choose products,
+- test out purchasing products (without real-time purchase or without any real-time transactions).
 
-Kelly's Art & Photo Boutique has no commercial intention. 
-Aim of this project was to create a site where various forms of Art and Photos are displayed,
-and Site visitors may choose to purchase them (no real purchases).
-
+Kelly's Art & Photo Boutique has no real-time commercial intention.
 
 Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
@@ -16,22 +18,71 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ![Am I Responsive image](docs/readme_images/am_i_responsive_opt_50.png)
 
 
-# Content
-- [UX Design](#ux-design)
+## Contents
+
+[User Experience](#user-experience)
 - [User Stories](#user-stories)
-- [Features](#features)
-- [Structure](#structure)
-- [Testing & Validation](#testing--validation)
-- [Deployment](#deployment)
-- [References & Credits](#references--credits)
-- [Acknowledgements](#acknowledgements)
+
+[Wireframes](#wireframes)
+
+[Design](#design)
+- [Images](#images)
+- [Color](#color)
+- [Font](#font)
+
+[Features](#features)
+- [Existing Features](#existing-features)
+- [Future Features](#future-features)
+
+[Languages Used](#languages-used)
+
+[Sites, Apps Used](#sites-apps-used)
+
+[Validation & Testing](#validation-and-testing)
+- [Lighthouse](#lighthouse)
+- [HTML](#html)
+- [CSS](#css)
+- [Favicon](#favicon)
+- [Logo](#logo)
+- [Search Bar](#search-bar)
+- [My Account](#my-account)
+- [Cart](#cart)
+- [NavBar, NavLinks, NavButtons](#navbar-navlinks-navbuttons)
+- [Home Page](#home-page)
+- [All Items](#all-items)
+- [Art](#art)
+- [Photos](#photos)
+- [Social Media](#social-media)
+- [Footer](#footer)
+
+[Bugs](#bugs)
+- [Fixed Bugs](#fixed-bugs)
+- [Known Bugs](#known-bugs)
+
+[Deployment](#deployment)
+
+[Forking Repository](#forking-repository)
+
+[Creating Repository](#creating-repository)
+
+[Credits](#credits)
+- [Code](#code)
+- [README](#readme)
+- [Icons](#icons)
+- [Logo](#logo)
+- [Font](#font)
+- [am I responsive](#am-i-responsive)
+- [Wireframes](#wireframes)
+- [Products/Images](#productsimages)
+
+[Acknowledgements](#acknowledgements)
 
 
-# UX Design
+# User Experience
 
-## User Stories
+- User Stories
 
-### Admin can:
+## Admin may:
 
 - Login
 - Access 'Product Management' once logged in
@@ -48,11 +99,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Admin can create test purchases and delete them after
 - Admin may click on all items on the website like other users
 
-#### Future Features for Admin:
-
-- System would suggest a new unique SKU, based on existing products
-
-### Site User may:
+## Site User may:
 
 - Click on Logo, which brings user to Home page (All Items)
 - Click on NavBar links: All Items, Art, Photos
@@ -65,41 +112,12 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - View items in their cart
 - Logout
 
-#### Site User may not:
+## Site User may not:
 
 - Add, edit or delete products
 - Access Product Management
 
-#### Future Features for Site Users:
-
-- Choose art based on what tools were used eg pencil, paint, water-color, marker
-- Choose Art and photos based on seasons, celebrations
-- See their Username displayed when logged in
-- See their saved details under their account, including name and username
-- Fill in Request Form, what type of Art or Photos they would love to see displayed
-- 'How to ...' option in Nav Menu, where are selection of videos, articles, tips how to create certain art, 
-  or how certain art pieces were created
-- Live classes with Site Visitors, creating Art
-
-[Back to the overview](#content)
-
-
-### Deployments
-
-- Ensure env.py is set up properly
-- Check gitignore
-- Set "DEBUG = 'DEVELOPMENT' in os.environ" in settings.py
-- Login to Heroku
-- Click on settings in the Menu
-- Click on Reveal Config Vars
-- Check if these look ok
-- Click on Deploy in the main menu
-- Scroll down to the end and click on Deploy Branch
-- Once Heroku has finished deploying your app, "View app" appears at the bottom of the page
-- Click on "View app"
-
-[Back to the overview](#content)
-
+[Back to Contents](#contents)
 
 # Wireframes
 
@@ -125,13 +143,19 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ![Wireframe click here to shop page]()
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
 
+# Design
 
-## Colors
+## Images
+
+## Color
 
 - Base color (cornflower) for the website from: [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
 
+## Font
+
+[Back to Contents](#contents)
 
 # Features
 
@@ -161,14 +185,36 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Future Features
 
 - Registered Site User may save items as their favourites, and see them under their profile
-
 - If Registered Site User pauses their shopping, they can save the shopping cart items, and return next time
-
 - Add an option to search Art and Photos by Holiday eg Easter, Christmas, Halloween
 
-[Back to the overview](#content)
+- For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
 
-# Testing & Validation
+Users to:
+- Choose art based on what tools were used eg pencil, paint, water-color, marker
+- Choose Art and photos based on seasons, celebrations
+- See their Username displayed when logged in
+- See their saved details under their account, including name, username, delivery address, previous purchases
+- Fill in Request Form, what type of Art or Photos they would love to see displayed
+- 'How to ...' option in Nav Menu, with selection of videos, articles, tips how to create certain art, 
+  or how certain art pieces were created
+- Live classes with Site Visitors, creating Art, discussing techniques
+
+[Back to Contents](#contents)
+
+# Languages Used
+
+
+# Sites, Apps Used
+
+
+
+[Back to Contents](#contents)
+
+
+# Testing
+
+## Lighthouse
 
 - ![Lighthouse test, Home page](docs/readme_images/lighthouse_home_page_opt_50.png)
 
@@ -180,10 +226,11 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - [Lighthouse test, All Photos](docs/readme_images/lighthouse_all_photos_opt_50.png)
 
+## HTML
 
 - ![HTML validator]()
 
-  validated with: [W3C Markaup Validation](https://validator.w3.org/)
+  validated with: [W3C Markup Validation](https://validator.w3.org/)
 
 - ![CSS validator]()
 
@@ -193,16 +240,33 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
   validated with: [codebeautify](https://codebeautify.org/jsvalidate)
 
+## CSS
 
+## Favicon
 
-## Bugs
+## Logo
 
-- Images uploading mulitple times
-- + - buttons not working correctly
-- All products not entered into system, only images in Media folder
-- Username not showing up when logged in
-- And many more bugs, which due to time constraint are not listed here
-- Can not add some products into the cart, as cart icon not visible for some products
+## Search Bar
+
+## My Account
+
+## Cart
+
+## NavBar, NavLinks, NavButtons
+
+## Home Page
+
+## All Items
+
+## Art
+
+## Photos
+
+## Social Media
+
+## Footer
+
+# Bugs
 
 ## Fixed Bugs
 
@@ -344,12 +408,34 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 ![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
 
+----------
 
-### Known Bugs
+## Known Bugs
 
+- Images uploading multiple times
+- + - buttons not working correctly
+- All products not entered into system, only images in Media folder
+- Username not showing up when logged in
+- And many more bugs, which due to time constraint are not listed here
+- Can not add some products into the cart, as cart icon not visible for some products
 
+# Deployment
 
-### Forking the repository
+- Ensure env.py is set up properly
+- Check gitignore
+- Set "DEBUG = 'DEVELOPMENT' in os.environ" in settings.py
+- Login to Heroku
+- Click on settings in the Menu
+- Click on Reveal Config Vars
+- Check if these look ok
+- Click on Deploy in the main menu
+- Scroll down to the end and click on Deploy Branch
+- Once Heroku has finished deploying your app, "View app" appears at the bottom of the page
+- Click on "View app"
+
+[Back to the overview](#content)
+
+# Forking Repository
 
 - Go to [Github](https://github.com/)
 - If you want to fork one of your own repos, then DO NOT login under your own name, as fork option is not available
@@ -361,16 +447,14 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - On the same line as the Repo's name, on the right, click on the arrow beside the Fork
 - Click on: + Create a new fork
 
-
-
 - Choose a name for the repo
 - Add description if you desire
 - Choose if you want to Copy the main branch only
 - Click on: "Create fork"
 
+[Back to the overview](#content)
 
-
-### Creating the repository
+# Creating Repository
 
 - Code Institute's [template](https://github.com/Code-Institute-Org/ci-full-template) was used to set up this project.
 - After clicking on the above template link, click on the green button: "Use this template"
@@ -379,26 +463,29 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - Leave the project Public like the default setting (for Code Institute projects)
 - Click on the green button "Create repository"
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
 
+# Credits
 
-# References & Credits
-
-## Code:
+## Code
 
 - Code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project ["Boutique Ado"](https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
 The developer has credited Walk-through mainly on top of html files, 
 due to enourmous number of other files, which are all coded similarl to Walk-through project.
 
-## README:
+## README
 
 - General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
-## Icons:
+- Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
+
+
+## Icons
 
 - Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
-## Logo:
+## Logo
+
 - As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
 Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
 Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
@@ -408,24 +495,23 @@ Website's finalised logo:
 ![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
 
 
-## Font:
+## Font
+
 - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
 - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
 
 
-## am I responsive:
+## am I responsive
 
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
 
 
-## Wireframes:
+## Wireframes
 
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
-
-
-## Images
+# Products/Images
 
 - All of the photos used for the website, were taken by the developer
 
@@ -435,7 +521,7 @@ Website's finalised logo:
   All converted images have 'opt' in the name to show they were optimized
 
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
 
 # Acknowledgements
 
@@ -449,4 +535,4 @@ Website's finalised logo:
   secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
   Developer changed the key and hid it, as advised by her mentor.
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
