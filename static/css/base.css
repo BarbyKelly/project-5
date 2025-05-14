@@ -1,20 +1,56 @@
-/* base.css copied from walk-through "Boutique Ado", like base for most of the files, folders for this project */
+/* base.css followed from Code Institute's walk-through "Boutique Ado",
+and PP2 "Estonia Quiz" */
 
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-html {
-    height: 100%;
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
     background: url('/media/website_background.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     color: #555555;
     font-family: 'Cormorant Garamond', serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-align: left;
+    padding-top: 2px;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 2.6rem;
+    padding-top: 3px;
+}
+
+h2 {
+    font-size: 2.4rem;
+    align-items: left;
+    width: 100%;
+    padding: 2px;
+    font-weight: bold;
+}
+
+/* Container styling */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    max-height: min-content;
+    padding-top: 5px; 
 }
 
 /* from Bulma */
@@ -186,7 +222,7 @@ input[name='q']::placeholder {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+        max-width: 80%;
   }
 }
 
@@ -338,8 +374,7 @@ input[name='q']::placeholder {
 /* Footer - styling based on previous project: [quiz](https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css)*/
 
 .footer {
-    position: sticky;
-    margin-left: 0;
+    margin-top: auto;
     bottom: 0;
     width: 100%;
     background: #ffffff;
