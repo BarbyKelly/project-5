@@ -499,7 +499,9 @@ Website's finalised logo:
 
 - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
-- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed)
+- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
+
+![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
 
 ## am I responsive
