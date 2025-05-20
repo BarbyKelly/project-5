@@ -396,11 +396,17 @@ input[name='q']::placeholder {
     padding-right: 10px;
     bottom: 0;
 }
+
+footer {
+    margin-top: auto;
+}
+
 #social-networks {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 #social-networks i {
