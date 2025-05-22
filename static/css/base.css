@@ -12,33 +12,31 @@ and PP2 "Estonia Quiz" */
 }
 
 body {
-    height: 100vh;
-    background: url('/media/website_background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #555555;
     font-family: 'Cormorant Garamond', serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    background-image: url('/media/website_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFFFFF;
+    color: #555555;
     text-align: left;
-    padding-top: 2px;
 }
 
-/* Headings */
+/* Styling of Headings */
 
 h1 {
     font-size: 2.6rem;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 
 h2 {
     font-size: 2.4rem;
     align-items: left;
     width: 100%;
-    padding: 2px;
+    padding: 5px;
     font-weight: bold;
 }
 
@@ -47,11 +45,15 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
     height: auto;
-    max-height: min-content;
-    /*padding-top: 5px;
-    padding-bottom: 15px;*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 20px;
 }
 
 /* from Bulma */
@@ -230,15 +232,6 @@ input[name='q']::placeholder {
     padding-bottom: 10px;
 }
 
-/* ------ Media Queries from Boutique Ado --------- */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-        max-width: 80%;
-  }
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -321,69 +314,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-}
-
-/* pad the top a bit when navbar is collapsed on mobile view */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
-    }
-
-    .nav-link {
-        padding: 0.15rem;
-    }
-
-    .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
-
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-    }
-
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
-
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
-        padding: .375rem .375rem;
-    }
-
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
-        padding: .375rem .375rem;
-        font-size: .75rem;
-    }
-
-    .increment-qty, decrement-qty {
-        padding: .25rem .5rem !important;
-    }
-}
-
 /* Footer - styling based on previous project: [quiz](https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css)*/
 
 .footer {
@@ -392,9 +322,9 @@ input[name='q']::placeholder {
     background: #ffffff;
     color: #021527;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
     bottom: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 footer {
@@ -412,4 +342,86 @@ footer {
 #social-networks i {
     font-size: 100%;
     color: #021527;
+}
+
+/* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
+
+/* Media Queries for 'XXXS' screens */
+@media (max-width: 320px) {
+  .container {
+        max-width: 250px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Queries for 'XXS' screens */
+@media (min-width: 320px) {
+  .container {
+        max-width: 300px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media Queries for 'XS' screens */
+@media (min-width: 475px) {
+  .container {
+        max-width: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Media Queries for 'S' screens */
+@media (min-width: 648px) {
+  .container {
+        max-width: 600px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Queries for 'M' screens */
+@media (min-width: 768px) {
+  .container {
+        max-width: 700px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Queries for 'L' screens */
+@media (min-width: 1024px) {
+  .container {
+        max-width: 1000px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Queries for 'XL' screens */
+@media (min-width: 1280px) {
+  .container {
+        max-width: 1200px;
+  }
+}
+
+/* Media Queries for 'XXL' screens */
+@media (min-width: 1536px) {
+  .container {
+        max-width: 1500px;
+  }
 }
