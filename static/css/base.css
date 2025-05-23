@@ -40,6 +40,11 @@ h2 {
     font-weight: bold;
 }
 
+.shopping-header {
+    margin-top: 7rem;
+    margin-left: 0;
+}
+
 /* Container styling */
 
 .container {
@@ -50,10 +55,8 @@ h2 {
     align-items: center;
     width: 90%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 7rem;
     max-width: 400px;
-    padding: 20px;
 }
 
 /* from Bulma */
@@ -63,10 +66,6 @@ h2 {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.logo-font {
-    text-transform: uppercase;
 }
 
 .main-logo-link {
@@ -379,6 +378,16 @@ footer {
   }
 }
 
+/* Media Queries for products-sorting-line 
+for screens smaller than 475px */
+
+@media (max-width: 475px) {
+    .products-sorting-line {
+        display: flex;
+        margin-top: 1.5rem;
+    }
+}
+
 /* Media Queries for 'S' screens */
 @media (min-width: 648px) {
   .container {
@@ -417,6 +426,15 @@ footer {
   .container {
         max-width: 1200px;
   }
+}
+
+/* Media Queries for products-sorting-line 
+for screens smaller than 1290px */
+
+@media (max-width: 1290px) {
+    .products-sorting-line {
+        margin-top: 2.5rem;
+    }
 }
 
 /* Media Queries for 'XXL' screens */
