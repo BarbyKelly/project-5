@@ -23,6 +23,7 @@ body {
     background-color: #FFFFFF;
     color: #555555;
     text-align: left;
+    line-height: 1;
 }
 
 /* Styling of Headings */
@@ -43,6 +44,11 @@ h2 {
 .shopping-header {
     margin-top: 7rem;
     margin-left: 0;
+}
+
+.navbar {
+    line-height: 1rem;
+    margin-left: 10px;
 }
 
 /* Container styling */
@@ -75,7 +81,7 @@ h2 {
 .click-here-to-shop-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 150px;
 }
 
 .btn-black {
@@ -346,20 +352,70 @@ footer {
 /* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
 
 /* Media Queries for 'XXXS' screens */
-@media (max-width: 320px) {
-  .container {
-        max-width: 250px;
+@media /*(max-width: 320px) and*/ (min-width: 194px) {
+  /* .container {
+    max-width: 15px;
+  } */
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+
+  .navbar {
+    font-size: xx-small;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .shopping-header {
+    font-size: 1.9rem;
+    margin-top: 2.8rem;
+  }
+
+  .btn {
+    min-width: 120px;
+    font-size: 0.75rem;
   }
 }
+/* delete Media Queries for 'XXXS' screens 
+@media (max-width: 320px) {
+  .container {
+    max-width: 315px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .navbar {
+    font-size: small;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .shopping-header {
+    font-size: 1.9rem;
+    margin-top: 2.8rem;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+  }
+} */
 
 /* Media Queries for 'XXS' screens */
 @media (min-width: 320px) {
   .container {
-        max-width: 300px;
+    max-width: 300px;
+  }
+
+  .navbar {
+    font-size: small;
   }
 
   h2 {
@@ -370,28 +426,56 @@ footer {
 /* Media Queries for 'XS' screens */
 @media (min-width: 475px) {
   .container {
-        max-width: 400px;
+    max-width: 400px;
   }
 
   h1 {
     font-size: 2rem;
   }
+
+  .shopping-header {
+    font-size: 2.6rem;
+  }
+
+  .navbar {
+    font-size: small;
+  }
 }
 
 /* Media Queries for products-sorting-line 
-for screens smaller than 475px */
+for screens smaller than 475px 
 
 @media (max-width: 475px) {
     .products-sorting-line {
         display: flex;
         margin-top: 1.5rem;
     }
-}
+
+    .navbar {
+    line-height: 1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .shopping-header {
+        font-size: 2.4rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+} */
 
 /* Media Queries for 'S' screens */
 @media (min-width: 648px) {
   .container {
-        max-width: 600px;
+    max-width: 600px;
   }
 
   h2 {
@@ -402,7 +486,7 @@ for screens smaller than 475px */
 /* Media Queries for 'M' screens */
 @media (min-width: 768px) {
   .container {
-        max-width: 700px;
+    max-width: 700px;
   }
 
   h2 {
@@ -413,7 +497,7 @@ for screens smaller than 475px */
 /* Media Queries for 'L' screens */
 @media (min-width: 1024px) {
   .container {
-        max-width: 1000px;
+    max-width: 1000px;
   }
 
   h2 {
@@ -424,22 +508,22 @@ for screens smaller than 475px */
 /* Media Queries for 'XL' screens */
 @media (min-width: 1280px) {
   .container {
-        max-width: 1200px;
+    max-width: 1200px;
   }
 }
 
 /* Media Queries for products-sorting-line 
-for screens smaller than 1290px */
+for screens smaller than 1290px 
 
 @media (max-width: 1290px) {
     .products-sorting-line {
         margin-top: 2.5rem;
     }
-}
+} */
 
 /* Media Queries for 'XXL' screens */
 @media (min-width: 1536px) {
   .container {
-        max-width: 1500px;
+    max-width: 1500px;
   }
 }
