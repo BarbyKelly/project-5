@@ -26,11 +26,17 @@ body {
     line-height: 1;
 }
 
-/* Styling of Headings */
+/* Styling of Headings and Logo */
 
 h1 {
     font-size: 2.6rem;
     padding-top: 5px;
+}
+
+.boutique-logo {
+  display: inline-block;
+  width: 4rem;
+  height: auto;
 }
 
 h2 {
@@ -356,10 +362,7 @@ footer {
 /* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
 
 /* Media Queries for 'XXXS' screens */
-@media /*(max-width: 320px) and*/ (min-width: 194px) {
-  /* .container {
-    max-width: 15px;
-  } */
+@media (min-width: 194px) {
 
   h1 {
     font-size: 1.7rem;
@@ -384,7 +387,7 @@ footer {
     font-size: 0.75rem;
   }
 }
-/* delete Media Queries for 'XXXS' screens 
+/* Media Queries for 'XXXS' screens */
 @media (max-width: 320px) {
   .container {
     max-width: 315px;
@@ -395,7 +398,7 @@ footer {
   }
 
   .navbar {
-    font-size: small;
+    font-size: x-small;
   }
 
   h2 {
@@ -410,7 +413,7 @@ footer {
   .btn {
     font-size: 0.75rem;
   }
-} */
+}
 
 /* Media Queries for 'XXS' screens */
 @media (min-width: 320px) {
@@ -447,7 +450,7 @@ footer {
 }
 
 /* Media Queries for products-sorting-line 
-for screens smaller than 475px 
+for screens smaller than 475px */
 
 @media (max-width: 475px) {
     .products-sorting-line {
@@ -460,7 +463,7 @@ for screens smaller than 475px
     }
 
     h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -474,7 +477,7 @@ for screens smaller than 475px
     .btn {
         font-size: 0.8rem;
     }
-} */
+}
 
 /* Media Queries for 'S' screens */
 @media (min-width: 648px) {
@@ -490,7 +493,7 @@ for screens smaller than 475px
 /* Media Queries for 'M' screens */
 @media (min-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 690px;
   }
 
   h2 {
@@ -515,15 +518,6 @@ for screens smaller than 475px
     max-width: 1200px;
   }
 }
-
-/* Media Queries for products-sorting-line 
-for screens smaller than 1290px 
-
-@media (max-width: 1290px) {
-    .products-sorting-line {
-        margin-top: 2.5rem;
-    }
-} */
 
 /* Media Queries for 'XXL' screens */
 @media (min-width: 1536px) {

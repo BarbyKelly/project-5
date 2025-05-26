@@ -8,10 +8,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/logo_wireframe_by_aoife_ten_opt.png">
     {% endblock %}
 
     {% block extra_meta %}
@@ -43,13 +44,15 @@
     <title>Kelly's Art & Photo Boutique {% block extra_title %}{% endblock %}</title>
     
   </head>
+
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Header -->
     <header class="container-fluid fixed-top">
       <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-              <h1 class="logo-font text-black my-0"><italic>Kelly's Art & Photo Boutique</italic></h1>
+            <img class="boutique-logo" src="media/logo_wireframe_by_aoife_ten_opt.png" alt="Unique Logo for this website">
+            <h1 class="logo-font text-black my-0"><italic>Kelly's Art & Photo Boutique</italic></h1>
           </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
