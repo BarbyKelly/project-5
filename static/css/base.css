@@ -34,8 +34,7 @@ h1 {
 }
 
 .boutique-logo {
-  display: inline-block;
-  width: 4rem;
+  width: 10rem;
   height: auto;
 }
 
@@ -82,10 +81,6 @@ h2 {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.main-logo-link {
-    width: fit-content;
 }
 
 .click-here-to-shop-button {
@@ -459,7 +454,8 @@ for screens smaller than 475px */
     }
 
     .navbar {
-    line-height: 1rem;
+        line-height: 1rem;
+        font-size: large;
     }
 
     h1 {
@@ -483,6 +479,11 @@ for screens smaller than 475px */
 @media (min-width: 648px) {
   .container {
     max-width: 600px;
+  }
+
+  .navbar {
+        line-height: 1rem;
+        font-size: large;
   }
 
   h2 {
