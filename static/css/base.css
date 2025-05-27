@@ -328,8 +328,7 @@ input[name='q']::placeholder {
     color: #021527;
     text-align: center;
     bottom: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 1.5rem;
 }
 
 footer {
