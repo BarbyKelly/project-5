@@ -99,6 +99,8 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Admin can create test purchases and delete them after
 - Admin may click on all items on the website like other users
 
+[Back to Contents](#contents)
+
 ## Site User may:
 
 - Click on Logo, which brings user to Home page (All Items)
@@ -139,9 +141,15 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
-## "Click Here to Shop" page
+## "My Account" Page
 
-![Wireframe click here to shop page]()
+![Wireframe My Account Page]()
+
+## "Cart" Page
+
+## Checkout Page
+
+
 
 [Back to Contents](#contents)
 
@@ -182,6 +190,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Homepage Features
 - 
 
+[Back to Features](#features)
+[Back to Contents](#contents)
+
 ## Future Features
 
 - Registered Site User may save items as their favourites, and see them under their profile
@@ -200,10 +211,12 @@ Users to:
   or how certain art pieces were created
 - Live classes with Site Visitors, creating Art, discussing techniques
 
+[Back to Features](#features)
 [Back to Contents](#contents)
 
 # Languages Used
 
+[Back to Contents](#contents)
 
 # Sites, Apps Used
 
@@ -226,7 +239,10 @@ Users to:
 
 - [Lighthouse test, All Photos](docs/readme_images/lighthouse_all_photos_opt_50.png)
 
-## HTML
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
+## HTML, CSS, JS Validation
 
 - ![HTML validator]()
 
@@ -240,31 +256,69 @@ Users to:
 
   validated with: [codebeautify](https://codebeautify.org/jsvalidate)
 
-## CSS
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 
 ## Favicon
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## Logo
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 ## Search Bar
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## My Account
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 ## Cart
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## NavBar, NavLinks, NavButtons
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 ## Home Page
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## All Items
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 ## Art
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## Photos
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 ## Social Media
 
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
 ## Footer
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
 
 # Bugs
 
@@ -274,34 +328,34 @@ Users to:
   therefore it was hard to know which tab was open. Screenshot of when Developer expected to see 'All Art' displayed, 
   instead displayed were '0 products, with a heading 'All items':
 
-![0 products displayed](docs/readme_images/0_products_displayed.png)
+  ![0 products displayed](docs/readme_images/0_products_displayed.png)
 
-Developer took these steps to fix main-nav links:
+  Developer took these steps to fix main-nav links:
 
-1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
+  1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
 
-![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
+  ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
 
-![Django categories](docs/readme_images/django categories.png)
+  ![Django categories](docs/readme_images/django categories.png)
 
-therefore, Art and Photos categories couldn't display, under Art and Photos NavLinks
+  therefore, Art and Photos categories couldn't display, under Art and Photos NavLinks
 
-2. Developer matched categories in main-nav with Django categories and categories.json
+  2. Developer matched categories in main-nav with Django categories and categories.json
 
-3. Art and Photos displayed now correctly, except for Beach Photos.
-None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' instead of expected: 'beach_photos' in Django Categories:
+  3. Art and Photos displayed now correctly, except for Beach Photos.
+  None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' instead of expected: 'beach_photos' in Django Categories:
 
-![beach-photo instead of beach_photo](docs/readme_images/beach-photo instead of beach_photo.png)
+  ![beach-photo instead of beach_photo](docs/readme_images/beach-photo instead of beach_photo.png)
 
-Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beach Photos were displayed on the website as expected:
+  Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beach Photos were displayed on the website as expected:
 
-![beach photos displayed ok](docs/readme_images/beach_photos_displayed_ok_opt_50.png)
+  ![beach photos displayed ok](docs/readme_images/beach_photos_displayed_ok_opt_50.png)
 
-4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
+  4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
 
-5. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
+  5. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
 
-6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
+  6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
 
 
 ### Fixed "django.core.serializers.base.DeserializationError: Problem installing fixture"
@@ -408,16 +462,17 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 ![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
 
-----------
+[Back to Bugs](#bugs)
+[Back to Contents](#contents)
 
 ## Known Bugs
 
-- Images uploading multiple times
-- + - buttons not working correctly
 - All products not entered into system, only images in Media folder
 - Username not showing up when logged in
-- And many more bugs, which due to time constraint are not listed here
 - Can not add some products into the cart, as cart icon not visible for some products
+
+[Back to Bugs](#bugs)
+[Back to Contents](#contents)
 
 # Deployment
 
@@ -433,14 +488,14 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - Once Heroku has finished deploying your app, "View app" appears at the bottom of the page
 - Click on "View app"
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
 
 # Forking Repository
 
 - Go to [Github](https://github.com/)
 - If you want to fork one of your own repos, then DO NOT login under your own name, as fork option is not available
 
-![How fork looks when logged in](docs/readmeimages/notpossibletofork.png)
+  ![How fork looks when logged in](docs/readmeimages/notpossibletofork.png)
 
 - Search Github or Google for the repo that you would like to fork
 - Open the repo you want to fork
@@ -452,7 +507,7 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - Choose if you want to Copy the main branch only
 - Click on: "Create fork"
 
-[Back to the overview](#content)
+[Back to Contents](#contents)
 
 # Creating Repository
 
@@ -471,7 +526,10 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 - Code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project ["Boutique Ado"](https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
 The developer has credited Walk-through mainly on top of html files, 
-due to enourmous number of other files, which are all coded similarl to Walk-through project.
+due to enormous number of other files, which are all coded similarly to Walk-through project.
+
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 ## README
 
@@ -479,10 +537,15 @@ due to enourmous number of other files, which are all coded similarl to Walk-thr
 
 - Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
 
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 ## Icons
 
 - Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
+
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 ## Logo
 
@@ -494,6 +557,8 @@ Website's finalised logo:
 
 ![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
 
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 ## Font
 
@@ -503,15 +568,23 @@ Website's finalised logo:
 
 ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
+[Back to Credits](#credits)
+[Back to Contents](#contents)
+
 
 ## am I responsive
 
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
 
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 ## Wireframes
 
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
+
+[Back to Credits](#credits)
+[Back to Contents](#contents)
 
 # Products/Images
 
@@ -522,7 +595,7 @@ Website's finalised logo:
 - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
   All converted images have 'opt' in the name to show they were optimized
 
-
+[Back to Credits](#credits)
 [Back to Contents](#contents)
 
 # Acknowledgements
