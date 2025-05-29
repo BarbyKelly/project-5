@@ -40,9 +40,7 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
-    align-items: left;
     width: 100%;
-    padding: 5px;
     font-weight: bold;
 }
 
@@ -228,18 +226,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* Shopping Cart page */
-
-.cart-table {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.cart {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -356,51 +342,51 @@ footer {
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
 @media (max-width: 575.98px) {
   .container {
-    max-width: 550px;
+    max-width: 570px;
   }
 
   .navbar {
         font-size: medium;
-  }
-
-  h2 {
-    font-size: 1.2rem;
   }
 }
 
 /* Media Queries for 'S' screens (landscape phones, tablets less than 768px) */
 @media (max-width: 767.98px) {
   .container {
-    max-width: 700px;
-  }
-
-  h2 {
-    font-size: 1.2rem;
+    max-width: 750px;
   }
 }
 
 /* Media Queries for 'M' screens (laptops, tablets, less than 992px*/
 @media (max-width: 991.98px) {
   .container {
-    max-width: 900px;
-  }
-
-  h2 {
-    font-size: 1.2rem;
+    max-width: 990px;
   }
 }
 
 /* Media Queries for 'L' screens (desktops, less than 1200px */
 @media (max-width: 1199.98px) {
   .container {
-    max-width: 1100px;
+    max-width: 1150px;
   }
 }
 
 /* Media Queries for 'XL' screens (large desktops, less than 1400px */
 @media (max-width: 1399.98px) {
   .container {
-    max-width: 1300px;
+    max-width: 1350px;
+  }
+
+  .click-here-to-shop-button {
+    font-size: large;
+    min-width: 200px;
+  }  
+}
+
+/* Media Queries for 'XXL' screens (large desktops, more than 1400px */
+@media (min-width: 1399.99px) {
+  .container {
+    min-width: 1350px;
   }
 
   .click-here-to-shop-button {
