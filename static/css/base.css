@@ -353,110 +353,10 @@ footer {
 
 /* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
 
-/* Media Queries for 'XXXS' screens */
-@media (min-width: 194px) {
-
-  h1 {
-    font-size: 1.7rem;
-    line-height: 1;
-  }
-
-  .navbar {
-    font-size: xx-small;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  .click-here-to-shop-button {
-    min-width: 120px;
-    font-size: 0.75rem;
-  }
-}
-/* Media Queries for 'XXXS' screens */
-@media (max-width: 320px) {
+/* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
+@media (max-width: 575.98px) {
   .container {
-    max-width: 315px;
-  }
-
-  h1 {
-    font-size: 1.7rem;
-  }
-
-  .navbar {
-    font-size: x-small;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  .click-here-to-shop-button {
-    font-size: 0.75rem;
-  }
-}
-
-/* Media Queries for 'XXS' screens */
-@media (min-width: 320px) {
-  .container {
-    max-width: 300px;
-  }
-
-  .navbar {
-    font-size: small;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-}
-
-/* Media Queries for 'XS' screens */
-@media (min-width: 475px) {
-  .container {
-    max-width: 400px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .navbar {
-    font-size: small;
-  }
-}
-
-/* Media Queries for products-sorting-line 
-for screens smaller than 475px */
-
-@media (max-width: 475px) {
-    .products-sorting-line {
-        display: flex;
-        margin-top: 1.5rem;
-    }
-
-    .navbar {
-        font-size: large;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .click-here-to-shop-button {
-        font-size: 0.8rem;
-    }
-}
-
-/* Media Queries for 'S' screens */
-@media (min-width: 648px) {
-  .container {
-    max-width: 600px;
+    max-width: 550px;
   }
 
   .navbar {
@@ -468,10 +368,10 @@ for screens smaller than 475px */
   }
 }
 
-/* Media Queries for 'M' screens */
-@media (min-width: 768px) {
+/* Media Queries for 'S' screens (landscape phones, tablets less than 768px) */
+@media (max-width: 767.98px) {
   .container {
-    max-width: 690px;
+    max-width: 700px;
   }
 
   h2 {
@@ -479,10 +379,10 @@ for screens smaller than 475px */
   }
 }
 
-/* Media Queries for 'L' screens */
-@media (min-width: 1024px) {
+/* Media Queries for 'M' screens (laptops, tablets, less than 992px*/
+@media (max-width: 991.98px) {
   .container {
-    max-width: 1000px;
+    max-width: 900px;
   }
 
   h2 {
@@ -490,17 +390,17 @@ for screens smaller than 475px */
   }
 }
 
-/* Media Queries for 'XL' screens */
-@media (min-width: 1280px) {
+/* Media Queries for 'L' screens (desktops, less than 1200px */
+@media (max-width: 1199.98px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 
-/* Media Queries for 'XXL' screens */
-@media (min-width: 1536px) {
+/* Media Queries for 'XL' screens (large desktops, less than 1400px */
+@media (max-width: 1399.98px) {
   .container {
-    max-width: 1500px;
+    max-width: 1300px;
   }
 
   .click-here-to-shop-button {
