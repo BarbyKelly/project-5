@@ -4,6 +4,10 @@ and PP2 "Estonia Quiz" */
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
+html {
+    height: 100%;
+}
+
 /* General styling */
 * {
     margin: 0;
@@ -34,7 +38,7 @@ h1 {
 }
 
 .boutique-logo {
-    width: 10rem;
+    width: 7rem;
     height: auto;
 }
 
@@ -357,11 +361,58 @@ footer {
   }
 }
 
+/* Top navbar fix on Medium and up screens */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 50px;
+    }
+}
+
 /* Media Queries for 'M' screens (laptops, tablets, less than 992px*/
 @media (max-width: 991.98px) {
-  .container {
-    max-width: 990px;
+    .container {
+        max-width: 990px;
   }
+
+    .header-container {
+        padding-top: 50px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
 }
 
 /* Media Queries for 'L' screens (desktops, less than 1200px */
