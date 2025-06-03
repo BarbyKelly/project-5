@@ -34,8 +34,8 @@ h1 {
 }
 
 .boutique-logo {
-  width: 10rem;
-  height: auto;
+    width: 10rem;
+    height: auto;
 }
 
 h2 {
@@ -346,7 +346,7 @@ footer {
   }
 
   .navbar {
-        font-size: medium;
+    font-size: medium;
   }
 }
 
