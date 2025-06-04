@@ -341,6 +341,30 @@ footer {
     color: #021527;
 }
 
+/* Styling for error pages. Learned from https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css */
+.error-page-title {
+    color: cornflowerblue;
+    text-align: center;
+    padding: 15px;
+}
+
+.error-page,
+.error-container {
+    position: relative;
+    display: block;
+    color: #FAF9F6;
+    font-weight: 250;
+    text-align: center;
+    padding: 20px;
+}
+
+.page-link {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+
 /* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
 
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
