@@ -82,24 +82,35 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 - User Stories
 
-## Admin may:
+## Users may:
 
-- Login
-- Access 'Product Management' once logged in
-- View 'My Profile'
-- Logout
+- Click on Logo (to bring them back to Home Page or refresh Home Page)
+- Use Search bar
+- Click on My Account:
+  - Click on 'Sign In'
+    - Click on link: 'Sign Up first' (steps for 'Sign Up' described below), if no account
+    - Fill in a Username or Email, and a password:
+      - Even if they don't have an account. Only User with an account will be signed in
+      - Users without account will be reminded to 'Please fill in this field'
+    - Tick 'Remember Me' box:
+      - Even if they don't have an account. Only User with an account will be Remembered
+      - User without an account will be reminded to 'Please fill in this field'
+    - Click on 'Home' button to get back to Home page
+    - Click on 'Sign In' button to sign in:
+      - Even if they don't have an account. Only User with an account will be signed in
+      - User without an account will be reminded to 'Please fill in this field'
+    - Click on 'Forgot Your Password?':
+      - Even if they don't have an account.
+      - Fill in 'Password Reset' form:
+        - Click on 'Reset My Password'
+        - Only User with an account will receive an email to reset their password
+        - Click on 'Back to Sign In' button
+    - Click on 'Home' below 'Sign In' form
+    - 
+  - Click on 'Sign Up'
+- Click on Cart
+- 
 
-- Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
-- Follow SKU system already in place: 
-  dr333(add a unique number in the end) for art,
-  ph888(add a unique number in the end) for photos
-
-- Admin may change the SKU system if needed
-- Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
-- Admin can create test purchases and delete them after
-- Admin may click on all items on the website like other users
-
-[Back to Contents](#contents)
 
 ## Site User may:
 
@@ -120,6 +131,32 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Access Product Management
 
 [Back to Contents](#contents)
+ 
+
+## Users once signed in may:
+- Notice a pop up: 'Success! Successfully signed in as ...' displayed on top right
+- Access 'My Profile' via 'My Account'
+- Under their profile Update their Default postage information
+- See their Order History
+- Sign Out by clicking 'My Account', and then 'Sign Out' 
+
+## Extra permissions for An Admin. Admin may:
+- Access 'Product Management' once signed in
+- View 'My Profile'
+- Sign out
+
+- Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
+- Follow SKU system already in place: 
+  dr333(add a unique number in the end) for art,
+  ph888(add a unique number in the end) for photos
+
+- Admin may change the SKU system if needed
+- Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
+- Admin can create test purchases and delete them after
+- Admin may click on all items on the website like other users
+
+[Back to Contents](#contents)
+
 
 # Wireframes
 
@@ -171,39 +208,41 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
-![Favicon](docs/readme_images/favicon.png)
+  ![Favicon](docs/readme_images/favicon.png)
 
 ## Logo
 
 - Logo displayed on all pages of the website, and on all screen sizes
 - Click on Logo brings user back to Home page
 
-![Logo](docs/readme_images/logo.png)
+  ![Logo](docs/readme_images/logo.png)
 
 [Back to Features](#features)
+
 [Back to Contents](#contents)
 
 ## Search Bar, Button, Icon
 
 - Search bar or icon displayed on all pages:
 
-![Search Bar](docs/readme_images/search_bar_centered.png)
+  ![Search Bar](docs/readme_images/search_bar_centered.png)
 
 - Button to activate search
 - User can search for Products: Art & Photos
 - User can search for eg 'rainbow', and products from both Art and Photos are displayed:
 
-![Rainbow Search](docs/readme_images/two_rainbows_found_opt_50.png)
+  ![Rainbow Search](docs/readme_images/two_rainbows_found_opt_50.png)
 
 - If user enters nothing in Search box, error message pops up:
 
-![Search criteria error](docs/readme_images/error_search_criteria.png)
+  ![Search criteria error](docs/readme_images/error_search_criteria.png)
 
 - On smaller screens, Search Icon is displayed:
 
-![Search Icon](docs/readme_images/search_icon.png)
+  ![Search Icon](docs/readme_images/search_icon.png)
 
 [Back to Features](#features)
+
 [Back to Contents](#contents)
 
 - **Navigation Menu**
@@ -227,29 +266,44 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - 
 
 [Back to Features](#features)
+
 [Back to Contents](#contents)
 
-## Future Features
+# Future Features
 
-- Registered Site User may save items as their favourites, and see them under their profile
-- If Registered Site User pauses their shopping, they can save the shopping cart items, and return next time
-- Add an option to search Art and Photos by Holiday eg Easter, Christmas, Halloween
+- Registered Site User may save items for later, or as their favorites, and see them under their profile
+- If Registered Site User pauses their shopping, shopping cart items stay in the cart 
+- Registered User is notified of items in their cart when they return to the website
+
+- Improved Descriptions for all products, to improve search for Users
+- Add an option to search Art and Photos by special celebrations: Easter, Christmas, Halloween, Birthday, Anniversary, Valentine's Day etc.
+  (with improved Descriptions, this option will work, like now when looking for Winter, rainbow)
+- Filter to search products with multiple options eg Stone Art - Birthday - Age 5
+- Option to choose art based on what tools were used eg pencil, paint, water-color, marker, paper, stone, canvas
+
+- Users Username is displayed when signed in
+- Fill in Request Form, what type of Art or Photos User would love to see displayed/made
+- 'How to ...' option in Nav Menu, with selection of videos, articles, tips how to create certain art, 
+  or how certain art pieces were made
+
+- Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
+- Users can use search box to search all of the website, not just products
+
+- Password Reset form would notify User if their email is not registered for an Account. Presently any email address is accepted on Password Reset form 
+
+- Clickable Contact details below 'Password Reset' form, instead of just text as it is at the moment: 
+
+  ![No 'contact us' details](docs/readme_images/password_reset_form.png)
+
+- Clickable Contact details below 'Password Reset' email notice, instead of just text as it is at the moment:
+
+  ![alt text](docs/readme_images/password_reset_email_sent.png)
+
 
 - For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
 
-Users to:
-- Choose art based on what tools were used eg pencil, paint, water-color, marker
-- Choose Art and photos based on seasons, celebrations
-- See their Username displayed when logged in
-- See their saved details under their account, including name, username, delivery address, previous purchases
-- Fill in Request Form, what type of Art or Photos they would love to see displayed
-- 'How to ...' option in Nav Menu, with selection of videos, articles, tips how to create certain art, 
-  or how certain art pieces were created
-- Live classes with Site Visitors, creating Art, discussing techniques
-
-- users can search all of the website, not just products
-
 [Back to Features](#features)
+
 [Back to Contents](#contents)
 
 # Languages Used
@@ -269,17 +323,18 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
 ## Lighthouse
 
-- ![Lighthouse test, Home page](docs/readme_images/lighthouse_home_page_opt_50.png)
+- ![Lighthouse test, Home page]()
 
   validated with Google developer tools
 
-- ![Lighthouse test, All Art](docs/readme_images/lighthouse_all_art_opt_50.png)
+- ![Lighthouse test, All Art]()
 
-- ![Lighthouse test, Animal Art](docs/readme_images/lighthouse_animal_art_opt_50.png)
+- ![Lighthouse test, Animal Art]()
 
-- [Lighthouse test, All Photos](docs/readme_images/lighthouse_all_photos_opt_50.png)
+- ![Lighthouse test, All Photos]()
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## HTML, CSS, JS Validation
@@ -297,37 +352,55 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
   validated with: [codebeautify](https://codebeautify.org/jsvalidate)
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 
 ## Favicon
 
-| Tested Item | Expected Outcome                      | Outcome     |
-| ----------- | ------------------------------------- | ----------- |
-| Favicon     | Reduced image of the Logo             | as expected |
-|             | Displayed on all pages of the website | as expected |
+![Favicon](docs/readme_images/favicon.png)
+
+| Tested Item | Expected Outcome                                      | Outcome     |
+| ----------- | ----------------------------------------------------- | ----------- |
+| Favicon     | Reduced image of the Logo                             | as expected |
+|             | Displayed in browser tab for all pages of the website | as expected |
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Logo
 
-| Tested Item | Expected Outcome                            | Outcome     |
-| ----------- | ------------------------------------------- | ----------- |
-| Logo        | Displayed top left for larger screens       | as expected |
-|             | Displayed top center for smaller screens    | as expected |
-|             | Displayed on all pages of the website       | as expected |
-|             | Click on Logo brings user back to Home page | as expected |  
+![Logo example on a smaller screen](docs/readme_images/logo_center_smaller_screen.png)
+
+| Tested Item | Expected Outcome                               | Outcome     |
+| ----------- | ---------------------------------------------- | ----------- |
+| Logo        | Displayed top left for larger screens          | as expected |
+|             | Displayed top center for smaller screens       | as expected |
+|             | Displayed on all pages of the website          | as expected |
+|             | Text 'Kelly's Art & Photos Boutique' is        |             |
+|             | displayed big enough on all screen sizes       | as expected |
+|             | Art and Photos on the Logo are                 |             |
+|             | displayed big enough on all screen sizes       | as expected |
+|             | Logo matches the theme of the website          | as expected |
+|             | Clicking on Logo brings user back to Home page | as expected |  
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Search
 
+### Search Bar
+
+![Search Bar](docs/readme_images/search_bar.png)
+
 | Tested Item | Expected Outcome                                                                   | Outcome     |
 | ----------- | ---------------------------------------------------------------------------------- | ----------- |
 | Search Bar  | Displayed top center for larger screens                                            | as expected |
-|             | Placeholder 'Search our Boutique' is faded in Search box                           | as expected |
+|             | Placeholder is faded in Search box                                                 | as expected |
+|             | Personalized Placeholder                                                           | as expected |
+|             | Placeholder text 'Search our Boutique for Art & Photos'                            | as expected |
 |             | User can type in the Search box                                                    | as expected |
 |             | Placeholder is no longer displayed, when first character is entered in Search Box  | as expected |
 |             | Search button is clickable                                                         | as expected |
@@ -340,9 +413,20 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 |             | When user types in random characters eg 'jjjj',                                    |             |
 |             | '0' Products found for 'jjjj' is displayed                                         | as expected |
 |             |                                                                                    |             |
+|             | Search option is displayed on all pages of the website                             | as expected |
+|             | User can search Products only: Art & Photos, not rest of the website               | as expected |
+
+### Search Icon
+
+![Search Icon](docs/readme_images/search_icon.png)
+
+| Tested Item | Expected Outcome                                                                   | Outcome     |
+| ----------- | ---------------------------------------------------------------------------------- | ----------- |
+|             |                                                                                    |             |
 | Search Icon | Displayed on smaller screens                                                       | as expected |
 |             | Search icon replaces the Search bar for smaller screens                            | as expected |
 |             | Search icon is clickable                                                           | as expected |
+|             | Displayed between burger-menu and 'My Account' icon                                | as expected |
 |             | Search icon with Search bar below it, is displayed when user clicks on Search icon | as expected |
 |             | Search bar that is displayed, responds same way as Search Bar test results above   | as expected |
 |             | Second click on Search icon, closes Search bar, and only Search icon is displayed  | as expected |
@@ -351,51 +435,65 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 |             | User can search Products only: Art & Photos, not rest of the website               | as expected |
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## My Account
 
+
+
+
+
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Cart
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## NavBar, NavLinks, NavButtons
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Home Page
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## All Items
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Art
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Photos
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Social Media
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## Footer
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 ## 404 Error Page
@@ -409,6 +507,7 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 |             | KAP Boutique page opens when user clicks on the link   | as expected |         
 
 [Back to Testing](#testing)
+
 [Back to Contents](#contents)
 
 # Bugs
@@ -419,15 +518,15 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
   therefore it was hard to know which tab was open. Screenshot of when Developer expected to see 'All Art' displayed, 
   instead displayed were '0 products, with a heading 'All items':
 
-  ![0 products displayed](docs/readme_images/0_products_displayed.png)
+    ![0 products displayed](docs/readme_images/0_products_displayed.png)
 
   Developer took these steps to fix main-nav links:
 
   1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
 
-  ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
+    ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
 
-  ![Django categories](docs/readme_images/django categories.png)
+    ![Django categories](docs/readme_images/django categories.png)
 
   therefore, Art and Photos categories couldn't display, under Art and Photos NavLinks
 
@@ -436,11 +535,11 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
   3. Art and Photos displayed now correctly, except for Beach Photos.
   None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' instead of expected: 'beach_photos' in Django Categories:
 
-  ![beach-photo instead of beach_photo](docs/readme_images/beach-photo instead of beach_photo.png)
+    ![beach-photo instead of beach_photo](docs/readme_images/beach-photo instead of beach_photo.png)
 
   Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beach Photos were displayed on the website as expected:
 
-  ![beach photos displayed ok](docs/readme_images/beach_photos_displayed_ok_opt_50.png)
+    ![beach photos displayed ok](docs/readme_images/beach_photos_displayed_ok_opt_50.png)
 
   4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
 
@@ -448,6 +547,9 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
   6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
 
+[Back to Contents](#contents)
+
+[Back to Bugs](#bugs)
 
 ### Fixed "django.core.serializers.base.DeserializationError: Problem installing fixture"
 
@@ -461,15 +563,15 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
 #### Keyerror: author:
 
-![keyerror: author](docs/readme_images/keyerror author.png)
+  ![keyerror: author](docs/readme_images/keyerror author.png)
 
 #### No field_name author:
 
-![no field_name author](docs/readme_images/no field_name author.png)
+  ![no field_name author](docs/readme_images/no field_name author.png)
 
 #### Fixtures categories.json:
 
-![fixtures categories.json](docs/readme_images/fixtures categories.json.png)
+  ![fixtures categories.json](docs/readme_images/fixtures categories.json.png)
 
 - Developer had been focusing on field 'author' in categories.json file. Seeing 'author' is in categories.json file, so why would it come up as an error, 'no field_name author'
 
@@ -477,13 +579,13 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
 #### Django Add Categories:
 
-![Django Add Categories](docs/readme_images/django admin categories.png)
+  ![Django Add Categories](docs/readme_images/django admin categories.png)
 
 developer realised issue was that categories.json had a field 'author', while in admin.py/Django categories there was no 'author' field set up
 
 - Developer removed 'author' field from categories.json and 'python manage.py loaddata categories' command worked then ok:
 
-![load categories command worked](docs/readme_images/load categories command worked.png)
+  ![load categories command worked](docs/readme_images/load categories command worked.png)
 
 - Fixing this bug/error was a great lesson for the developer, she learned how to better understand Terminal messages, and saw more value in them
 
@@ -497,11 +599,11 @@ developer adjusted <div class="input-group-prepend"> and <div class="input-group
 
 Developer was able to update the amount of certain products in the cart, yet couldn't increase or decrease products when putting it into cart:
 
-![Increase/decrease buttons not working](docs/readme_images/buttons_clicking_but_quantity_remains_the_same_opt.png)
+  ![Increase/decrease buttons not working](docs/readme_images/buttons_clicking_but_quantity_remains_the_same_opt.png)
 
 Button still didn't work, after adusting cart.html, or quantity_input_script.html:
 
-![Fixed var plusDisabled](docs/readme_images/fix var plusDisabled.png)
+  ![Fixed var plusDisabled](docs/readme_images/fix var plusDisabled.png)
 
 Arrows up and down in Quantity box, worked ok, and increased or decreased Quantity as needed, and Subtotal accordingly.
 
@@ -548,21 +650,22 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 - Developer noticed Logo had 'Art', while NavLinks had 'Drawings'. Developer replaced 'Drawing' with 'Art' in fixtures: categories.json, in django categories, and in index.html (Home page), and in main.nav html (templates), and then 'Art' was displayed instead of 'Drawings':
 
-![Before: NavLink 'Drawings' instead of Art](<docs/readme_images/bug, art vs drawings.png>)
+  ![Before: NavLink 'Drawings' instead of Art](<docs/readme_images/bug, art vs drawings.png>)
 
 
-![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
+  ![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
 
 [Back to Bugs](#bugs)
+
 [Back to Contents](#contents)
 
 ## Known Bugs
 
-- All products not entered into system, only images in Media folder
 - Username not showing up when logged in
 - Can not add some products into the cart, as cart icon not visible for some products
 
 [Back to Bugs](#bugs)
+
 [Back to Contents](#contents)
 
 # Deployment
@@ -620,6 +723,7 @@ The developer has credited Walk-through mainly on top of html files,
 due to enormous number of other files, which are all coded similarly to Walk-through project.
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 ## README
@@ -629,6 +733,7 @@ due to enormous number of other files, which are all coded similarly to Walk-thr
 - Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 ## Icons
@@ -636,6 +741,7 @@ due to enormous number of other files, which are all coded similarly to Walk-thr
 - Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 ## Logo
@@ -646,9 +752,10 @@ Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f
 Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
 Website's finalised logo:
 
-![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
+  ![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 ## Font
@@ -657,9 +764,10 @@ Website's finalised logo:
 
 - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
 
-![Google Fonts](docs/readme_images/font_embed_opt_50.png)
+  ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 
@@ -668,6 +776,7 @@ Website's finalised logo:
 - Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 ## Wireframes
@@ -675,6 +784,7 @@ Website's finalised logo:
 - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 # Products/Images
@@ -687,6 +797,7 @@ Website's finalised logo:
   All converted images have 'opt' in the name to show they were optimized
 
 [Back to Credits](#credits)
+
 [Back to Contents](#contents)
 
 # Acknowledgements
