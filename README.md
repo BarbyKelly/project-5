@@ -167,7 +167,45 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 # Features
 
-## Common Features
+## Favicon
+
+Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
+
+![Favicon](docs/readme_images/favicon.png)
+
+## Logo
+
+- Logo displayed on all pages of the website, and on all screen sizes
+- Click on Logo brings user back to Home page
+
+![Logo](docs/readme_images/logo.png)
+
+[Back to Features](#features)
+[Back to Contents](#contents)
+
+## Search Bar, Button, Icon
+
+- Search bar or icon displayed on all pages:
+
+![Search Bar](docs/readme_images/search_bar_centered.png)
+
+- Button to activate search
+- User can search for Products: Art & Photos
+- User can search for eg 'rainbow', and products from both Art and Photos are displayed:
+
+![Rainbow Search](docs/readme_images/two_rainbows_found_opt_50.png)
+
+- If user enters nothing in Search box, error message pops up:
+
+![Search criteria error](docs/readme_images/error_search_criteria.png)
+
+- On smaller screens, Search Icon is displayed:
+
+![Search Icon](docs/readme_images/search_icon.png)
+
+[Back to Features](#features)
+[Back to Contents](#contents)
+
 - **Navigation Menu**
     - All Items (Home page)
     - Art
@@ -180,8 +218,6 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ### Future Navigation Menu Features:
     - Request Form
     - How to ... 
-    - Sign Up
-    - Sign In
 
 ### **Footer**
     - Copyright
@@ -211,6 +247,8 @@ Users to:
   or how certain art pieces were created
 - Live classes with Site Visitors, creating Art, discussing techniques
 
+- users can search all of the website, not just products
+
 [Back to Features](#features)
 [Back to Contents](#contents)
 
@@ -226,6 +264,8 @@ Users to:
 
 
 # Testing
+
+Note: for testing, in many places developer used "Kelly's Boutique" instead of "Kelly's Art & Photo Boutique", to reduce the number of characters, and make it an easier read.
 
 ## Lighthouse
 
@@ -262,15 +302,53 @@ Users to:
 
 ## Favicon
 
+| Tested Item | Expected Outcome                      | Outcome     |
+| ----------- | ------------------------------------- | ----------- |
+| Favicon     | Reduced image of the Logo             | as expected |
+|             | Displayed on all pages of the website | as expected |
+
 [Back to Testing](#testing)
 [Back to Contents](#contents)
 
 ## Logo
 
+| Tested Item | Expected Outcome                            | Outcome     |
+| ----------- | ------------------------------------------- | ----------- |
+| Logo        | Displayed top left for larger screens       | as expected |
+|             | Displayed top center for smaller screens    | as expected |
+|             | Displayed on all pages of the website       | as expected |
+|             | Click on Logo brings user back to Home page | as expected |  
+
 [Back to Testing](#testing)
 [Back to Contents](#contents)
 
-## Search Bar
+## Search
+
+| Tested Item | Expected Outcome                                                                   | Outcome     |
+| ----------- | ---------------------------------------------------------------------------------- | ----------- |
+| Search Bar  | Displayed top center for larger screens                                            | as expected |
+|             | Placeholder 'Search our Boutique' is faded in Search box                           | as expected |
+|             | User can type in the Search box                                                    | as expected |
+|             | Placeholder is no longer displayed, when first character is entered in Search Box  | as expected |
+|             | Search button is clickable                                                         | as expected |
+|             | User can click on Search button to activate Search                                 | as expected |
+|             | If user enters a valid Search term, those products are displayed                   | as expected |
+|             | When user enters eg number 9, all products made by 9 year old, are displayed       | as expected |         
+|             | If user clicks on Search button without entering any value in Search Box,          |             |
+|             | An error message "Search criteria not entered!" pops up                            | as expected |
+|             | When user searches for eg 'rainbow', photo and art with rainbow are displayed      | as expected |
+|             | When user types in random characters eg 'jjjj',                                    |             |
+|             | '0' Products found for 'jjjj' is displayed                                         | as expected |
+|             |                                                                                    |             |
+| Search Icon | Displayed on smaller screens                                                       | as expected |
+|             | Search icon replaces the Search bar for smaller screens                            | as expected |
+|             | Search icon is clickable                                                           | as expected |
+|             | Search icon with Search bar below it, is displayed when user clicks on Search icon | as expected |
+|             | Search bar that is displayed, responds same way as Search Bar test results above   | as expected |
+|             | Second click on Search icon, closes Search bar, and only Search icon is displayed  | as expected |
+|             |                                                                                    |             |
+|             | Search option is displayed on all pages of the website                             | as expected |
+|             | User can search Products only: Art & Photos, not rest of the website               | as expected |
 
 [Back to Testing](#testing)
 [Back to Contents](#contents)
@@ -316,6 +394,19 @@ Users to:
 [Back to Contents](#contents)
 
 ## Footer
+
+[Back to Testing](#testing)
+[Back to Contents](#contents)
+
+## 404 Error Page
+
+| Tested Item | Expected Outcome                                       | Outcome     |
+| ----------- | ------------------------------------------------------ | ----------- |
+| Error Page  | Personalized Error page 404 is displayed               | as expected |
+|             | Tips how to fix this error are displayed               | as expected |
+|             | Background image of the KAP Boutique is displayed      | as expected |
+|             | Link to get back to KAP Boutique page    | as expected |
+|             | KAP Boutique page opens when user clicks on the link   | as expected |         
 
 [Back to Testing](#testing)
 [Back to Contents](#contents)
