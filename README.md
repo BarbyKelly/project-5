@@ -1,15 +1,18 @@
 # Project 5 - Kelly's Art & Photo Boutique
 
-This e-commerce project was created as part of Code Institute's Software Development course.
-Layout and code for based on Code Institute's Walk-through project:
-[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
- 
-Aim of this project:
-- to create a Site where selection of Art and Photos displayed,
-- option for Site users to browse products, search and choose products,
-- test out purchasing products (without real-time purchase or without any real-time transactions).
+[Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/) was created as part of Code Institute's project,
+for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
-Kelly's Art & Photo Boutique has no real-time commercial intention.
+Developer closely followed Code Institute's Walk-through project:
+[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode), to complete this project.
+ 
+Aim of Kelly's Art & Photo Boutique:
+- built for educational purposes only
+- to create a Site where selection of Art and Photos are displayed,
+- option for Site users to browse products, search and choose products
+- test out purchasing products (without real-time purchase or without any real-time transactions)
+- no real-time commercial intention
+- No real orders, payments or deliveries
 
 Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
@@ -38,13 +41,18 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 [Sites, Apps Used](#sites-apps-used)
 
-[Validation & Testing](#validation-and-testing)
+[Validation](#validation)
 - [Lighthouse](#lighthouse)
 - [HTML](#html)
 - [CSS](#css)
+- [JS](#js)
+
+[Testing](#testing)
 - [Favicon](#favicon)
 - [Logo](#logo)
-- [Search Bar](#search-bar)
+- [Search](#search)
+  - [Search Bar](#search-bar)
+  - [Search Icon](#search-icon)
 - [My Account](#my-account)
 - [Cart](#cart)
 - [NavBar, NavLinks, NavButtons](#navbar-navlinks-navbuttons)
@@ -85,7 +93,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Users may:
 
 - Click on Logo (to bring them back to Home Page or refresh Home Page)
-- Use Search Bar/Search Icon
+- Use Search Bar/Search Icon to find Art and Photos
 
 - Click on My Account:
 
@@ -110,56 +118,37 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
         - Only User with an account and valid email address, will receive an email to reset their password
         - Click on 'Back to Sign In' button
 
-  - Click on 'Sign Up first' to access 'Sign Up' form:
-    - Click on link: 'Sign In first' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
-    - Fill in Email address and , and a password:
-      - Even if they don't have an account. Only User with an account will be signed in
-      - Users without invalid/not existing Username or Email address, will be reminded: 'Please fill in this field'
-    - Tick 'Remember Me' box:
-      - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
-      - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
-        or if they do not have an account
-    - Click on 'Home' button to get back to Home page
-    - Click on 'Sign In' button to sign in:
-      - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
-        will be signed in
-      - User without an account or user who has not entered correct details, will be reminded to 'Please fill in this field'
-    - Click on 'Forgot Your Password?':
-      - Even if they don't have an account.
-      - Fill in 'Password Reset' form:
-        - Click on 'Reset My Password'
-        - Only User with an account and valid email address, will receive an email to reset their password
-        - Click on 'Back to Sign In' button
+  - Click on 'Sign Up' to access 'Sign Up' form:
+    - Click on: 'Sign In here' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
+    - Fill in E-mail address,E-mail address confirmation, Username, Password and Password(again)
+      - Users are reminded: 'Please fill in this field' if they leave a required field blank
+    - Click on 'Back to Sign In' button to return to 'Sign In' form
+    - Click on 'Sign Up' button to Sign Up:
 
+- Click on Cart to open Shopping Cart page
+  - Click on 'Back to Shopping' if no items in the cart
 
+  - Click on 'Proceed to Secure Checkout' in the pop-up, after adding an item into the cart:
 
+    ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
 
+  - Click on 'Continue Shopping'
+  - Click on 'Secure Checkout'
 
-- Click on Cart
-- 
+    ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
 
-
-## Site User may:
-
-- Click on Logo, which brings user to Home page (All Items)
-- Click on NavBar links: All Items, Art, Photos
+- Click on Nav Bar Menu Items, and dropdown Menus to choose which Items to display
 - Choose to have products displayed by Category, by Price, by Author, or All Items
 - Select Art by: Animal Art, Name Art, Winter Art, Variety of Art, or All Art
 - Choose photos displayed by: Beach, Rainbows, Animals, Sky, Variety of Photos, or All Photos
-- Create an account
-- Login with their username and password
-- Click on My Account, My Profile, Logout, Cart
-- View items in their cart
-- Logout
 
-## Site User may not:
+## User who is not Admin of Kelly's Art & Photo Boutique, may not:
 
 - Add, edit or delete products
 - Access Product Management
 
 [Back to Contents](#contents)
  
-
 ## Users once signed in may:
 - Notice a pop up: 'Success! Successfully signed in as ...' displayed on top right
 - Access 'My Profile' via 'My Account'
@@ -171,11 +160,10 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Access 'Product Management' once signed in
 - View 'My Profile'
 - Sign out
-
 - Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
 - Follow SKU system already in place: 
-  dr333(add a unique number in the end) for art,
-  ph888(add a unique number in the end) for photos
+  dr33(add a unique number in the end) for art,
+  ph88(add a unique number in the end) for photos
 
 - Admin may change the SKU system if needed
 - Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
@@ -231,13 +219,21 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 # Features
 
-## Favicon
+## Existing Features
+
+### Home Page
+
+Kelly's Art & Photo Boutique Home Page:
+
+  ![Home Page](docs/readme_images/homepage_opt_50.png)
+
+#### Favicon
 
 Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   ![Favicon](docs/readme_images/favicon.png)
 
-## Logo
+#### Logo
 
 - Logo displayed on all pages of the website, and on all screen sizes
 - Click on Logo brings user back to Home page
@@ -248,7 +244,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 [Back to Contents](#contents)
 
-## Search Bar, Button, Icon
+#### Search Bar, Search Icon
 
 - Search bar or icon displayed on all pages:
 
@@ -272,33 +268,65 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 [Back to Contents](#contents)
 
-- **Navigation Menu**
-    - All Items (Home page)
-    - Art
-    - Photos
-  **On the right**
-    - My Account
-    - Cart 
+#### My Account
 
+- With options to 'Sign In' and 'Sign Up'
 
-### Future Navigation Menu Features:
-    - Request Form
-    - How to ... 
+#### Cart
 
-### **Footer**
-    - Copyright
-    - Social Media links
+- Displaying either €0.00 when Cart is empty
+- Or displaying the amount of Products User has added to the cart
 
-## Homepage Features
-- 
+#### Navigation Menu
+
+- All Navigation Menu items are clickable
+- Required Art/Photo/Product section is displayed, when User clicks on any of Nav menu items
+
+![All Items Dropdown Menu](docs/readme_images/all_items_dropdown.png)
+
+- All Items
+  - By Category
+  - By Price
+  - By Author
+  - All Items
+
+![Art Dropdown Menu](docs/readme_images/art_menu_dropdown.png)
+
+- Art
+  - Animal Art
+  - Name Art
+  - Winter Art
+  - Variety of Art
+  - All Art
+
+![Photos Dropdown Menu](docs/readme_images/photos_menu_dropdown.png)
+
+- Photos
+  - Beach
+  - Rainbows
+  - Animals
+  - Sky
+  - Variety of Photos
+  - All Photos
+
+#### 'Click here to shop' button
+
+- Clickable button to start to shop
+- All of the products are displayed on scrollable page after clicking on 'Click here to shop'
+
+#### Footer
+  - Copyright
+  - Social Media links
 
 [Back to Features](#features)
 
 [Back to Contents](#contents)
 
-# Future Features
 
-- Registered Site User may save items for later, or as their favorites, and see them under their profile
+## Future Features
+
+- Active/chosen Menu Item is underlined or otherwise highlighted
+- Registered Site User may save items for later, or as their favorites, to access these under their account
 - If Registered Site User pauses their shopping, shopping cart items stay in the cart 
 - Registered User is notified of items in their cart when they return to the website
 
@@ -314,7 +342,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   or how certain art pieces were made
 
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
-- Users can use search box to search all of the website, not just products
+- Users can use search box to search all parts of the website, not just products
 
 - User can click on 'Forgot Username/email?", to recover their Username/email, that they used for this website
 
@@ -328,7 +356,6 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   ![alt text](docs/readme_images/password_reset_email_sent.png)
 
-
 - For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
 
 
@@ -336,20 +363,45 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 [Back to Contents](#contents)
 
+
 # Languages Used
+
+![Languages Used](docs/readme_images/languages_used.png)
+
+- HTML
+- Python
+- CSS
+- JavaScript
+- Dockerfile
 
 [Back to Contents](#contents)
 
 # Sites, Apps Used
 
+Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
+
+- [Code Institute](https://codeinstitute.net/ie/)
+- [GitHub](https://github.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [VS Code](https://code.visualstudio.com/)
+- [Django](https://www.djangoproject.com/)
+- [Heroku](https://www.heroku.com/)
+- [Balsamiq Wireframes](https://balsamiq.com/wireframes/)
+- [AWS](aws.amazon.com)
+- [Stripe](https://stripe.com/)
+- [YouTube](https://www.youtube.com/)
+- [Simple Image Resizer](https://www.simpleimageresizer.com/)
+- [Diffchecker](https://www.diffchecker.com/)
+- [Favicon](https://favicon.io/favicon-converter/)
+- [Font Awesome](https://fontawesome.com/icons)
 
 
 [Back to Contents](#contents)
 
 
-# Testing
+# Validation
 
-Note: for testing, in many places developer used "Kelly's Boutique" instead of "Kelly's Art & Photo Boutique", to reduce the number of characters, and make it an easier read.
+* For testing, in many places developer used "Kelly's Boutique" instead of "Kelly's Art & Photo Boutique", to reduce the number of characters, and make it easier read.
 
 ## Lighthouse
 
@@ -367,15 +419,19 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
 [Back to Contents](#contents)
 
-## HTML, CSS, JS Validation
+## HTML
 
 - ![HTML validator]()
 
   validated with: [W3C Markup Validation](https://validator.w3.org/)
 
+## CSS
+
 - ![CSS validator]()
 
   validated with: [W3C Markup Validation](https://validator.w3.org/)
+
+## JS
 
 - ![JS validator]()
 
@@ -385,6 +441,7 @@ Note: for testing, in many places developer used "Kelly's Boutique" instead of "
 
 [Back to Contents](#contents)
 
+# Testing
 
 ## Favicon
 
