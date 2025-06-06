@@ -85,29 +85,56 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 ## Users may:
 
 - Click on Logo (to bring them back to Home Page or refresh Home Page)
-- Use Search bar
+- Use Search Bar/Search Icon
+
 - Click on My Account:
-  - Click on 'Sign In'
-    - Click on link: 'Sign Up first' (steps for 'Sign Up' described below), if no account
+
+  - Click on 'Sign In' to access 'Sign In' form:
+    - Click on link: 'Sign Up first' (steps for 'Sign Up' described below)
     - Fill in a Username or Email, and a password:
       - Even if they don't have an account. Only User with an account will be signed in
-      - Users without account will be reminded to 'Please fill in this field'
+      - Users without invalid/not existing Username or Email address, will be reminded: 'Please fill in this field'
     - Tick 'Remember Me' box:
-      - Even if they don't have an account. Only User with an account will be Remembered
-      - User without an account will be reminded to 'Please fill in this field'
+      - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
+      - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
+        or if they do not have an account
     - Click on 'Home' button to get back to Home page
     - Click on 'Sign In' button to sign in:
-      - Even if they don't have an account. Only User with an account will be signed in
-      - User without an account will be reminded to 'Please fill in this field'
+      - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
+        will be signed in
+      - User without an account or user who has not entered correct details, will be reminded to 'Please fill in this field'
     - Click on 'Forgot Your Password?':
       - Even if they don't have an account.
       - Fill in 'Password Reset' form:
         - Click on 'Reset My Password'
-        - Only User with an account will receive an email to reset their password
+        - Only User with an account and valid email address, will receive an email to reset their password
         - Click on 'Back to Sign In' button
-    - Click on 'Home' below 'Sign In' form
-    - 
-  - Click on 'Sign Up'
+
+  - Click on 'Sign Up first' to access 'Sign Up' form:
+    - Click on link: 'Sign In first' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
+    - Fill in Email address and , and a password:
+      - Even if they don't have an account. Only User with an account will be signed in
+      - Users without invalid/not existing Username or Email address, will be reminded: 'Please fill in this field'
+    - Tick 'Remember Me' box:
+      - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
+      - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
+        or if they do not have an account
+    - Click on 'Home' button to get back to Home page
+    - Click on 'Sign In' button to sign in:
+      - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
+        will be signed in
+      - User without an account or user who has not entered correct details, will be reminded to 'Please fill in this field'
+    - Click on 'Forgot Your Password?':
+      - Even if they don't have an account.
+      - Fill in 'Password Reset' form:
+        - Click on 'Reset My Password'
+        - Only User with an account and valid email address, will receive an email to reset their password
+        - Click on 'Back to Sign In' button
+
+
+
+
+
 - Click on Cart
 - 
 
@@ -289,6 +316,8 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
 - Users can use search box to search all of the website, not just products
 
+- User can click on 'Forgot Username/email?", to recover their Username/email, that they used for this website
+
 - Password Reset form would notify User if their email is not registered for an Account. Presently any email address is accepted on Password Reset form 
 
 - Clickable Contact details below 'Password Reset' form, instead of just text as it is at the moment: 
@@ -301,6 +330,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 
 - For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
+
 
 [Back to Features](#features)
 

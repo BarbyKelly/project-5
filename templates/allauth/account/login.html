@@ -32,7 +32,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p text-primary>{% blocktrans %}If you have not created an account yet, then please
-<a class=text-black font-weight-bold href="{{ signup_url }}">Sign Up</a> first.{% endblocktrans %}</p>
+<a class=text-black font-weight-bold href="{{ signup_url }}">Sign Up first</a>{% endblocktrans %}</p>
 {% endif %}
 
 <form class="login" method="POST" action="{% url 'account_login' %}">

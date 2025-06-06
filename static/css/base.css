@@ -84,13 +84,13 @@ h2 {
     position: fixed;
     bottom: 200px;
     left: 50px;
-    background: black;
+    background: cornflowerblue;
     color: white;
     min-width: 150px;
 }
 
-.btn-black {
-    background: black;
+.btn-blue {
+    background: cornflowerblue;
     color: white;
 }
 
@@ -103,17 +103,20 @@ h2 {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: rgb(28, 28, 209);
     color: white !important;
 }
 
 .click-here-to-shop-button:hover,
 .click-here-to-shop-button:active,
 .click-here-to-shop-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.social-networks:hover,
+.social-networks:active,
+.social-networks:focus,
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: rgb(28, 28, 209);
     color: white;
 }
 
@@ -125,8 +128,8 @@ h2 {
     border: 1px solid black !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.bg-blue {
+    background: cornflowerblue !important;
 }
 
 .overlay {
@@ -140,7 +143,7 @@ h2 {
 }
 
 a.category-badge > span.badge:hover {
-    background: #000 !important;
+    background: rgb(28, 28, 209) !important;
     color: #ffffff !important;
 }
 
@@ -262,7 +265,7 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
+    background-color: cornflowerblue;
     border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -276,7 +279,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
     color: #fff;
-    background-color: #222;
+    background-color: rgb(28, 28, 209);
     border-color: #222;
 }
 
@@ -338,7 +341,7 @@ footer {
 
 #social-networks i {
     font-size: 100%;
-    color: #021527;
+    color: cornflowerblue;
 }
 
 /* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
@@ -404,12 +407,12 @@ footer {
     }
 
     .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-blue.rounded-0 {
         padding: .375rem .375rem;
     }
 
     .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-blue.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
