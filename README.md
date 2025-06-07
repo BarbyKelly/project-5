@@ -604,8 +604,8 @@ Color changes when Hovering over Search Button:
 |             | 'Reset My Password' button is clickable                                             | as expected |
 |             | Hovering on the 'Reset My Password' button, changes the color of the button         | as expected |
 |             |                                                                                     |             |
-|             | Message appears if email address that meets the requirements has been entered,      |             |
-|             | and User has clicked on 'Reset My Password' button:                                 |             |
+|             | If entered email address meets the requirements,                                    |             |
+|             | and User has clicked on 'Reset My Password' button, message appears:                |             |
 |             | "We have sent you an e-mail. If you have not received your Password Reset email,    | as expected |  
 |             | please check your spam folder. Otherwise contact us"                                |             |  
 |             |                                                                                     |             |

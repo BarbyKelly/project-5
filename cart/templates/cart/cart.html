@@ -13,10 +13,12 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <div class="container mt-1 mb-2">
         <div class="row">
             <div class="col">
-                <h2 class="logo-font mb-4 cart font-weight-bold">Shopping Cart</h2>
+                <hr>
+                <h2 class="logo-font mb-1 cart font-weight-bold">Shopping Cart</h2>
+                <hr>
             </div>
         </div>
 
@@ -82,7 +84,7 @@
                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_postage_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You may get free delivery by spending just <strong>€{{ free_postage_delta }}</strong> more
+                                            You may get free postage by spending just <strong>€{{ free_postage_delta }}</strong> more
                                         </p>
                                     {% endif %}
                                 </td>
