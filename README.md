@@ -101,7 +101,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
     - Click on link: 'Sign Up first' (steps for 'Sign Up' described below)
     - Fill in a Username or Email, and a password:
       - Even if they don't have an account. Only User with an account will be signed in
-      - Users without invalid/not existing Username or Email address, will be reminded: 'Please fill in this field'
+      - Users without invalid/not existing Username or Email address, will be reminded: "Please fill in this field"
     - Tick 'Remember Me' box:
       - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
       - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
@@ -110,7 +110,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
     - Click on 'Sign In' button to sign in:
       - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
         will be signed in
-      - User without an account or user who has not entered correct details, will be reminded to 'Please fill in this field'
+      - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
     - Click on 'Forgot Your Password?':
       - Even if they don't have an account.
       - Fill in 'Password Reset' form:
@@ -123,12 +123,12 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
     - Fill in E-mail address,E-mail address confirmation, Username, Password and Password(again)
       - Users are reminded: 'Please fill in this field' if they leave a required field blank
     - Click on 'Back to Sign In' button to return to 'Sign In' form
-    - Click on 'Sign Up' button to Sign Up:
+    - Click on 'Sign Up' button to Sign Up
 
 - Click on Cart to open Shopping Cart page
   - Click on 'Back to Shopping' if no items in the cart
 
-  - Click on 'Proceed to Secure Checkout' in the pop-up, after adding an item into the cart:
+  - Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
 
     ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
 
@@ -150,7 +150,7 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 [Back to Contents](#contents)
  
 ## Users once signed in may:
-- Notice a pop up: 'Success! Successfully signed in as ...' displayed on top right
+- Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
 - Access 'My Profile' via 'My Account'
 - Under their profile Update their Default postage information
 - See their Order History
@@ -358,6 +358,8 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 - For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
 
+- All required fields marked with asterisk
+
 
 [Back to Features](#features)
 
@@ -482,6 +484,10 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
 ![Search Bar](docs/readme_images/search_bar.png)
 
+Color changes when Hovering over Search Button:
+
+![Color Changes when Hovering](docs/readme_images/color_change_when_hovered_over_search_button.png)
+
 | Tested Item | Expected Outcome                                                                   | Outcome     |
 | ----------- | ---------------------------------------------------------------------------------- | ----------- |
 | Search Bar  | Displayed top center for larger screens                                            | as expected |
@@ -491,6 +497,8 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 |             | User can type in the Search box                                                    | as expected |
 |             | Placeholder is no longer displayed, when first character is entered in Search Box  | as expected |
 |             | Search button is clickable                                                         | as expected |
+|             | Hovering over 'Search Icon' that is placed on the right of 'Search Bar' button,    | as expected |
+|             | changes color of the button                                                        | as expected |
 |             | User can click on Search button to activate Search                                 | as expected |
 |             | If user enters a valid Search term, those products are displayed                   | as expected |
 |             | When user enters eg number 9, all products made by 9 year old, are displayed       | as expected |         
@@ -527,9 +535,87 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
 ## My Account
 
+'Sign In' form:
 
+!['Sign In' form](docs/readme_images/sign_in_form_opt_50.png)
 
-
+| Tested Item | Expected Outcome                                                                    | Outcome     |
+| ----------- | ----------------------------------------------------------------------------------- | ----------- |
+| My Account  | Displayed near top right corner beside cart on larger screens                       | as expected |
+|             | Displayed closer to the right side, between Search Icon,                            |             |
+|             | and Cart, on smaller screens                                                        | as expected |
+|             |                                                                                     |             |
+|             | First click on 'My Account' opens dropdown with two options:                        | as expected |
+|             | 'Sign In'                                                                           | as expected |         
+|             | 'Sign Up'                                                                           | as expected |
+|             |                                                                                     |             |
+| Sign In     | 'Sign In' is clickable                                                              | as expected |
+|             | Click on 'Sign In' opens 'Sign In' form                                             | as expected |
+|             | 'Sign Up first' option is displayed below the heading                               | as expected |
+|             | Placeholder 'Username or e-mail' is displayed in top box                            | as expected |
+|             | Placeholder 'Password' is displayed in a Password box                               | as expected |
+|             | User can type in 'Username or e-mail' and 'Password' box                            | as expected |
+|             | Placeholder is no longer displayed, when User enters one character                  | as expected |
+|             | 'Username or e-mail' and 'Password' are required fields                             | as expected |
+|             | If either of the required fields have no character typed in,                        | as expected |
+|             | Pop-up "Please fill in this field" is displayed                                     | as expected |
+|             |                                                                                     |             |
+|             | 'Remember Me' checkbox is optional                                                  | as expected |
+|             | Checkbox is displayed below required fields                                         | as expected |
+|             | Click on Checkbox ticks the box                                                     | as expected |
+|             | Checkbox can be ticked multiple times                                               | as expected |
+|             | User may remove tick before submitting the form                                     | as expected |
+|             |                                                                                     |             |       
+|             | 'Sign In' button is clickable                                                       | as expected |  
+|             | Hovering over 'Sign In' button, changes color of the button                         | as expected |
+|             | Click on 'Sign In' button Signs User in, if entered details are correct             | as expected |
+|             | If either of the required fields is left empty, "Please fill in this field" pops up | as expected |
+|             | If entered details are incorrect, pop up is displayed:                              | as expected |
+|             | "The username and/or password you specified are not correct"                        | as expected |
+|             | User may enter details again, and try to 'Sign In' again                            | as expected |   
+|             |                                                       |             |
+|             | 'Home' button is displayed on the left of 'Sign In' button                          | as expected |         
+|             | 'Home' button is clickable                                                          | as expected |
+|             | Hovering over 'Home' button, changes color of the button                            | as expected |
+|             | Click on 'Home' button opens Home Page                                              | as expected |
+|             |                                                                                     |             |
+|             | 'Forgot Your Password?' is displayed below 'Home' and 'Sign In' buttons             | as expected |
+|             | 'Forgot Your Password?' is clickable                                                | as expected |
+|             | Click on 'Forgot Your Password?' opens up 'Password Reset' form                     | as expected |
+|             | Placeholder is displayed in 'E-mail' address box                                    | as expected |
+|             | Placeholder is no longer displayed, when first character is entered in e-mail box   | as expected |
+|             | E-mail box is a required field                                                      | as expected |
+|             |                                                                                     |             |
+|             | If User omits '@' from the email address, pop up is displayed:                      |             |  
+|             | "Please include an '@' in the email address. 'x' is missing an '@' "                | as expected |  
+|             |                                                                                     |             |
+|             | "Please fill in this field" is displayed if User clicks on 'Reset My Password' and  |             |
+|             | has not typed any characters in e-mail box                                          | as expected |
+|             |                                                                                     |             |
+|             | If User omits any characters after '@' in the email address, pop up is displayed:   |             |  
+|             | "Please enter a part following '@'. 'x@' is incomplete."                            | as expected |  
+|             |                                                                                     |             |
+|             | If User type in one character before '@', and one after in the e-mail box,          |             |  
+|             | "Enter a valid email address" is displayed below the e-mail box                     | as expected |  
+|             |                                                                                     |             |
+|             | User can fill the 'Password Reset' form even if they don't have an account          | as expected |
+|             | Only User with an account and valid email address,                                  |             |
+|             | will receive an email to reset their password                                       | as expected |
+|             | 'Reset My Password' button is clickable                                             | as expected |
+|             | Hovering on the 'Reset My Password' button, changes the color of the button         | as expected |
+|             |                                                                                     |             |
+|             | Message appears if email address that meets the requirements has been entered,      |             |
+|             | and User has clicked on 'Reset My Password' button:                                 |             |
+|             | "We have sent you an e-mail. If you have not received your Password Reset email,    | as expected |  
+|             | please check your spam folder. Otherwise contact us"                                |             |  
+|             |                                                                                     |             |
+|             | 'Back to Sign In' button is displayed beside 'Reset My Password' button             | as expected |
+|             | 'Back to Sign In' button is clickable                                               | as expected |
+|             | Hovering on the 'Back to Sign In' button, changes the color of the button           | as expected |
+|             | Click on 'Back to Sign In' button opens up 'Sign In' form                           | as expected |
+|             |                                                                                     |             |
+|             | Second click on 'My Account' closes dropdown menu                                   | as expected |  
+       
 
 [Back to Testing](#testing)
 
