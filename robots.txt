@@ -1,9 +1,14 @@
 User-agent: *
+Allow: /
+
+# Disallowed
 Disallow: /accounts/
+Disallow: /account/
 Disallow: /admin/
 Disallow: /cart/
 Disallow: /checkout/
 Disallow: /profile/
+Disallow: /login/
 Disallow: /checkout_success/
 Disallow: /order_number/
 Disallow: /order_total/
