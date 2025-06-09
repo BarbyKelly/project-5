@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import HowTo, Recommendation
 from .forms import Recommendation
 
-# 'How To ...' views
+# View to return 'How To ...' page
 class HowToList(generic.ListView):
     """
     Returns all published 'How To ...' links and displays them
@@ -18,7 +18,7 @@ def howto_part(request):
     """
     Renders 'How To ...' page
     """
-    howto = HowTo.objects.all().order_by('title').first()
+    howto = HowTo.objects.all().order_by('title')
 
     return render(
         request,
