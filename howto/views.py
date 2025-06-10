@@ -2,8 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import HowTo, Recommendation
-from .forms import Recommendation
+from .models import HowTo
+
 
 # View to return 'How To ...' page
 class HowToList(generic.ListView):
