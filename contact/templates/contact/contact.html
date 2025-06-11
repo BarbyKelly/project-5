@@ -1,0 +1,39 @@
+<!-- Base for contact.html learned from https://github.com/kera-cudmore/seaside-sewing/blob/main/contact/templates/contact/contact.html  -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} - Contact our Boutique
+{% endblock %}
+
+{% block extra_meta %}
+    <meta name="description" content="Kelly's Art & Photo Boutique - Contact our Boutique. An online shop selling variety of art and photos. ">
+    <meta name="keywords" content="Contact Boutique, contact us, Kelly's Art & Photo Boutique, art, photos, drawings, online shop, shop">
+{% endblock %}
+
+{% block content %}
+    <div class="row page-title">
+        <h3>Contact our Boutique</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-10 col-lg-8 offset-lg-3">
+            <p class="text-muted text-center">Please fill in the form below if you want to contact our Boutique</p>
+            <form action="{% url 'contact' %}" method="POST" id="contact_form" class="pt-4">
+                {% csrf_token %}
+                {{ contact_form|crispy }}
+
+                <!-- Buttons -->
+                <div class="submit-button text-center mt-3 mb-1">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black my-2">
+                        <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
+                        <span>Back to Boutique </span>
+                    </a>
+                    <button class="btn btn-outline-black my-1" id="submit-button">
+                        <span class="mr-1"><i class="fa-regular fa-paper-plaen"></i></span>
+                        <span>Submit Contact Form</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
