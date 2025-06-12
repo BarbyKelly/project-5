@@ -1,7 +1,12 @@
+# Code for contact/models.py learned from: https://github.com/denisklopotan/vegan-sneaker-store/blob/main/contact/models.py
+
 from django.db import models
 
 
 class ContactForm(models.Model):
+    """
+    Contact Form model
+    """
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=100, null=False, blank=False)
     subject = models.CharField(max_length=50, null=False, blank=False)

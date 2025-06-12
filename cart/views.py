@@ -3,7 +3,6 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
 
 def view_cart(request):
     """
@@ -11,6 +10,7 @@ def view_cart(request):
     """
 
     return render(request, 'cart/cart.html')
+
 
 def add_to_cart(request, item_id):
     """

@@ -1,3 +1,4 @@
+<!-- Base for base.html from Boutique Ado, like most of this project. -->
 {% load static %}
 
 <!DOCTYPE html>
@@ -102,31 +103,13 @@
                 </div>
               </a>
             </li>
-            <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="contact-boutique" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="list-inline-item">
+              <a class="text-info font-weight-bold text-black nav-link" href="{% url 'contact' %}">
                 <div class="text-center">
                   <div><i class="fa-solid fa-comment fa-lg"></i></div>
                   <p class="my-0">Contact Us</p>
                 </div>
               </a>
-              <div class="dropdown-menu border-0"  aria-labelledby="contact-options">
-                <ul>
-                  <li><a href="{% url 'contact' %}" class="dropdown-item">Online Contact Form</a></li>
-                  <li>Postal address:<br>
-                    <address class="mt-2">
-                      Kelly's Art & Photo Boutique
-                      <br>
-                      333 Art Street
-                      <br>
-                      Photo Town
-                      <br>
-                      Boutique City
-                      <br>
-                      ART C0DE
-                    </address></li>
-                  <li>Phone: 333 555 888</li>
-                </ul>
-              </div>
             </li>
           </ul>
         </div>
