@@ -323,6 +323,7 @@ input[name='q']::placeholder {
     background: #ffffff;
     color: #021527;
     text-align: center;
+    font-size: large;
     bottom: 0;
     padding: 1.5rem;
 }
@@ -340,7 +341,7 @@ footer {
 }
 
 #social-networks i {
-    font-size: 100%;
+    font-size: 1.2rem;
     color: cornflowerblue;
 }
 

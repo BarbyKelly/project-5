@@ -1,12 +1,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -18,7 +18,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="art-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px";  href="#" id="art-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-link">
@@ -31,7 +31,7 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="photos-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" style="font-size: 20px"; href="#" id="photos-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Photos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="photos-link">
@@ -44,7 +44,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black {% if request.path == howto_url %}active{%endif%}" id="how-to-link" href="{% url 'howto' %}">How To ...?</a>
+            <a class="logo-font font-weight-bold nav-link text-black {% if request.path == howto_url %}active{%endif%}" style="font-size: 20px"; id="how-to-link" href="{% url 'howto' %}">How To ...?</a>
         </li>
     </ul>
 </div>
