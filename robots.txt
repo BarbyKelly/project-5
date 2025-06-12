@@ -12,6 +12,7 @@ Disallow: /login/
 Disallow: /checkout_success/
 Disallow: /order_number/
 Disallow: /order_total/
+Disallow: /order_history/
 Disallow: /user_profile/
 Disallow: /full_name/
 Disallow: /postage_cost/
@@ -23,4 +24,7 @@ Disallow: /postcode/
 Disallow: /billing_details/
 Disallow: /phone_number/
 Disallow: /profile_data/
+Disallow: /social_account/
+Disallow: /account_signup/
+Disallow: /account_login/
 Sitemap: https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/sitemap.xml
