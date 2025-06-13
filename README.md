@@ -891,9 +891,15 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 ## Code
 
-- Code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project ["Boutique Ado"](https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
+- Code for Kelly's Art & Photo Boutique is mainly based on Code Institute's Walk-through project ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
 The developer has credited Walk-through mainly on top of html files, 
-due to enormous number of other files, which are all coded similarly to Walk-through project.
+due to enormous number of files.
+
+- Other projects, that Developer found helpful to make this project, have been credited in some files and below:
+
+  ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
+
+  ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
 
 [Back to Credits](#credits)
 
