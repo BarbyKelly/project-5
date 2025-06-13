@@ -2,7 +2,6 @@
 {% extends 'base.html' %}
 {% block content%}
 {% load static %}
-{% for howto in howto %}
 
 {% block page_header %}
     <div class="container header-container mt-10">
@@ -12,6 +11,7 @@
     </div>
 {% endblock %}
 
+{% for howto in howto %}
 <body class="h-100 main-bg">
 <div class="container-fluid box d-flex flex mt-1 mb-1" style="background-color: #FFFFFF; padding-left: 1em; padding-right: 2px;">
     <div class="row">
@@ -22,6 +22,7 @@
     </div>
 </div>
 {% endfor %}
+
 <div class="row">
     <div class="col text-right text-black">
         <!-- Links added by admin -->
