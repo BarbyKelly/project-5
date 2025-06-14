@@ -63,7 +63,7 @@ def adjust_cart(request, item_id):
     if size:
         if quantity > 0:
             cart[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]['items_by_size'][size]}')
+            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}')
         else:
             del cart[item_id]['items_by_size'][size]
             if not cart[item_id]['items_by_size']:
