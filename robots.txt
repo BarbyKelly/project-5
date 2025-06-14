@@ -1,28 +1,4 @@
-User-agent: SemrushBot
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
 User-agent: *
 Disallow: /accounts/
-Disallow: /admin/
 Disallow: /cart/
-Disallow: /checkout/
-Disallow: /profile/
-Disallow: /login/
-Disallow: /checkout_success/
-Disallow: /order_number/
-Disallow: /order_total/
-Disallow: /order_history/
-Disallow: /user_profile/
-Disallow: /full_name/
-Disallow: /postage_cost/
-Disallow: /order/
-Disallow: /street_address1/
-Disallow: /street_address2/
-Disallow: /shipping_details/
-Disallow: /billing_details/
-Disallow: /profile_data/
-Allow: /
 Sitemap: https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/sitemap.xml
