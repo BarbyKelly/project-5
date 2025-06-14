@@ -13,21 +13,18 @@
 
 {% for howto in howto %}
 <body class="h-100 main-bg">
-<div class="container-fluid box d-flex flex mt-1 mb-1" style="background-color: #FFFFFF; padding-left: 1em; padding-right: 2px;">
-    <div class="row">
+<div class="container-fluid text-center text-black d-flex flex mt-1 mb-1" style="padding-bottom: 10px;">
+    <div class="col-lg-4 flex ml-5 mr-5" style="background-color: #FFFFFF; padding-left: .1rem; padding-right: .1rem;">
+        <hr>
+        <div class="row"></div>
         <!-- Title -->
-        <h2 class="text-center">{{ howto.title }}</h2>
+        <div class="col">{{ howto.title }}</div>
         <!-- How To ... content -->
-        <h4 class="text-center ml-5">{{ howto.content | safe }} </h4>
+        <div class="col">{{ howto.content | safe }}</div>
+        <hr>
     </div>
 </div>
 {% endfor %}
 
-<div class="row">
-    <div class="col text-right text-black">
-        <!-- Links added by admin -->
-         <p class="text-end mr-3 text-black"><em>Disclaimer: YouTube video links shared by Boutique's admin. No personal benefit,<br> no connection to these YouTube content creators</em></p>
-    </div>
-</div>
 </body>
 {% endblock content %}

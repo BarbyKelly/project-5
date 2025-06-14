@@ -968,9 +968,21 @@ Website's finalised logo:
 
 ## Privacy Policy
 
-- Privacy Policy created based on Code Institute's walk-through: Boutique Ado. 
+- Privacy Policy created based on lessons for Code Institute's walk-through [Boutique Ado](https://github.com/Code-Institute-Solutions/) 
 
   [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy.
+
+[Back to Credits](#credits)
+
+[Back to Contents](#contents)
+
+## 'How To ...' app links
+
+- Disclaimer: Boutique's admin shared selection of YouTube video links that she or her kids found helpful for creating art. No personal benefit from those or any other youtube channels shared on this website
+
+[Back to Credits](#credits)
+
+[Back to Contents](#contents)
 
 # Products/Images
 
@@ -987,14 +999,11 @@ Website's finalised logo:
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, 
-  Coursemates, and online content creators.
+- Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, Coursemates, and online content creators.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce       
-  project, and for creating a unique Logo
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, and for creating a unique Logo
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that  
-  secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
-  Developer changed the key and hid it, as advised by her mentor.
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
+ Developer changed the key and hid it, as advised by her mentor.
 
 [Back to Contents](#contents)
