@@ -966,6 +966,12 @@ Website's finalised logo:
 
 [Back to Contents](#contents)
 
+## Privacy Policy
+
+- Privacy Policy created based on Code Institute's walk-through: Boutique Ado. 
+
+  [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy.
+
 # Products/Images
 
 - All of the photos used for the website, were taken by the developer

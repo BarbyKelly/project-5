@@ -82,7 +82,7 @@ h2 {
 
 .click-here-to-shop-button {
     position: fixed;
-    bottom: 200px;
+    bottom: 220px;
     left: 50px;
     background: cornflowerblue;
     color: white;
@@ -323,9 +323,9 @@ input[name='q']::placeholder {
     background: #ffffff;
     color: #021527;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     bottom: 0;
-    padding: 1.5rem;
+    padding: .1rem;
 }
 
 footer {
