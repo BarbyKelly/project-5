@@ -1,4 +1,11 @@
+User-agent: SemrushBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 User-agent: *
 Disallow: /accounts/
 Disallow: /cart/
+Allow: /
 Sitemap: https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/sitemap.xml
