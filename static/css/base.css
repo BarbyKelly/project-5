@@ -30,6 +30,11 @@ body {
     line-height: 1;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Styling of Headings and Logo */
 
 h1 {

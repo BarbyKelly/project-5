@@ -1,50 +1,80 @@
-<div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Items
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Items</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px";  href="#" id="art-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Art
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="art-link">
-                <a href="{% url 'products' %}?category=animal_art" class="dropdown-item">Animal Art</a>
-                <a href="{% url 'products' %}?category=name_art" class="dropdown-item">Name Art</a>
-                <a href="{% url 'products' %}?category=winter_art" class="dropdown-item">Winter Art</a>
-                <a href="{% url 'products' %}?category=variety_of_art" class="dropdown-item">Variety of Art</a>
-                <a href="{% url 'products' %}?category=animal_art,name_art,winter_art,variety_of_art" class="dropdown-item">All Art</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" style="font-size: 20px"; href="#" id="photos-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Photos
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="photos-link">
-                <a href="{% url 'products' %}?category=beach_photo" class="dropdown-item">Beach</a>
-                <a href="{% url 'products' %}?category=rainbow_photo" class="dropdown-item">Rainbows</a>
-                <a href="{% url 'products' %}?category=animal_photo" class="dropdown-item">Animals</a>
-                <a href="{% url 'products' %}?category=sky_photo" class="dropdown-item">Sky</a>
-                <a href="{% url 'products' %}?category=variety_of_photos" class="dropdown-item">Variety of Photos</a>
-                <a href="{% url 'products' %}?category=beach_photo,rainbow_photo,animal_photo,sky_photo,variety_of_photos" class="dropdown-item">All Photos</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black {% if request.path == howto_url %}active{%endif%}" style="font-size: 20px"; id="how-to-link" href="{% url 'howto' %}">How To ...?</a>
-        </li>
-    </ul>
+<div class="collapse navbar-collapse justify-content-between" id="main-nav">
+    <div class="w-100 d-flex justify-content-between">
+        <div id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-between w-auto mx-auto">
+                <li class="nav-item d-block d-md-none">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="{% url 'home' %}" id="home-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Items
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                        <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                        <a href="{% url 'products' %}?sort=author&direction=asc" class="dropdown-item">By Author</a>
+                        <a href="{% url 'products' %}" class="dropdown-item">All Items</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px";  href="#" id="art-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Art
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="art-link">
+                        <a href="{% url 'products' %}?category=animal_art" class="dropdown-item">Animal Art</a>
+                        <a href="{% url 'products' %}?category=name_art" class="dropdown-item">Name Art</a>
+                        <a href="{% url 'products' %}?category=winter_art" class="dropdown-item">Winter Art</a>
+                        <a href="{% url 'products' %}?category=variety_of_art" class="dropdown-item">Variety of Art</a>
+                        <a href="{% url 'products' %}?category=animal_art,name_art,winter_art,variety_of_art" class="dropdown-item">All Art</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5" style="font-size: 20px"; href="#" id="photos-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Photos
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="photos-link">
+                        <a href="{% url 'products' %}?category=beach_photo" class="dropdown-item">Beach</a>
+                        <a href="{% url 'products' %}?category=rainbow_photo" class="dropdown-item">Rainbows</a>
+                        <a href="{% url 'products' %}?category=animal_photo" class="dropdown-item">Animals</a>
+                        <a href="{% url 'products' %}?category=sky_photo" class="dropdown-item">Sky</a>
+                        <a href="{% url 'products' %}?category=variety_of_photos" class="dropdown-item">Variety of Photos</a>
+                        <a href="{% url 'products' %}?category=beach_photo,rainbow_photo,animal_photo,sky_photo,variety_of_photos" class="dropdown-item">All Photos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == howto_url %}active{%endif%}" style="font-size: 20px" id="how-to-link" href="{% url 'howto' %}">
+                        How To ...?
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == account_login %}active{%endif%}" href="{% url 'account_login' %}" style="font-size: 20px" id="account-login">
+                        Sign In
+                    </a>
+                    {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                      {% endif %}
+                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == account_signup %}active{%endif%}" href="{% url 'account_signup' %}" style="font-size: 20px" id="account-signup">
+                        Sign Up
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="logo-font font-weight-bold text-black mr-5 {% if request.path == cart_url %}active{% endif %} nav-link" id="cart" style="font-size: 20px" href="{% url 'view_cart' %}">Cart
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == contact_url %}active{% endif %}" href="{% url 'contact' %}" style="font-size: 20px" id="contact-us">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>   
 </div>
