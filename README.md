@@ -901,6 +901,8 @@ due to enormous number of files.
 
   ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
 
+  [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
+
 [Back to Credits](#credits)
 
 [Back to Contents](#contents)
@@ -926,7 +928,7 @@ due to enormous number of files.
 ## Logo
 
 - As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
-Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo by herself. Aoife chose colors based on Developer's wish for 'cornflower blue'.
+Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo. Aoife chose colors based on Developer's wish for 'cornflower blue'.
 Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
 Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
 Website's finalised logo:
@@ -952,7 +954,9 @@ Website's finalised logo:
 
 ## am I responsive
 
-- Responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
+- Original responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
+
+- Numerous attempts to create an up to date responsiveness test, have failed, due to test site failing to connect to the website.
 
 [Back to Credits](#credits)
 
@@ -999,9 +1003,9 @@ Website's finalised logo:
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends, mentor, facilitator, tutors, Slack members, Coursemates, and online content creators.
+- Developer is grateful for any guidance and support provided by her family and friends, mentor Lauren-Nicole Popich, student care worker Kim, facilitator Kay Welfare, tutors, Slack members, Coursemates, and online content creators.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, and for creating a unique Logo
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, and for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo. Great team effort.
 
 - Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
  Developer changed the key and hid it, as advised by her mentor.
