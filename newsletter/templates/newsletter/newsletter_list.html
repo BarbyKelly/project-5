@@ -1,0 +1,35 @@
+<!-- Base for Newsletter app learned from  https://bastakiss.com/blog/django-6/how-to-add-a-newsletter-app-to-your-django-website-475 -->
+<!-- And from contact_success.html -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+{% endblock %}
+
+{% block extra_meta %}
+    <meta name="description" content="Kelly's Art & Photo Boutique - Subscribe to our Boutique's Newsletter. An online shop selling variety of art and photos. ">
+    <meta name="keywords" content="Subscribe to our Boutique's Newsletter. Kelly's Art & Photo Boutique, art, photos, drawings, online shop, shop">
+{% endblock %}
+
+{% block content %}
+    <div class="row page-title">
+        <h3>Subscribe to our Newsletter</h3>
+    </div>
+
+    <ul>
+        {% for newsletter in newsletters %}
+            <li>{{ newsletter.title }} - {{ newsletter.created_on }}</li>
+        {% endfor % }
+    </ul>
+    <div class="row">
+        <div class="col-10 offset-1 text-center">
+            <h4>Thank you for Subscribing</h4>
+            <a href="{% url 'products' %}" class="btn btn-outline-black my-2">
+                <span class="icon mr-1">
+                    <i class="fa-solid fa-shop"></i>
+                </span>
+                <span>View products in our Boutique</span>
+            </a>
+        </div>
+    </div>
+{% endblock %}
