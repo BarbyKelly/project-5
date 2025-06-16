@@ -1,5 +1,8 @@
+# robots.txt
 User-agent: *
 Disallow: /accounts/
 Disallow: /cart/
-Allow: /
+
+User-agent: GPTBot
+Disallow: /
 Sitemap: https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/sitemap.xml
