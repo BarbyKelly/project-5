@@ -1,7 +1,11 @@
 # robots.txt
 User-agent: *
 Disallow: /accounts/
+Disallow: /profile/
 Disallow: /cart/
+Disallow: /checkout/
+Disallow: /admin/
+Disallow: /order_history/
 
 User-agent: GPTBot
 Disallow: /
