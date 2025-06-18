@@ -19,7 +19,11 @@ def newsletter(request):
             form.save()
             messages.info(
                 request, "Subscribed to our Boutique's Newsletter!")
+            
+            # Get subscribers email address from the form
             email = request.POST.get("email")
+
+            # Subscription email details
             subject = "Kelly's Art & Photo Boutique"
             message = (
                 "Thank you for subscribing to Boutique's newsletter,"
@@ -28,7 +32,11 @@ def newsletter(request):
                 "https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/"
             )
             from_email = "2025studentproject@gmail.com"
-            recipient_list[email]
+
+            # List of recipients
+            recipient_list = [email]
+
+            # Send email
             send_mail(subject,
                       message, from_email, recipient_list, fail_silently=False)
     else:
@@ -36,7 +44,11 @@ def newsletter(request):
 
     context = {"form": form}
     return render(
-        request, 'newsletter/newsletter.html')
+        request, 'newsletter/newsletter.html',
+        {
+         'subscription_form': SubscriptionForm()
+        }
+    )
 
 
 class Newsletter(TemplateView):

@@ -12,7 +12,7 @@ class Newsletter(models.Model):
     content = models.TextField()
     created_on = models.DateField(auto_now_add=True)
     email = models.EmailField(
-        default='2025studentproject@gmail.com', unique=True)
+        max_length=100, null=False, blank=False)
     sent_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
