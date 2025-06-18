@@ -10,7 +10,7 @@
     </div>
 {% endblock %}
 
-{% block content%}
+{% block content %}
 {% load crispy_forms_tags %}
 <div class="overlay"></div>
 <div class="container mb-2 mt-2">
@@ -25,19 +25,19 @@
     <div class="row">
         <div class="col-12">
             <form class="mt-2" method="POST">
-                {{ contact_form|crispy }}
+                {{ subscription_form|crispy }}
                 {% csrf_token %}
                 <!-- Buttons: 'Back to Products' and 'Submit' -->
                 <div class="submit-button text-center mt-3 mb-1">
                     <a href="{% url 'products' %}" class="btn btn-outline-black my-2">
                         <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
-                        <span>Back to Boutique </span>
+                        <span>Back to Boutique</span>
                     </a>
                     <button class="btn btn-outline-black my-1" id="submit-button" <a href="{% url 'subscription_form.url' %}" class="btn btn-outline-black my-2"></a>>
-                    <span>Subscribe</span>
-                </button>
+                        <span>Subscribe</span>
+                    </button>
                 </div>
-            </form>    
+            </form>
         </div>
     </div>
 </div>

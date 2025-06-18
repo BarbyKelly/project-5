@@ -2,6 +2,7 @@
 # https://github.com/tmarkec/row_to_grow/blob/main/subscription/views.py
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import TemplateView
+from .models import Subscriber
 from .forms import SubscriptionForm
 from .models import Newsletter
 from django.contrib import messages
@@ -44,7 +45,12 @@ class Newsletter(TemplateView):
     """
     template_name = 'newsletter/newsletter.html'
 
-# Learned from https://bastakiss.com/blog/django-6/how-to-add-a-newsletter-app-to-your-django-website-475
+# Learned from:
+# https://bastakiss.com/blog/django-6/how-to-add-a-newsletter-app-to-your-django-website-475
+
+
 def newsletter_list(request):
-    newsletters = Newsletter.objects.all().order_by('title')
-    return render(request, 'newsletter/newsletter_list.html', {'newsletters': newsletters})
+    newsletters = Subscriber.objects.all().order_by('email')
+    return render(
+        request, 'subscription_form_success.html',
+        {'newsletters': newsletters})

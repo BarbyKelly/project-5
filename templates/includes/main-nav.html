@@ -46,7 +46,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == howto_url %}active{%endif%}" style="font-size: 20px" id="how-to-link" href="{% url 'howto.url' %}">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == howto_url %}active{%endif%}" style="font-size: 20px" id="how-to-link" href="{% url 'howto' %}">
                         How To ...?
                     </a>
                 </li>
@@ -72,12 +72,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == contact_url %}active{% endif %}" href="{% url 'contact.url' %}" style="font-size: 20px" id="contact-us">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == contact_url %}active{% endif %}" href="{% url 'contact' %}" style="font-size: 20px" id="contact-us">
                         Contact Us
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == newsletter_url %}active{% endif %}" href="{% url 'newsletter.url' %}" style="font-size: 20px" id="newsletter">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 {% if request.path == newsletter_url %}active{% endif %}" href="{% url 'newsletter' %}" style="font-size: 20px" id="newsletter">
                         Newsletter
                     </a>
                 </li>
