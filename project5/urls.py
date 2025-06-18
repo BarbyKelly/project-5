@@ -1,4 +1,4 @@
-# Code for urls.py from Code Institute's Walk-Through Boutique Ado, credit in README
+# Code for urls.py from Code Institute's Walk-Through Boutique Ado
 
 """project5 URL Configuration
 
@@ -31,6 +31,8 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
-    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    path(
+        'robots.txt', TemplateView.as_view(
+            template_name="robots.txt", content_type='text/plain')),
     path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,10 +1,14 @@
+# Base for newsletter app learned from:
+# https://github.com/tmarkec/row_to_grow/blob/main/subscription/admin.py
 from django.contrib import admin
-from .models import SubscriptionForm
+from .models import Subscriber, Newsletter
 
 
-@admin.register(SubscriptionForm)
-class SubscriptionFormAdmin(admin.ModelAdmin):
-    list_display = ('title', 'added_on',)
-    search_fields = ('title', 'content',)
-    list_filter = ('status', 'added_on',)
-    ordering = ('title',)
+class SubscriberAdmin(admin.ModelAdmin):
+    """
+    Subscribers list
+    """
+    list_display = ("email", "added_on")
+
+admin.site.register(Subscriber, SubscriberAdmin)
+admin.site.register(Newsletter)

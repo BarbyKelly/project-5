@@ -1,62 +1,42 @@
-from django.views import View
+# Base learned from:
+# https://github.com/tmarkec/row_to_grow/blob/main/subscription/views.py
+from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic import TemplateView
 from .forms import SubscriptionForm
+from .models import Newsletter
 from django.contrib import messages
 from django.core.mail import send_mail
-from django.shortcuts import render, redirect, reverse, HttpResponse
 
 
-class Newsletter(View):
+def newsletter(request):
     """
-    A view that renders Newsletter's page,
-    and sends a confirmation email
+    Function to handle Subscription
     """
-    def get(self, request, *args, **kwargs):
-        return render(
-            request,
-            'newsletter/newsletter.html',
-            {
-                'subscription_form': SubscriptionForm()
-            }
-        )
-
-    def post(self, request, *args, **kwargs):
-        subscription_form = SubscriptionForm(data=request.POST)
-
-        if subscription_form.is_valid():
-            subscription_form.save()
-            messages.add_message(
-                request,
-                message.SUCCESS,
-                'Your Subscription form was submitted!')
-
+    if request.method == 'POST':
+        form = SubscriptionForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.info(
+                request, "Subscribed to our Boutique's Newsletter!")
             email = request.POST.get("email")
-            title = "Kelly's Art & Photo Boutique's Subscription"
+            subject = "Kelly's Art & Photo Boutique"
             message = (
-                "Thank you for subscribing to our Boutique's newsletter!\n"
-                "Feel free to check out our art and photos:\n"
+                "Thank you for subscribing to Boutique's newsletter,"
+                "our latest products and news will be sent by email"
+                "Please feel free to check out our page:"
                 "https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/"
-                )
+            )
             from_email = "2025studentproject@gmail.com"
-            recipient_list = [email]
+            recipient_list[email]
+            send_mail(subject,
+                      message, from_email, recipient_list, fail_silently=False)
+    else:
+        form = SubscriptionForm()
 
-            send_mail(
-                title, message, from_email,
-                recipient_list, fail_silently=False)
-
-            return redirect('home')
-        else:
-            form = SubscriptionForm()
-
-        return render(request, 'newsletter/newsletter.html', {'form': form})
+    context = {"form": form}
+    return render(
+        request, 'newsletter/newsletter.html')
 
 
-class NewsletterListView(View):
-    """
-    A view displaying list of Newsletters
-    """
-
-    def get(self, request):
-        newsletters = Newsletter.objects.all().order_by('created_on')
-        return render(
-            request, 'newsletter/newsletter_list.html',
-            {'newsletters': newsletters})
+class Newsletter(TemplateView):
+    template_name = 'newsletter/newsletter.html'

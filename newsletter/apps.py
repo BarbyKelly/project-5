@@ -1,3 +1,5 @@
+# Code learned from:
+# https://github.com/tmarkec/row_to_grow/blob/main/subscription/apps.py
 from django.apps import AppConfig
 
 
