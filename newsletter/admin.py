@@ -4,11 +4,12 @@ from django.contrib import admin
 from .models import Subscriber, Newsletter
 
 
+@admin.register(Subscriber)
 class SubscriberAdmin(admin.ModelAdmin):
     """
-    Subscribers list
+    Subscriber
     """
-    list_display = ("email", "added_on")
-
-admin.site.register(Subscriber, SubscriberAdmin)
-admin.site.register(Newsletter)
+    list_display = ('email', 'added_on',)
+    search_fields = ('email',)
+    list_filter = ('email',)
+    ordering = ('email',)

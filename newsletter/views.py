@@ -39,4 +39,12 @@ def newsletter(request):
 
 
 class Newsletter(TemplateView):
+    """
+    Template name
+    """
     template_name = 'newsletter/newsletter.html'
+
+# Learned from https://bastakiss.com/blog/django-6/how-to-add-a-newsletter-app-to-your-django-website-475
+def newsletter_list(request):
+    newsletters = Newsletter.objects.all().order_by('title')
+    return render(request, 'newsletter/newsletter_list.html', {'newsletters': newsletters})
