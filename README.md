@@ -28,6 +28,11 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 [Wireframes](#wireframes)
 
+[ERD, SEO and Marketing](#erd-seo-and-marketing)
+- [ERD](#erd-seo-and-marketing)
+- [SEO](#seo)
+- [Marketing](#marketing)
+
 [Design](#design)
 - [Images](#images)
 - [Color](#color)
@@ -205,15 +210,71 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 [Back to Contents](#contents)
 
+# ERD, SEO and Marketing
+
+## ERD
+
+[Back to Contents](#contents)
+
+## SEO
+
+The following improvements were made based on SEO Test [SEO Site Checkup](https://seositecheckup.com/seo-audit/kellys-art-and-photo-boutique-913058c0223e.herokuapp.com)
+
+
+
+
+
+[Back to Contents](#contents)
+
+## Marketing
+
+### Facebook Page
+
+![Facebook Page](docs/readme_images/facebook_page_post_opt_500.jpg)
+
+[Facebook Reel](https://youtu.be/F123AhI8RGA)
+
+
+[Back to Contents](#contents)
+[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
+
+### Keyword Research
+
+[Back to Contents](#contents)
+[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
+
+### Similar Businesses
+
+Developer found the following businesses relevant and interesting:
+
+[Gallerix.ie](  https://gallerix.ie/)
+
+[JamArtFactory.com](https://jamartfactory.com/)
+
+[Kids and Art](https://kidsandart.org/store-artwork/)
+
+To date Developer did not come across a website with same combination as hers: her photos and her kids art.
+
+[Back to Contents](#contents)
+[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
+
 # Design
 
 ## Images
+
+- Background image by the Developer
+
+- Logo image created with Developers kids
 
 ## Color
 
 - Base color (cornflower) for the website from: [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
 
 ## Font
+
+- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
+
+  ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
 [Back to Contents](#contents)
 
@@ -225,15 +286,15 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 Kelly's Art & Photo Boutique Home Page:
 
-  ![Home Page](docs/readme_images/homepage_opt_50.png)
+  ![Home Page](docs/readme_images/home_page_boutique_opt_500.png)
 
-#### Favicon
+### Favicon
 
 Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   ![Favicon](docs/readme_images/favicon.png)
 
-#### Logo
+### Logo
 
 - Logo displayed on all pages of the website, and on all screen sizes
 - Click on Logo brings user back to Home page
@@ -244,9 +305,9 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 [Back to Contents](#contents)
 
-#### Search Bar, Search Icon
+### Search Bar
 
-- Search bar or icon displayed on all pages:
+- Search bar displayed on larger screen sizes:
 
   ![Search Bar](docs/readme_images/search_bar_centered.png)
 
@@ -260,35 +321,36 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   ![Search criteria error](docs/readme_images/error_search_criteria.png)
 
-- On smaller screens, Search Icon is displayed:
-
-  ![Search Icon](docs/readme_images/search_icon.png)
 
 [Back to Features](#features)
 
 [Back to Contents](#contents)
 
-#### My Account
 
-- With options to 'Sign In' and 'Sign Up'
+### Navigation Menu
 
-#### Cart
+#### Nav bar
 
-- Displaying either €0.00 when Cart is empty
-- Or displaying the amount of Products User has added to the cart
+- All Navigation Menu items are clickable and displayed below Logo on a larger screens, beside each other:
 
-#### Navigation Menu
+  ![Nav bar](docs/readme_images/nav_bar.png)
 
-- All Navigation Menu items are clickable
-- Required Art/Photo/Product section is displayed, when User clicks on any of Nav menu items
+- Collapsed/burger-menu is displayed on smaller screens:
 
-![All Items Dropdown Menu](docs/readme_images/all_items_dropdown.png)
+  ![All Items Dropdown Menu](docs/readme_images/burger_menu.png)
 
-- All Items
-  - By Category
-  - By Price
-  - By Author
+- When User clicks on 'All Items', dropdown opens:
   - All Items
+    - By Category
+    - By Price
+    - By Author
+    - All Items
+
+- Previously opened dropdown menu closes, if another Button is clicked 
+
+### Art
+
+- When User clicks on 'Art', dropdown opens:
 
 ![Art Dropdown Menu](docs/readme_images/art_menu_dropdown.png)
 
@@ -297,9 +359,13 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Name Art
   - Winter Art
   - Variety of Art
-  - All Art
+  - All Ar
 
-![Photos Dropdown Menu](docs/readme_images/photos_menu_dropdown.png)
+### Photos
+
+- When User clicks on 'Art', dropdown opens:
+
+![Photos Dropdown Menu](docs/readme_images/photos_dropdown.png)
 
 - Photos
   - Beach
@@ -309,14 +375,89 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Variety of Photos
   - All Photos
 
-#### 'Click here to shop' button
+### How To...?
+
+- 'How To...?' page displays links to various YouTube channels, showing different styles of doing art
+
+![How To...? page](docs/readme_images/how_to_page_opt_50.png)
+
+### Sign In
+
+![Sign In page](docs/readme_images/sign_in_form.png)
+
+- Displaying 'Sign In' form
+- And an option to 'Sign Up'
+- To click on 'Home' button
+- Or 'Sign In' button
+- And to choose 'Forgot Your Password?", which opens up:
+  - 'Password Reset' page:
+    - User can enter email address,
+    - Click on 'Back to Sign In', 
+    - Or click on 'Reset My Password'
+
+### Sign Up
+
+![Sign Up](docs/readme_images/sign_up_form.png)
+
+- Displaying 'Sign Up' form
+- And an option to 'Sign In' if User already has an account
+- Option to click on 'Back to Sign In' button
+- Or 'Sign Up' button
+
+### Cart
+
+![Cart page](docs/readme_images/cart_page.png)
+
+- Displaying 'Shopping Cart' page:
+  - If cart is empty:
+    - Message: 'Your cart is empty'
+    - with a button below: 'Back to shopping'
+  - If items placed in the cart by User:
+    - list of products in the cart with image, title, size, and SKU
+    - price of each item
+    - quantity of each item
+    - option to update quantity or remove product
+    - cost of subtotal of each type of item
+    - cart total
+    - postage cost
+    - grand total
+    - buttons below: 'Continue shopping' and 'Secure Checkout'
+
+### Contact Us
+
+![Contact Us](docs/readme_images/contact_us.png)
+
+- User can click on Contact Us
+- Fill in Contact Form
+- Click on 'Back to Shopping'
+- Or click on 'Submit Contact Form'
+
+### Newsletter
+
+![Newsletter](docs/readme_images/newsletter.png)
+
+- Newsletter page has an option to fill in Subscription form
+- User can enter their email address
+- Click on 'Back to Shopping'
+- Or click on 'Subscribe'
+
+### 'Click here to shop' button
 
 - Clickable button to start to shop
 - All of the products are displayed on scrollable page after clicking on 'Click here to shop'
 
-#### Footer
-  - Copyright
-  - Social Media links
+### Footer
+  - Copyright with year of the project
+  - Developer's name
+  - Stating it is an E-commerce Project
+  - Disclaimer: NOt for real transactions
+  - Privacy policy:
+    - User can click on 'Privacy Policy' to access it
+  - Social Media links:
+    - Clickable
+    - General Facebook, Twitter and YouTube pages open after click/tap
+    - Mock Facebook page has been set up for the site. Developer understand Facebook can require deletion of the Mock up page,
+    therefor Developer kept the general Facebook link
 
 [Back to Features](#features)
 
@@ -360,6 +501,13 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 - All required fields marked with asterisk
 
+- On smaller screens, Search Icon was displayed before:
+
+  ![Search Icon](docs/readme_images/search_icon.png)
+
+  Due to Developer changing Nav bar items around, Search Icon is no longer displayed on smaller screens. Developer is aware this needs to be fixed.
+
+- When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added    beside it.
 
 [Back to Features](#features)
 
