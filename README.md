@@ -3,22 +3,28 @@
 [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/) was created as part of Code Institute's project,
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
-Developer closely followed Code Institute's Walk-through project:
+Developer mainly based her project on Code Institute's Walk-through:
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode), to complete this project.
  
 Aim of Kelly's Art & Photo Boutique:
 - built for educational purposes only
 - to create a Site where selection of Art and Photos are displayed,
-- option for Site users to browse products, search and choose products
-- test out purchasing products (without real-time purchase or without any real-time transactions)
-- no real-time commercial intention
-- No real orders, payments or deliveries
+- option for Site users to browse products, search and choose products, 
+- test out purchasing products (without real-time purchase or without any real-time transactions),
+- try to sign up and sign in,
+- check out 'How To...?" videos with art lessons by various YouTubers
+- sign up for a Newsletter
+
+This website has no real-time commercial intention.
+No real orders, payments or deliveries.
 
 Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
-![Am I Responsive image](docs/readme_images/am_i_responsive_opt_50.png)
+![Am I Responsive image](docs/readme_images/am_i_responsive_opt_350.png)
+
+Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
 
 ## Contents
@@ -93,9 +99,9 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 # User Experience
 
-- User Stories
+## User Stories
 
-## Users may:
+### Users may:
 
 - Click on Logo (to bring them back to Home Page or refresh Home Page)
 - Use Search Bar/Search Icon to find Art and Photos
@@ -147,21 +153,21 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 - Select Art by: Animal Art, Name Art, Winter Art, Variety of Art, or All Art
 - Choose photos displayed by: Beach, Rainbows, Animals, Sky, Variety of Photos, or All Photos
 
-## User who is not Admin of Kelly's Art & Photo Boutique, may not:
+### User who is not Admin of Kelly's Art & Photo Boutique, may not:
 
 - Add, edit or delete products
 - Access Product Management
 
 [Back to Contents](#contents)
  
-## Users once signed in may:
+### Users once signed in may:
 - Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
 - Access 'My Profile' via 'My Account'
 - Under their profile Update their Default postage information
 - See their Order History
 - Sign Out by clicking 'My Account', and then 'Sign Out' 
 
-## Extra permissions for An Admin. Admin may:
+### Extra permissions for An Admin. Admin may:
 - Access 'Product Management' once signed in
 - View 'My Profile'
 - Sign out
@@ -198,15 +204,6 @@ Github: [link to github](https://github.com/BarbyKelly/project-5)
 
 ![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
-## "My Account" Page
-
-![Wireframe My Account Page]()
-
-## "Cart" Page
-
-## Checkout Page
-
-
 
 [Back to Contents](#contents)
 
@@ -230,17 +227,24 @@ The following improvements were made based on SEO Test [SEO Site Checkup](https:
 
 ### Facebook Page
 
+- Developer set up a mock Facebook page, to demonstrate how it would look:
+
 ![Facebook Page](docs/readme_images/facebook_page_post_opt_500.jpg)
+
+- Developer created a reel on Facebook with Stone Art, to show how would advertise for future collections:
 
 [Facebook Reel](https://youtu.be/F123AhI8RGA)
 
+  All of the displayed stone Art was created by Developer's daughter Aoife, age 10
 
 [Back to Contents](#contents)
+
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 ### Keyword Research
 
 [Back to Contents](#contents)
+
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 ### Similar Businesses
@@ -256,6 +260,7 @@ Developer found the following businesses relevant and interesting:
 To date Developer did not come across a website with same combination as hers: her photos and her kids art.
 
 [Back to Contents](#contents)
+
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 # Design
@@ -555,15 +560,48 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
 ## Lighthouse
 
-- ![Lighthouse test, Home page]()
+Lighthouse tests with Google developer tools:
 
-  validated with Google developer tools
+- Kelly's Art & Photo Boutique 'Home' Page lighthouse test:
 
-- ![Lighthouse test, All Art]()
+  ![Lighthouse test, Home](docs/readme_images/lighthouse_home.png)
 
-- ![Lighthouse test, Animal Art]()
+- Kelly's Art & Photo Boutique 'All Products' Page lighthouse test:
 
-- ![Lighthouse test, All Photos]()
+  ![Lighthouse test, All Products](docs/readme_images/lighthouse_all_products.png)
+
+- Kelly's Art & Photo Boutique 'Art' Page lighthouse test:
+
+  ![Lighthouse test, Art](docs/readme_images/lighthouse_art.png)
+
+- Kelly's Art & Photo Boutique 'Photos' Page lighthouse test:
+
+  ![Lighthouse test, Photos](docs/readme_images/lighthouse_photos.png)
+
+- Kelly's Art & Photo Boutique 'How To...?' Page lighthouse test:
+
+  ![Lighthouse test, How To...?](docs/readme_images/lighthouse_how_to.png)
+
+- Kelly's Art & Photo Boutique 'Sign In' Page lighthouse test:
+
+  ![Lighthouse test, Sign In](docs/readme_images/lighthouse_sign_in.png)
+
+- Kelly's Art & Photo Boutique 'Sign Up' Page lighthouse test:
+
+  ![Lighthouse test, Sign Up](docs/readme_images/lighthouse_sign_up.png)
+
+- Kelly's Art & Photo Boutique 'Cart' Page lighthouse test:
+
+  ![Lighthouse test, Cart](docs/readme_images/lighthouse_cart.png)
+
+- Kelly's Art & Photo Boutique 'Contact Us' Page lighthouse test:
+
+  ![Lighthouse test, Contact Us](docs/readme_images/lighthouse_contact.png)
+
+- Kelly's Art & Photo Boutique 'Newsletter' Page lighthouse test:
+
+  ![Lighthouse test, Newsletter](docs/readme_images/lighthouse_newsletter.png)
+
 
 [Back to Testing](#testing)
 
@@ -681,21 +719,12 @@ Color changes when Hovering over Search Button:
 
 [Back to Contents](#contents)
 
-## My Account
+## Sign In page
 
-'Sign In' form:
-
-!['Sign In' form](docs/readme_images/sign_in_form_opt_50.png)
+!['Sign In' form](docs/readme_images/sign_in_form.png)
 
 | Tested Item | Expected Outcome                                                                    | Outcome     |
 | ----------- | ----------------------------------------------------------------------------------- | ----------- |
-| My Account  | Displayed near top right corner beside cart on larger screens                       | as expected |
-|             | Displayed closer to the right side, between Search Icon,                            |             |
-|             | and Cart, on smaller screens                                                        | as expected |
-|             |                                                                                     |             |
-|             | First click on 'My Account' opens dropdown with two options:                        | as expected |
-|             | 'Sign In'                                                                           | as expected |         
-|             | 'Sign Up'                                                                           | as expected |
 |             |                                                                                     |             |
 | Sign In     | 'Sign In' is clickable                                                              | as expected |
 |             | Click on 'Sign In' opens 'Sign In' form                                             | as expected |
