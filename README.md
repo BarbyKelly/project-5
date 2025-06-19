@@ -22,12 +22,12 @@ Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-bouti
 
 Github: [link to github](https://github.com/BarbyKelly/project-5)
 
+Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
+
 ![Am I Responsive image](docs/readme_images/am_i_responsive_opt_350.png)
 
-Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
-
-## Contents
+# Contents
 
 [User Experience](#user-experience)
 - [User Stories](#user-stories)
@@ -104,56 +104,54 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=http
 ### Users may:
 
 - Click on Logo (to bring them back to Home Page or refresh Home Page)
-- Use Search Bar/Search Icon to find Art and Photos
+- Use Search Bar on larger screens to find Art and Photos 
 
-- Click on My Account:
-
-  - Click on 'Sign In' to access 'Sign In' form:
-    - Click on link: 'Sign Up first' (steps for 'Sign Up' described below)
-    - Fill in a Username or Email, and a password:
-      - Even if they don't have an account. Only User with an account will be signed in
-      - Users without invalid/not existing Username or Email address, will be reminded: "Please fill in this field"
-    - Tick 'Remember Me' box:
-      - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
-      - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
-        or if they do not have an account
-    - Click on 'Home' button to get back to Home page
-    - Click on 'Sign In' button to sign in:
-      - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
-        will be signed in
-      - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
-    - Click on 'Forgot Your Password?':
-      - Even if they don't have an account.
+- Click on 'Sign In' to access 'Sign In' form:
+  - Click on link: 'Sign Up first' (steps for 'Sign Up' described below)
+  - Fill in Username or Email, and a password:
+    - Even if they don't have an account. Only User with an account will be signed in
+    - Users without invalid/not existing Username or Email address, will be reminded: "Please fill in this field"
+  - Tick 'Remember Me' box:
+    - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
+    - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
+      or if they do not have an account
+  - Click on 'Home' button to get back to Home page
+  - Click on 'Sign In' button to sign in:
+    - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
+      will be signed in
+    - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
+  - Click on 'Forgot Your Password?':
+    - Even if they don't have an account.
       - Fill in 'Password Reset' form:
         - Click on 'Reset My Password'
         - Only User with an account and valid email address, will receive an email to reset their password
         - Click on 'Back to Sign In' button
 
-  - Click on 'Sign Up' to access 'Sign Up' form:
-    - Click on: 'Sign In here' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
-    - Fill in E-mail address,E-mail address confirmation, Username, Password and Password(again)
-      - Users are reminded: 'Please fill in this field' if they leave a required field blank
-    - Click on 'Back to Sign In' button to return to 'Sign In' form
-    - Click on 'Sign Up' button to Sign Up
+- Click on 'Sign Up' to access 'Sign Up' form:
+  - Click on: 'Sign In here' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
+  - Fill in E-mail address,E-mail address confirmation, Username, Password and Password(again)
+    - Users are reminded: 'Please fill in this field' if they leave a required field blank
+  - Click on 'Back to Sign In' button to return to 'Sign In' form
+  - Click on 'Sign Up' button to Sign Up
 
 - Click on Cart to open Shopping Cart page
   - Click on 'Back to Shopping' if no items in the cart
 
-  - Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
+- Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
 
-    ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
+  ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
 
   - Click on 'Continue Shopping'
   - Click on 'Secure Checkout'
 
-    ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
+  ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
 
 - Click on Nav Bar Menu Items, and dropdown Menus to choose which Items to display
 - Choose to have products displayed by Category, by Price, by Author, or All Items
 - Select Art by: Animal Art, Name Art, Winter Art, Variety of Art, or All Art
 - Choose photos displayed by: Beach, Rainbows, Animals, Sky, Variety of Photos, or All Photos
 
-### User who is not Admin of Kelly's Art & Photo Boutique, may not:
+### User who is not an Admin of Kelly's Art & Photo Boutique, may not:
 
 - Add, edit or delete products
 - Access Product Management
@@ -165,12 +163,10 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=http
 - Access 'My Profile' via 'My Account'
 - Under their profile Update their Default postage information
 - See their Order History
-- Sign Out by clicking 'My Account', and then 'Sign Out' 
+- Sign Out by clicking on 'Sign Out' under 'Sign In' tab
 
 ### Extra permissions for An Admin. Admin may:
 - Access 'Product Management' once signed in
-- View 'My Profile'
-- Sign out
 - Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
 - Follow SKU system already in place: 
   dr33(add a unique number in the end) for art,
@@ -186,7 +182,7 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=http
 
 # Wireframes
 
-- Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
+Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
 ## Home Page
 
@@ -211,21 +207,20 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive?url=http
 
 ## ERD
 
+Not completed to date
+
 [Back to Contents](#contents)
 
 ## SEO
 
-The following improvements were made based on SEO Test [SEO Site Checkup](https://seositecheckup.com/seo-audit/kellys-art-and-photo-boutique-913058c0223e.herokuapp.com)
-
-
-
-
+SEO tests helped Developer to see robots.txt file was not ok.
+With tutors help, developer fixed robots.txt and sitemap.xml 
 
 [Back to Contents](#contents)
 
-## Marketing
+# Marketing
 
-### Facebook Page
+## Facebook Page
 
 - Developer set up a mock Facebook page, to demonstrate how it would look:
 
@@ -241,13 +236,15 @@ The following improvements were made based on SEO Test [SEO Site Checkup](https:
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
-### Keyword Research
+## Keyword Research
+
+Developer used keywords suitable for the project eg photo, art, boutique, shop, cart
 
 [Back to Contents](#contents)
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
-### Similar Businesses
+## Similar Businesses
 
 Developer found the following businesses relevant and interesting:
 
@@ -473,10 +470,9 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 - Active/chosen Menu Item is underlined or otherwise highlighted
 - Registered Site User may save items for later, or as their favorites, to access these under their account
-- If Registered Site User pauses their shopping, shopping cart items stay in the cart 
-- Registered User is notified of items in their cart when they return to the website
+- Registered User is notified of saved items in their cart when they return to the website
 
-- Improved Descriptions for all products, to improve search for Users
+- Improved Descriptions for all products, to improve search for Users, and add more keywords
 - Add an option to search Art and Photos by special celebrations: Easter, Christmas, Halloween, Birthday, Anniversary, Valentine's Day etc.
   (with improved Descriptions, this option will work, like now when looking for Winter, rainbow)
 - Filter to search products with multiple options eg Stone Art - Birthday - Age 5
@@ -513,6 +509,10 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   Due to Developer changing Nav bar items around, Search Icon is no longer displayed on smaller screens. Developer is aware this needs to be fixed.
 
 - When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added    beside it.
+
+- Sign In menu closes after person has signed in. At the moment dropdown stays open even when other nav links are clicked on.
+
+!['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
 [Back to Features](#features)
 
@@ -1012,7 +1012,10 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 ## Known Bugs
 
 - Username not showing up when logged in
-- Can not add some products into the cart, as cart icon not visible for some products
+
+- Sign In menu closes after person has signed in. At the moment dropdown stays open even when other nav links are clicked on:
+
+!['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
 [Back to Bugs](#bugs)
 
