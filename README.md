@@ -4,16 +4,18 @@
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
 Developer mainly based her project on Code Institute's Walk-through:
-[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode), to complete this project.
+[Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
  
 Aim of Kelly's Art & Photo Boutique:
 - built for educational purposes only
 - to create a Site where selection of Art and Photos are displayed,
+- sharing Art made by Developer's kids, and Photos taken by the Developer
 - option for Site users to browse products, search and choose products, 
-- test out purchasing products (without real-time purchase or without any real-time transactions),
-- try to sign up and sign in,
+- test out purchasing products (without real transactions),
+- option to Sign up and Sign in,
 - check out 'How To...?" videos with art lessons by various YouTubers
 - sign up for a Newsletter
+- fill in a Contact form
 
 This website has no real-time commercial intention.
 No real orders, payments or deliveries.
@@ -59,20 +61,23 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 - [JS](#js)
 
 [Testing](#testing)
-- [Favicon](#favicon)
-- [Logo](#logo)
-- [Search](#search)
-  - [Search Bar](#search-bar)
-  - [Search Icon](#search-icon)
-- [My Account](#my-account)
-- [Cart](#cart)
+- [Favicon Test](#favicon-test)
+- [Logo Test](#logo-test)
+- [Search Bar](#search-bar)
 - [NavBar, NavLinks, NavButtons](#navbar-navlinks-navbuttons)
 - [Home Page](#home-page)
 - [All Items](#all-items)
 - [Art](#art)
 - [Photos](#photos)
-- [Social Media](#social-media)
+- [How To...?](#how-to)
+- [Sign In](#sign-in)
+- [Sign Up](#sign-up)
+- [Cart](#cart)
+- [Contact Us](#contact-us)
+- [Newsletter](#newsletter)
 - [Footer](#footer)
+  - [Privacy Policy](#privacy-policy)
+  - [Social Media](#social-media)
 
 [Bugs](#bugs)
 - [Fixed Bugs](#fixed-bugs)
@@ -92,7 +97,7 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 - [Font](#font)
 - [am I responsive](#am-i-responsive)
 - [Wireframes](#wireframes)
-- [Products/Images](#productsimages)
+- [Products/Images](#products-images)
 
 [Acknowledgements](#acknowledgements)
 
@@ -603,7 +608,7 @@ Lighthouse tests with Google developer tools:
   ![Lighthouse test, Newsletter](docs/readme_images/lighthouse_newsletter.png)
 
 
-[Back to Testing](#testing)
+[Back to Validation](#validation)
 
 [Back to Contents](#contents)
 
@@ -625,13 +630,13 @@ Lighthouse tests with Google developer tools:
 
   validated with: [codebeautify](https://codebeautify.org/jsvalidate)
 
-[Back to Testing](#testing)
+[Back to Validation](#validation)
 
 [Back to Contents](#contents)
 
 # Testing
 
-## Favicon
+## Favicon Test
 
 ![Favicon](docs/readme_images/favicon.png)
 
@@ -644,7 +649,7 @@ Lighthouse tests with Google developer tools:
 
 [Back to Contents](#contents)
 
-## Logo
+## Logo Test
 
 ![Logo example on a smaller screen](docs/readme_images/logo_center_smaller_screen.png)
 
@@ -664,9 +669,7 @@ Lighthouse tests with Google developer tools:
 
 [Back to Contents](#contents)
 
-## Search
-
-### Search Bar
+## Search Bar
 
 ![Search Bar](docs/readme_images/search_bar.png)
 
@@ -697,23 +700,6 @@ Color changes when Hovering over Search Button:
 |             | Search option is displayed on all pages of the website                             | as expected |
 |             | User can search Products only: Art & Photos, not rest of the website               | as expected |
 
-### Search Icon
-
-![Search Icon](docs/readme_images/search_icon.png)
-
-| Tested Item | Expected Outcome                                                                   | Outcome     |
-| ----------- | ---------------------------------------------------------------------------------- | ----------- |
-|             |                                                                                    |             |
-| Search Icon | Displayed on smaller screens                                                       | as expected |
-|             | Search icon replaces the Search bar for smaller screens                            | as expected |
-|             | Search icon is clickable                                                           | as expected |
-|             | Displayed between burger-menu and 'My Account' icon                                | as expected |
-|             | Search icon with Search bar below it, is displayed when user clicks on Search icon | as expected |
-|             | Search bar that is displayed, responds same way as Search Bar test results above   | as expected |
-|             | Second click on Search icon, closes Search bar, and only Search icon is displayed  | as expected |
-|             |                                                                                    |             |
-|             | Search option is displayed on all pages of the website                             | as expected |
-|             | User can search Products only: Art & Photos, not rest of the website               | as expected |
 
 [Back to Testing](#testing)
 
