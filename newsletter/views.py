@@ -19,7 +19,6 @@ def newsletter(request):
             form.save()
             messages.info(
                 request, "Subscribed to our Boutique's Newsletter!")
-            
             # Get subscribers email address from the form
             email = request.POST.get("email")
 

@@ -58,7 +58,7 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 - [Lighthouse](#lighthouse)
 - [HTML](#html)
 - [CSS](#css)
-- [JS](#js)
+- [Python](#python)
 
 [Testing](#testing)
 - [Favicon Test](#favicon-test)
@@ -203,33 +203,34 @@ With tutors help, developer fixed robots.txt and sitemap.xml
 
 [Back to Contents](#contents)
 
-# Marketing
+## Marketing
 
-## Facebook Page
+### Facebook Mockup
 
-- Developer set up a mock Facebook page, to demonstrate how it would look:
+- Developer set up Facebook Mockup to show how her site would look in Facebook:
 
-![Facebook Page](docs/readme_images/facebook_page_post_opt_500.jpg)
+![Facebook Mockup](docs/readme_images/facebook_page_post_opt_500.jpg)
 
-- Developer created a reel on Facebook with Stone Art, to show how would advertise for future collections:
+### Facebook Reel
 
-[Facebook Reel](https://youtu.be/F123AhI8RGA)
+- Developer created a [Facebook Reel](https://youtu.be/F123AhI8RGA), with Stone Art, to show one of the options how she would advertise the arrival of a new collection:
 
-  All of the displayed stone Art was created by Developer's daughter Aoife, age 10
+  All of the displayed stone Art in the Reel, was created by Developer's daughter Aoife, age 10
 
 [Back to Contents](#contents)
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
-## Keyword Research
+### Keyword Research
 
 Developer used keywords suitable for the project eg photo, art, boutique, shop, cart
 
-[Back to Contents](#contents)
-
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
-## Similar Businesses
+[Back to Contents](#contents)
+
+
+### Similar Businesses
 
 Developer found the following businesses relevant and interesting:
 
@@ -239,11 +240,12 @@ Developer found the following businesses relevant and interesting:
 
 [Kids and Art](https://kidsandart.org/store-artwork/)
 
-To date Developer did not come across a website with same combination as hers: her photos and her kids art.
+To date Developer did not come across a website with same combination as hers: parent's photos and their kids' art in one online shop.
+
+[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 [Back to Contents](#contents)
 
-[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 # Design
 
@@ -251,7 +253,7 @@ To date Developer did not come across a website with same combination as hers: h
 
 - Background image by the Developer
 
-- Logo image created with Developers kids
+- Logo image created together with Developers kids, using Wireframe and our own photos/art
 
 ## Color
 
@@ -270,8 +272,6 @@ To date Developer did not come across a website with same combination as hers: h
 ## Existing Features
 
 ### Home Page
-
-Kelly's Art & Photo Boutique Home Page:
 
   ![Home Page](docs/readme_images/home_page_boutique_opt_500.png)
 
@@ -463,15 +463,11 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Filter to search products with multiple options eg Stone Art - Birthday - Age 5
 - Option to choose art based on what tools were used eg pencil, paint, water-color, marker, paper, stone, canvas
 
-- Users Username is displayed when signed in
-- Fill in Request Form, what type of Art or Photos User would love to see displayed/made
-- 'How to ...' option in Nav Menu, with selection of videos, articles, tips how to create certain art, 
-  or how certain art pieces were made
+- Username is displayed when signed in
 
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
-- Users can use search box to search all parts of the website, not just products
 
-- User can click on 'Forgot Username/email?", to recover their Username/email, that they used for this website
+- Users can use search box to search all parts of the website, not just products
 
 - Password Reset form would notify User if their email is not registered for an Account. Presently any email address is accepted on Password Reset form 
 
@@ -493,9 +489,9 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   Due to Developer changing Nav bar items around, Search Icon is no longer displayed on smaller screens. Developer is aware this needs to be fixed.
 
-- When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added    beside it.
+- When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added beside it.
 
-- Sign In menu closes after person has signed in. At the moment dropdown stays open even when other nav links are clicked on.
+- Sign In menu to close after person has signed in. At the moment dropdown stays open even when other nav links are clicked on.
 
 !['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
@@ -520,7 +516,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
-- [Code Institute](https://codeinstitute.net/ie/)
+- [Code Institute](https://codeinstitute.net/)
 - [GitHub](https://github.com/)
 - [Gitpod](https://www.gitpod.io/)
 - [VS Code](https://code.visualstudio.com/)
@@ -534,6 +530,13 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 - [Diffchecker](https://www.diffchecker.com/)
 - [Favicon](https://favicon.io/favicon-converter/)
 - [Font Awesome](https://fontawesome.com/icons)
+- [Chat GPT](https://chatgpt.com/)
+
+  Chat GPT only used near the end of the project, to:
+  - fix Newsletter app error. It was not used to generate the code itself
+  - understand why responsiveness test would not work
+
+  ![Chat GPT](docs/readme_images/chat_gpt_check.png)
 
 
 [Back to Contents](#contents)
@@ -594,21 +597,17 @@ Lighthouse tests with Google developer tools:
 
 ## HTML
 
-- ![HTML validator]()
-
-  validated with: [W3C Markup Validation](https://validator.w3.org/)
+- HTML validator test with [W3C Markup Validation](https://validator.w3.org/) failed
 
 ## CSS
 
-- ![CSS validator]()
+- CSS validator validation with [W3C Markup Validation](https://validator.w3.org/) failed
 
-  validated with: [W3C Markup Validation](https://validator.w3.org/)
+## Python
 
-## JS
+- Developer checked some of Python files with [CI Python Linter Test](https://pep8ci.herokuapp.com/)
 
-- ![JS validator]()
-
-  validated with: [codebeautify](https://codebeautify.org/jsvalidate)
+![CI Python Linter test](docs/readme_images/ci_python_linter.png)
 
 [Back to Validation](#validation)
 
@@ -861,8 +860,6 @@ developer realised issue was that categories.json had a field 'author', while in
 - This error/bug also helped Developer to realize, she had added products to Django and hadn't updated categories.json accordingly, to reflect
 changes made via Django Products.
 
-
-
 - Product amounts were not updating in the basket: 
 developer adjusted <div class="input-group-prepend"> and <div class="input-group-append"> in cart.html. 
 
@@ -875,8 +872,6 @@ Button still didn't work, after adusting cart.html, or quantity_input_script.htm
   ![Fixed var plusDisabled](docs/readme_images/fix var plusDisabled.png)
 
 Arrows up and down in Quantity box, worked ok, and increased or decreased Quantity as needed, and Subtotal accordingly.
-
-
 
  
 - nothing in the cart when clicking on add to cart
@@ -916,7 +911,6 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
   ![JSON working ok](docs/readme_images/fixed_pk.png)
 
-
 - Developer noticed Logo had 'Art', while NavLinks had 'Drawings'. Developer replaced 'Drawing' with 'Art' in fixtures: categories.json, in django categories, and in index.html (Home page), and in main.nav html (templates), and then 'Art' was displayed instead of 'Drawings':
 
   ![Before: NavLink 'Drawings' instead of Art](<docs/readme_images/bug, art vs drawings.png>)
@@ -935,6 +929,8 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - Sign In menu closes after person has signed in. At the moment dropdown stays open even when other nav links are clicked on:
 
 !['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
+
+- Search icon not displayed for smaller screens
 
 [Back to Bugs](#bugs)
 
@@ -988,13 +984,13 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 # Credits
 
-## Code
+- CODE
 
-- Code for Kelly's Art & Photo Boutique is mainly based on Code Institute's Walk-through project ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
-The developer has credited Walk-through mainly on top of html files, 
-due to enormous number of files.
+  - Code for Kelly's Art & Photo Boutique is mainly based on Code Institute's Walk-through project ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
+  The developer has credited Walk-through mainly on top of html files, 
+  due to enormous number of files.
 
-- Other projects, that Developer found helpful to make this project, have been credited in some files and below:
+  - Other projects, that Developer found helpful to make this project, have been credited in some files and below:
 
   ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
 
@@ -1006,31 +1002,31 @@ due to enormous number of files.
 
 [Back to Contents](#contents)
 
-## README
+- README
 
-- General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
+  - General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
-- Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-## Icons
-
-- Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
+  - Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
 
 [Back to Credits](#credits)
 
 [Back to Contents](#contents)
 
-## Logo
+- ICONS
 
-- As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
-Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo. Aoife chose colors based on Developer's wish for 'cornflower blue'.
-Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
-Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
-Website's finalised logo:
+  - Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
+
+[Back to Credits](#credits)
+
+[Back to Contents](#contents)
+
+- LOGO
+
+  - As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
+  Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo. Aoife chose colors based on Developer's wish for 'cornflower blue'.
+  Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
+  Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
+  Website's finalised logo:
 
   ![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
 
@@ -1038,11 +1034,11 @@ Website's finalised logo:
 
 [Back to Contents](#contents)
 
-## Font
+- FONT
 
-- Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
+  - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
 
-- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
+  - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
 
   ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
@@ -1051,27 +1047,17 @@ Website's finalised logo:
 [Back to Contents](#contents)
 
 
-## am I responsive
+- WIREFRAMES
 
-- Original responsiveness test/image created with: [am I responsive](https://ui.dev/amiresponsive)
-
-- Numerous attempts to create an up to date responsiveness test, have failed, due to test site failing to connect to the website.
+  - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
 [Back to Credits](#credits)
 
 [Back to Contents](#contents)
 
-## Wireframes
+- PRIVACY POLICY
 
-- Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-## Privacy Policy
-
-- Privacy Policy created based on lessons for Code Institute's walk-through [Boutique Ado](https://github.com/Code-Institute-Solutions/) 
+  - Privacy Policy created based on lessons for Code Institute's walk-through [Boutique Ado](https://github.com/Code-Institute-Solutions/) 
 
   [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy.
 
@@ -1079,22 +1065,22 @@ Website's finalised logo:
 
 [Back to Contents](#contents)
 
-## 'How To ...' app links
+- 'HOW TO...?' LINKS
 
-- Disclaimer: Boutique's admin shared selection of YouTube video links that she or her kids found helpful for creating art. No personal benefit from those or any other youtube channels shared on this website
+  - Disclaimer: Boutique's admin shared selection of YouTube video links that she or her kids found helpful for creating art. No personal benefit from those or any other youtube channels shared on this website
 
 [Back to Credits](#credits)
 
 [Back to Contents](#contents)
 
-# Products/Images
+- PRODUCTS AND IMAGES
 
-- All of the photos used for the website, were taken by the developer
+  - All of the photos used for the website, were taken by the developer
 
-- All of the Art was made by developer's kids, at school, preschool, in art class, or at home
+  - All of the Art was made by developer's kids, at school, preschool, in art class, or at home
 
-- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
-  All converted images have 'opt' in the name to show they were optimized
+  - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
+    All converted images have 'opt' in the name to show they were optimized
 
 [Back to Credits](#credits)
 
@@ -1102,11 +1088,11 @@ Website's finalised logo:
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends, mentor Lauren-Nicole Popich, student care worker Kim, facilitator Kay Welfare, tutors, Slack members, Coursemates, and online content creators.
+- Developer is grateful for any guidance and support provided by her family and friends; mentor Lauren-Nicole Popich; Student Care, especially Kim, facilitator Kay Welfare, tutors, Slack members, and online content creators.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, and for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo. Great team effort.
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo. Great team effort. And for asking Developer to increase prices for their Art. 
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through.
- Developer changed the key and hid it, as advised by her mentor.
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through, where Secret key was hidden at a later stage.
+Developer changed the key asap and hid it, as advised by her mentor.
 
 [Back to Contents](#contents)
