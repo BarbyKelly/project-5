@@ -63,21 +63,9 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 [Testing](#testing)
 - [Favicon Test](#favicon-test)
 - [Logo Test](#logo-test)
-- [Search Bar](#search-bar)
-- [NavBar, NavLinks, NavButtons](#navbar-navlinks-navbuttons)
-- [Home Page](#home-page)
-- [All Items](#all-items)
-- [Art](#art)
-- [Photos](#photos)
-- [How To...?](#how-to)
-- [Sign In](#sign-in)
-- [Sign Up](#sign-up)
-- [Cart](#cart)
-- [Contact Us](#contact-us)
-- [Newsletter](#newsletter)
-- [Footer](#footer)
-  - [Privacy Policy](#privacy-policy)
-  - [Social Media](#social-media)
+- [Search Bar Test](#search-bar-test)
+- [Sign In Test](#sign-in-test)
+- [404 Error Page](#404-error-page)
 
 [Bugs](#bugs)
 - [Fixed Bugs](#fixed-bugs)
@@ -90,14 +78,6 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 [Creating Repository](#creating-repository)
 
 [Credits](#credits)
-- [Code](#code)
-- [README](#readme)
-- [Icons](#icons)
-- [Logo](#logo)
-- [Font](#font)
-- [am I responsive](#am-i-responsive)
-- [Wireframes](#wireframes)
-- [Products/Images](#products-images)
 
 [Acknowledgements](#acknowledgements)
 
@@ -669,9 +649,9 @@ Lighthouse tests with Google developer tools:
 
 [Back to Contents](#contents)
 
-## Search Bar
+## Search Bar Test
 
-![Search Bar](docs/readme_images/search_bar.png)
+![Search Bar Test](docs/readme_images/search_bar.png)
 
 Color changes when Hovering over Search Button:
 
@@ -705,7 +685,7 @@ Color changes when Hovering over Search Button:
 
 [Back to Contents](#contents)
 
-## Sign In page
+## Sign In Test
 
 !['Sign In' form](docs/readme_images/sign_in_form.png)
 
@@ -784,53 +764,6 @@ Color changes when Hovering over Search Button:
 
 [Back to Contents](#contents)
 
-## Cart
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## NavBar, NavLinks, NavButtons
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## Home Page
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## All Items
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## Art
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## Photos
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## Social Media
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
-
-## Footer
-
-[Back to Testing](#testing)
-
-[Back to Contents](#contents)
 
 ## 404 Error Page
 
