@@ -77,6 +77,8 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 
 [Creating Repository](#creating-repository)
 
+[Cloning Repository](#cloning-repository)
+
 [Credits](#credits)
 
 [Acknowledgements](#acknowledgements)
@@ -955,11 +957,8 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 # Forking Repository
 
 - Go to [Github](https://github.com/)
-- If you want to fork one of your own repos, then DO NOT login under your own name, as fork option is not available
-
-  ![How fork looks when logged in](docs/readmeimages/notpossibletofork.png)
-
 - Search Github or Google for the repo that you would like to fork
+  - If it's your own repo, check out steps below for [cloning](#cloning-repository) instead
 - Open the repo you want to fork
 - On the same line as the Repo's name, on the right, click on the arrow beside the Fork
 - Click on: + Create a new fork
@@ -981,6 +980,25 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 - Click on the green button "Create repository"
 
 [Back to Contents](#contents)
+
+
+# Cloning Repository
+
+- Go to GitHub repo that you want to clone
+- You may clone any public Repo of others, or your own private and public repos
+- Click on the green button 'Code'
+- Click beside the url to copy url of the repo
+- Go to VS code
+- Click on 'Source control' on the left side
+- Click on 'Clone Repository'
+- Paste the url and press Enter
+- Select the location/folder where you want to store clone of this repo
+- Ensure name of the folder is different to your previous repo, if you had a folder with that repo already
+- Click on 'Select Repository Location'
+- Click 'Open' if you wish to open cloned repo
+
+  Developer found this [How to clone a repo](https://www.youtube.com/watch?v=ILJ4dfOL7zs) video clear, and helpful, and described steps 
+  of cloning mainly based on this video.
 
 # Credits
 
