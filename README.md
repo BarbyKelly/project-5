@@ -187,7 +187,16 @@ Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
 ## ERD
 
-Not completed to date
+ERD is created as a visualization of the Kelly's Art & Photo Boutique's database structure.
+
+- ERD steps learned from: [LucidChart Tutorial: How to Create an ERD](https://youtu.be/RBZtPhZkUZM?feature=shared)
+
+- [LucidCharts](https://www.lucidchart.com/pages) used to create ERD
+
+- Disclaimer: There may be variations between ERD and the finished database structure of the project.
+
+  ![ERD](docs/readme_images/kelly's_art_and_photo_boutique_erd.png)
+
 
 [Back to Contents](#contents)
 
