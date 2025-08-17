@@ -1,6 +1,5 @@
 <!-- howto.html based on blog: https://github.com/BarbyKelly/blog/blob/main/resources/templates/resources/resources.html -->
 {% extends 'base.html' %}
-{% block content%}
 {% load static %}
 
 {% block page_header %}
@@ -11,10 +10,11 @@
     </div>
 {% endblock %}
 
-{% for howto in howto %}
-<body class="h-100 main-bg">
-<div class="container-fluid text-center text-black d-flex flex mt-1 mb-1" style="padding-bottom: 10px;">
-    <div class="col-lg-4 flex ml-5 mr-5" style="background-color: #FFFFFF; padding-left: .1rem; padding-right: .1rem;">
+{% block content%}
+<main class="h-100 main-bg pt-5">
+    {% for howto in howto %}
+    <div class="container-fluid text-center text-black d-flex flex mt-5 mb-5">
+        <div class="col-lg-4 flex" style="background-color: #FFFFFF;">
         <hr>
         <div class="row"></div>
         <!-- Title -->
@@ -25,6 +25,6 @@
     </div>
 </div>
 {% endfor %}
-
-</body>
+    </div>
+</main>
 {% endblock content %}

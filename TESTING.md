@@ -14,7 +14,7 @@
 
 - [How To ...?](#how-to-page-testing)
 
-- [Sign In](#sign-in-testing)
+- [Sign In](#sign-in-page-testing)
 
    - [Admin Sign In](#admin-sign-in-page-testing)
 
@@ -114,11 +114,37 @@ Color changes when Hovering over Search Button:
 
 [Back to the List](#list-of-parts-tested)
 
+
 ### 'How To...?' Page Testing
+
+| Tested Item | Expected Outcome                                                            | Outcome     |
+| ----------- | --------------------------------------------------------------------------- | ----------- |
+| How To Page | 'How To...?' page opens when the user clicks on the NavLink 'How To ...?'   | as expected |
+|             | Website's background image is displayed behind the links at all times       | as expected |
+|             | Responsive to different screen sizes                                        | as expected |
+|             | 'How To...?' NavLink remains the same color and style as rest of the Navbar | as expected |
+|             | Website's Logo is displayed on top left for larger screens,                 | as expected |
+|             | and in the middle for smaller screens.                                      | as expected |
+|             | Search bar is displayed in the middle for larger screens                    | as expected |
+|             | All Navbar items are displayed on larger screens, below Logo                | as expected |
+|             | Collapsed Navbar Menu displayed on the left for smaller screens             | as expected |
+|             | 'How To...?' boxes are displayed on the left for larger screens,            | as expected |
+|             | and in the middle for smaller screens.                                      | as expected |
+|             | Footer is displayed at the bottom on all screen sizes,                      | as expected |
+|             | on smaller screen might need to scroll to see Footer                        | as expected |
+|             |                                                                             |             |
+|             | Each 'How To...?' link is displayed in a separate box                       | as expected |
+|             | All video links are displayed in blue                                       | as expected |
+|             | Line appears below the link when pointer is on the link                     | as expected |
+|             | 'How To...?' video links are clickable                                      | as expected |
+|             | Click on each 'How To...?' link opens the appropriate video                 | as expected |
+|             | Videos open in a new tab                                                    | as expected |
+|             | 'How To...?' page remains open in a previous tab                            | as expected |
+
 
 [Back to the List](#list-of-parts-tested)
 
-### Sign In Testing
+### Sign In Page Testing
 
 !['Sign In' form](docs/readme_images/sign_in_form.png)
 
@@ -141,16 +167,16 @@ Color changes when Hovering over Search Button:
 |             | Click on Checkbox ticks the box                                                     | as expected |
 |             | Checkbox can be ticked multiple times                                               | as expected |
 |             | User may remove tick before submitting the form                                     | as expected |
-|             |                                                                                     |             |       
-|             | 'Sign In' button is clickable                                                       | as expected |  
+|             |                                                                                     |             |
+|             | 'Sign In' button is clickable                                                       | as expected |
 |             | Hovering over 'Sign In' button, changes color of the button                         | as expected |
 |             | Click on 'Sign In' button Signs User in, if entered details are correct             | as expected |
 |             | If either of the required fields is left empty, "Please fill in this field" pops up | as expected |
 |             | If entered details are incorrect, pop up is displayed:                              | as expected |
 |             | "The username and/or password you specified are not correct"                        | as expected |
-|             | User may enter details again, and try to 'Sign In' again                            | as expected |   
-|             |                                                       |             |
-|             | 'Home' button is displayed on the left of 'Sign In' button                          | as expected |         
+|             | User may enter details again, and try to 'Sign In' again                            | as expected |
+|             |                                                                                     |             |
+|             | 'Home' button is displayed on the left of 'Sign In' button                          | as expected |
 |             | 'Home' button is clickable                                                          | as expected |
 |             | Hovering over 'Home' button, changes color of the button                            | as expected |
 |             | Click on 'Home' button opens Home Page                                              | as expected |
@@ -162,17 +188,17 @@ Color changes when Hovering over Search Button:
 |             | Placeholder is no longer displayed, when first character is entered in e-mail box   | as expected |
 |             | E-mail box is a required field                                                      | as expected |
 |             |                                                                                     |             |
-|             | If User omits '@' from the email address, pop up is displayed:                      |             |  
-|             | "Please include an '@' in the email address. 'x' is missing an '@' "                | as expected |  
+|             | If User omits '@' from the email address, pop up is displayed:                      |             |
+|             | "Please include an '@' in the email address. 'x' is missing an '@' "                | as expected |
 |             |                                                                                     |             |
 |             | "Please fill in this field" is displayed if User clicks on 'Reset My Password' and  |             |
 |             | has not typed any characters in e-mail box                                          | as expected |
 |             |                                                                                     |             |
-|             | If User omits any characters after '@' in the email address, pop up is displayed:   |             |  
-|             | "Please enter a part following '@'. 'x@' is incomplete."                            | as expected |  
+|             | If User omits any characters after '@' in the email address, pop up is displayed:   |             |
+|             | "Please enter a part following '@'. 'x@' is incomplete."                            | as expected |
 |             |                                                                                     |             |
-|             | If User type in one character before '@', and one after in the e-mail box,          |             |  
-|             | "Enter a valid email address" is displayed below the e-mail box                     | as expected |  
+|             | If User type in one character before '@', and one after in the e-mail box,          |             |
+|             | "Enter a valid email address" is displayed below the e-mail box                     | as expected |
 |             |                                                                                     |             |
 |             | User can fill the 'Password Reset' form even if they don't have an account          | as expected |
 |             | Only User with an account and valid email address,                                  |             |
@@ -182,15 +208,15 @@ Color changes when Hovering over Search Button:
 |             |                                                                                     |             |
 |             | If entered email address meets the requirements,                                    |             |
 |             | and User has clicked on 'Reset My Password' button, message appears:                |             |
-|             | "We have sent you an e-mail. If you have not received your Password Reset email,    | as expected |  
-|             | please check your spam folder. Otherwise contact us"                                |             |  
+|             | "We have sent you an e-mail. If you have not received your Password Reset email,    | as expected |
+|             | please check your spam folder. Otherwise contact us"                                |             |
 |             |                                                                                     |             |
 |             | 'Back to Sign In' button is displayed beside 'Reset My Password' button             | as expected |
 |             | 'Back to Sign In' button is clickable                                               | as expected |
 |             | Hovering on the 'Back to Sign In' button, changes the color of the button           | as expected |
 |             | Click on 'Back to Sign In' button opens up 'Sign In' form                           | as expected |
 |             |                                                                                     |             |
-|             | Second click on 'My Account' closes dropdown menu                                   | as expected |  
+|             | Second click on 'My Account' closes dropdown menu                                   | as expected |
        
 
 [Back to the List](#list-of-parts-tested)
@@ -234,6 +260,8 @@ Color changes when Hovering over Search Button:
 [Back to the List](#list-of-parts-tested)
 
 ### Footer
+
+
 
 [Back to the List](#list-of-parts-tested)
 

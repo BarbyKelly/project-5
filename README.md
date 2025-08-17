@@ -164,6 +164,8 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 
 Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
+Disclaimer: There may be variations between Wireframes and the finished project.
+
 ## Home Page
 
 ![Wireframe, Homepage](docs/readme_images/home_page_wireframe_boutique_opt_50.png)
