@@ -128,10 +128,7 @@ Color changes when Hovering over Search Button:
 |             | Search bar is displayed in the middle for larger screens                    | as expected |
 |             | All Navbar items are displayed on larger screens, below Logo                | as expected |
 |             | Collapsed Navbar Menu displayed on the left for smaller screens             | as expected |
-|             | 'How To...?' boxes are displayed on the left for larger screens,            | as expected |
-|             | and in the middle for smaller screens.                                      | as expected |
-|             | Footer is displayed at the bottom on all screen sizes,                      | as expected |
-|             | on smaller screen might need to scroll to see Footer                        | as expected |
+|             | 'How To...?' boxes are displayed in the center of the screen                | as expected |
 |             |                                                                             |             |
 |             | Each 'How To...?' link is displayed in a separate box                       | as expected |
 |             | All video links are displayed in blue                                       | as expected |
@@ -140,6 +137,9 @@ Color changes when Hovering over Search Button:
 |             | Click on each 'How To...?' link opens the appropriate video                 | as expected |
 |             | Videos open in a new tab                                                    | as expected |
 |             | 'How To...?' page remains open in a previous tab                            | as expected |
+|             |                                                                             |             |
+|             | Footer is displayed at the bottom on all screen sizes,                      | as expected |
+|             | on smaller screen might need to scroll to see Footer                        | as expected |
 
 
 [Back to the List](#list-of-parts-tested)

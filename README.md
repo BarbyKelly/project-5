@@ -501,6 +501,8 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 !['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
+- Links in 'How To ...?' to include lessons how to take better photos
+
 [Back to Features](#features)
 
 [Back to Contents](#contents)
