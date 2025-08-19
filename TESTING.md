@@ -34,8 +34,6 @@
 
 - [Newsletter](#newsletter-page-testing)
 
-- [Footer](#footer)
-
 - [404 Error Page](#404-error-page-testing)
 
 
@@ -155,8 +153,8 @@ Color changes when Hovering over Search Button:
 |             | Click on 'Sign In' opens 'Sign In' form                                             | as expected |
 |             | 'Sign Up first' option is displayed below the heading                               | as expected |
 |             | Placeholder 'Username or e-mail' is displayed in top box                            | as expected |
-|             | Placeholder 'Password' is displayed in a Password box                               | as expected |
-|             | User can type in 'Username or e-mail' and 'Password' box                            | as expected |
+|             | Placeholder 'Password' is displayed in a Password field                             | as expected |
+|             | User can type in 'Username or e-mail' and 'Password' field                          | as expected |
 |             | Placeholder is no longer displayed, when User enters one character                  | as expected |
 |             | 'Username or e-mail' and 'Password' are required fields                             | as expected |
 |             | If either of the required fields have no character typed in,                        | as expected |
@@ -184,21 +182,21 @@ Color changes when Hovering over Search Button:
 |             | 'Forgot Your Password?' is displayed below 'Home' and 'Sign In' buttons             | as expected |
 |             | 'Forgot Your Password?' is clickable                                                | as expected |
 |             | Click on 'Forgot Your Password?' opens up 'Password Reset' form                     | as expected |
-|             | Placeholder is displayed in 'E-mail' address box                                    | as expected |
-|             | Placeholder is no longer displayed, when first character is entered in e-mail box   | as expected |
-|             | E-mail box is a required field                                                      | as expected |
+|             | Placeholder is displayed in 'E-mail' address field                                  | as expected |
+|             | Placeholder is no longer displayed, when first character is entered in e-mail field | as expected |
+|             | E-mail field is a required field                                                    | as expected |
 |             |                                                                                     |             |
 |             | If User omits '@' from the email address, pop up is displayed:                      |             |
 |             | "Please include an '@' in the email address. 'x' is missing an '@' "                | as expected |
 |             |                                                                                     |             |
 |             | "Please fill in this field" is displayed if User clicks on 'Reset My Password' and  |             |
-|             | has not typed any characters in e-mail box                                          | as expected |
+|             | has not typed any characters in e-mail field                                        | as expected |
 |             |                                                                                     |             |
 |             | If User omits any characters after '@' in the email address, pop up is displayed:   |             |
 |             | "Please enter a part following '@'. 'x@' is incomplete."                            | as expected |
 |             |                                                                                     |             |
-|             | If User type in one character before '@', and one after in the e-mail box,          |             |
-|             | "Enter a valid email address" is displayed below the e-mail box                     | as expected |
+|             | If User type in one character before '@', and one after in the e-mail field,        |             |
+|             | "Enter a valid email address" is displayed below the e-mail field                   | as expected |
 |             |                                                                                     |             |
 |             | User can fill the 'Password Reset' form even if they don't have an account          | as expected |
 |             | Only User with an account and valid email address,                                  |             |
@@ -255,15 +253,83 @@ Color changes when Hovering over Search Button:
 
 [Back to the List](#list-of-parts-tested)
 
+
 ### Newsletter Page Testing
 
+| Tested Item      | Expected Outcome                                                                     | Outcome     |
+| ---------------- | ------------------------------------------------------------------------------------ | ----------- |
+| Newsletter Page  | Newsletter Page opens when user clicks on the NavLink 'Newsletter' via Navbar,       | as expected |
+|                  | or via Side Menu on smaller screens                                                  | as expected |
+|                  |                                                                                      |             |
+|                  | White background is displayed behind the 'Subscription Form'                         | as expected |
+|                  | Page is responsive on different screen sizes                                         | as expected |
+|                  | Newsletter NavLink remains the same color and style as rest of the navbar items,     | as expected |
+|                  | the Newsletter link in Side Menu, remains the same color as other menu items.        | as expected |
+|                  |                                                                                      |             |
+|                  | Website's Logo is displayed on top left for larger screens,                          | as expected |
+|                  | and in the middle for smaller screens.                                               | as expected |
+|                  | Search bar is displayed in the middle for larger screens                             | as expected |
+|                  | No search bar or search icon for smaller screens                                     | as expected |
+|                  | All Navbar items are displayed below the Logo on larger screens,                     | as expected |
+|                  | and replaced by Side Menu on smaller screens                                         | as expected |
+|                  |                                                                                      |             |
+| Subscription     | Subscription form is displayed in the centre of the page,                            | as expected |
+| Form             | for all screen sizes,                                                                | as expected |
+|                  | except when Side Menu is open on smaller screens,                                    | as expected |
+|                  | then only bottom part of Subscription form is displayed,                             | as expected |
+|                  | while the Side Menu remains open.                                                    | as expected |
+|                  | Newsletter form is fully displayed again, when User clicks on the Newsletter         |             |
+|                  | in the Side Menu.                                                                    | as expected |
+|                  |                                                                                      |             |
+|                  | 'Subscribe to Our Newsletter' heading is displayed on top of the form                | as expected |
+|                  | Instructions for form filling are displayed below the heading                        | as expected |
+|                  |                                                                                      |             |
+|                  | Email field is displayed below the instructions                                      | as expected |
+|                  | * indicates 'Email' field is mandatory if User wants to Subscribe                    | as expected |
+|                  | User may type in 'Email field'                                                       | as expected |
+|                  | Placeholder 'Please enter your email' is displayed in 'Email field' when             | as expected |
+|                  | User has not typed any character in the 'Email field'.                               | as expected |
+|                  | Placeholder is no longer displayed, when User types a character in the 'Email field' | as expected |
+|                  | Placeholder reappears if User has deleted all of the characters in 'Email field'     | as expected |
+|                  |                                                                                      |             |
+| Email Format     | If User leaves mandatory field empty, and clicks on 'Subscribe',                     |             |
+| Validation       | 'Please fill in this field' pops up.                                                 | as expected |
+|                  |                                                                                      |             |
+|                  | If User types eg '124' in email field, and clicks 'Subscribe', pop up:               |             |
+|                  | "Please include an '@' in the email address.                                         | as expected |
+|                  | '124' is missing an '@' ", is displayed                                              | as expected |
+|                  |                                                                                      |             |
+|                  | If User types eg '124@' in email field, pop up is displayed:                         |             |
+|                  | "Please enter a part following '@'.'124@' is incomplete".                            | as expected |
+|                  |                                                                                      |             |
+
+|                  |                                                                                      |             |
+|                  | When User clicks away from 'Email field', pop-up is no longer displayed.             | as expected |
+|                  |                                                                                      |             |
+|                  | When User enters a valid email address,                                              |             |
+|                  | Newsletter Page remains on display,                                                  | as expected |
+|                  | and the Email* field is refreshed, with placeholder displayed in the 'Email field',  | as expected |
+|                  | Users email address is not displayed after confirmation pop-up.                      | as expected |
+|                  | Alert: "Subscribed to our Boutique's Newsletter!" pops up, top right,                | as expected |
+|                  | User may click on 'x' to close the pop up,                                           | as expected |
+|                  | or click on any NavLinks, form buttons to close the pop up.                          | as expected |
+|                  | Click on empty space will not close the pop up.                                      | as expected |
+|                  | User receives an email confirming subscription.                                      | as expected |
+|                  |                                                                                      |             |
+|'Back to Boutique'| 'Back to Boutique' button is displayed below Email* field, and                       | as expected |
+|button            | button changes color when a pointer is on it.                                        | as expected |
+|                  | Click on 'Back to Boutique' button opens up Boutique's Home page                     | as expected |
+|                  | 'Back to Boutique' button is displayed on the left of 'Subscribe' button,            | as expected |
+|                  | on larger screens.                                                                   | as expected |
+|                  | On smallest screens, 'Subscribe' button is below 'Back to Boutique' button           | as expected |
+|                  |                                                                                      |             |
+| 'Subscribe'      | 'Subscribe' button is displayed below Email* field                                   | as expected |
+| button           | 'Subscribe' button changes color when pointer is on it                               | as expected |
+|                  |                                                                                      |             |
+|                  | Footer is displayed at the bottom on all screen sizes                                | as expected |
+
 [Back to the List](#list-of-parts-tested)
 
-### Footer
-
-
-
-[Back to the List](#list-of-parts-tested)
 
 ### 404 Error Page Testing
 

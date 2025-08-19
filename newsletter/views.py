@@ -17,7 +17,7 @@ def newsletter(request):
         form = SubscriptionForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.info(
+            messages.success(
                 request, "Subscribed to our Boutique's Newsletter!")
             # Get subscribers email address from the form
             email = request.POST.get("email")
@@ -26,7 +26,7 @@ def newsletter(request):
             subject = "Kelly's Art & Photo Boutique"
             message = (
                 "Thank you for subscribing to Boutique's newsletter,"
-                "our latest products and news will be sent by email"
+                "our latest products and news will be sent by email."
                 "Please feel free to check out our page:"
                 "https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/"
             )
