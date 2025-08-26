@@ -251,82 +251,80 @@ Color changes when Hovering over Search Button:
 
 ### Contact Us Page Testing
 
+| Tested Item      | Expected Outcome                                                                       | Outcome     |
+| ---------------- | -------------------------------------------------------------------------------------- |------------ |
+| Contact Us       | 'Contact Us' page opens when user clicks on the NavLink 'Contact Us'                   | as expected |
+| Page             | or when 'Contact Us' link clicked via Side Menu (on smaller screens)                   | as expected |
+|                  |                                                                                        |             |
+|                  | Website's background image is not displayed behind the page                            | as expected |
+|                  | Page is Responsive to different screen sizes                                           | as expected |
+|                  | 'Contact Us' NavLink remains the same color and style as rest of the Navbar            | as expected |
+|                  | Website's Logo is displayed on top left for larger screens,                            | as expected |
+|                  | and in the middle for smaller screens.                                                 | as expected |
+|                  | Search bar is displayed in the middle for larger screens                               | as expected |
+|                  | All Navbar items are displayed on larger screens, below Logo                           | as expected |
+|                  | Collapsed Navbar Menu displayed on the left for smaller screens                        | as expected |
+|                  |                                                                                        |             |
+| Form             | Form is centered on all screen sizes                                                   | as expected |
+| "Contact Our     | Form is responsive to various screen sizes                                             | as expected |
+| Boutique"        | Heading "Contact Our Boutique" is displayed above the form                             | as expected |
+|                  | Guideline is displayed below the heading                                               | as expected |
+|                  | Full Name, Email Address, Subject and Message fields are displayed                     | as expected |
+|                  | All fields are mandatory                                                               | as expected |
+|                  | All mandatory fields are marked with an asterisk                                       | as expected |
+|                  |                                                                                        |             |
+| Message box      | Maximum 400 characters long                                                            | as expected |
+|                  | User may use arrows to scroll up and down within Message box, if text is longer        | as expected |
+|                  |                                                                                        |             |
+| Buttons          | 'Back to Boutique' and 'Submit Contact Form' buttons are displayed                     | as expected |
+|                  | at the bottom of the form                                                              | as expected |
+|                  |                                                                                        |             |
+|'Back to Boutique'| Displayed below Message* box, and                                                      | as expected |
+|button            | button changes color when a pointer is on it.                                          | as expected |
+|                  | Click on 'Back to Boutique' button opens up Boutique's Home page                       | as expected |
+|                  | Displayed on the left of the 'Submit Contact Form' button, on larger screens.          | as expected |
+|                  | On smaller screens, displayed below 'Back to Boutique' button                          | as expected |
+|                  |                                                                                        |             |
+| 'Submit Contact  | Displayed below Message* box                                                           | as expected |
+|  Form' button    | Button changes color when pointer is on it                                             | as expected |
+|                  | If all mandatory fields have a character in them, and email address is valid,          |             |
+|                  | click on 'Submit Contact Form' button submits the form                                 | as expected |
+|                  |                                                                                        |             |
+| Format           | If User leaves any mandatory field empty, and clicks on 'Submit Contact Form',         |             |
+| Validation       | 'Please fill in this field' pops up, near the mandatory field that was left empty.     | as expected |
+|                  |                                                                                        |             |
+|                  | If User types eg '124' in email box, and clicks 'Submit Contact Form', pop up:         |             |
+|                  | "Please include an '@' in the email address.                                           | as expected |
+|                  | '124' is missing an '@' ", is displayed                                                | as expected |
+|                  |                                                                                        |             |
+|                  | If User types eg '124@' in email box, pop up is displayed:                             |             |
+|                  | "Please enter a part following '@'.'124@' is incomplete".                              | as expected |
+|                  |                                                                                        |             |
+|                  | If User types eg '124@5.' in email field, pop up is displayed:                         | as expected |
+|                  | " '.' is used at a wrong position in '5'."                                             | as expected |
+|                  |                                                                                        |             |
+|                  | When User enters a valid email address,                                                |             |
+|                  | and User has entered at least one character in all other fields,                       | as expected |
+|                  | 'Contact Us' Page is no longer displayed.                                              | as expected |
+|                  | Instead, confirmation message is displayed:                                            | as expected |
+|                  | 'Thank you. Your message was submitted. We hope to reply within 3 working days.'       | as expected |
+|                  | Confirmation is in a different color than Navbar and the Button                        | as expected |
+|                  | 'Back to Boutique' button is displayed below the confirmation                          | as expected |
+|                  | When a pointer is on 'Back to Boutique' button, it changes color                       | as expected |
+|                  | Click on 'Back to Boutique' button brings user back to Home page                       | as expected |
+|                  | No instant email confirmation sent to User                                             | as expected |
+|                  |                                                                                        |             |
+|                  | Footer is displayed below the form, at the bottom of the screen,                       | as expected |
+|                  | on smaller screens User might need to scroll for Footer to appear                      | as expected |
+
+
+
 [Back to the List](#list-of-parts-tested)
 
 
 ### Newsletter Page Testing
 
-| Tested Item      | Expected Outcome                                                                     | Outcome     |
-| ---------------- | ------------------------------------------------------------------------------------ | ----------- |
-| Newsletter Page  | Newsletter Page opens when user clicks on the NavLink 'Newsletter' via Navbar,       | as expected |
-|                  | or via Side Menu on smaller screens                                                  | as expected |
-|                  |                                                                                      |             |
-|                  | White background is displayed behind the 'Subscription Form'                         | as expected |
-|                  | Page is responsive on different screen sizes                                         | as expected |
-|                  | Newsletter NavLink remains the same color and style as rest of the navbar items,     | as expected |
-|                  | the Newsletter link in Side Menu, remains the same color as other menu items.        | as expected |
-|                  |                                                                                      |             |
-|                  | Website's Logo is displayed on top left for larger screens,                          | as expected |
-|                  | and in the middle for smaller screens.                                               | as expected |
-|                  | Search bar is displayed in the middle for larger screens                             | as expected |
-|                  | No search bar or search icon for smaller screens                                     | as expected |
-|                  | All Navbar items are displayed below the Logo on larger screens,                     | as expected |
-|                  | and replaced by Side Menu on smaller screens                                         | as expected |
-|                  |                                                                                      |             |
-| Subscription     | Subscription form is displayed in the centre of the page,                            | as expected |
-| Form             | for all screen sizes,                                                                | as expected |
-|                  | except when Side Menu is open on smaller screens,                                    | as expected |
-|                  | then only bottom part of Subscription form is displayed,                             | as expected |
-|                  | while the Side Menu remains open.                                                    | as expected |
-|                  | Newsletter form is fully displayed again, when User clicks on the Newsletter         |             |
-|                  | in the Side Menu.                                                                    | as expected |
-|                  |                                                                                      |             |
-|                  | 'Subscribe to Our Newsletter' heading is displayed on top of the form                | as expected |
-|                  | Instructions for form filling are displayed below the heading                        | as expected |
-|                  |                                                                                      |             |
-|                  | Email field is displayed below the instructions                                      | as expected |
-|                  | * indicates 'Email' field is mandatory if User wants to Subscribe                    | as expected |
-|                  | User may type in 'Email field'                                                       | as expected |
-|                  | Placeholder 'Please enter your email' is displayed in 'Email field' when             | as expected |
-|                  | User has not typed any character in the 'Email field'.                               | as expected |
-|                  | Placeholder is no longer displayed, when User types a character in the 'Email field' | as expected |
-|                  | Placeholder reappears if User has deleted all of the characters in 'Email field'     | as expected |
-|                  |                                                                                      |             |
-| Email Format     | If User leaves mandatory field empty, and clicks on 'Subscribe',                     |             |
-| Validation       | 'Please fill in this field' pops up.                                                 | as expected |
-|                  |                                                                                      |             |
-|                  | If User types eg '124' in email field, and clicks 'Subscribe', pop up:               |             |
-|                  | "Please include an '@' in the email address.                                         | as expected |
-|                  | '124' is missing an '@' ", is displayed                                              | as expected |
-|                  |                                                                                      |             |
-|                  | If User types eg '124@' in email field, pop up is displayed:                         |             |
-|                  | "Please enter a part following '@'.'124@' is incomplete".                            | as expected |
-|                  |                                                                                      |             |
 
-|                  |                                                                                      |             |
-|                  | When User clicks away from 'Email field', pop-up is no longer displayed.             | as expected |
-|                  |                                                                                      |             |
-|                  | When User enters a valid email address,                                              |             |
-|                  | Newsletter Page remains on display,                                                  | as expected |
-|                  | and the Email* field is refreshed, with placeholder displayed in the 'Email field',  | as expected |
-|                  | Users email address is not displayed after confirmation pop-up.                      | as expected |
-|                  | Alert: "Subscribed to our Boutique's Newsletter!" pops up, top right,                | as expected |
-|                  | User may click on 'x' to close the pop up,                                           | as expected |
-|                  | or click on any NavLinks, form buttons to close the pop up.                          | as expected |
-|                  | Click on empty space will not close the pop up.                                      | as expected |
-|                  | User receives an email confirming subscription.                                      | as expected |
-|                  |                                                                                      |             |
-|'Back to Boutique'| 'Back to Boutique' button is displayed below Email* field, and                       | as expected |
-|button            | button changes color when a pointer is on it.                                        | as expected |
-|                  | Click on 'Back to Boutique' button opens up Boutique's Home page                     | as expected |
-|                  | 'Back to Boutique' button is displayed on the left of 'Subscribe' button,            | as expected |
-|                  | on larger screens.                                                                   | as expected |
-|                  | On smallest screens, 'Subscribe' button is below 'Back to Boutique' button           | as expected |
-|                  |                                                                                      |             |
-| 'Subscribe'      | 'Subscribe' button is displayed below Email* field                                   | as expected |
-| button           | 'Subscribe' button changes color when pointer is on it                               | as expected |
-|                  |                                                                                      |             |
-|                  | Footer is displayed at the bottom on all screen sizes                                | as expected |
 
 [Back to the List](#list-of-parts-tested)
 

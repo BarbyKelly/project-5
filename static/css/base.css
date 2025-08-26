@@ -199,6 +199,20 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
+/* Submit form styling. To reduce the size of the message box on the screen */
+/* So user can see buttons at all times on most screens. Learned from Chat gpt */
+textarea[name="message"] {
+    height: 70px;
+    max-height: 150px;
+    overflow-y: auto;
+    resize: vertical;
+}
+
+.logo-font {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* ------- Convenience Classes from Boutique Ado(colors copied from Bootstrap), edited by developer ------ */
 .arrow-primary {
     border-bottom-color: cornflowerblue !important;
@@ -361,6 +375,10 @@ footer {
   .navbar {
     font-size: medium;
   }
+
+  .logo-font {
+        font-size: 1.3rem;
+    }
 }
 
 /* Media Queries for 'S' screens (landscape phones, tablets less than 768px) */
@@ -368,6 +386,10 @@ footer {
   .container {
     max-width: 750px;
   }
+
+  .logo-font {
+        font-size: 1.5rem;
+    }
 }
 
 /* Top navbar fix on Medium and up screens */
@@ -382,6 +404,10 @@ footer {
 
     .header-container {
         padding-top: 50px;
+    }
+
+    .logo-font {
+        font-size: 1.7rem;
     }
 }
 
@@ -422,6 +448,10 @@ footer {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
+
+    .logo-font {
+        font-size: 2rem;
+    }
 }
 
 /* Media Queries for 'L' screens (desktops, less than 1200px */
@@ -429,6 +459,10 @@ footer {
   .container {
     max-width: 1150px;
   }
+
+  .logo-font {
+        font-size: 2.1rem;
+    }
 }
 
 /* Media Queries for 'XL' screens (large desktops, less than 1400px */
@@ -441,6 +475,10 @@ footer {
     font-size: large;
     min-width: 200px;
   }  
+
+  .logo-font {
+        font-size: 2.3rem;
+    }
 }
 
 /* Media Queries for 'XXL' screens (large desktops, more than 1400px */
@@ -452,5 +490,77 @@ footer {
   .click-here-to-shop-button {
     font-size: large;
     min-width: 200px;
-  }  
+  }
+
+  .logo-font {
+        font-size: 2.6rem;
+    }
 }
+
+/* Bootstrap 5 vs Bootstrap 4.6.2 spacing, copied from ChatGPT to avoid version differences breaking the code */
+/* Bootstrap 5 spacing aliases for Bootstrap 4.6.2 (including responsive) */
+
+/* Margin Start (ms-*) → Margin Left (ml-*) */
+[class*="ms-0"]  { margin-left: 0 !important; }
+[class*="ms-1"]  { margin-left: .25rem !important; }
+[class*="ms-2"]  { margin-left: .5rem !important; }
+[class*="ms-3"]  { margin-left: 1rem !important; }
+[class*="ms-4"]  { margin-left: 1.5rem !important; }
+[class*="ms-5"]  { margin-left: 3rem !important; }
+
+/* Margin End (me-*) → Margin Right (mr-*) */
+[class*="me-0"]  { margin-right: 0 !important; }
+[class*="me-1"]  { margin-right: .25rem !important; }
+[class*="me-2"]  { margin-right: .5rem !important; }
+[class*="me-3"]  { margin-right: 1rem !important; }
+[class*="me-4"]  { margin-right: 1.5rem !important; }
+[class*="me-5"]  { margin-right: 3rem !important; }
+
+/* Padding Start (ps-*) → Padding Left (pl-*) */
+[class*="ps-0"]  { padding-left: 0 !important; }
+[class*="ps-1"]  { padding-left: .25rem !important; }
+[class*="ps-2"]  { padding-left: .5rem !important; }
+[class*="ps-3"]  { padding-left: 1rem !important; }
+[class*="ps-4"]  { padding-left: 1.5rem !important; }
+[class*="ps-5"]  { padding-left: 3rem !important; }
+
+/* Padding End (pe-*) → Padding Right (pr-*) */
+[class*="pe-0"]  { padding-right: 0 !important; }
+[class*="pe-1"]  { padding-right: .25rem !important; }
+[class*="pe-2"]  { padding-right: .5rem !important; }
+[class*="pe-3"]  { padding-right: 1rem !important; }
+[class*="pe-4"]  { padding-right: 1.5rem !important; }
+[class*="pe-5"]  { padding-right: 3rem !important; }
+
+
+/* Margin Start (ms-*) → Margin Left (ml-*) */
+.ms-0, .ms-sm-0, .ms-md-0, .ms-lg-0, .ms-xl-0, .ms-xxl-0 { margin-left: 0 !important; }
+.ms-1, .ms-sm-1, .ms-md-1, .ms-lg-1, .ms-xl-1, .ms-xxl-1 { margin-left: .25rem !important; }
+.ms-2, .ms-sm-2, .ms-md-2, .ms-lg-2, .ms-xl-2, .ms-xxl-2 { margin-left: .5rem !important; }
+.ms-3, .ms-sm-3, .ms-md-3, .ms-lg-3, .ms-xl-3, .ms-xxl-3 { margin-left: 1rem !important; }
+.ms-4, .ms-sm-4, .ms-md-4, .ms-lg-4, .ms-xl-4, .ms-xxl-4 { margin-left: 1.5rem !important; }
+.ms-5, .ms-sm-5, .ms-md-5, .ms-lg-5, .ms-xl-5, .ms-xxl-5 { margin-left: 3rem !important; }
+
+/* Margin End (me-*) → Margin Right (mr-*) */
+.me-0, .me-sm-0, .me-md-0, .me-lg-0, .me-xl-0, .me-xxl-0 { margin-right: 0 !important; }
+.me-1, .me-sm-1, .me-md-1, .me-lg-1, .me-xl-1, .me-xxl-1 { margin-right: .25rem !important; }
+.me-2, .me-sm-2, .me-md-2, .me-lg-2, .me-xl-2, .me-xxl-2 { margin-right: .5rem !important; }
+.me-3, .me-sm-3, .me-md-3, .me-lg-3, .me-xl-3, .me-xxl-3 { margin-right: 1rem !important; }
+.me-4, .me-sm-4, .me-md-4, .me-lg-4, .me-xl-4, .me-xxl-4 { margin-right: 1.5rem !important; }
+.me-5, .me-sm-5, .me-md-5, .me-lg-5, .me-xl-5, .me-xxl-5 { margin-right: 3rem !important; }
+
+/* Padding Start (ps-*) → Padding Left (pl-*) */
+.ps-0, .ps-sm-0, .ps-md-0, .ps-lg-0, .ps-xl-0, .ps-xxl-0 { padding-left: 0 !important; }
+.ps-1, .ps-sm-1, .ps-md-1, .ps-lg-1, .ps-xl-1, .ps-xxl-1 { padding-left: .25rem !important; }
+.ps-2, .ps-sm-2, .ps-md-2, .ps-lg-2, .ps-xl-2, .ps-xxl-2 { padding-left: .5rem !important; }
+.ps-3, .ps-sm-3, .ps-md-3, .ps-lg-3, .ps-xl-3, .ps-xxl-3 { padding-left: 1rem !important; }
+.ps-4, .ps-sm-4, .ps-md-4, .ps-lg-4, .ps-xl-4, .ps-xxl-4 { padding-left: 1.5rem !important; }
+.ps-5, .ps-sm-5, .ps-md-5, .ps-lg-5, .ps-xl-5, .ps-xxl-5 { padding-left: 3rem !important; }
+
+/* Padding End (pe-*) → Padding Right (pr-*) */
+.pe-0, .pe-sm-0, .pe-md-0, .pe-lg-0, .pe-xl-0, .pe-xxl-0 { padding-right: 0 !important; }
+.pe-1, .pe-sm-1, .pe-md-1, .pe-lg-1, .pe-xl-1, .pe-xxl-1 { padding-right: .25rem !important; }
+.pe-2, .pe-sm-2, .pe-md-2, .pe-lg-2, .pe-xl-2, .pe-xxl-2 { padding-right: .5rem !important; }
+.pe-3, .pe-sm-3, .pe-md-3, .pe-lg-3, .pe-xl-3, .pe-xxl-3 { padding-right: 1rem !important; }
+.pe-4, .pe-sm-4, .pe-md-4, .pe-lg-4, .pe-xl-4, .pe-xxl-4 { padding-right: 1.5rem !important; }
+.pe-5, .pe-sm-5, .pe-md-5, .pe-lg-5, .pe-xl-5, .pe-xxl-5 { padding-right: 3rem !important; }

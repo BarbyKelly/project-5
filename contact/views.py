@@ -1,40 +1,36 @@
-# Base for contact app and form from Boutique Ado, and https://github.com/denisklopotan/vegan-sneaker-store/blob/main/contact/views.py
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+# Base for contact app and form from Boutique Ado, and
+# https://github.com/denisklopotan/vegan-sneaker-store/blob/main/contact/views.py
+# Form success fixes learned from Chat GPT, and views.py edited accordingly
+from django.shortcuts import render
 from django.views import View
-from .forms import ContactForm
 from django.contrib import messages
+from .forms import ContactForm
 
 
 class Contact(View):
     """
-    A view that renders Contact page
+    A view that renders Contact Form
     """
     def get(self, request, *args, **kwargs):
-        return render(
-            request,
-            'contact/contact.html',
-            {
-                'contact_form': ContactForm()
-            }
-        )
+        form = ContactForm()
+        return render(request, 'contact/contact.html',
+                      {'contact_form': form, 'submitted': False})
 
     def post(self, request, *args, **kwargs):
-        contact_form = ContactForm(data=request.POST)
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            confirmation_text = (
+                'Thank you.'
+                ' Your message was submitted.'
+                ' We hope to reply within 3 working days.'
+            )
+            # Clearing form after valid submission
+            return render(
+                request, 'contact/contact.html',
+                {'submitted': True,
+                    'confirmation_text': confirmation_text})
 
-        if contact_form.is_valid():
-            contact_form.save()
-            messages.add_message(
-                request,
-                messages.SUCCESS,
-                'Your message was submitted. \
-                    We hope to reply within 3 working days.')
-
-        else:
-            contact_form = ContactForm()
-        return render(
-            request,
-            'contact/contact.html',
-            {
-                'contact_form': ContactForm()
-            }
-        )
+        # If form invalid, keep Contact Form open with errors
+        return render(request, 'contact/contact.html',
+                      {'contact_form': form,  'submitted': False})
