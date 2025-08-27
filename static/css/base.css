@@ -53,6 +53,21 @@ h2 {
     font-weight: bold;
 }
 
+/* Styling of Navbar and NavLinks. Reduced repetition with ChatGPT's guidance */
+.navbar .nav-link,
+.navbar .dropdown-item {
+    font-size: 20px !important;
+    font-weight: bold !important; 
+    color: black !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:active,
+.navbar .dropdown-item:focus {
+    color: black !important;
+    background-color: transparent !important;
+}
+
 .navbar {
     line-height: 1rem;
     margin-left: 10px;

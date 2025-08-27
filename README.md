@@ -662,6 +662,39 @@ Due to large volume of Tests done, Testing is reported in a separate [Testing.md
 
   6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
 
+  7. When logged in as an admin, Sign In was still showing in the Navbar, and all of the options for admin were displayed at all times:
+
+   ![Sign In not ok in Navbar](docs/readme_images/sign_in_not_ok.png)
+  
+  Click on other NavLinks, opened those links, yet Sign In menu remained open, and blocked top of other pages:
+
+  ![Sign In menu blocking top part](docs/readme_images/sign_in_menu_blocking_top.png)
+
+  When Developer clicked on Sign In NavLink to see if that would close the Sign In menu, Homepage opened instead.
+
+  Solving:
+
+  Issue located in main_nav.html with Chat GPT's help:
+
+  ![Issue in main_nav.html](docs/readme_images/main_nav_sign_in_issue.png)
+
+  ChatGPT guided Developer to see she was always rendering 'Sign In', signed in or not. 
+  Which meant after being signed in, extra links were added as inside the same <li>.
+
+  Developer fixed the styling for Navbar/NavLinks, to see if all would work together after Sign In fix, and ChatGPT guided Developer to reduce repetition of styling in main-nav.html.
+
+  Sign In before and after fix, including updated styling:
+
+  ![Sign In after fix](sign_in_fix.png)
+
+  As a result of the fix, when Admin was signed in:
+  - 'Sign In' NavLink was no longer displayed,
+  - Username replaced 'Sign In' NavLink,
+  - Options for Signed In Admin were available via dropdown menu
+  - 'Sign Up' was no longer displayed for Signed In user/admin
+
+  ChatGPT was a great help for fixing this error, and improving styling to match Django and Bootstrap.
+
 [Back to Contents](#contents)
 
 [Back to Bugs](#bugs)
@@ -932,6 +965,24 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 [Back to Credits](#credits)
 
 [Back to Contents](#contents)
+
+- ChatGPT
+
+  - Closer to the end of the project 5, Developer found out it is ok to check code and get guidance from ChatGPT.
+  Developer had no previous coding experience with ChatGPT, as she thought students were supposed to avoid it.
+  Learning to use ChatGPT was an interesting experience.
+  ChatGPT helped to understand the updated guidelines for Django, Bootstrap, styling, and even helped to solve git commit issue, when
+  security changes started to see vs code as a threat, and commits wouldn't go through.
+  Changing permissions, and path with ChatGPT's guidance, git commit error got fixed.
+  Something similar, would have usually been fixed with tutor's help.
+  
+  Developer found ChatGPT helpful in general.
+  Even with all of the knowledge packed into ChatGPT, it was very important to check if suggestions matched Developer's vision,
+  and trying to solve the issues first herself.
+  Treating ChatGPT like a tutor, was useful.
+  Before ChatGPT, Developer couldn't imagine getting so many errors fixed without tutor's help.
+  It was lovely to be able to ask guidance at any time. 
+   
 
 # Acknowledgements
 
