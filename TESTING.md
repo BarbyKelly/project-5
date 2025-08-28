@@ -146,75 +146,127 @@ Color changes when Hovering over Search Button:
 
 !['Sign In' form](docs/readme_images/sign_in_form.png)
 
-| Tested Item | Expected Outcome                                                                    | Outcome     |
-| ----------- | ----------------------------------------------------------------------------------- | ----------- |
-|             |                                                                                     |             |
-| Sign In     | 'Sign In' is clickable                                                              | as expected |
-|             | Click on 'Sign In' opens 'Sign In' form                                             | as expected |
-|             | 'Sign Up first' option is displayed below the heading                               | as expected |
-|             | Placeholder 'Username or e-mail' is displayed in top box                            | as expected |
-|             | Placeholder 'Password' is displayed in a Password field                             | as expected |
-|             | User can type in 'Username or e-mail' and 'Password' field                          | as expected |
-|             | Placeholder is no longer displayed, when User enters one character                  | as expected |
-|             | 'Username or e-mail' and 'Password' are required fields                             | as expected |
-|             | If either of the required fields have no character typed in,                        | as expected |
-|             | Pop-up "Please fill in this field" is displayed                                     | as expected |
-|             |                                                                                     |             |
-|             | 'Remember Me' checkbox is optional                                                  | as expected |
-|             | Checkbox is displayed below required fields                                         | as expected |
-|             | Click on Checkbox ticks the box                                                     | as expected |
-|             | Checkbox can be ticked multiple times                                               | as expected |
-|             | User may remove tick before submitting the form                                     | as expected |
-|             |                                                                                     |             |
-|             | 'Sign In' button is clickable                                                       | as expected |
-|             | Hovering over 'Sign In' button, changes color of the button                         | as expected |
-|             | Click on 'Sign In' button Signs User in, if entered details are correct             | as expected |
-|             | If either of the required fields is left empty, "Please fill in this field" pops up | as expected |
-|             | If entered details are incorrect, pop up is displayed:                              | as expected |
-|             | "The username and/or password you specified are not correct"                        | as expected |
-|             | User may enter details again, and try to 'Sign In' again                            | as expected |
-|             |                                                                                     |             |
-|             | 'Home' button is displayed on the left of 'Sign In' button                          | as expected |
-|             | 'Home' button is clickable                                                          | as expected |
-|             | Hovering over 'Home' button, changes color of the button                            | as expected |
-|             | Click on 'Home' button opens Home Page                                              | as expected |
-|             |                                                                                     |             |
-|             | 'Forgot Your Password?' is displayed below 'Home' and 'Sign In' buttons             | as expected |
-|             | 'Forgot Your Password?' is clickable                                                | as expected |
-|             | Click on 'Forgot Your Password?' opens up 'Password Reset' form                     | as expected |
-|             | Placeholder is displayed in 'E-mail' address field                                  | as expected |
-|             | Placeholder is no longer displayed, when first character is entered in e-mail field | as expected |
-|             | E-mail field is a required field                                                    | as expected |
-|             |                                                                                     |             |
-|             | If User omits '@' from the email address, pop up is displayed:                      |             |
-|             | "Please include an '@' in the email address. 'x' is missing an '@' "                | as expected |
-|             |                                                                                     |             |
-|             | "Please fill in this field" is displayed if User clicks on 'Reset My Password' and  |             |
-|             | has not typed any characters in e-mail field                                        | as expected |
-|             |                                                                                     |             |
-|             | If User omits any characters after '@' in the email address, pop up is displayed:   |             |
-|             | "Please enter a part following '@'. 'x@' is incomplete."                            | as expected |
-|             |                                                                                     |             |
-|             | If User type in one character before '@', and one after in the e-mail field,        |             |
-|             | "Enter a valid email address" is displayed below the e-mail field                   | as expected |
-|             |                                                                                     |             |
-|             | User can fill the 'Password Reset' form even if they don't have an account          | as expected |
-|             | Only User with an account and valid email address,                                  |             |
-|             | will receive an email to reset their password                                       | as expected |
-|             | 'Reset My Password' button is clickable                                             | as expected |
-|             | Hovering on the 'Reset My Password' button, changes the color of the button         | as expected |
-|             |                                                                                     |             |
-|             | If entered email address meets the requirements,                                    |             |
-|             | and User has clicked on 'Reset My Password' button, message appears:                |             |
-|             | "We have sent you an e-mail. If you have not received your Password Reset email,    | as expected |
-|             | please check your spam folder. Otherwise contact us"                                |             |
-|             |                                                                                     |             |
-|             | 'Back to Sign In' button is displayed beside 'Reset My Password' button             | as expected |
-|             | 'Back to Sign In' button is clickable                                               | as expected |
-|             | Hovering on the 'Back to Sign In' button, changes the color of the button           | as expected |
-|             | Click on 'Back to Sign In' button opens up 'Sign In' form                           | as expected |
-|             |                                                                                     |             |
-|             | Second click on 'My Account' closes dropdown menu                                   | as expected |
+| Tested Item   | Expected Outcome                                                                                            | Outcome     |
+| ------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
+|               |                                                                                                             |             |
+| Sign In       | 'Sign In' can be accessed by click on NavLink in the Navbar                                                 | as expected |
+| Page          | or when 'Sign In' link is clicked via Side Menu (on smaller screens)                                        | as expected |
+|               | Website's background image is not displayed behind the page                                                 | as expected |
+|               | Page is Responsive to different screen sizes                                                                | as expected |
+|               | 'Sign In' NavLink remains the same color and style as rest of the Navbar                                    | fix |
+|               | Website's Logo is displayed on top left for larger screens,                                                 | as expected |
+|               | and in the middle for smaller screens.                                                                      | as expected |
+|               | Search bar is displayed in the middle for larger screens                                                    | as expected |
+|               | All Navbar items are displayed on larger screens, below Logo                                                | as expected |
+|               | Collapsed Navbar Menu displayed on the left for smaller screens                                             | as expected |
+|               | Click on 'Sign In' opens 'Sign In' form                                                                     | as expected |
+|               |                                                                                                             |             |
+| 'Sign Up'     | 'Sign Up' option is displayed below the heading, for Users without an account                               | as expected |
+|               | Paragraph with a link displayed: 'No account yet? Then please Sign Up.'                                     | as expected |
+|               | 'Sign Up' part is highlighted in a different color                                                          | as expected |
+|               | 'Sign Up' is a clickable link                                                                               | as expected |
+|               | Line appears below 'Sign Up' when a pointer is on it                                                        | as expected |
+|               | Click on 'Sign Up' link opens up 'Sign Up' page                                                             | as expected |
+|               |                                                                                                             |             |
+| Placeholders  | Placeholder 'Username or e-mail' is displayed in top field                                                  | as expected |
+|               | Placeholder 'Password' is displayed in a Password field                                                     | as expected |
+|               | User can type in 'Username or e-mail' and 'Password' field                                                  | as expected |
+|               | Placeholder is no longer displayed in a field, where User has entered a character                           | as expected |
+|               |                                                                                                             |             |
+| Fields        | 'Username or e-mail' and 'Password' are required fields                                                     | as expected |
+|               | No * to mark fields are mandatory (as per allauth's default set up)                                         | as expected |
+|               |                                                                                                             |             |
+|               | As the top field is for Username or email, there are no email validation errors popping up                  | as expected |       
+|               | User can type any characters in both fields                                                                 |             |
+|               |                                                                                                             |             |
+|               | If User leaves either of the fields without a character, and clicks 'Sign In',                              |             |
+|               | 'Please fill in this field' pops up, near the mandatory field that was left with placeholder                | as expected |
+|               |                                                                                                             |             |
+|               | If User types in incorrect username/email or password,                                                      |             |
+|               | 'The username and/or password you specified are not correct.' is displayed above the Username/e-mail field  | as expected |
+|               |                                                                                                             |             |
+| 'Remember Me' | 'Remember Me' checkbox is optional                                                                          | as expected |
+| checkbox      | Checkbox is displayed below required fields                                                                 | as expected |
+|               | Click on Checkbox ticks the box                                                                             | as expected |
+|               | Clicking on Checkbox again, removes the tick, if box already ticked                                         | as expected |
+|               | Checkbox can be ticked/unticked multiple times                                                              | as expected |
+|               | User may remove tick before submitting the form,                                                            | as expected |
+|               | or leave the box ticked                                                                                     | as expected |
+|               |                                                                                                             |             |
+| 'Home' button | 'Home' button is displayed on the left of 'Sign In' button                                                  | as expected |
+|               | 'Home' button is clickable                                                                                  | as expected |
+|               | Hovering over 'Home' button, changes color of the button                                                    | as expected |
+|               | Click on 'Home' button opens Home Page                                                                      | as expected |
+|               | If either of the required fields have no character typed in,                                                | as expected |
+|               | On smallest screens, 'Home' button is is displayed on top of 'Sign In' button                               | as expected |
+|               |                                                                                                             |             |
+| 'Sign In'     | 'Sign In' button is clickable                                                                               | as expected |
+| button        | Hovering over 'Sign In' button, changes color of the button                                                 | as expected |
+|               | Click on 'Sign In' button Signs User in, if entered details are correct                                     | as expected |
+|               | If either of the required fields is left empty, "Please fill in this field" pops up                         | as expected |
+|               | If entered details are incorrect, pop up is displayed:                                                      | as expected |
+|               | "The username and/or password you specified are not correct"                                                | as expected |
+|               | User may enter details again, and try to 'Sign In' again                                                    | as expected |
+|               |                                                                                                             |             |
+| Signed In     | When Admin enters correct details, Admin will be signed in                                                  | as expected |
+| Admin         | Options for signed In Admin: 'Product Management', 'My Profile', 'Sign Out'                                 | as expected |
+|               |                                                                                                             |             |
+| Signed In     | When User enters correct details, User will be signed in                                                    | as expected |
+| User          | Signed In User has an option to view 'My Profile', and to 'Sign Out'                                        | as expected |
+|               | No option to access 'Product Management'                                                                    | as expected |
+|               |                                                                                                             |             |
+|               | 'My Profile' and 'Sign Out' are clickable                                                                   | as expected |
+|               | Click on 'My Profile' opens up User's profile page                                                          | as expected |
+|               | 'My Profile' includes 'Default Postage information',                                                        | as expected |
+|               | and 'Order History' if User has any order(s).                                                               | as expected |
+|               | User may type on all Postage info fields, and edit them.                                                    | as expected |
+|               | User may delete all info in Postage info fields                                                             | as expected |
+|               | Postage info fields visible to User:                                                                        | as expected |
+|               | Phone, Street 1, Street 2, Town or City, County/State, Postal Code and a Country                            | as expected |
+|               | To update a Country, it can be selected from a dropdown list                                                | as expected |
+|               | User may click on 'Update Information' to update postage details.                                           | as expected |
+|               | 'Profile successfully updated!' pops-up top right corner of the screen, after click on 'Update Information' | as expected |
+|               |                                                                                                             |             |
+|               | Signed in User may click on Order number, if there are any orders                                           | as expected |
+|               | Clickable Order number is in a different color                                                              | as expected |
+|               | and a line appears under Order number when a pointer is on it.                                              | as expected |
+|               | User may view all the details of any order                                                                  | as expected |
+|               | Order details look similar to Confirmation page, when User place the order                                  | as expected |
+|               | User has no option to edit Order details                                                                    | as expected |
+|               | Alert top right corner:                                                                                     | as expected |
+|               | notifies User of this being a past Confirmation                                                             | as expected |
+|               | 'Back to Profile' button is placed below 'Order Confirmation' details                                       | as expected |
+|               | Button changes color when a pointer is on it                                                                | as expected |
+|               | 'Back to Profile' button is clickable                                                                       | as expected |
+|               | Click on it brings User back to 'My Profile' page                                                           | as expected |
+|               |                                                                                                             |             |
+| 'Forgot Your  | 'Forgot Your Password?' is displayed below 'Home' and 'Sign In' buttons                                     | as expected |
+| Password?'    | or below 'Sign In' button for smallest screens.                                                             | as expected |
+|               | 'Forgot Your Password?' is clickable,                                                                       | as expected |
+|               | And different color to highlight it's clickable                                                             | as expected |
+|               | Line appears under 'Forgot Your Password?' when pointer is on it                                            | as expected |
+|               | Click on 'Forgot Your Password?' opens up 'Password Reset' form                                             | as expected |
+|               |                                                                                                             |             |
+|               | User can fill the 'Password Reset' form even if they don't have an account                                  | as expected |
+|               | Only User with an account and valid email address,                                                          |             |
+|               | will receive an email to reset their password                                                               | as expected |
+|               | 'Reset My Password' button is clickable                                                                     | as expected |
+|               | Hovering on the 'Reset My Password' button, changes the color of the button                                 | as expected |
+|               |                                                                                                             |             |
+|               | If entered email address meets the requirements,                                                            |             |
+|               | and User has clicked on 'Reset My Password' button, message appears:                                        |             |
+|               | "We have sent you an e-mail. If you have not received your Password Reset email,                            | as expected |
+|               | please check your spam folder. Otherwise contact us"                                                        |             |
+|               |                                                                                                             |             |
+|               | 'Back to Sign In' button is displayed beside 'Reset My Password' button                                     | as expected |
+|               | 'Back to Sign In' button is clickable                                                                       | as expected |
+|               | Hovering on the 'Back to Sign In' button, changes the color of the button                                   | as expected |
+|               | Click on 'Back to Sign In' button opens up 'Sign In' form                                                   | as expected |
+|               |                                                                                                             |             |
+|               | Second click on 'My Account' closes dropdown menu                                                           | as expected |
+|               |                                                                                                             |             |
+|               | Footer is displayed below the form, at the bottom of the screen,                                            | as expected |
+|               | on smaller screens User might need to scroll for Footer to appear                                           | as expected |
        
 
 [Back to the List](#list-of-parts-tested)

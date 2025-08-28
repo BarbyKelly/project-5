@@ -497,11 +497,32 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 - When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added beside it.
 
-- Sign In menu to close after person has signed in. At the moment dropdown stays open even when other nav links are clicked on.
+- Asterisks to mark all mandatory fields on all forms.
+
+- 'Sign In' form: if incorrect details entered, pop up to display: 'The Username/email and/or password entered are incorrect. Please try again.'
+At the moment default message mentions only username and/or password being incorrect.
 
 !['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
 - Links in 'How To ...?' to include lessons how to take better photos
+
+### About Creators
+
+- App added to share details about the people who created Art & Photos for the Boutique. Maybe painted images of each creator.
+
+### 'My Profile'
+
+- to include email field
+
+- fields to have a label above them or on the left
+
+- alert set up to notify User that they are about to change their 'Default Postage Information'
+
+- 'Phone Number' field to accept numbers only
+
+- Set up restrictions, so User can not delete all 'Default Postage Information' and click on 'Update Information' when fields are left blank
+
+- Instead of displaying 'Thank You for shopping' when User clicks on previous Order, in Order History, would be nice to display: "Your Order nr ..." 
 
 [Back to Features](#features)
 
@@ -981,7 +1002,7 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   and trying to solve the issues first herself.
   Treating ChatGPT like a tutor, was useful.
   Before ChatGPT, Developer couldn't imagine getting so many errors fixed without tutor's help.
-  It was lovely to be able to ask guidance at any time. 
+  It was lovely to be able to ask guidance at any time.
    
 
 # Acknowledgements

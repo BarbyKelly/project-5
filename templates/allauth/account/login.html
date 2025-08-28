@@ -31,20 +31,26 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p text-primary>{% blocktrans %}If you have not created an account yet, then please
-<a class=text-black font-weight-bold href="{{ signup_url }}">Sign Up first</a>{% endblocktrans %}</p>
+<!-- Option to sign up if no account yet. Style edited with ChatGPT's guidance -->
+<p class="text-black font-weight-bold">
+  {% blocktrans trimmed with url=signup_url %}
+    No account yet? Then please
+    <a class="text-primary font-weight-bold" href="{{ url }}">Sign Up.</a>
+  {% endblocktrans %}</p>
 {% endif %}
 
+<!-- Sign in form with added asterisk. Learned from ChatGPT how to add * to input fields when input fields not in this html template -->
 <form class="login" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form|crispy }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
+  
   <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Home</a>
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
   <p class="mt-2">
-    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Your Password?" %}</a>
+    <a class="text-primary font-weight-bold" href="{% url 'account_reset_password' %}">{% trans "Forgot Your Password?" %}</a>
   </p>
 </form>
 
