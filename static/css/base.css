@@ -53,21 +53,70 @@ h2 {
     font-weight: bold;
 }
 
-/* Styling of Navbar and NavLinks. Reduced repetition with ChatGPT's guidance */
+/* All of styling of Navbar, NavLinks, and reduction of repetition fixed with ChatGPT's guidance. */
 .navbar .nav-link,
 .navbar .dropdown-item {
-    font-size: 20px !important;
-    font-weight: bold !important; 
+    font-size: 20px;
+    font-weight: bold;
     color: black !important;
+    position: relative;
+    transition: color 0.25s ease-in-out;
 }
 
+/* Underline effect for nav-links */
+.navbar .nav-link::after,
+.navbar .dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(29, 97, 157);
+    transition: width 0.2s ease-in-out;
+}
+
+/* Hover state for nav-links */
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    color: #435f78 !important;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .dropdown-toggle:hover::after {
+    width: 100%;
+}
+
+/* Underline active links */
+.navbar .nav-link.active,
+.navbar .dropdown-toggle.active {
+    color: cornflowerblue;
+}
+
+.navbar .nav-link.active::after,
+.navbar .dropdown-toggle.active::after {
+    width: 100%;
+    height: 2px;
+}
+
+/* Hide all dropdown menus by default */
+.navbar .dropdown-menu {
+    display: none;
+}
+
+/* Show dropdown menu when parent is hovered */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hover Dropdown menu items */
 .navbar .dropdown-item:hover,
-.navbar .dropdown-item:active,
 .navbar .dropdown-item:focus {
     color: black !important;
     background-color: transparent !important;
 }
 
+/* Navbar spacing */
 .navbar {
     line-height: 1rem;
     margin-left: 10px;
