@@ -58,6 +58,8 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'art_categories_list': ['animal_art', 'name_art', 'winter_art', 'variety_of_art'],
+        'photo_categories_list': ['beach_photo', 'rainbow_photo', 'animal_photo', 'sky_photo', 'variety_of_photos'],
     }
 
     return render(request, 'products/products.html', context)
