@@ -1,6 +1,7 @@
 <!-- Most of html based on Code Institute's walk-through Boutique Ado -->
 <!-- Navbar edited based on Chirpy Chooks https://chirpy-chooks.herokuapp.com/ -->
 <!-- main-nav.html navbar fixed with ChatGPT's guidance -->
+
 <div class="collapse navbar-collapse justify-content-center" id="main-nav">
     <ul class="navbar-nav mx-auto">
 
@@ -17,23 +18,31 @@
         <li class="nav-item mx-3 dropdown">
             <!-- With - learned from ChatGPT -->
             {% with art_categories="animal_art,name_art,winter_art,variety_of_art" %}
-            <a class="font-weight-bold nav-link {% if request.GET.category in art_categories %}active{% endif %}"
-                href="{% url 'products' %}?category={{ art_categories }}"
-                id="art-link"
-                aria-haspopup="true"
-                aria-expanded="false">
-                Art
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="art-link">
-                <a href="{% url 'products' %}?category=animal_art"
-                    class="dropdown-item {% if request.GET.category in 'animal_art' %}active{% endif %}" role="menuitem">Animal Art</a>
-                <a href="{% url 'products' %}?category=name_art"
-                    class="dropdown-item {% if request.GET.category in 'name_art' %}active{% endif %}" role="menuitem">Name Art</a>
-                <a href="{% url 'products' %}?category=winter_art"
-                    class="dropdown-item {% if request.GET.category in 'winter_art' %}active{% endif %}" role="menuitem">Winter Art</a>
-                <a href="{% url 'products' %}?category=variety_of_art"
-                    class="dropdown-item {% if request.GET.category in 'variety_of_art' %}active{% endif %}" role="menuitem">Variety of Art</a>
-            </div>
+                <a class="font-weight-bold nav-link {% if request.GET.category in art_categories %}active{% endif %}"
+                    href="{% url 'products' %}?category={{ art_categories }}"
+                    id="art-link"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    Art
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="art-link">
+                    <a href="{% url 'products' %}?category=animal_art"
+                        class="dropdown-item {% if request.GET.category in 'animal_art' %}active{% endif %}" role="menuitem">
+                        Animal Art
+                    </a>
+                    <a href="{% url 'products' %}?category=name_art"
+                        class="dropdown-item {% if request.GET.category in 'name_art' %}active{% endif %}" role="menuitem">
+                        Name Art
+                    </a>
+                    <a href="{% url 'products' %}?category=winter_art"
+                        class="dropdown-item {% if request.GET.category in 'winter_art' %}active{% endif %}" role="menuitem">
+                        Winter Art
+                    </a>
+                    <a href="{% url 'products' %}?category=variety_of_art"
+                        class="dropdown-item {% if request.GET.category in 'variety_of_art' %}active{% endif %}" role="menuitem">
+                        Variety of Art
+                    </a>
+                </div>
             {% endwith %}
         </li>
 
@@ -41,25 +50,35 @@
         <li class="nav-item mx-3 dropdown">
             <!-- With - learned from ChatGPT -->
             {% with photo_categories="beach_photo,rainbow_photo,animal_photo,sky_photo,variety_of_photos" %}
-            <a class="font-weight-bold nav-link {% if request.GET.category in photo_categories %}active{% endif %}"
-                href="{% url 'products' %}?category={{ photo_categories }}"
-                id="photos-link"
-                aria-haspopup="true"
-                aria-expanded="false">
-                Photos
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="photos-link">
-                <a href="{% url 'products' %}?category=beach_photo"
-                    class="dropdown-item {% if request.GET.category in 'beach_photo' %}active{% endif %}" role="menuitem">Beach</a>
-                <a href="{% url 'products' %}?category=rainbow_photo"
-                    class="dropdown-item {% if request.GET.category in 'rainbow_photo' %}active{% endif %}" role="menuitem">Rainbows</a>
-                <a href="{% url 'products' %}?category=animal_photo"
-                    class="dropdown-item {% if request.GET.category in 'animal_photo' %}active{% endif %}" role="menuitem">Animals</a>
-                <a href="{% url 'products' %}?category=sky_photo"
-                    class="dropdown-item {% if request.GET.category in 'sky_photo' %}active{% endif %}" role="menuitem">Sky</a>
-                <a href="{% url 'products' %}?category=variety_of_photos"
-                    class="dropdown-item {% if request.GET.category in 'variety_of_photos' %}active{% endif %}" role="menuitem">Variety of Photos</a>
-            </div>
+                <a class="font-weight-bold nav-link {% if request.GET.category in photo_categories %}active{% endif %}"
+                    href="{% url 'products' %}?category={{ photo_categories }}"
+                    id="photos-link"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    Photos
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="photos-link">
+                    <a href="{% url 'products' %}?category=beach_photo"
+                        class="dropdown-item {% if request.GET.category in 'beach_photo' %}active{% endif %}" role="menuitem">
+                        Beach
+                    </a>
+                    <a href="{% url 'products' %}?category=rainbow_photo"
+                        class="dropdown-item {% if request.GET.category in 'rainbow_photo' %}active{% endif %}" role="menuitem">
+                        Rainbows
+                    </a>
+                    <a href="{% url 'products' %}?category=animal_photo"
+                        class="dropdown-item {% if request.GET.category in 'animal_photo' %}active{% endif %}" role="menuitem">
+                        Animals
+                    </a>
+                    <a href="{% url 'products' %}?category=sky_photo"
+                        class="dropdown-item {% if request.GET.category in 'sky_photo' %}active{% endif %}" role="menuitem">
+                        Sky
+                    </a>
+                    <a href="{% url 'products' %}?category=variety_of_photos"
+                        class="dropdown-item {% if request.GET.category in 'variety_of_photos' %}active{% endif %}" role="menuitem">
+                        Variety of Photos
+                    </a>
+                </div>
             {% endwith %}
         </li>
 
@@ -92,7 +111,7 @@
         </li>
 
         <!-- Contact Us -->
-        <li class="nav-item 3">
+        <li class="nav-item mx-3">
             <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
                 href="{% url 'contact' %}"
                 id="contact-us"
@@ -101,27 +120,40 @@
             </a>
         </li>
 
-        <!-- Sign In, Sign Up - fixed with Chat GPT's guidance -->
+        <!-- Sign In and Sign Up - fixed with Chat GPT's guidance -->
         {% if request.user.is_authenticated %}
-            <!-- User dropdown menu -->
             <li class="nav-item mx-3 dropdown">
-                <a class="font-weight-bold nav-link dropdown-toggle"
-                    href="#"
+                <!-- Username - click opens user's Profile -->
+                <a class="font-weight-bold nav-link"
+                    href="{% url 'profile' %}">
+                    {{ request.user.username }}
+                </a>
+
+                <!-- Signed in User - dropdown toggle - fixed with ChatGPT's guidance -->
+                <a class="nav-link dropdown-toggle dropdown-toggle-split"
+                    href='#'
                     id="user-options"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false">
-                    {{ request.user.username }}
+                    <span class="sr-only">User's Toggle Dropdown</span>
                 </a>
+
                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                     {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
-                            aria-label="Product Management dropdown option for Site's Admin only">Product Management</a>
+                            aria-label="Product Management dropdown option for Site's Admin only">
+                            Product Management
+                        </a>
                     {% endif %}
                     <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold"
-                        aria-label="My Profile dropdown option">My Profile</a>
+                        aria-label="My Profile dropdown option">
+                        My Profile
+                    </a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold"
-                        aria-label="Sign Out dropdown option">Sign Out</a>
+                        aria-label="Sign Out dropdown option">
+                        Sign Out
+                    </a>
                 </div>
             </li>
         {% else %}
@@ -134,6 +166,7 @@
                     Sign In
                 </a>
             </li>
+
             <!-- Sign Up -->
             <li class="nav-item mx-3">
                 <a class="font-weight-bold nav-link"
@@ -144,5 +177,6 @@
                 </a>
             </li>
         {% endif %}
+
     </ul>  
 </div>
