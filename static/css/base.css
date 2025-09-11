@@ -66,29 +66,16 @@ h2 {
     transition: color 0.2s ease-in-out;
 }
 
-/* Underline effect on hover, navLinks, parentLinks*/
-.navbar .nav-link::after,
-.navbar .dropdown-toggle::after {
+/* Underline effect on hover. Fix learned from chatGPT */
+.navbar .nav-link:not(.dropdown-toggle):hover::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0;
+    width: 100%;
     height: 2px;
     background-color: rgb(29, 97, 157);
     transition: width 0.2s ease-in-out;
-}
-
-.navbar .nav-link:hover::after,
-.navbar .dropdown-toggle:hover::after {
-    color: #435f78 !important;
-    width: 100%;
-}
-
-/* Change text color for dropdown items on hover */
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-    color: cornflowerblue !important;
 }
 
 /* Active link - change text color */
@@ -98,7 +85,13 @@ h2 {
     color: cornflowerblue !important;
 }
 
-/* Hide all dropdown menus by default */
+/* Change text color for dropdown items on hover */
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    color: cornflowerblue !important;
+}
+
+/* Dropdown menus */
 .navbar .dropdown-menu {
     display: none;
 }
@@ -109,7 +102,6 @@ h2 {
 }
 
 /* Show parent as active, when one of it's dropdown items is active */
-.navbar .dropdown:hover > .nav-link,
 .navbar .dropdown-item.active {
     color: cornflowerblue !important;
 }
@@ -123,7 +115,6 @@ h2 {
 /* Navbar spacing */
 .navbar {
     line-height: 1rem;
-    margin: left 0;
 }
 
 /* Container styling */

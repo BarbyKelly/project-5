@@ -72,52 +72,6 @@
             </a>
         </li>
 
-        <!-- Sign Up -->
-        <li class="nav-item mx-3">
-            <a class="font-weight-bold nav-link"
-                href="{% url 'account_signup' %}"
-                id="account-signup"
-                aria-label="Sign Up option">
-                Sign Up
-            </a>
-        </li>
-
-        <!-- Sign In - fixed with Chat GPT's guidance -->
-        {% if request.user.is_authenticated %}
-            <!-- User dropdown menu -->
-            <li class="nav-item mx-3 dropdown">
-                <a class="font-weight-bold nav-link dropdown-toggle"
-                    href="#"
-                    id="user-options"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false">
-                    {{ request.user.username }}
-                </a>
-                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                    {% if request.user.is_superuser %}
-                        <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
-                            aria-label="Product Management dropdown option for Site's Admin only">Product Management</a>
-                    {% endif %}
-                        <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold"
-                            aria-label="My Profile dropdown option">My Profile</a>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold"
-                            aria-label="Sign Out dropdown option">Sign Out</a>
-                </div>
-            </li>
-            {% else %}
-
-            <!-- NavLinks when User not Signed In -->
-            <li class="nav-item mx-3">
-                <a class="font-weight-bold nav-link text-black"
-                    href="{% url 'account_login' %}"
-                    id="account-login"
-                    aria-label="Sign In option">
-                    Sign In
-                </a>
-            </li>
-            {% endif %}
-
         <!-- How To...? -->
         <li class="nav-item mx-3">
             <a class="font-weight-bold nav-link {% if request.resolver_match.url_name == 'howto' %}active{%endif%}"
@@ -146,5 +100,49 @@
                 Contact Us
             </a>
         </li>
+
+        <!-- Sign In, Sign Up - fixed with Chat GPT's guidance -->
+        {% if request.user.is_authenticated %}
+            <!-- User dropdown menu -->
+            <li class="nav-item mx-3 dropdown">
+                <a class="font-weight-bold nav-link dropdown-toggle"
+                    href="#"
+                    id="user-options"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    {{ request.user.username }}
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
+                            aria-label="Product Management dropdown option for Site's Admin only">Product Management</a>
+                    {% endif %}
+                    <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold"
+                        aria-label="My Profile dropdown option">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold"
+                        aria-label="Sign Out dropdown option">Sign Out</a>
+                </div>
+            </li>
+        {% else %}
+            <!-- NavLinks when User not Signed In -->
+            <li class="nav-item mx-3">
+                <a class="font-weight-bold nav-link text-black"
+                    href="{% url 'account_login' %}"
+                    id="account-login"
+                    aria-label="Sign In option">
+                    Sign In
+                </a>
+            </li>
+            <!-- Sign Up -->
+            <li class="nav-item mx-3">
+                <a class="font-weight-bold nav-link"
+                    href="{% url 'account_signup' %}"
+                    id="account-signup"
+                    aria-label="Sign Up option">
+                    Sign Up
+                </a>
+            </li>
+        {% endif %}
     </ul>  
 </div>
