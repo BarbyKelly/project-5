@@ -31,6 +31,10 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 
 # Contents
 
+[Business Model for Kelly's Art & Photo Boutique](#business-model-for-kellys-art--photo-boutique)
+- [Direct Audience](#direct-audience)
+- [Indirect Audience](#indirect-audience)
+
 [User Experience](#user-experience)
 - [User Stories](#user-stories)
 
@@ -75,6 +79,57 @@ Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
 [Credits](#credits)
 
 [Acknowledgements](#acknowledgements)
+
+# Business Model for Kelly's Art & Photo Boutique
+
+## Direct Audience
+
+The following groups are considered Direct Audience, as they are most likely to purchase, commission or order products from Kelly's Art & Photo Boutique:
+  
+  - Online Users searching for:
+    - Original Art (e.g., Name Art, Seasonal Art such as winter, Animal Art etc.) 
+    - Children's Art
+    - Handmade Art
+    - Photos (e.g., Sky, Beach, Animals, Rainbows, Variety etc.)
+
+  - Educational Institutions: 
+    - Schools and higher education providers seeking examples of art/photos or decorations for their institutions
+    - Crèches and preschools incorporating childrens' art into projects
+
+  - Healthcare and Care Homes:
+    - Nursing homes and healthcare Practices searching for artwork or photos for waiting rooms, wards,
+      and community spaces
+    - Clinics and treatment areas where children and adults are tested or treated, to create a brighter more welcoming, 
+      more homely/relatable atmosphere, and maybe inspire patients
+
+  - Treatment Centers, Therapists:
+    - Looking for artwork or photos to enhance the ambiance of the waiting rooms, therapy areas or playrooms, sensory sections
+
+  - Hospitality and Accommodation Providers:
+    - Restaurants, cafes, hotels, B&B's, Airbnb's, searching art or photos for specific ambiance
+  
+  - Individuals, couples, families, friends:
+    - People seeking handmade and original gifts for variety of occasions eg graduation, first school day, birthday, anniversary, just to say 'Thank you'
+
+  - Beauty and Spa businesses:
+    - Salons, spas, wellness centers, in need of calming  for Art/Photos to complement their relaxing atmosphere
+
+
+## Indirect Audience
+
+Groups that are influenced by the display or recommendation of the products made by Kelly's Art & Photo Boutique.
+
+- Business owners and interior designers:
+  - Seeing products of Kelly's Art & Photo Boutique displayed in someone's living space, business,
+    accommodation, Healthcare Provider, in Educational institution
+  
+- Visitors, friends, guests:
+  - Individuals or groups exposed to art and photos in homes, schools, hospitality and accommodation places,
+    hospitals, nursing homes, businesses, may be interested in requiring art from Kelly's Art & Photo Boutique
+
+- Influencers and Promoters:
+  - Influencers or Promoters, who share or recommend products from the boutique, on social media, blogs, 
+    local networks, sharing boutique's reels/page
 
 
 # User Experience
@@ -1003,11 +1058,15 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   Treating ChatGPT like a tutor, was useful.
   Before ChatGPT, Developer couldn't imagine getting so many errors fixed without tutor's help.
   It was lovely to be able to ask guidance at any time.
+
+- Business Model
+
+  - Developer learned from [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model) how to write Business Model for Kelly's Art & Photo Boutique. Mentor Lauren-Nicole Popich guided developer to this project, as an example for Business model.
    
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends; mentor Lauren-Nicole Popich; Student Care, especially Kim, facilitator Kay Welfare, tutors, Slack members, and online content creators.
+- Developer is grateful for any guidance and support provided by her family and friends; mentor Lauren-Nicole Popich; Student Care, especially Kim, facilitator Kay Welfare, tutors, Slack members, chatGPT, and online content creators.
 
 - Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo. Great team effort. And for asking Developer to increase prices for their Art. 
 
