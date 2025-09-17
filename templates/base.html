@@ -4,10 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     {% block meta %}
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="google-site-verification" content="2GllS38cQ4AvENLO6njtCQI0HR2M-_2-azChKY6Djns" />
 
@@ -33,17 +32,32 @@
       <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
       <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
       <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-      <link rel="shortcut icon" type="image/png" href="https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/logo_wireframe_by_aoife_ten_opt.png">
+      <link rel="shortcut icon" type="image/png"
+            href="https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/logo_wireframe_by_aoife_ten_opt.png">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <!-- Bootstrap 4.6.2 CSS -->
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+
+      <!-- Google Fonts Preconnect -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0, 700;1,300;1,400;1,500;1,600;1,700&display=swap">
+
+      <!-- Google Fonts Preload - copied from chatGPT, to improve loading time -->
+      <link rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+      </noscript>
+
+      <!-- Custom CSS -->
       <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -51,10 +65,26 @@
     {% endblock %}
 
     {% block corejs %}
-      <script src="https://kit.fontawesome.com/5d412561c7.js" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/5d412561c7.js"
+              crossorigin="anonymous"></script>
+
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+              integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"></script>
+
+      <!-- Popper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+              integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+              crossorigin="anonymous"></script>
+
+      <!-- Bootstrap 4.6.2 JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+              crossorigin="anonymous"></script>
+
       <!-- Stripe -->
       <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -70,22 +100,22 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
-          </a>
+          <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
+        </a>
         </div>
         <div class="col-12 col-lg-4 my-auto d-none d-sm-none d-lg-block py-1 py-lg-0">
-          <form method="GET" action="{% url 'products' %}">
+        <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our Boutique for Art & Photos ">
+            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our Boutique for Art & Photos ">
               <div class="input-group-append">
                 <button class="form-control btn btn-blue border border-black rounded-0" type="submit">
                   <span class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
                   </span>
                 </button>
               </div>
-            </div>
-          </form>
+          </div>
+        </form>
         </div>
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-center">
