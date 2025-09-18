@@ -97,7 +97,7 @@
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Header - fixed with chatGPT's help, to remove topnav, place Logo left and burger menu right for all screens -->
     <header class="container-fluid fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 justify-content-between py-2 shadow-sm">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white w-100 justify-content-between py-2 shadow-sm">
 
         <!-- Logo - left on all screens -->
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -116,42 +116,31 @@
             <!-- Items from main-nav.html -->
             {% include 'includes/main-nav.html' %}
 
-            <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
-            <li class="nav-item ml-lg-2">
-              <a class="nav-link" href="{% url 'products' %}?q=">
+            <!-- Search - fixed with chatGPT's guidance -->
+            <li class="nav-item position-relative">
+              <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
+              <a class="nav-link" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </a>
+
+              <!-- Search Form - hidden until Search Icon is clicked -->
+              <div class="search_form">
+                <form method="GET" action="{% url 'products' %}">
+                  <input type="text"
+                         name="q"
+                         class="form-control form-control-sm border border-black rounded-0"
+                         placeholder="Search our Boutique"
+                         aria-label="Search">
+                  <button type="submit" class="btn btn-blue border border-black rounded-0 ml-1">
+                    Search
+                  </button>
+                </form>
+              </div>
             </li>
           </ul>
         </div>
 
       </nav>
-    </header>
-
-
-        <!-- Commented out while removing topnav, and search bar from larger screens 
-        <div class="col-12 col-lg-4 my-auto d-none d-sm-none d-lg-block py-1 py-lg-0">
-        <form method="GET" action="{% url 'products' %}">
-            <div class="input-group w-100">
-            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our Boutique for Art & Photos ">
-              <div class="input-group-append">
-                <button class="form-control btn btn-blue border border-black rounded-0" type="submit">
-                  <span class="icon">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  </span>
-                </button>
-              </div>
-          </div>
-        </form>
-        </div>
-        <div class="col-12"> -->
-          
-            
-            
-          </nav>
-        </div>
-        </div>
-      </div>
     </header>
 
     {% if messages %}
@@ -209,5 +198,23 @@
     </footer>
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
+
+    <!-- Script for Search - copied from ChatGPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const toggle = document.getElementById("search_toggle");
+        const searchForm = document.querySelector(".search_form");
+        const searchInput = searchForm.querySelector("input[name='q']");
+
+
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          searchForm.classList.toggle("active");
+          if (searchForm.classList.contains("active")) {
+            searchInput.focus();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

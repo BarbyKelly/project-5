@@ -42,11 +42,6 @@ h1 {
     padding-top: 5px;
 }
 
-.boutique-logo {
-    width: 7rem;
-    height: auto;
-}
-
 h2 {
     font-size: 2rem;
     width: 100%;
@@ -54,6 +49,13 @@ h2 {
 }
 
 /* All of styling of Navbar, NavLinks, and reduction of repetition fixed with ChatGPT's guidance. */
+/* Logo */
+.boutique-logo {
+    width: auto;
+    max-width: 7rem;
+    height: auto;
+}
+
 /* Base navLinks and Dropdown items */
 .navbar .nav-link,
 .navbar .dropdown-toggle,
@@ -112,6 +114,43 @@ h2 {
     background-color: transparent !important;
 }
 
+/* ----- Search - styling fixed with chatGPT's guidance ----->
+/* Search Form - hidden by default */
+.search_form {
+    display: none;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    z-index: 1000;
+    background: #FFFFFF;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.search_form.active {
+    display: flex;
+}
+
+/* Search Form Input */
+.search_form input {
+    flex: 1;
+    min-width: 10rem;
+    max-width: 12rem;
+    font-size: 1rem;
+}
+
+/* Search form Button to stay beside input */
+.search_form form {
+    display: flex;
+    align-items: center;
+}
+
+/* No underline effect for Search Icon */
+#search_toggle::after {
+    content: none;
+}
+
 /* Navbar spacing */
 .navbar {
     line-height: 1rem;
@@ -129,10 +168,6 @@ h2 {
     height: auto;
     margin-top: 7rem;
     max-width: 400px;
-}
-
-.form-control-search {
-    font-size: 0.75rem;
 }
 
 /* from Bulma */
@@ -423,8 +458,8 @@ footer {
     color: cornflowerblue;
 }
 
-/* Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) */
-
+/* ---- Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) ---- */
+/* ---- Media Queries edited with chatGPT's guidance ---- */
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
 @media (max-width: 575.98px) {
   .container {
@@ -434,10 +469,6 @@ footer {
   .navbar {
     font-size: medium;
   }
-
-  .logo-font {
-        font-size: 1.3rem;
-    }
 }
 
 /* Media Queries for 'S' screens (landscape phones, tablets less than 768px) */
@@ -445,10 +476,6 @@ footer {
   .container {
     max-width: 750px;
   }
-
-  .logo-font {
-        font-size: 1.5rem;
-    }
 }
 
 /* Top navbar fix on Medium and up screens */
@@ -463,10 +490,6 @@ footer {
 
     .header-container {
         padding-top: 50px;
-    }
-
-    .logo-font {
-        font-size: 1.7rem;
     }
 }
 
@@ -508,20 +531,39 @@ footer {
         font-size: .75rem;
     }
 
-    .logo-font {
-        font-size: 2rem;
+    /* Search form - fixed with chatGPT's guidance */
+    .search_form.active {
+        flex-direction: column;
+        width: 100%;
+        position: static;
+        transform: translateY(-0.3rem);
+    }
+
+    .search_form.active input,
+    .search_form.active button {
+        width: 100%;
     }
 }
 
 /* Media Queries for 'L' screens (desktops, less than 1200px */
 @media (max-width: 1199.98px) {
   .container {
-    max-width: 1150px;
+    max-width: 100%;
   }
 
-  .logo-font {
-        font-size: 2.1rem;
-    }
+  .navbar .nav-link {
+    font-size: 16px;
+    padding: 0.25rem 0.1rem;
+  }
+
+  .nav-item.mx-3 {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
 }
 
 /* Media Queries for 'XL' screens (large desktops, less than 1400px */
@@ -533,11 +575,7 @@ footer {
   .click-here-to-shop-button {
     font-size: large;
     min-width: 200px;
-  }  
-
-  .logo-font {
-        font-size: 2.3rem;
-    }
+  }
 }
 
 /* Media Queries for 'XXL' screens (large desktops, more than 1400px */
@@ -550,8 +588,4 @@ footer {
     font-size: large;
     min-width: 200px;
   }
-
-  .logo-font {
-        font-size: 2.6rem;
-    }
 }
