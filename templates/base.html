@@ -95,14 +95,41 @@
     <title>Kelly's Art & Photo Boutique {% block extra_title %}{% endblock %}</title>
   </head>
   <body class="d-flex flex-column h-100 main-bg">
-    <!-- Header -->
+    <!-- Header - fixed with chatGPT's help, to remove topnav, place Logo left and burger menu right for all screens -->
     <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-white pt-lg-2 d-lg-flex">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-          <a href="{% url 'home' %}" class="nav-link main-logo-link">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 justify-content-between py-2 shadow-sm">
+
+        <!-- Logo - left on all screens -->
+        <a href="{% url 'home' %}" class="nav-link main-logo-link">
           <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
         </a>
+
+        <!-- Burger Menu (smaller screens only) - on the right -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links and Search Icon -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <!-- Items from main-nav.html -->
+            {% include 'includes/main-nav.html' %}
+
+            <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
+            <li class="nav-item ml-lg-2">
+              <a class="nav-link" href="{% url 'products' %}?q=">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+
+      </nav>
+    </header>
+
+
+        <!-- Commented out while removing topnav, and search bar from larger screens 
         <div class="col-12 col-lg-4 my-auto d-none d-sm-none d-lg-block py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
@@ -117,12 +144,10 @@
           </div>
         </form>
         </div>
-        <div class="col-12">
-          <nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-center">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            {% include 'includes/main-nav.html' %}
+        <div class="col-12"> -->
+          
+            
+            
           </nav>
         </div>
         </div>
