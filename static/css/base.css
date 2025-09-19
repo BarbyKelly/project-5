@@ -77,7 +77,7 @@ h2 {
 }
 
 /* Underline effect on hover. Fix learned from chatGPT */
-.navbar .nav-link:not(.dropdown-toggle):hover::after {
+.navbar .nav-link:not(.dropdown-toggle):not(.main-logo-link):hover:after {
     content: "";
     position: absolute;
     left: 0;
@@ -126,6 +126,7 @@ h2 {
 /* Search Form - hidden by default */
 .search_form {
     display: none;
+    flex-direction: row;
     top: 100%;
     left: 0;
     width: max-content;

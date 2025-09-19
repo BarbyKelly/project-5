@@ -104,40 +104,40 @@
           <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
         </a>
 
-        <!-- Burger Menu (smaller screens only) - on the right -->
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links and Search Icon -->
+        <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="navbar-nav ml-auto align-items-center">
             <!-- Items from main-nav.html -->
             {% include 'includes/main-nav.html' %}
-
-            <!-- Search - fixed with chatGPT's guidance -->
-            <li class="nav-item position-relative">
-              <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
-              <a class="nav-link" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
-
-              <!-- Search Form - hidden until Search Icon is clicked -->
-              <div class="search_form">
-                <form method="GET" action="{% url 'products' %}">
-                  <input type="text"
-                         name="q"
-                         class="form-control form-control-sm border border-black rounded-0"
-                         placeholder="Search our Boutique"
-                         aria-label="Search">
-                  <button type="submit" class="btn btn-blue border border-black rounded-0 ml-1">
-                    Search
-                  </button>
-                </form>
-              </div>
-            </li>
           </ul>
+        </div>
+
+        <!-- Icons on the right side: search and burger menu - fixed with chatGPT's guidance -->
+        <div class="d-flex align-items-center order-xl-3 ml-auto">
+          <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
+          <a class="nav-link mr-2" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <!-- Search Form - hidden until Search Icon is clicked - fixed with chatGPT's guidance -->
+          <div class="search_form">
+            <form method="GET" action="{% url 'products' %}">
+              <input type="text"
+                     name="q"
+                     class="form-control form-control-sm border border-black rounded-0"
+                     placeholder="Search our Boutique"
+                     aria-label="Search">
+              <button type="submit" class="btn btn-blue border border-black rounded-0 ml-1">
+                Search
+              </button>
+            </form>
+          </div>
+
+          <!-- Burger Menu (smaller screens only) - on the right -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-nav"
+                  aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
       </nav>
