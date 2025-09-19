@@ -118,18 +118,27 @@ h2 {
 /* Search Form - hidden by default */
 .search_form {
     display: none;
-    flex-wrap: nowrap;
-    position: absolute;
-    right: 0;
-    top: 65px;
-    z-index: 1000;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    min-width: 200px;
+    z-index: 1050;
     background: #FFFFFF;
     align-items: center;
-    gap: 0.1rem;
+    padding: 0.4rem;
+    box-shadow: 0 1px 5px rgba(0,0,0.13);
 }
 
 .search_form.active {
     display: flex;
+    align-items: center;
+}
+
+/* Search form Button to stay beside input */
+.search_form form {
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 /* Search Form Input */
@@ -140,10 +149,9 @@ h2 {
     font-size: 1rem;
 }
 
-/* Search form Button to stay beside input */
-.search_form form {
-    display: flex;
-    align-items: center;
+.search_form button {
+    margin-left: 0.4rem;
+    white-space: nowrap;
 }
 
 /* No underline effect for Search Icon */
@@ -475,6 +483,18 @@ footer {
 @media (max-width: 767.98px) {
   .container {
     max-width: 750px;
+  }
+
+  .search_form {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    margin-top: 0.4rem;
+  }
+
+  .search_form input {
+    min-width: 0;
+    max-width: 100%;
   }
 }
 
