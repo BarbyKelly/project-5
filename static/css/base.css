@@ -123,17 +123,15 @@ h2 {
 }
 
 /* ----- Search - styling fixed with chatGPT's guidance ----->
-/* Search Form - hidden by default */
+/* Search Form - hidden by default - fixed with chatGPT's guidance */
 .search_form {
     display: none;
-    flex-direction: row;
+    position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: max-content;
-    min-width: 200px;
     z-index: 1050;
     background: #FFFFFF;
-    align-items: center;
     padding: 0.4rem;
     box-shadow: 0 1px 5px rgba(0,0,0.13);
 }
@@ -170,7 +168,7 @@ h2 {
 
 /* Navbar spacing */
 .navbar {
-    width: 100vh;
+    width: 100%;
     line-height: 1rem;
     padding-left: 10px;
     padding-right: 10px;
@@ -581,6 +579,11 @@ footer {
     .search_form.active input,
     .search_form.active button {
         width: 100%;
+    }
+
+    .search_form.active button {
+        width: auto;
+        margin-top: 0.4rem;
     }
 }
 

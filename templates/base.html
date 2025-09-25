@@ -121,13 +121,15 @@
 
           <!-- Search Form - hidden until Search Icon is clicked - fixed with chatGPT's guidance -->
           <div class="search_form">
-            <form method="GET" action="{% url 'products' %}">
+            <form method="GET" action="{% url 'products' %}" class="d-flex">
               <input type="text"
                      name="q"
                      class="form-control form-control-sm border border-black rounded-0"
                      placeholder="Search our Boutique"
                      aria-label="Search">
-              <button type="submit" class="btn btn-blue border border-black rounded-0 ml-1">
+              <button type="submit"
+                      class="btn btn-blue border border-black rounded-0 ml-1"
+                      aria-label="Submit Search">
                 Search
               </button>
             </form>
@@ -199,22 +201,42 @@
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
 
-    <!-- Script for Search - copied from ChatGPT -->
+    <!-- Script for Search - learned from ChatGPT -->
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         const toggle = document.getElementById("search_toggle");
         const searchForm = document.querySelector(".search_form");
         const searchInput = searchForm.querySelector("input[name='q']");
 
-
+        // Toggle Search Form
         toggle.addEventListener("click", function (e) {
           e.preventDefault();
-          searchForm.classList.toggle("active");
-          if (searchForm.classList.contains("active")) {
+          e.stopPropagation();
+          const isActive = searchForm.classList.toggle("active");
+
+          if (isActive) {
             searchInput.focus();
           }
         });
+
+        // Close Search Form when clicking outside of it
+        document.addEventListener("click", function (e) {
+          if (
+            searchForm.classList.contains("active") &&
+            !searchForm.contains(e.target) &&
+            e.target !== toggle
+        ) {
+          searchForm.classList.remove("active");
+        }
       });
+
+      // Close Search Form on ESC key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && searchForm.classList.contains("active")) {
+          searchForm.classList.remove("active");
+        }
+      });
+    });
     </script>
   </body>
 </html>
