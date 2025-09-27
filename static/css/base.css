@@ -129,36 +129,42 @@ h2 {
     position: absolute;
     top: 100%;
     right: 0;
-    width: max-content;
     z-index: 1050;
     background: #FFFFFF;
     padding: 0.4rem;
     box-shadow: 0 1px 5px rgba(0,0,0.13);
 }
 
+/* Active Search Form, Input and Button - fixed with chatGPT's guidance */
 .search_form.active {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-/* Search form Button to stay beside input */
-.search_form form {
+.search_form.active form {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 0;
+    width: auto;
 }
 
-/* Search Form Input */
-.search_form input {
-    flex: 1;
-    min-width: 10rem;
-    max-width: 12rem;
+.search_form.active input,
+.search_form.active button {
+    height: 2rem;
     font-size: 1rem;
+    line-height: 1.2;
 }
 
-.search_form button {
+.search_form.active input {
+    flex: 1;
+    min-width: 8rem;
+    margin-right: 0.4rem;
+}
+
+.search_form.active button {
+    flex-shrink: 0;
     margin-left: 0.4rem;
-    white-space: nowrap;
 }
 
 /* No underline effect for Search Icon */
@@ -501,18 +507,6 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-
-  .search_form {
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    margin-top: 0.4rem;
-  }
-
-  .search_form input {
-    min-width: 0;
-    max-width: 100%;
-  }
 }
 
 /* Top navbar fix on Medium and up screens */
@@ -527,6 +521,34 @@ footer {
 
     .header-container {
         padding-top: 10px;
+    }
+
+    /* Search Form - fixed with chatGPT's guidance */
+    .search_form {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .search_form.active {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search_form.active form {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+
+    .search_form.active input {
+        width: 12rem;
+        margin: 0 0.5rem 0 0;
+    }
+
+    .search_form.active button {
+        margin: 0;
+        width: auto;
     }
 }
 
@@ -566,24 +588,6 @@ footer {
     .btn.btn-blue.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
-    }
-
-    /* Search form - fixed with chatGPT's guidance */
-    .search_form.active {
-        flex-direction: column;
-        width: 100%;
-        position: static;
-        transform: translateY(-0.3rem);
-    }
-
-    .search_form.active input,
-    .search_form.active button {
-        width: 100%;
-    }
-
-    .search_form.active button {
-        width: auto;
-        margin-top: 0.4rem;
     }
 }
 
