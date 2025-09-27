@@ -122,6 +122,12 @@ h2 {
     background-color: transparent !important;
 }
 
+/* Header Icons wrapper - fixed with chatGPT's guidance */
+.header_icons {
+    display: flex;
+    align-items: center;
+}
+
 /* ----- Search - styling fixed with chatGPT's guidance ----->
 /* Search Form - hidden by default - fixed with chatGPT's guidance */
 .search_form {
@@ -142,27 +148,27 @@ h2 {
     width: 100%;
 }
 
-.search_form.active form {
+.search_form form {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: auto;
 }
 
-.search_form.active input,
-.search_form.active button {
+.search_form input,
+.search_form button {
     height: 2rem;
     font-size: 1rem;
     line-height: 1.2;
 }
 
-.search_form.active input {
+.search_form input {
     flex: 1;
     min-width: 8rem;
     margin-right: 0.4rem;
 }
 
-.search_form.active button {
+.search_form button {
     flex-shrink: 0;
     margin-left: 0.4rem;
 }
@@ -574,11 +580,6 @@ footer {
         font-size: 1rem;
     }
 
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-    }
-
     .btn.btn-outline-black.rounded-0,
     .btn.btn-blue.rounded-0 {
         padding: .375rem .375rem;
@@ -593,23 +594,42 @@ footer {
 
 /* Media Queries for 'L' screens (desktops, less than 1200px */
 @media (max-width: 1199.98px) {
-  .container {
-    max-width: 100%;
-  }
+    .container {
+      max-width: 100%;
+    }
 
-  .navbar .nav-link {
-    font-size: 16px;
-    padding: 0.25rem 0.1rem;
-  }
+    .navbar .nav-link {
+        font-size: 16px;
+        padding: 0.25rem 0.1rem;
+    }
 
-  .nav-item.mx-3 {
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-  }
+    .nav-item.mx-3 {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
 
-  .navbar-nav {
-    flex-wrap: wrap;
-  }
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    /* Navbar Collapse - fixed with chatGPT's guidance */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        width: auto;
+        background: #FFFFFF;
+        border-left: 0.5px solid #919497;
+        border-bottom: 0.5px solid #919497;
+        box-shadow: 0 2px 4px rgba(0,0,0.02);
+        z-index: 1040;
+    }
 }
 
 /* Media Queries for 'XL' screens (large desktops, less than 1400px */

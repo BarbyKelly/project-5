@@ -104,16 +104,8 @@
           <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
         </a>
 
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav ml-auto align-items-center">
-            <!-- Items from main-nav.html -->
-            {% include 'includes/main-nav.html' %}
-          </ul>
-        </div>
-
         <!-- Icons on the right side: search and burger menu - fixed with chatGPT's guidance -->
-        <div class="d-flex align-items-center order-xl-3 ml-auto">
+        <div class="d-flex align-items-center order-xl-3 ml-auto header_icons">
           <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
           <a class="nav-link mr-2" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -135,11 +127,19 @@
             </form>
           </div>
 
-          <!-- Burger Menu (smaller screens only) - on the right -->
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-nav"
+          <!-- Burger Menu (medium and small screens only) - on the right - fixed with chatGPT's guidance -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                   aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+        </div>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <!-- Items from main-nav.html -->
+            {% include 'includes/main-nav.html' %}
+          </ul>
         </div>
 
       </nav>
@@ -201,12 +201,13 @@
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
 
-    <!-- Script for Search - learned from ChatGPT -->
+    <!-- Script for Search and Burger Menu - learned from ChatGPT -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const toggle = document.getElementById("search_toggle");
         const searchForm = document.querySelector(".search_form");
         const searchInput = searchForm.querySelector("input[name='q']");
+        const navBarCollapse = document.getElementById("main-nav");
 
         // Toggle Search Form
         toggle.addEventListener("click", function (e) {
@@ -214,12 +215,17 @@
           e.stopPropagation();
           const isActive = searchForm.classList.toggle("active");
 
+          // Close Burger Menu if Search Form opens
+          if (isActive && navBarCollapse.classList.contains("show")) {
+            $(navBarCollapse).collapse('hide');
+          }
+
           if (isActive) {
             searchInput.focus();
           }
         });
 
-        // Close Search Form when clicking outside of it
+        // Close Search Form and Burger Menu when clicking outside of either one
         document.addEventListener("click", function (e) {
           if (
             searchForm.classList.contains("active") &&
@@ -228,12 +234,24 @@
         ) {
           searchForm.classList.remove("active");
         }
+
+        // Close Burger Menu if click outside of it
+        if (
+          navBarCollapse.classList.contains("show") &&
+          !navBarCollapse.contains(e.target) &&
+          !e.target.closest(".navbar-toggler")
+        ) {
+          $(navBarCollapse).collapse('hide');
+        }
       });
 
       // Close Search Form on ESC key
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && searchForm.classList.contains("active")) {
           searchForm.classList.remove("active");
+        }
+        if (e.key === "Escape" && navBarCollapse.classList.contains("active")) {
+          $(navBarCollapse).collapse('hide');
         }
       });
     });
