@@ -48,7 +48,7 @@ h2 {
     font-weight: bold;
 }
 
-/* All of styling of Navbar, NavLinks, and reduction of repetition fixed with ChatGPT's guidance. */
+/* Styling of Navbar, NavLinks, Logo, and reduction of repetition fixed with ChatGPT's guidance. */
 /* Logo */
 
 .header-container {
@@ -62,18 +62,27 @@ h2 {
     height: auto;
 }
 
-/* Base navLinks and Dropdown items */
+/* Navbar - base */
+.navbar {
+    width: 100%;
+    line-height: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 65px;
+    box-shadow: 0.4 9px rgb(59, 132, 165);
+}
+
+/* NavBar Links and Dropdown items */
 .navbar .nav-link,
 .navbar .dropdown-toggle,
 .navbar .dropdown-item {
-    font-size: 20px;
     font-weight: bold;
     color: black !important;
     position: relative;
     display: inline-block;
     transition: color 0.2s ease-in-out;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 }
 
 /* Underline effect on hover. Fix learned from chatGPT */
@@ -88,17 +97,8 @@ h2 {
     transition: width 0.2s ease-in-out;
 }
 
-/* Active link - change text color */
-.navbar .nav-link.active,
-.navbar .dropdown-toggle.active,
-.navbar .dropdown-item.active {
-    color: cornflowerblue !important;
-}
-
-/* Change text color for dropdown items on hover */
-.navbar .dropdown-item:hover,
-.navbar .dropdown-item:focus {
-    color: cornflowerblue !important;
+.navbar-collapse {
+    border-top: none;
 }
 
 /* Dropdown menus */
@@ -145,7 +145,7 @@ h2 {
 .search_form.active {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: auto;
 }
 
 .search_form form {
@@ -176,16 +176,6 @@ h2 {
 /* No underline effect for Search Icon */
 #search_toggle::after {
     content: none;
-}
-
-/* Navbar spacing */
-.navbar {
-    width: 100%;
-    line-height: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-height: 65px;
-    box-shadow: 0.4 9px rgb(59, 132, 165);
 }
 
 /* Container styling */
@@ -571,6 +561,62 @@ footer {
     body {
         height: calc(100vh - 116px);
     }
+}
+
+/* Media Queries for 'L' screens (desktops, less than 1200px - fixed with chatGPT's guidance */
+@media (max-width: 1199.98px) {
+    .container {
+      max-width: 100%;
+    }
+
+    /* Burger Menu to stay full width - fixed with chatGPT's guidance */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        max-width: 250px;
+        background: #FFFFFF;
+        border-left: 0.4px solid #919497;
+        border-bottom: 0.4px solid #919497;
+        box-shadow: 0 1px 3px rgba(0,0,0.02);
+        z-index: 1040;
+    }
+
+    /* All items inside Burger dropdown, same width - fixed with chatGPT's guidance */
+    .navbar-collapse .nav-item {
+        background-color: transparent;
+        color: #000;
+    }
+
+    /* Dropdown menu inside Burger - fixed with chatGPT's guidance */
+    .navbar-collapse .dropdown-menu {
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .navbar .nav-link {
+        font-size: 19px;
+        padding: 0.25rem 0.1rem;
+    }
+
+    .nav-item.mx-3 {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
 
     .nav-link {
         padding: 0.15rem;
@@ -592,43 +638,10 @@ footer {
     }
 }
 
-/* Media Queries for 'L' screens (desktops, less than 1200px */
-@media (max-width: 1199.98px) {
-    .container {
-      max-width: 100%;
-    }
-
+/* Media 1200 min-width - fixed with chatGPT's guidance */
+@media (min-width: 1200px) {
     .navbar .nav-link {
-        font-size: 16px;
-        padding: 0.25rem 0.1rem;
-    }
-
-    .nav-item.mx-3 {
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
-    }
-
-    .navbar-nav {
-        flex-wrap: wrap;
-    }
-
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-    }
-
-    /* Navbar Collapse - fixed with chatGPT's guidance */
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: auto;
-        width: auto;
-        background: #FFFFFF;
-        border-left: 0.5px solid #919497;
-        border-bottom: 0.5px solid #919497;
-        box-shadow: 0 2px 4px rgba(0,0,0.02);
-        z-index: 1040;
+        font-size: 19px;
     }
 }
 
