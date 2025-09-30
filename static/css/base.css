@@ -69,7 +69,7 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     min-height: 65px;
-    box-shadow: 0.4 9px rgb(59, 132, 165);
+    box-shadow: 0 4px 9px rgb(59, 132, 165);
 }
 
 /* NavBar Links and Dropdown items */
@@ -114,11 +114,6 @@ h2 {
 /* Show parent as active, when one of it's dropdown items is active */
 .navbar .dropdown-item.active {
     color: cornflowerblue !important;
-}
-
-/* Active dropdown items to have color only, no background */
-.navbar .dropdown-item.active {
-    color: cornflowerblue !important;
     background-color: transparent !important;
 }
 
@@ -128,7 +123,19 @@ h2 {
     align-items: center;
 }
 
-/* ----- Search - styling fixed with chatGPT's guidance ----->
+/* Hover effect for clickable Navbar icons and Logo - fixed with chatGPT */
+.nav-link:hover,
+.navbar-toggler:hover,
+.main-logo-link:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+    border-radius: 3px;
+    will-change: transform;
+}
+
+/* ----- Search - styling fixed with chatGPT's guidance ----- */
 /* Search Form - hidden by default - fixed with chatGPT's guidance */
 .search_form {
     display: none;
@@ -138,7 +145,7 @@ h2 {
     z-index: 1050;
     background: #FFFFFF;
     padding: 0.4rem;
-    box-shadow: 0 1px 5px rgba(0,0,0.13);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
 }
 
 /* Active Search Form, Input and Button - fixed with chatGPT's guidance */
