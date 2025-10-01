@@ -1059,6 +1059,35 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   Before ChatGPT, Developer couldn't imagine getting so many errors fixed without tutor's help.
   It was lovely to be able to ask guidance at any time.
 
+  - Performance improvement (after Lighthouse test)
+
+    - Starting Performance score: 71
+
+      ![Lighthouse score before performance fixes](docs/readme_images/ls_score_before_performance_fixes.png)
+
+    - Developer shared initial Lighthouse score results with ChatGPT
+    - Steps the Developer implemented based on ChatGPT's guidance:
+      - Added 'defer' to the Stripe JS script in base.html
+      - Updated {% for product in products %} loops in products.html, to improve loading time for images
+      - Optimized background image file size (472KB to 190KB)
+      - Uploaded optimized image to AWS S3
+      - Deleted previous background image from both local media and AWS
+      - In base.css, replaced the original local background image:
+
+        background-image: url('/media/website_background.jpg');
+
+        with the optimized AWS-hosted image:
+
+        background-image: url('https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/website_background_opt_200.jpg');
+
+      - Result: Lighthouse Performance score improved to 93
+
+        ![Lighthouse score after performance fixes with ChatGPT's guidance](docs/readme_images/ls_score_after_performance_fixes.png)
+
+
+
+
+
 - Business Model
 
   - Developer learned from [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model) how to write Business Model for Kelly's Art & Photo Boutique. Mentor Lauren-Nicole Popich guided developer to this project, as an example for Business model.

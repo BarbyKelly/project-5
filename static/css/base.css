@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
-    background-image: url('/media/website_background.jpg');
+    background-image: url('https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/website_background_opt_200.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
