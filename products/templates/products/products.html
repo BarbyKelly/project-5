@@ -57,8 +57,7 @@
                             {% if product.image %}
                                 <img
                                     class="card-img-top img-fluid"
-                                    src="{{ product.image_small.url }} 480w, {{ product.image_medium.url }} 768w, {{ product.image.url }} 1200w"
-                                    sizes="(max-width: 768px) 100vw, 25vw"
+                                    src="{{ product.image.url }}"
                                     alt="{{ product.name }}"
                                     {% if forloop.counter > 4 %}loading="lazy"{% endif %}
                                 >
