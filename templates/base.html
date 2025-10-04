@@ -39,6 +39,9 @@
     {% block extra_meta %}
     {% endblock %}
 
+    <!-- Lightbox2 CSS - copied from ChatGPT to fix image click after csp was added -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
     {% block corecss %}
       <!-- Bootstrap 4.6.2 CSS -->
       <link rel="stylesheet"
@@ -185,19 +188,24 @@
           </div>
         </div>
         <hr>
+        <!-- Social Networks - noreferrer added with ChatGPT's guidance for security, Best Practices -->
         <ul id="social-networks">
-          <li><a class="social-networks" href="https://www.facebook.com/" target="_blank" rel="noopener"
+          <li><a class="social-networks" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
           aria-label="Facebook home page (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
           </li>
-          <li><a class="social-networks" href="https://x.com/" target="_blank" rel="noopener"
+          <li><a class="social-networks" href="https://x.com/" target="_blank" rel="noopener noreferrer"
           aria-label="X/Twitter home page (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
           </li>
-          <li><a class="social-networks" href="https://www.youtube.com/" target="_blank" rel="noopener"
+          <li><a class="social-networks" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
           aria-label="YouTube home page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
           </li>
         </ul>
       </div>
     </footer>
+
+    <!-- Lightbox2 JS - copied from ChatGPT to fix image click issue after csp was added -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
 

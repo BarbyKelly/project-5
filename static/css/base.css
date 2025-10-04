@@ -261,13 +261,59 @@ h2 {
 }
 
 .overlay {
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    position: fixed;
     background: white;
     z-index: -1;
+    pointer-events: none;
+}
+
+/* Product card - clickable (not just image, and badge) - copied from chatGPT after csp fix stopped image click */
+.product_card {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.product_card:hover {
+    border: 1px solid #474d54;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.16);
+    border-radius: 0.4rem;
+    transform: translateY(-2px);
+}
+
+.product_card * {
+    pointer-events: none;
+}
+
+.product_card a,
+.product_card button {
+    pointer-events: auto;
+}
+
+/* Image Container - styling fixed with ChatGPT's guidance */
+.product-container,
+.product-details-container,
+.image-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.image-container a {
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.image-container a img {
+    display: block;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 a.category-badge > span.badge:hover {

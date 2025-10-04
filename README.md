@@ -1063,7 +1063,7 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
     - Starting Performance score: 71
 
-      ![Lighthouse score before performance fixes](docs/readme_images/ls_score_before_performance_fixes.png)
+      ![Lighthouse score before performance fixes](docs/readme_images/lh_score_before_performance_fixes.png)
 
     - Developer shared initial Lighthouse score results with ChatGPT
     - Steps the Developer implemented based on ChatGPT's guidance:
@@ -1082,7 +1082,19 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
       - Result: Lighthouse Performance score improved to 93
 
-        ![Lighthouse score after performance fixes with ChatGPT's guidance](docs/readme_images/ls_score_after_performance_fixes.png)
+        ![Lighthouse score after performance fixes with ChatGPT's guidance](docs/readme_images/lh_score_after_performance_fixes.png)
+
+  - Best Practices Score improved with ChatGPT's guidance
+
+    - Starting Lighthouse score: 79
+
+      ![LH report for Best Practices](docs/readme_images/lh_bp_starting_score.png)
+    
+    - Steps suggested by ChatGPT to improve Content Security Policy(CSP):
+
+      ![Steps for CSP fix, by ChatGPT](docs/readme_images/lh_bp_csp_steps.png)
+
+      ![Security and CSP fix](docs/readme_images/security_and_csp_from_chatgpt.png)
 
 
 
