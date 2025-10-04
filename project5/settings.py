@@ -86,15 +86,48 @@ MIDDLEWARE = [
 # Content Security Policy (CSP) for Django-csp - copied exactly from ChatGPT - to improve Best Practices
 CSP_DIRECTIVES = {
     "default-src": ("'self'",),
-    "script-src": ("'self'", "https://js.stripe.com", "https://cdnjs.cloudflare.com"),
-    "style-src": ("'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"),
-    "font-src": ("'self'", "https://fonts.gstatic.com"),
-    "img-src": ("'self'", "data:", "https://kellys-art-and-photo-boutique.s3.amazonaws.com", "https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com"),
-    "connect-src": ("'self'", "https://api.stripe.com"),
-    "frame-src": ("https://js.stripe.com",),
+    "script-src": (
+        "'self'",
+        "'unsafe-inline'",
+        "'unsafe-eval'",
+        "https://js.stripe.com",
+        "https://cdnjs.cloudflare.com",
+        "https://cdn.jsdelivr.net",
+        "https://kellys-art-and-photo-boutique.s3.amazonaws.com",
+    ),
+    "style-src": (
+        "'self'",
+        "'unsafe-inline'",
+        "https://fonts.googleapis.com",
+        "https://cdnjs.cloudflare.com",
+        "https://cdn.jsdelivr.net",
+        "https://kellys-art-and-photo-boutique.s3.amazonaws.com",
+    ),
+    "font-src": (
+        "'self'",
+        "https://fonts.gstatic.com",
+        "https://kellys-art-and-photo-boutique.s3.amazonaws.com",
+    ),
+    "img-src": (
+        "'self'",
+        "data:",
+        "https://res.cloudinary.com",
+        "https://kellys-art-and-photo-boutique.s3.amazonaws.com",
+        "https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com",
+    ),
+    "connect-src": (
+        "'self'",
+        "https://api.stripe.com",
+    ),
+    "frame-src": (
+        "https://js.stripe.com",
+    ),
     "base-uri": ("'self'",),
     "object-src": ("'none'",),
-    "trusted-types": ("'none'",),
+    "form-action": (
+        "'self'",
+        "https://js.stripe.com"),
+    "manifest-src": ("'self'",),
 }
 
 
