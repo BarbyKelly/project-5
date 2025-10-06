@@ -70,8 +70,10 @@ INSTALLED_APPS = [
 ]
 
 
-# Middleware
+# Middleware - fixed with ChatGPT's guidance - to fix AWS and CSP
 MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'csp.middleware.CSPMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -260,7 +262,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static and Media files (CSS, JavaScript, Images)
+# Static and Media files (CSS, JavaScript, Images) - fixed with ChatGPT's guidance
 USE_AWS = os.environ.get('USE_AWS', False)
 
 if 'USE_AWS' in os.environ:
@@ -294,6 +296,9 @@ else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+    # WhiteNoise: compress and cache static files for Heroku - added with ChatGPT's guidance, to fix css issue
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Stripe
