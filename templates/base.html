@@ -8,7 +8,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="google-site-verification" content="2GllS38cQ4AvENLO6njtCQI0HR2M-_2-azChKY6Djns" />
+      <meta name="google-site-verification" content="2GllS38cQ4AvENLO6njtCQI0HR2M-_2-azChKY6Djns">
 
       <!-- Basic SEO - created with ChatGPT's guidance -->
       <meta name="description" content="Kelly's Art & Photo Boutique - children's original handmade art and variety of photos, ideal as gifts or décor">
@@ -97,6 +97,7 @@
 
     <title>Kelly's Art & Photo Boutique {% block extra_title %}{% endblock %}</title>
   </head>
+
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Header - fixed with chatGPT's help, to remove topnav, place Logo left and burger menu right for all screens -->
     <header class="container-fluid fixed-top header-container">
@@ -107,7 +108,7 @@
           <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
         </a>
 
-        <!-- Icons on the right side: search and burger menu - fixed with chatGPT's guidance -->
+        <!-- Search and burger menu - fixed with chatGPT's guidance -->
         <div class="d-flex align-items-center order-xl-3 ml-auto header_icons">
           <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
           <a class="nav-link mr-2" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
@@ -144,7 +145,6 @@
             {% include 'includes/main-nav.html' %}
           </ul>
         </div>
-
       </nav>
     </header>
 
@@ -177,6 +177,7 @@
       $('.toast').toast('show');
     </script>
     {% endblock %}
+
     <!-- Footer, base code from LoveRunning index.html-->
     <footer>
       <div class="footer">
@@ -209,7 +210,7 @@
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
 
-    <!-- Script for Search and Burger Menu - all of it learned from ChatGPT -->
+    <!-- Script for Search and Burger Menu - all of it learned from ChatGPT, to match with bootstrap4 -->
     <script>
     document.addEventListener("DOMContentLoaded", function () {
       const searchFormToggle = document.getElementById("search_toggle");
@@ -237,14 +238,14 @@
         if (searchForm.classList.contains("active") &&
             !searchForm.contains(e.target) &&
             e.target !== searchToggle) {
-          searchForm.classList.remove("active");
+            searchForm.classList.remove("active");
         }
 
         // Close Burger Menu if click outside of it
         if (navBarCollapse.classList.contains("show") &&
             !navBarCollapse.contains(e.target) &&
             !e.target.closest(".navbar-toggler")) {
-          $(navBarCollapse).collapse('hide');
+            $(navBarCollapse).collapse('hide');
         }
       });
 
