@@ -205,76 +205,51 @@
     <!-- Script copied from ChatGPT, to help to show navbar items as active -->
     <script src="{% static 'js/active-nav.js' %}"></script>
 
-    <!-- Script for Search and Burger Menu - all of it learned from ChatGPT, to match with bootstrap4 -->
+    <!-- Script for Search Icon/form - all the parts learned from ChatGPT, to match with bootstrap4 -->
     <script>
     document.addEventListener("DOMContentLoaded", function () {
       const searchFormToggle = document.getElementById("search_toggle");
       const searchForm = document.querySelector(".search_form");
       const searchInput = searchForm.querySelector("input[name='q']");
       const burgerMenuToggler = document.querySelector(".navbar-toggler");
+      const navBarCollapse = document.getElementById("main-nav");
 
       // Toggle Search Form
       searchFormToggle.addEventListener("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
-        const isActive = searchForm.classList.toggle("active");
 
-        // Close Burger Menu if Search Form opens
-        if (isActive && navBarCollapse.classList.contains("show")) {
+        // Close Burger Menu if open - fixed with chatGPT
+        if ($(navBarCollapse).hasClass('show')) {
           $(navBarCollapse).collapse('hide');
         }
 
+        const isActive = searchForm.classList.toggle("active");
         if (isActive) searchInput.focus();
       });
 
-      // Close Search Form and Burger Menu when clicking outside of either one
+      // Close Search Form when clicking outside of it
       document.addEventListener("click", function (e) {
         if (searchForm.classList.contains("active") &&
             !searchForm.contains(e.target) &&
-            e.target !== searchToggle) {
+            e.target !== searchFormToggle) {
             searchForm.classList.remove("active");
         }
-
-        // Close Burger Menu if click outside of it
-        if (navBarCollapse.classList.contains("show") &&
-            !navBarCollapse.contains(e.target) &&
-            !e.target.closest(".navbar-toggler")) {
-            $(navBarCollapse).collapse('hide');
-        }
       });
 
-      // Close Search Form and Burger on ESC key
+      // Close Search Form on ESC key
       document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          if (searchForm.classList.contains("active")) searchForm.classList.remove("active");
-          if (navBarCollapse.classList.contains("show")) $(navBarCollapse).collapse('hide');
+        if (e.key === "Escape" && searchForm.classList.contains("active")) {
+          searchForm.classList.remove("active");
         }
       });
 
-      // Burger Menu click closes Search Form first, then opens Burger Menu - learned from chatGPt
+      // Close Search Form when Burger Menu is clicked - fixed with chatGPT's guidance
       burgerMenuToggler.addEventListener("click", function () {
         if (searchForm.classList.contains("active")) {
           searchForm.classList.remove("active");
-          // Wait for browser to repaint, before toggling Burger
-          setTimeout(() => {
-            $(navBarCollapse).collapse('toggle');
-          }, 10);
-        } else {
-          $(navBarCollapse).collapse('toggle');
         }
       });
-
-      // Hover for dropdowns - desktops (learned form chatGPT)
-      if (window.innerWidth >= 1200) {
-        document.querySelectorAll('#main-nav .dropdown').forEach(function(dropdown){
-          dropdown.addEventListener('mouseenter', function(){
-            this.querySelector('.dropdown-menu').classList.add('show');
-          });
-          dropdown.addEventListener('mouseleave', function(){
-            this.querySelector('.dropdown-menu').classList.remove('show');
-          });
-        });
-      }
     });
     </script>
   </body>
