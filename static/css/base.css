@@ -101,14 +101,8 @@ h2 {
     border-top: none;
 }
 
-/* Dropdown menus */
-.navbar .dropdown-menu {
-    display: none;
-}
-
-/* Show dropdown menu when parent is hovered */
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
+.navbar-collapse.show {
+    display: block !important;
 }
 
 /* Show parent as active, when one of it's dropdown items is active */
@@ -303,7 +297,6 @@ h2 {
 .image_container {
     width: 100%;
     border-radius: 0.3rem;
-    background-color: #fcfafa;
     display: flex;
     justify-content: center;
     padding: 8px;
@@ -712,6 +705,10 @@ footer {
     .navbar .nav-link {
         font-size: 19px;
     }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 /* Media Queries for 'XL' screens (large desktops, less than 1400px */
@@ -737,5 +734,3 @@ footer {
     min-width: 200px;
   }
 }
-
-/* Force rebuild 25-10-06 */

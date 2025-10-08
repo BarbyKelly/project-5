@@ -111,7 +111,7 @@
         <!-- Search and burger menu - fixed with chatGPT's guidance -->
         <div class="d-flex align-items-center order-xl-3 ml-auto header_icons">
           <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
-          <a class="nav-link mr-2" href="{% url 'products' %}" id="search_toggle" aria-label="Search">
+          <a class="nav-link mr-2" href="#" id="search_toggle" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
 
@@ -139,12 +139,7 @@
         </div>
 
         <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav ml-auto align-items-center">
-            <!-- Items from main-nav.html -->
-            {% include 'includes/main-nav.html' %}
-          </ul>
-        </div>
+        {% include 'includes/main-nav.html' %}
       </nav>
     </header>
 
@@ -216,7 +211,6 @@
       const searchFormToggle = document.getElementById("search_toggle");
       const searchForm = document.querySelector(".search_form");
       const searchInput = searchForm.querySelector("input[name='q']");
-      const navBarCollapse = document.getElementById("main-nav");
       const burgerMenuToggler = document.querySelector(".navbar-toggler");
 
       // Toggle Search Form
