@@ -1,26 +1,50 @@
 {% extends "account/base.html" %}
 
 {% load i18n %}
-
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
+{% block extra_head %}
+  <!-- Meta tags - for Sign Up (added based on Sign in fix, which was learned from chatGPT) -->
+  <meta name="description" content="Sign up securely for account on Kelly's Art & Photo Boutique.">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:title" content="Sign Up - Kelly's Art & Photo Boutique"> 
+  <meta property="og:description" content="Create your Kelly's Art & Photo Boutique's account">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ request.build_absolute_url }}">
+  <meta property="og:site_name" content="Kelly's Art & Photo Boutique">
+  <link rel="canonical" href="{{ request.build_absolute_url }}">
+{% endblock %}
+
 {% block inner_content %}
-  <div class="row page-title">
-    <h2 class="logo-font text-center mt-3 mb-1">{% trans "Sign Up" %}</h2>
-  </div>
-  <hr>
-  <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">Sign In here</a>.{% endblocktrans %}</p>
+  <!-- Inner content block improved with chatGPT's guidance, for better SEO -->
+  <section class="account_signup container mt-4 pt-4 text-center" aria-labelledby="signup-title">
+    <h1 id="signup-title" class="logo-font mb-3">
+      {% trans "Sign Up" %}
+    </h1>
+    <hr aria-label="hide">
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="btn btn-reverse btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Sign In</a>
-  <button class="btn btn-outline-black" type="submit">
-    <span>{% trans "Sign Up" %}</span>
-  </button>
-</form>
+    <p>
+      {% blocktrans %}
+        Already have an account? Then please <a href="{{ login_url }}">Sign In here</a>
+      {% endblocktrans %}
+    </p>
 
+    <form class="signup mt-2" id="signup_form" method="post" action="{% url 'account_signup' %}">
+      {% csrf_token %}
+      {{ form|crispy }}
+      {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+
+      <!-- Div for buttons added based on Sign In fix -->
+      <div class="d-flex justify-content-center mt-4">
+        <a class="btn btn-reverse btn-outline-black rounded-0 mr-2" href="{% url 'account_login' %}">
+          {% trans "Back to Sign In" %}
+        </a>
+        <button class="btn btn-outline-black rounded-0" type="submit">
+          <span>{% trans "Sign Up" %}</span>
+        </button>
+      </div>
+    </form>
+  </section>
 {% endblock %}

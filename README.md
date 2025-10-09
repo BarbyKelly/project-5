@@ -8,12 +8,12 @@ Developer mainly based her project on Code Institute's Walk-through:
  
 Aim of Kelly's Art & Photo Boutique:
 - built for educational purposes only
-- to create a Site where selection of Art and Photos are displayed,
+- to create a Site where selection of Art and Photos are displayed
 - sharing Art made by Developer's kids, and Photos taken by the Developer
-- option for Site users to browse products, search and choose products, 
-- test out purchasing products (without real transactions),
-- option to Sign up and Sign in,
-- check out 'How To...?" videos with art lessons by various YouTubers
+- option for Site users to browse products, search and choose products
+- test out purchasing products (without real transactions)
+- option to Sign up and Sign in
+- check out 'How To...?" videos with art lessons by selected YouTubers
 - sign up for a Newsletter
 - fill in a Contact form
 
@@ -22,11 +22,11 @@ No real orders, payments or deliveries.
 
 Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
-Github: [link to github](https://github.com/BarbyKelly/project-5)
+Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/project-5)
 
-Responsiveness test with [am i responsive](https://ui.dev/amiresponsive)
+Responsiveness tested with [am I responsive](https://ui.dev/amiresponsive)
 
-![Am I Responsive image](docs/readme_images/am_i_responsive_opt_350.png)
+![Am I Responsive image](docs/readme_images/am_I_responsive_opt.png)
 
 
 # Contents
@@ -560,6 +560,8 @@ At the moment default message mentions only username and/or password being incor
 !['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
 
 - Links in 'How To ...?' to include lessons how to take better photos
+
+- Users can Sign Up and Sign In via social media links, Google account and similar
 
 ### About Creators
 

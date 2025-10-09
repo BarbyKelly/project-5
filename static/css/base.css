@@ -434,7 +434,7 @@ textarea[name="message"] {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: cornflowerblue; /* text-secondary */
+    font-weight: bold;
 }
 
 .allauth-form-inner-content input {
@@ -481,7 +481,7 @@ textarea[name="message"] {
 }
 
 .allauth-form-inner-content a {
-    color: #17a2b8; /* text-info */
+    color: cornflowerblue
 }
 
 /* Product Form */
