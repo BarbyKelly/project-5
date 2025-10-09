@@ -26,7 +26,7 @@ Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/
 
 Responsiveness tested with [am I responsive](https://ui.dev/amiresponsive)
 
-![Am I Responsive image](docs/readme_images/am_I_responsive_opt.png)
+![Am I Responsive image](docs/readme_images/am_I_responsive_opt_58.png)
 
 
 # Contents
@@ -112,12 +112,12 @@ The following groups are considered Direct Audience, as they are most likely to 
     - People seeking handmade and original gifts for variety of occasions eg graduation, first school day, birthday, anniversary, just to say 'Thank you'
 
   - Beauty and Spa businesses:
-    - Salons, spas, wellness centers, in need of calming  for Art/Photos to complement their relaxing atmosphere
+    - Salons, spas, wellness centers, looking for certain type of Art/Photos to complement their relaxing atmosphere
 
 
 ## Indirect Audience
 
-Groups that are influenced by the display or recommendation of the products made by Kelly's Art & Photo Boutique.
+Groups that are influenced by the display or recommendation of the products made by Kelly's Art & Photo Boutique:
 
 - Business owners and interior designers:
   - Seeing products of Kelly's Art & Photo Boutique displayed in someone's living space, business,
@@ -136,43 +136,47 @@ Groups that are influenced by the display or recommendation of the products made
 
 ## User Stories
 
-### Users may:
+Users may opt to use various features:
+
+### Navbar
+
+- Click on Navbar items/links:
+
+### Logo
 
 - Click on Logo (to bring them back to Home Page or refresh Home Page)
-- Use Search Bar on larger screens to find Art and Photos 
 
-- Click on 'Sign In' to access 'Sign In' form:
-  - Click on link: 'Sign Up first' (steps for 'Sign Up' described below)
-  - Fill in Username or Email, and a password:
-    - Even if they don't have an account. Only User with an account will be signed in
-    - Users without invalid/not existing Username or Email address, will be reminded: "Please fill in this field"
-  - Tick 'Remember Me' box:
-    - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
-    - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
-      or if they do not have an account
-  - Click on 'Home' button to get back to Home page
-  - Click on 'Sign In' button to sign in:
-    - Even if they don't have an account or have not entered correct details. Only User with an account and valid Username/e-mail and Password,
-      will be signed in
-    - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
-  - Click on 'Forgot Your Password?':
-    - Even if they don't have an account.
-      - Fill in 'Password Reset' form:
-        - Click on 'Reset My Password'
-        - Only User with an account and valid email address, will receive an email to reset their password
-        - Click on 'Back to Sign In' button
+### Home
 
-- Click on 'Sign Up' to access 'Sign Up' form:
-  - Click on: 'Sign In here' (which opens up 'Sign In' form, and steps for 'Sign In' form were described above)
-  - Fill in E-mail address,E-mail address confirmation, Username, Password and Password(again)
-    - Users are reminded: 'Please fill in this field' if they leave a required field blank
-  - Click on 'Back to Sign In' button to return to 'Sign In' form
-  - Click on 'Sign Up' button to Sign Up
+- Click on Home NavLink to get back to Home page or to refresh Home page
+- Click on 'Click Here To Shop' button on Home page
 
-- Click on Cart to open Shopping Cart page
+### Art
+
+- Hover on Art NavLink (on larger screens) for Art dropdown menu to be displayed
+- Click on Art NavLink which opens up Art page with all of the Art available in the Boutique
+- Choose to click on any item in dropdown menu, to select Art by specific category
+- Hover on badges (for all screen sizes) to highlight any badge that pointer is on
+- Click on badges to choose an Art category
+- Choose to sort Art by Price, Name, Author, or Category
+- Select Art by: Animal, Name, Winter, or Variety
+
+### Photos
+
+- Hover on Photos NavLink (on larger screens) for Photos dropdown menu to be displayed
+- Click on Photos NavLink, which opens up Photos page with all of the Photos available in the Boutique
+- Choose to click on any item in dropdown menu to select Photos by specific category
+- Hover on badges (for all screen sizes) to highlight any badge that pointer is on
+- Click on badges to choose particular Photos category
+- Choose to sort products by Price, Name, Author, or Category
+- Select Art by: Animal, Name, Winter, or Variety
+- Choose photos by: Beach, Rainbow, Animal, Sky, or Variety
+
+### Cart
+
+- Click on Cart NavLink to open Shopping Cart page
   - Click on 'Back to Shopping' if no items in the cart
-
-- Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
+  - Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
 
   ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
 
@@ -181,17 +185,89 @@ Groups that are influenced by the display or recommendation of the products made
 
   ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
 
-- Click on Nav Bar Menu Items, and dropdown Menus to choose which Items to display
-- Choose to have products displayed by Category, by Price, by Author, or All Items
-- Select Art by: Animal Art, Name Art, Winter Art, Variety of Art, or All Art
-- Choose photos displayed by: Beach, Rainbows, Animals, Sky, Variety of Photos, or All Photos
+### How To...?
+
+- Click on 'How To...?' NavLink, to access 'How To...?' page
+- Select any of the YouTube links to watch by clicking on them
+- YouTube videos opening up in the new tab, leaving Kelly's Art & Photo Boutique's open in a previous tab
+
+### Newsletter
+
+- Click on Newsletter NavLink to open up Newsletter page with form
+- Fill in the form (email only) to sign up for Boutique's Newsletter
+- Click on 'Back to Boutique'
+- Click on 'Subscribe' to subscribe to the Newsletter
+
+### Contact Us
+
+- Click on 'Contact Us' NavLink to open up 'Contact Us' page
+- Fill in form to contact Boutique
+- Click on 'Back to Boutique'
+- Click on 'Submit Contact Form'
+
+### Sign In
+
+- Click on 'Sign In' NavLink to access 'Sign In' page with a Sign In Form
+- Click on link: 'Sign Up' if User does not have an account yet
+  - Sign Up page opens after click, and User may fill in Sign Up form (steps below under 'Sign Up')
+- User may choose to fill the 'Sign In' form or not
+
+#### Sign In form
+
+- Fill in Username or Email, and a password:
+    - Even if they don't have an account. Only User with an account will be signed in
+    - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
+      or if they do not have an account
+  - Option to tick 'Remember Me' box:
+    - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
+  - Click on 'Home' button to return to Home page
+  - Click on 'Sign In' button to sign in:
+    - Even if they don't have an account or have not entered correct details, they can click on the button.
+      Only User with an account and valid Username/e-mail and Password, will be signed in
+    - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
+  - Click on 'Forgot Your Password?':
+    - Even if they don't have an account.
+      - Fill in 'Password Reset' form:
+        - Click on 'Reset My Password'
+        - Only User with an account and valid email address, will receive an email to reset their password
+        - Click on 'Back to Sign In' button
+
+### Sign Up
+
+- Click on 'Sign Up' NavLink to access 'Sign Up' page and 'Sign Up' form:
+- Click on: 'Sign In here' (which opens up 'Sign In' form (steps for 'Sign In' form described above))
+  if they already have an account set up
+- User may choose to fill the 'Sign Up' form or not
+
+#### Sign Up form
+
+- Fill in E-mail address, E-mail address confirmation, Username, Password and Password (again)
+- Users are reminded: 'Please fill in this field' if they leave a required field blank
+- Opt to click on 'Back to Sign In' button to return to 'Sign In' form
+- Click on 'Sign Up' button to Sign Up
+
+#### Search Icon/Search Form
+
+- Click on Search Icon to open up Search Form
+- Type in Search Form
+- Click on Blue Search Icon (part of the form) or press Enter, to start search
+- Search Art and Photos in the Boutique with keywords eg 'rainbow':
+
+  ![Search results for 'Rainbow'](docs/readme_images/search_results_rainbow_opt_50.png)
+
+- Click on Blue Search Icon (part of the form) or press Enter, without typing in Search Form
+  - Use 'x' in top right corner to close Error alert, when Search Form was left empty
+- Click on Search Icon in the Navbar to close Search Form
+
+#### Burger Icon/Menu (on smaller screens)
+
+- Click on Burger Icon to open dropdown menu
+- Choose any of the items from the dropdown menu and click on them
 
 ### User who is not an Admin of Kelly's Art & Photo Boutique, may not:
 
 - Add, edit or delete products
 - Access Product Management
-
-[Back to Contents](#contents)
  
 ### Users once signed in may:
 - Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
@@ -204,13 +280,20 @@ Groups that are influenced by the display or recommendation of the products made
 - Access 'Product Management' once signed in
 - Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
 - Follow SKU system already in place: 
-  dr33(add a unique number in the end) for art,
-  ph88(add a unique number in the end) for photos
+  dr33(add a unique number in the end) for Art,
+  ph88(add a unique number in the end) for Photos
 
 - Admin may change the SKU system if needed
 - Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
 - Admin can create test purchases and delete them after
 - Admin may click on all items on the website like other users
+
+### Footer
+
+- User may click on Privacy Policy to open it up
+- May click on Social Media icons to open up their home pages
+
+[Back to User Experience](#user-experience)
 
 [Back to Contents](#contents)
 
@@ -518,6 +601,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Registered Site User may save items for later, or as their favorites, to access these under their account
 - Registered User is notified of saved items in their cart when they return to the website
 
+- 'How To...?' page to include videos related to Photos, Photography
 - Improved Descriptions for all products, to improve search for Users, and add more keywords
 - Add an option to search Art and Photos by special celebrations: Easter, Christmas, Halloween, Birthday, Anniversary, Valentine's Day etc.
   (with improved Descriptions, this option will work, like now when looking for Winter, rainbow)
