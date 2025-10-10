@@ -425,10 +425,17 @@ To date Developer did not come across a website with same combination as hers: p
 
 ### Home Page
 
-  ![Home Page](docs/readme_images/home_page_boutique_opt_500.png)
+  ![Home Page](docs/readme_images/home_page_opt_100.png)
 
-  - Displaying Logo, Navbar with NavLinks or Burger Menu (for smaller screens), Search Icon, and 'Click here to shop' button
-  - Hovering effect for all Navbar items i.e. hovered item is raised, and pointer is indicating it's clickable
+  - Displayed on Home page:
+    - Logo
+    - Navbar
+    - NavLinks or Burger Menu (for smaller screens)
+    - Search Icon
+    - 'Click here to shop' button
+    - Footer
+
+  - Hovering effect for all Navbar items i.e. hovered item is raised, and pointer is indicating item is clickable
   - NavLinks have a line under while hovered, to highlight them more
   - No active line under Logo, Search Icon or Burger Menu on hover
   - Home page has a background image
@@ -468,24 +475,67 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Hover effect for dropdown menu items
 - Click on Art NavLink opens up Art page with all of the Art available in the Boutique
 - Click on Art category from dropdown menu, opens up page with the selected category of Art
-- 'Products Home' button below Logo, top left, is clickable
-  - Click on it opens up page with all of the Boutique's products
+- When Art page is open with all or some of the products:
+  - 'Products Home' link (below Navbar, above products on the left) is clickable
+  - Click on it opens up page with all of the Boutique's products, Art and Photos
+  - Number of products eg 18 products, is displayed beside 'Products Home' link
 
-  #### Badges
+#### Badges
 
-  - Displayed below Navbar for all Art or selected category of Art
-  - For all screen sizes
-  - Change color when hovered
-  - Pointer appears on badge when hovered
-  - Clickable
-  - Click on badge opens up selected Art category
-  - Or refreshes the page if only one category of Art is displayed
-
-  - Select Art by: Animal, Name, Winter, or Variety
+- Displayed below Navbar for all Art or selected category of Art
+- For all screen sizes
+- Change color when hovered
+- Pointer appears on badge when hovered
+- Clickable
+- Click on badge opens up selected Art category
+- Or refreshes the page if only one category of Art is displayed
+- Options for Badges if all Art displayed: Variety of Art, Winter Art, Name Art, Animal Art 
 
 #### Sorting
 
-  - Choose to sort Art by Price, Name, Author, or Category
+- 'Sort by' option displayed on the right below badge(s):
+
+![Options for sorting](docs/readme_images/sort_by_options_opt_100.png)
+
+- Placeholder 'Sort by...' is displayed
+- Options to sort by:
+  - Price (low to high)
+  - Price (high to low)
+  - Name (A-Z)
+  - Name (Z-A)
+  - Author (A-Z)
+  - Author (Z-A)
+  - Category (A-Z)
+  - Category (Z-A)
+- Sorting options is highlighted on hover
+- Click on Sorting option sorts products as required, and all of the Art is displayed in requested order
+- User may choose eg 'Variety of Art', 10 products displayed, and then opt to sort the category by Author (A-Z),
+  which results in all 10 Variety of Art products sorted by Author A-Z
+
+#### Art/product cards
+
+- On hover, pointer appears and Art product is raised up to highlight which product is hovered 
+- Card includes:
+  - Image
+  - Name
+  - Price
+  - Author
+  - Badge
+- Product card is clickable
+- Click on product card opens up a page with the selected product
+- Details displayed on product page:
+  - Image
+  - Name
+  - Price
+  - Author
+  - Badge
+  - Description
+  - Size options:
+
+  - Quantity:
+    
+  - Buttons below quantity:
+    - 'Continue Shopping' and 'Add to Cart'
 
 
 ### Search Icon/Search Form
