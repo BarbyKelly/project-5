@@ -430,10 +430,16 @@ To date Developer did not come across a website with same combination as hers: p
   - Displayed on Home page:
     - Logo
     - Navbar
-    - NavLinks or Burger Menu (for smaller screens)
+    - NavLinks or Burger Menu (depending on screen size)
     - Search Icon
     - 'Click here to shop' button
-    - Footer
+    - Footer:
+      - Copyright
+      - Developer's name
+      - Project type
+      - Disclaimer: no real transactions
+      - Privacy Policy
+      - Social Media links
 
   - Hovering effect for all Navbar items i.e. hovered item is raised, and pointer is indicating item is clickable
   - NavLinks have a line under while hovered, to highlight them more
@@ -531,11 +537,49 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Badge
   - Description
   - Size options:
+    - Default size option - 13x10cm
+    - 13x10cm
+    - 10x13cm
+    - 18x13cm
+    - 13x18cm
+    - 45x30cm
+    - 30x45cm
 
   - Quantity:
-    
+    - By default quantity of 1 is displayed in the input field
+    - Quantity can be increased/decreased using either arrows or by typing
+    - Arrows:
+      - On hover, arrows appear at the right end of input box
+      - Arrows are clickable
+      - Arrow up increases Quantity by 1
+        - Max quantity 50 per product:
+          - Arrow up is still clickable, when Quantity 50 is displayed
+          - Blue background color appears behind 50, when User clicks on arrow up while 50 is displayed
+          - Quantity would not increase beyond 50
+          - [Future feature below to improve feedback to User re Quantity](#quantity)
+      - Arrow down decreases Quantity by 1
+        - Min quantity 1:
+          - Arrow down is still clickable, when Quantity 1 is displayed
+          - Blue background color appears behind 1, when User clicks down arrow to reduce below 1
+          - Quantity would not dencrease below 1
+          - [Future feature below to improve feedback to User re Quantity](#quantity)
+
+    - Typing Quantity values:
+      - User can click in input box and type in any number
+      - If value entered is more than 50, pop up appears: "Value must be less than or equal to 50.":
+
+        ![Less than or equal to 50](docs/readme_images/less_than_or_equal_to_fifty_opt_50.png)
+
+      - If User leaves the value above 50, and clicks on 'Add to Cart', same pop up appears
+
+      - When User types a value less than 1, pop up appears: "Value must be greater than or equal to 1.":
+
+        ![Greater than or equal to 1](docs/readme_images/greater_than_or_equal_to_one_opt_50.png)
+
   - Buttons below quantity:
     - 'Continue Shopping' and 'Add to Cart'
+      - Click on 'Continue Shopping' brings User to the page with all of the Products, Art and Photos
+      - Click and 'Add to Cart', adds the product to the cart, with selected size and quantity
 
 
 ### Search Icon/Search Form
@@ -779,7 +823,17 @@ At the moment default message mentions only username and/or password being incor
 
 - Set up restrictions, so User can not delete all 'Default Postage Information' and click on 'Update Information' when fields are left blank
 
-- Instead of displaying 'Thank You for shopping' when User clicks on previous Order, in Order History, would be nice to display: "Your Order nr ..." 
+- Instead of displaying 'Thank You for shopping' when User clicks on previous Order, in Order History, would be nice to display: "Your Order nr ..."
+
+### Size options
+
+- Limited to Landscape style or Portrait style, instead of both options available like now
+- Image to reflect the size option that User has chosen, before they add the product into cart 
+
+### Quantity
+
+- Message to pop up for User: "Minimum quantity 1", when User tries to reduce minimum quantity below 1
+- Alert to pop up: "Maximum quantity 50 per product", when User has quantity of 50 in insert box, and tries to click on upward arrow to quantity beyond 50 
 
 [Back to Features](#features)
 
