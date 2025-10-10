@@ -131,6 +131,9 @@ Groups that are influenced by the display or recommendation of the products made
   - Influencers or Promoters, who share or recommend products from the boutique, on social media, blogs, 
     local networks, sharing boutique's reels/page
 
+[Back to Business Model](#business-model-for-kellys-art--photo-boutique)
+
+[Back to Contents](#contents)
 
 # User Experience
 
@@ -320,6 +323,7 @@ Disclaimer: There may be variations between Wireframes and the finished project.
 
 ![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
+[Back to Wireframes](#wireframes)
 
 [Back to Contents](#contents)
 
@@ -337,13 +341,14 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
   ![ERD](docs/readme_images/kelly's_art_and_photo_boutique_erd.png)
 
-
 [Back to Contents](#contents)
 
 ## SEO
 
-SEO tests helped Developer to see robots.txt file was not ok.
-With tutors help, developer fixed robots.txt and sitemap.xml 
+- SEO tests helped Developer to see robots.txt file was not ok.
+  With tutors help, developer fixed robots.txt and sitemap.xml
+
+- Google Lighthouse tests helped Developer to improve SEO score.
 
 [Back to Contents](#contents)
 
@@ -351,23 +356,26 @@ With tutors help, developer fixed robots.txt and sitemap.xml
 
 ### Facebook Mockup
 
-- Developer set up Facebook Mockup to show how her site would look in Facebook:
+- Developer set up Facebook Mockup to show how her site would look on Facebook:
 
 ![Facebook Mockup](docs/readme_images/facebook_page_post_opt_500.jpg)
 
 ### Facebook Reel
 
-- Developer created a [Facebook Reel](https://youtu.be/F123AhI8RGA), with Stone Art, to show one of the options how she would advertise the arrival of a new collection:
+- Developer created a [Facebook Reel](https://youtu.be/F123AhI8RGA), with Stone Art,
+  to show one of the options how she would advertise the arrival of a new  collection:
 
   All of the displayed stone Art in the Reel, was created by Developer's daughter Aoife, age 10
 
-[Back to Contents](#contents)
+  Disclaimer: Reel is demonstrated via YouTube, in case sample business page for Facebook is taken down by Facebook 
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
+[Back to Contents](#contents)
+
 ### Keyword Research
 
-Developer used keywords suitable for the project eg photo, art, boutique, shop, cart
+Developer used keywords suitable for the project eg photo, art, boutique, shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor>
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
@@ -376,7 +384,7 @@ Developer used keywords suitable for the project eg photo, art, boutique, shop, 
 
 ### Similar Businesses
 
-Developer found the following businesses relevant and interesting:
+Developer found the following businesses relevant to her sample business, and their sites relatable:
 
 [Gallerix.ie](  https://gallerix.ie/)
 
@@ -397,7 +405,7 @@ To date Developer did not come across a website with same combination as hers: p
 
 - Background image by the Developer
 
-- Logo image created together with Developers kids, using Wireframe and our own photos/art
+- Logo image created together with Developers kids, using Wireframe and Developer's photo and her kids art
 
 ## Color
 
@@ -419,6 +427,20 @@ To date Developer did not come across a website with same combination as hers: p
 
   ![Home Page](docs/readme_images/home_page_boutique_opt_500.png)
 
+  - Displaying Logo, Navbar with NavLinks or Burger Menu (for smaller screens), Search Icon, and 'Click here to shop' button
+  - Hovering effect for all Navbar items i.e. hovered item is raised, and pointer is indicating it's clickable
+  - NavLinks have a line under while hovered, to highlight them more
+  - No active line under Logo, Search Icon or Burger Menu on hover
+  - Home page has a background image
+  - No products displayed on Home page
+  
+  #### 'Click here to shop' button
+
+  - Clickable button to start to shop
+  - All of the products are displayed on scrollable page after clicking on 'Click here to shop'
+  - Button is displayed near bottom left
+
+
 ### Favicon
 
 Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
@@ -428,7 +450,9 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 ### Logo
 
 - Logo displayed on all pages of the website, and on all screen sizes
-- Click on Logo brings user back to Home page
+- On hover, Logo is raised, and pointer appears
+- Logo is clickable
+- Click on Logo brings user back to Home page or refreshes Home page if User is already on the Home page
 
   ![Logo](docs/readme_images/logo.png)
 
@@ -436,21 +460,65 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 [Back to Contents](#contents)
 
-### Search Bar
+### Art
 
-- Search bar displayed on larger screen sizes:
+- Hovering effect for Art NavLink (on larger screens) displays dropdown menu of Art categories
+- Clickable Art NavLink
+- Clickable dropdown menu options
+- Hover effect for dropdown menu items
+- Click on Art NavLink opens up Art page with all of the Art available in the Boutique
+- Click on Art category from dropdown menu, opens up page with the selected category of Art
+- 'Products Home' button below Logo, top left, is clickable
+  - Click on it opens up page with all of the Boutique's products
 
-  ![Search Bar](docs/readme_images/search_bar_centered.png)
+  #### Badges
 
-- Button to activate search
-- User can search for Products: Art & Photos
-- User can search for eg 'rainbow', and products from both Art and Photos are displayed:
+  - Displayed below Navbar for all Art or selected category of Art
+  - For all screen sizes
+  - Change color when hovered
+  - Pointer appears on badge when hovered
+  - Clickable
+  - Click on badge opens up selected Art category
+  - Or refreshes the page if only one category of Art is displayed
 
-  ![Rainbow Search](docs/readme_images/two_rainbows_found_opt_50.png)
+  - Select Art by: Animal, Name, Winter, or Variety
 
-- If user enters nothing in Search box, error message pops up:
+#### Sorting
 
-  ![Search criteria error](docs/readme_images/error_search_criteria.png)
+  - Choose to sort Art by Price, Name, Author, or Category
+
+
+### Search Icon/Search Form
+
+- Search is for Products only, not for the whole site
+- Search Icon displayed on all screen sizes
+  - On the right, at the end of the Navbar - for larger screens
+  - On smaller screens, on the left of Burger Menu button, close to the right side
+
+  ![Search Icon](<docs/readme_images/search_icon.png>)
+
+- Search Form opens when User clicks on Search Icon:
+
+  ![Search Form](docs/readme_images/search__form.png)
+
+  - Search Form opens below the Search Icon and Burger Menu, below the Navbar
+  - User may type in Search Form
+  - Placeholder 'Search our Boutique' is displayed in Search Form, unless User types in at least one character
+  - User may use Search Form to find Art and Photos in the Boutique, with keywords eg 'hedgehog':
+
+    ![Search for 'Hedgehog'](docs/readme_images/search_hedgehog.png)
+
+  - Blue Search Icon at the end of the Form is clickable to start search
+  - Or User can press 'Enter' on keyboard to start search or tap on screen
+  - Empty search can be started without typing anything in Search Form:
+    - Empty search results in:
+      - All of the Products being displayed, and
+      - An error message near Search Icon notifying User: "Search criteria not entered!"
+      - User has an option to click on 'x' in top right corner of the message, to close Error alert
+
+      ![Error message](docs/readme_images/error_for_empty_search.png)
+
+  - Click on Search Icon in the Navbar closes Search Form (unless User chooses to activate Search)
 
 
 [Back to Features](#features)
@@ -460,7 +528,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 ### Navigation Menu
 
-#### Nav bar
+#### Navbar
 
 - All Navigation Menu items are clickable and displayed below Logo on a larger screens, beside each other:
 
@@ -572,23 +640,21 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Click on 'Back to Shopping'
 - Or click on 'Subscribe'
 
-### 'Click here to shop' button
-
-- Clickable button to start to shop
-- All of the products are displayed on scrollable page after clicking on 'Click here to shop'
-
 ### Footer
+
   - Copyright with year of the project
   - Developer's name
   - Stating it is an E-commerce Project
-  - Disclaimer: NOt for real transactions
+  - Disclaimer: Site is not for real transactions
   - Privacy policy:
     - User can click on 'Privacy Policy' to access it
   - Social Media links:
     - Clickable
     - General Facebook, Twitter and YouTube pages open after click/tap
-    - Mock Facebook page has been set up for the site. Developer understand Facebook can require deletion of the Mock up page,
-    therefor Developer kept the general Facebook link
+    - Mock Facebook page has been set up for the site. Developer understands Facebook can delete the Mock up page,
+      therefore Developer kept the general Facebook link instead
+  - Footer is same for all pages
+  - Footer is displayed for all pages
 
 [Back to Features](#features)
 
