@@ -28,12 +28,17 @@
       <meta name="twitter:description" content="Children's original handmade art and variety of photos, ideal as gifts or décor">
       <meta name="twitter:image" content="{% static 'images/social-preview.jpg' %}">
 
-      <!-- Favicon links -->
+      <!-- Favicon links - fixed with chatGPT's guidance-->
+      <link rel="icon" type="image/png" sizes="192x192" href="{% static 'favicon/favicon-192x192.png' %}">
+      <link rel="icon" type="image/png" sizes="512x512" href="{% static 'favicon/favicon-512x512.png' %}">
       <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
       <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
       <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-      <link rel="shortcut icon" type="image/png"
-            href="https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/logo_wireframe_by_aoife_ten_opt.png">
+      <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+
+      <!-- PWA webmanifest - added with ChatGPT's guidance -->
+      <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+      <meta name="theme-color" content="#FFFFFF">
     {% endblock %}
 
     {% block extra_meta %}
@@ -118,64 +123,47 @@
         <!-- Header: Sign In, Sign Up, Cart, Search, Burger - all fixed with chatGPT's guidance -->
         <div class="d-flex align-items-center order-xl-3 ml-auto header_icons">
 
-          <!-- Sign In and Sign Up - fixed with Chat GPT's guidance -->
-          {% if request.user.is_authenticated %}
-            <div class="nav-item mx-3 dropdown">
-                <!-- Username - click opens user's Profile -->
-                <a class="font-weight-bold nav-link"
-                    href="{% url 'profile' %}">
-                    {{ request.user.username }}
-                </a>
+          <!-- User dropdown - fixed with Chat GPT's guidance -->
+          <div class="nav-item mx-3 dropdown">
+            {% if request.user.is_authenticated %}
+              <!-- Signed in User dropdown - fixed with chatGPT's guidance -->
+              <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="signed-in-user-dropdown" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Signed in User dropdown">
+                 <i class="fa-solid fa-user mr-2"></i>{{ request.user.username }}
+              </a>
 
-                <!-- Signed in User - dropdown toggle - fixed with ChatGPT's guidance -->
-                <a class="nav-link dropdown-toggle dropdown-toggle-split"
-                    href='#'
-                    id="user-options"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="sr-only">User's Toggle Dropdown</span>
+              <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="signed-in-user-dropdown">
+                {% if request.user.is_superuser %}
+                  <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
+                     aria-label="Product Management dropdown option for Site's Admin only">
+                    Product Management
+                  </a>
+                {% endif %}
+                <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold" aria-label="My Profile dropdown option">
+                  My Profile
                 </a>
-
-                <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                    {% if request.user.is_superuser %}
-                        <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
-                            aria-label="Product Management dropdown option for Site's Admin only">
-                            Product Management
-                        </a>
-                    {% endif %}
-                    <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold"
-                        aria-label="My Profile dropdown option">
-                        My Profile
-                    </a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold"
-                        aria-label="Sign Out dropdown option">
-                        Sign Out
-                    </a>
-                </div>
-            </div>
-          {% else %}
-
-            <!-- NavLinks when User not Signed In -->
-            <div class="nav-item mx-3">
-                <a class="font-weight-bold nav-link text-black"
-                    href="{% url 'account_login' %}"
-                    id="account-login"
-                    aria-label="Sign In option">
-                    Sign In
+                <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold" aria-label="Sign Out dropdown option">
+                  Sign Out
                 </a>
-            </div>
-
-            <!-- Sign Up -->
-            <div class="nav-item mx-3">
-                <a class="font-weight-bold nav-link"
-                    href="{% url 'account_signup' %}"
-                    id="account-signup"
-                    aria-label="Sign Up option">
-                    Sign Up
-                </a>
-            </div>
-          {% endif %}
+              </div>
+            {% else %}
+              <!-- Signed Out User Icon dropdown - fixed with ChatGPT's guidance -->
+              <a class="nav-link dropdown-toggle font-weight-bold"
+                  href="#"
+                  id="signed-out-user-dropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="Signed Out User dropdown">
+                <i class="fa-solid fa-user mr-2"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="signed-out-user-dropdown">
+                <a href="{% url 'account_login' %}" class="dropdown-item">Sign In</a>
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+              </div>
+            {% endif %}
+          </div>
 
           <!-- Cart Icon - fixed with chatGPT's guidance -->
           <a class="nav-link position-relative mr-4" href="{% url 'view_cart' %}" aria-label="cart">
