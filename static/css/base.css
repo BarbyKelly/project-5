@@ -85,18 +85,6 @@ h2 {
     padding-bottom: 0.4rem;
 }
 
-/* Underline effect on hover. Fix learned from chatGPT */
-.navbar .nav-link:not(.dropdown-toggle):not(.main-logo-link):hover:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(29, 97, 157);
-    transition: width 0.2s ease-in-out;
-}
-
 .navbar-collapse {
     border-top: none;
 }
@@ -122,11 +110,11 @@ h2 {
 .navbar-toggler:hover,
 .main-logo-link:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
-    border-radius: 3px;
-    will-change: transform;
+    transform: scale(1.09);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    will-change: transform, box-shadow;
 }
 
 /* ----- Search - styling fixed with chatGPT's guidance ----- */

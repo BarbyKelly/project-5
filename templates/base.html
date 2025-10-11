@@ -108,10 +108,87 @@
           <img class="boutique-logo" src="{{ MEDIA_URL }}logo_wireframe_by_aoife_ten_opt.png" alt="Logo for Kelly's Art & Photo Boutique">
         </a>
 
-        <!-- Search and burger menu - fixed with chatGPT's guidance -->
+        <!-- Navbar Links - center, collapse on mobile - fixed with chatGPT's guidance -->
+        <div class="collapse navbar-collapse justify-content-center" id="main-nav">
+          <ul class="navbar-nav mx-auto">
+            {% include 'includes/main-nav.html' %}
+          </ul>
+        </div>
+
+        <!-- Header: Sign In, Sign Up, Cart, Search, Burger - all fixed with chatGPT's guidance -->
         <div class="d-flex align-items-center order-xl-3 ml-auto header_icons">
+
+          <!-- Sign In and Sign Up - fixed with Chat GPT's guidance -->
+          {% if request.user.is_authenticated %}
+            <div class="nav-item mx-3 dropdown">
+                <!-- Username - click opens user's Profile -->
+                <a class="font-weight-bold nav-link"
+                    href="{% url 'profile' %}">
+                    {{ request.user.username }}
+                </a>
+
+                <!-- Signed in User - dropdown toggle - fixed with ChatGPT's guidance -->
+                <a class="nav-link dropdown-toggle dropdown-toggle-split"
+                    href='#'
+                    id="user-options"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="sr-only">User's Toggle Dropdown</span>
+                </a>
+
+                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'add_product' %}" class="dropdown-item font-weight-bold"
+                            aria-label="Product Management dropdown option for Site's Admin only">
+                            Product Management
+                        </a>
+                    {% endif %}
+                    <a href="{% url 'profile' %}" class="dropdown-item font-weight-bold"
+                        aria-label="My Profile dropdown option">
+                        My Profile
+                    </a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item font-weight-bold"
+                        aria-label="Sign Out dropdown option">
+                        Sign Out
+                    </a>
+                </div>
+            </div>
+          {% else %}
+
+            <!-- NavLinks when User not Signed In -->
+            <div class="nav-item mx-3">
+                <a class="font-weight-bold nav-link text-black"
+                    href="{% url 'account_login' %}"
+                    id="account-login"
+                    aria-label="Sign In option">
+                    Sign In
+                </a>
+            </div>
+
+            <!-- Sign Up -->
+            <div class="nav-item mx-3">
+                <a class="font-weight-bold nav-link"
+                    href="{% url 'account_signup' %}"
+                    id="account-signup"
+                    aria-label="Sign Up option">
+                    Sign Up
+                </a>
+            </div>
+          {% endif %}
+
+          <!-- Cart Icon - fixed with chatGPT's guidance -->
+          <a class="nav-link position-relative mr-4" href="{% url 'view_cart' %}" aria-label="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            {% if product_count %}
+              <span class="badge badge-pill badge-info position-absolute" style="top: -3px; right: -7px;">
+                {{ product_count }}
+              </span>
+            {% endif %}
+          </a>
+        
           <!-- Search Icon - for all screens (placed after 'Sign Up' for larger screens, below burger dropdown on smaller screens) -->
-          <a class="nav-link mr-2" href="#" id="search_toggle" aria-label="Search">
+          <a class="nav-link mr-4" href="#" id="search_toggle" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
 
@@ -137,9 +214,6 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
-        <!-- Navbar Links -->
-        {% include 'includes/main-nav.html' %}
       </nav>
     </header>
 
