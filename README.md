@@ -26,7 +26,7 @@ Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/
 
 Responsiveness tested with [am I responsive](https://ui.dev/amiresponsive)
 
-![Am I Responsive image](docs/readme_images/am_I_responsive_opt_58.png)
+![Mockup created with Canvas](docs/readme_images/mockup_created_with_canvas.png)
 
 
 # Contents
@@ -1219,6 +1219,8 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   - General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
 
   - Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
+
+  - Developer used [Canvas](https://www.canva.com/mockups) to create Mockups of the website. ChatGPT guided to Canvas.
 
 [Back to Credits](#credits)
 
