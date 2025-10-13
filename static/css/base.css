@@ -50,16 +50,16 @@ h2 {
 
 /* Styling of Navbar, NavLinks, Logo, and reduction of repetition fixed with ChatGPT's guidance. */
 /* Logo */
+.boutique-logo {
+    width: auto;
+    max-width: 6rem;
+    height: auto;
+}
 
+/* Header */
 .header-container {
     width: 100%;
     margin-bottom: 1rem;
-}
-
-.boutique-logo {
-    width: auto;
-    max-width: 7rem;
-    height: auto;
 }
 
 /* Navbar - base */
@@ -375,7 +375,7 @@ textarea[name="message"] {
 }
 
 .logo-font {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -532,6 +532,16 @@ footer {
 
 /* ---- Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) ---- */
 /* ---- Media Queries edited with chatGPT's guidance ---- */
+/* Media Queries for 'XXS' screens (phones, less than 376px */
+@media (max-width: 376px) {
+  .container {
+    max-width: 376px;
+  }
+.boutique-logo {
+    max-width: 3.1rem;
+  }
+}
+
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
 @media (max-width: 575.98px) {
   .container {
