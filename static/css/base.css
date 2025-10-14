@@ -177,7 +177,7 @@ h2 {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 7rem;
+    margin-top: 5rem;
     max-width: 400px;
 }
 
@@ -503,30 +503,33 @@ textarea[name="message"] {
 /* Footer - styling based on previous project: [quiz](https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css)*/
 
 .footer {
-    margin-top: auto;
     width: 100%;
     background: #ffffff;
     color: #021527;
     text-align: center;
     font-size: medium;
-    bottom: 0;
-    padding: .1rem;
+    padding: 0.5rem 0 0.5rem;
+    border-top: 1px solid #fcf4f4;
 }
 
 footer {
     margin-top: auto;
 }
 
+.footer div {
+    margin-bottom: 0.5rem;
+}
+
 #social-networks {
-    text-align: center;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #social-networks i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: cornflowerblue;
 }
 
