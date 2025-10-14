@@ -144,8 +144,6 @@ Color changes when Hovering over Search Button:
 
 ### Sign In Page Testing
 
-!['Sign In' form](docs/readme_images/sign_in_form.png)
-
 | Tested Item   | Expected Outcome                                                                                            | Outcome     |
 | ------------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
 |               |                                                                                                             |             |

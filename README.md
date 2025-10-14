@@ -139,162 +139,148 @@ Groups that are influenced by the display or recommendation of the products made
 
 ## User Stories
 
-Users may opt to use various features:
+Users may opt to tap, click, hover, open, fill various items listed below:
 
 ### Navbar
 
-- Click on Navbar items/links:
+- **Logo**
+  - Click **Logo** (to bring them back to Home Page or refresh Home Page)
 
-### Logo
+- **Home**
+  - Click **Home** NavLink to get back to Home page or to refresh Home page.
+  - Click **Click Here To Shop** button on Home page
 
-- Click on Logo (to bring them back to Home Page or refresh Home Page)
+- **Art**
+  - Hover on Art NavLink (on larger screens) for Art dropdown menu to be displayed
+  - Click Art NavLink which opens up Art page with all of the Art available in the Boutique
+  - Choose to click any item in dropdown menu, to select Art by specific category
+  - Hover on badges (for all screen sizes) to highlight any badge that pointer is on
+  - Click badges to choose an Art category
+  - Choose to sort Art by Price, Name, Author, or Category
+  - Select Art by: Animal, Name, Winter, or Variety
 
-### Home
+- **Photos**
+  - Hover on Photos NavLink (on larger screens) for Photos dropdown menu to be displayed
+  - Click Photos NavLink, which opens up Photos page with all of the Photos available in the Boutique
+  - Choose to click any item in dropdown menu to select Photos by specific category
+  - Hover on badges (for all screen sizes) to highlight any badge that pointer is on
+  - Click badges to choose particular Photos category
+  - Choose to sort products by Price, Name, Author, or Category
+  - Select Art by: Animal, Name, Winter, or Variety
+  - Choose photos by: Beach, Rainbow, Animal, Sky, or Variety
 
-- Click on Home NavLink to get back to Home page or to refresh Home page
-- Click on 'Click Here To Shop' button on Home page
+- **How To...?**
+  - Click **How To...?** NavLink, to access 'How To...?' page
+  - Select any of the YouTube links to watch by clicking on them
+  - YouTube videos opening up in the new tab, leaving Kelly's Art & Photo Boutique's open in a previous tab
 
-### Art
+- **Newsletter**
+  - Click **Newsletter** NavLink to open up Newsletter page with form
+  - Fill in the form (email only) to sign up for Boutique's Newsletter
+  - Click **Back to Boutique**
+  - Click **Subscribe** to subscribe to the Newsletter
 
-- Hover on Art NavLink (on larger screens) for Art dropdown menu to be displayed
-- Click on Art NavLink which opens up Art page with all of the Art available in the Boutique
-- Choose to click on any item in dropdown menu, to select Art by specific category
-- Hover on badges (for all screen sizes) to highlight any badge that pointer is on
-- Click on badges to choose an Art category
-- Choose to sort Art by Price, Name, Author, or Category
-- Select Art by: Animal, Name, Winter, or Variety
+- **Contact Us**
+  - Click **Contact Us** NavLink to open up 'Contact Us' page
+  - Fill in form to contact Boutique
+  - Click **Back to Boutique**
+  - Click **Submit Contact Form**
 
-### Photos
+- **User Icon**
+  - Click **User Icon**, to access **Sign In** or **Sign Up**
 
-- Hover on Photos NavLink (on larger screens) for Photos dropdown menu to be displayed
-- Click on Photos NavLink, which opens up Photos page with all of the Photos available in the Boutique
-- Choose to click on any item in dropdown menu to select Photos by specific category
-- Hover on badges (for all screen sizes) to highlight any badge that pointer is on
-- Click on badges to choose particular Photos category
-- Choose to sort products by Price, Name, Author, or Category
-- Select Art by: Animal, Name, Winter, or Variety
-- Choose photos by: Beach, Rainbow, Animal, Sky, or Variety
+    - **Sign In**
 
-### Cart
+    ![Sign In page](docs/readme_images/sign_in_page.png)
 
-- Click on Cart NavLink to open Shopping Cart page
-  - Click on 'Back to Shopping' if no items in the cart
-  - Click on "Proceed to Secure Checkout" in the pop-up, after adding an item into the cart:
+      - Click **Sign In** to access 'Sign In' page with a Sign In Form
+      - Click link: **Sign Up**
+        - Where Users can create an account
+        > Detailed **Sign Up** form features and testing available in [testing.md#sign-up-page-testing](testing.md#sign-up-page-testing) 
+      - Fill the 'Sign In' form
 
-  ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
+      - **Sign In form**
+        - Fill in **Username or Email**, and **Password**:
+        - Tick **Remember Me** box:
+        - Click **Home** button to return to Home page
+        - Click **Sign In** button to sign in:
+        - Click **Forgot Your Password?**:
+            - Fill in **Password Reset** form:
+              - Click **Reset My Password**
+              - Click **Back to Sign In** button
+              > Detailed **Sign In** form features and testing available in [testing.md#sign-in-page-testing](testing.md#sign-in-page-testing)
 
-  - Click on 'Continue Shopping'
-  - Click on 'Secure Checkout'
+    - **Sign Up**
 
-  ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
+      ![Sign Up](docs/readme_images/sign_up.png)
 
-### How To...?
+      - Click **Sign Up** to access 'Sign Up' page and 'Sign Up' form:
+      - Click **Sign In here**
+        > Detailed **Sign In** form features and testing available in [testing.md#sign-in-page-testing](testing.md#sign-in-page-testing)
+      - Fill the 'Sign Up' form
+        - **Sign Up** form
+          - Fill in E-mail address, E-mail address confirmation, Username, Password and Password (again)
+          - Opt to click 'Back to Sign In' button to return to 'Sign In' form
+          - Click 'Sign Up' button to Sign Up
+          > Detailed **Sign Up** form features and testing available in [testing.md#sign-up-page-testing](testing.md#sign-up-page-testing) 
 
-- Click on 'How To...?' NavLink, to access 'How To...?' page
-- Select any of the YouTube links to watch by clicking on them
-- YouTube videos opening up in the new tab, leaving Kelly's Art & Photo Boutique's open in a previous tab
+- **Cart**
+  - Click **Cart** NavLink to open Shopping Cart page
+    - Click **Back to Shopping** if no items in the cart
+    - Click **Proceed to Secure Checkout** in the pop-up, after adding an item into the cart:
 
-### Newsletter
+    ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
 
-- Click on Newsletter NavLink to open up Newsletter page with form
-- Fill in the form (email only) to sign up for Boutique's Newsletter
-- Click on 'Back to Boutique'
-- Click on 'Subscribe' to subscribe to the Newsletter
+    - Click **Continue Shopping**
+    - Click **Secure Checkout**
 
-### Contact Us
+    ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
 
-- Click on 'Contact Us' NavLink to open up 'Contact Us' page
-- Fill in form to contact Boutique
-- Click on 'Back to Boutique'
-- Click on 'Submit Contact Form'
 
-### Sign In
+- **Search Icon/Search Form**
+  - Click **Search Icon** to open up Search Form
+  - Type in Search Form
+  - Click Blue Search Icon (part of the form) or press Enter, to start search
+  - Search Art and Photos in the Boutique with keywords eg 'rainbow':
 
-- Click on 'Sign In' NavLink to access 'Sign In' page with a Sign In Form
-- Click on link: 'Sign Up' if User does not have an account yet
-  - Sign Up page opens after click, and User may fill in Sign Up form (steps below under 'Sign Up')
-- User may choose to fill the 'Sign In' form or not
+    ![Search results for 'Rainbow'](docs/readme_images/search_results_rainbow_opt_50.png)
 
-#### Sign In form
+  - Click Blue Search Icon (part of the form) or press Enter, without typing in Search Form
+    - Use 'x' in top right corner to close Error alert, when Search Form was left empty
+  - Click Search Icon in the Navbar to close Search Form
 
-- Fill in Username or Email, and a password:
-    - Even if they don't have an account. Only User with an account will be signed in
-    - Users will be reminded to 'Please fill in this field', if they have not filled either of the 'Sign In' boxes correctly, 
-      or if they do not have an account
-  - Option to tick 'Remember Me' box:
-    - Even if they don't have an account. Only User with an account will be Remembered (depending on their cookie settings)
-  - Click on 'Home' button to return to Home page
-  - Click on 'Sign In' button to sign in:
-    - Even if they don't have an account or have not entered correct details, they can click on the button.
-      Only User with an account and valid Username/e-mail and Password, will be signed in
-    - User without an account or user who has not entered correct details, will be reminded to "Please fill in this field"
-  - Click on 'Forgot Your Password?':
-    - Even if they don't have an account.
-      - Fill in 'Password Reset' form:
-        - Click on 'Reset My Password'
-        - Only User with an account and valid email address, will receive an email to reset their password
-        - Click on 'Back to Sign In' button
+- **Burger Icon/Menu** (on smaller screens)
 
-### Sign Up
+  - Click Burger Icon to open dropdown menu
+  - Choose any of the items from the dropdown menu and click them
 
-- Click on 'Sign Up' NavLink to access 'Sign Up' page and 'Sign Up' form:
-- Click on: 'Sign In here' (which opens up 'Sign In' form (steps for 'Sign In' form described above))
-  if they already have an account set up
-- User may choose to fill the 'Sign Up' form or not
-
-#### Sign Up form
-
-- Fill in E-mail address, E-mail address confirmation, Username, Password and Password (again)
-- Users are reminded: 'Please fill in this field' if they leave a required field blank
-- Opt to click on 'Back to Sign In' button to return to 'Sign In' form
-- Click on 'Sign Up' button to Sign Up
-
-#### Search Icon/Search Form
-
-- Click on Search Icon to open up Search Form
-- Type in Search Form
-- Click on Blue Search Icon (part of the form) or press Enter, to start search
-- Search Art and Photos in the Boutique with keywords eg 'rainbow':
-
-  ![Search results for 'Rainbow'](docs/readme_images/search_results_rainbow_opt_50.png)
-
-- Click on Blue Search Icon (part of the form) or press Enter, without typing in Search Form
-  - Use 'x' in top right corner to close Error alert, when Search Form was left empty
-- Click on Search Icon in the Navbar to close Search Form
-
-#### Burger Icon/Menu (on smaller screens)
-
-- Click on Burger Icon to open dropdown menu
-- Choose any of the items from the dropdown menu and click on them
-
-### User who is not an Admin of Kelly's Art & Photo Boutique, may not:
-
-- Add, edit or delete products
-- Access Product Management
+- **User** who is not an Admin of Kelly's Art & Photo Boutique, **may not**:
+  - Add, edit or delete products
+  - Access Product Management
  
-### Users once signed in may:
-- Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
-- Access 'My Profile' via 'My Account'
-- Under their profile Update their Default postage information
-- See their Order History
-- Sign Out by clicking on 'Sign Out' under 'Sign In' tab
+- **Users once signed in** may:
+  - Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
+  - Access 'My Profile' via 'My Account'
+  - Under their profile Update their Default postage information
+  - See their Order History
+  - Sign Out by clicking on 'Sign Out' under 'Sign In' tab
 
-### Extra permissions for An Admin. Admin may:
-- Access 'Product Management' once signed in
-- Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
-- Follow SKU system already in place: 
-  dr33(add a unique number in the end) for Art,
-  ph88(add a unique number in the end) for Photos
+- **Extra permissions for An Admin**
+  Admin may:
+  - Access 'Product Management' once signed in
+  - Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
+  - Follow SKU system already in place: 
+    dr33(add a unique number in the end) for Art,
+    ph88(add a unique number in the end) for Photos
 
-- Admin may change the SKU system if needed
-- Admin may click on Shopping cart and see if admin has any products in the cart (for testing)
-- Admin can create test purchases and delete them after
-- Admin may click on all items on the website like other users
+  - Admin may change the SKU system if needed
+  - Admin may click Shopping cart and see if admin has any products in the cart (for testing)
+  - Admin can create test purchases and delete them after
+  - Admin may click all items on the website like other users
 
-### Footer
-
-- User may click on Privacy Policy to open it up
-- May click on Social Media icons to open up their home pages
+- **Footer**
+  - User may click **Privacy Policy** to open it up
+  - May click **Social Media** icons to open up their home pages
 
 [Back to User Experience](#user-experience)
 
@@ -465,7 +451,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Logo displayed on all pages of the website, and on all screen sizes
 - On hover, Logo is raised, and pointer appears
 - Logo is clickable
-- Click on Logo brings user back to Home page or refreshes Home page if User is already on the Home page
+- Clicking Logo brings user back to Home page or refreshes Home page if User is already on the Home page
 
   ![Logo](docs/readme_images/logo.png)
 
@@ -479,11 +465,11 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Clickable Art NavLink
 - Clickable dropdown menu options
 - Hover effect for dropdown menu items
-- Click on Art NavLink opens up Art page with all of the Art available in the Boutique
-- Click on Art category from dropdown menu, opens up page with the selected category of Art
+- Click Art NavLink opens up Art page with all of the Art available in the Boutique
+- Click Art category from dropdown menu, opens up page with the selected category of Art
 - When Art page is open with all or some of the products:
   - 'Products Home' link (below Navbar, above products on the left) is clickable
-  - Click on it opens up page with all of the Boutique's products, Art and Photos
+  - Click it opens up page with all of the Boutique's products, Art and Photos
   - Number of products eg 18 products, is displayed beside 'Products Home' link
 
 #### Badges
@@ -493,7 +479,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 - Change color when hovered
 - Pointer appears on badge when hovered
 - Clickable
-- Click on badge opens up selected Art category
+- Clicking badge opens up selected Art category
 - Or refreshes the page if only one category of Art is displayed
 - Options for Badges if all Art displayed: Variety of Art, Winter Art, Name Art, Animal Art 
 
@@ -514,7 +500,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Category (A-Z)
   - Category (Z-A)
 - Sorting options is highlighted on hover
-- Click on Sorting option sorts products as required, and all of the Art is displayed in requested order
+- Clicking Sorting option sorts products as required, and all of the Art is displayed in requested order
 - User may choose eg 'Variety of Art', 10 products displayed, and then opt to sort the category by Author (A-Z),
   which results in all 10 Variety of Art products sorted by Author A-Z
 
@@ -528,7 +514,7 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Author
   - Badge
 - Product card is clickable
-- Click on product card opens up a page with the selected product
+- Clicing product card opens up a page with the selected product
 - Details displayed on product page:
   - Image
   - Name
@@ -578,8 +564,8 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
   - Buttons below quantity:
     - 'Continue Shopping' and 'Add to Cart'
-      - Click on 'Continue Shopping' brings User to the page with all of the Products, Art and Photos
-      - Click and 'Add to Cart', adds the product to the cart, with selected size and quantity
+      - Clicking **Continue Shopping** brings User to the page with all of the Products, Art and Photos
+      - Clicking **Add to Cart**, adds the product to the cart, with selected size and quantity
 
 
 ### Search Icon/Search Form
@@ -608,11 +594,11 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
     - Empty search results in:
       - All of the Products being displayed, and
       - An error message near Search Icon notifying User: "Search criteria not entered!"
-      - User has an option to click on 'x' in top right corner of the message, to close Error alert
+      - User has an option to click **x** in top right corner of the message, to close Error alert
 
       ![Error message](docs/readme_images/error_for_empty_search.png)
 
-  - Click on Search Icon in the Navbar closes Search Form (unless User chooses to activate Search)
+  - Clicking **Search Icon** in the Navbar closes Search Form (unless User chooses to activate Search)
 
 
 [Back to Features](#features)
@@ -678,24 +664,24 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 ![Sign In page](docs/readme_images/sign_in_form.png)
 
-- Displaying 'Sign In' form
-- And an option to 'Sign Up'
-- To click on 'Home' button
-- Or 'Sign In' button
+- Displaying **Sign In** form
+- And an option to **Sign Up**
+- To click **Home** button
+- Or **Sign In** button
 - And to choose 'Forgot Your Password?", which opens up:
-  - 'Password Reset' page:
+  - **Password Reset** page:
     - User can enter email address,
-    - Click on 'Back to Sign In', 
-    - Or click on 'Reset My Password'
+    - Click **Back to Sign In**, 
+    - Or click **Reset My Password**
 
 ### Sign Up
 
 ![Sign Up](docs/readme_images/sign_up_form.png)
 
-- Displaying 'Sign Up' form
-- And an option to 'Sign In' if User already has an account
-- Option to click on 'Back to Sign In' button
-- Or 'Sign Up' button
+- Displaying **Sign Up** form
+- And an option to **Sign In** if User already has an account
+- Option to click **Back to Sign In** button
+- Or **Sign Up** button
 
 ### Cart
 
@@ -720,10 +706,10 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 ![Contact Us](docs/readme_images/contact_us.png)
 
-- User can click on Contact Us
+- User can click **Contact Us**
 - Fill in Contact Form
-- Click on 'Back to Shopping'
-- Or click on 'Submit Contact Form'
+- Click **Back to Shopping**
+- Or click **Submit Contact Form**
 
 ### Newsletter
 
@@ -731,8 +717,8 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
 - Newsletter page has an option to fill in Subscription form
 - User can enter their email address
-- Click on 'Back to Shopping'
-- Or click on 'Subscribe'
+- Click **Back to Shopping**
+- Or click **Subscribe**
 
 ### Footer
 
@@ -741,10 +727,10 @@ Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
   - Stating it is an E-commerce Project
   - Disclaimer: Site is not for real transactions
   - Privacy policy:
-    - User can click on 'Privacy Policy' to access it
+    - User can click **Privacy Policy** to access it
   - Social Media links:
     - Clickable
-    - General Facebook, Twitter and YouTube pages open after click/tap
+    - General **Facebook**, **Twitter** and **YouTube** pages open after click/tap
     - Mock Facebook page has been set up for the site. Developer understands Facebook can delete the Mock up page,
       therefore Developer kept the general Facebook link instead
   - Footer is same for all pages
@@ -1354,8 +1340,9 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
       ![Security and CSP fix](docs/readme_images/security_and_csp_from_chatgpt.png)
 
-
-
+  - README styling:
+    - ChatGPT guided Developer how to reduce nesting, and to use **bold** instead of headings, where many subcategories
+    - Developer wished to link exact parts of Testing.md to README. ChatGPT showed how that could be done eg (testing.md#sign-up-page-testing)
 
 
 - Business Model
