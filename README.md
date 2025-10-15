@@ -342,9 +342,9 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ### Facebook Mockup
 
-- Developer set up Facebook Mockup to show how her site would look on Facebook:
+- Developer set up Facebook Mockup to show how the website would look on Facebook:
 
-![Facebook Mockup](docs/readme_images/facebook_page_post_opt_500.jpg)
+  ![Facebook Mockup](docs/readme_images/facebook_page_post_opt_500.jpg)
 
 ### Facebook Reel
 
@@ -361,7 +361,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ### Keyword Research
 
-Developer used keywords suitable for the project eg photo, art, boutique, shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor>
+- Developer used keywords suitable for the project eg photo, art, boutique, shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
@@ -370,15 +370,15 @@ Developer used keywords suitable for the project eg photo, art, boutique, shop, 
 
 ### Similar Businesses
 
-Developer found the following businesses relevant to her sample business, and their sites relatable:
+- Developer found the following businesses relevant to her sample business:
 
-[Gallerix.ie](  https://gallerix.ie/)
+  [Gallerix.ie](  https://gallerix.ie/)
 
-[JamArtFactory.com](https://jamartfactory.com/)
+  [JamArtFactory.com](https://jamartfactory.com/)
 
-[Kids and Art](https://kidsandart.org/store-artwork/)
+  [Kids and Art](https://kidsandart.org/store-artwork/)
 
-To date Developer did not come across a website with same combination as hers: parent's photos and their kids' art in one online shop.
+  >To date Developer did not come across a website with same combination as hers: parent's photos and their kids' art in one online shop.
 
 [Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
@@ -389,17 +389,19 @@ To date Developer did not come across a website with same combination as hers: p
 
 ## Images
 
-- Background image by the Developer
+- **Background** image by the Developer
 
-- Logo image created together with Developers kids, using Wireframe and Developer's photo and her kids art
+- **Logo** created together with Developers kids, by using Wireframe and Developer's photo and her kids art:
+
+  ![Logo](docs/readme_images/logo.png)
 
 ## Color
 
-- Base color (cornflower) for the website from: [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
+- Base color **cornflower** for the website from: [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
 
 ## Font
 
-- Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
+- Code for **Cormorant Garamond** font from [Google Fonts](https://fonts.google.com/selection/embed):
 
   ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
@@ -407,54 +409,46 @@ To date Developer did not come across a website with same combination as hers: p
 
 # Features
 
-## Existing Features
+## Existing Features (mobile-first approach)
 
-### Home Page
+- **Favicon**
 
-  ![Home Page](docs/readme_images/home_page_opt_100.png)
+  - Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
 
-  - Displayed on Home page:
-    - Logo
-    - Navbar
-    - NavLinks or Burger Menu (depending on screen size)
+    ![Favicon](docs/readme_images/favicon.png)
+
+- **Navbar**
+
+  - Displayed on all pages, consisting of:
+    - Logo:
+      - Clicking **Logo** brings user back to **Home** page or refreshes Home page if User is already on it
+    - User Icon:
+      - With **Sign In** and **Sign Up** options
+    - Cart
     - Search Icon
-    - 'Click here to shop' button
-    - Footer:
-      - Copyright
-      - Developer's name
-      - Project type
-      - Disclaimer: no real transactions
-      - Privacy Policy
-      - Social Media links
+    - Burger Menu:
+      - With dropdown menu of NavLinks
+      - On larger screens, NavLinks are displayed instead of Burger Menu
+    - Hovering effect for all Navbar items and dropdowns
 
-  - Hovering effect for all Navbar items i.e. hovered item is raised, and pointer is indicating item is clickable
-  - NavLinks have a line under while hovered, to highlight them more
-  - No active line under Logo, Search Icon or Burger Menu on hover
-  - Home page has a background image
-  - No products displayed on Home page
-  
-  #### 'Click here to shop' button
+- **Footer**:
+  - Copyright
+  - Developer's name
+  - Project type
+  - Disclaimer: no real transactions
+  - Privacy Policy
+  - Social Media links
 
-  - Clickable button to start to shop
-  - All of the products are displayed on scrollable page after clicking on 'Click here to shop'
-  - Button is displayed near bottom left
+- **Home Page**
 
+  ![Home Page - mobile first](docs/readme_images/home_page_pixel7_opt_50.png)
 
-### Favicon
-
-Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
-
-  ![Favicon](docs/readme_images/favicon.png)
-
-### Logo
-
-- Logo displayed on all pages of the website, and on all screen sizes
-- On hover, Logo is raised, and pointer appears
-- Logo is clickable
-- Clicking Logo brings user back to Home page or refreshes Home page if User is already on the Home page
-
-  ![Logo](docs/readme_images/logo.png)
-
+  - Features only on Home page:
+    - Background image
+    - **Click here to shop** button:
+      - All of the products are displayed on scrollable page after clicking on **Click here to shop**
+      - Button is displayed near bottom left
+ 
 [Back to Features](#features)
 
 [Back to Contents](#contents)

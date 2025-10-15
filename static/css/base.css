@@ -190,8 +190,8 @@ h2 {
     width: 1.5rem;
 }
 
+/* Click here to shop - button */
 .click-here-to-shop-button {
-    position: fixed;
     bottom: 220px;
     left: 50px;
     background: cornflowerblue;
@@ -199,6 +199,14 @@ h2 {
     min-width: 150px;
 }
 
+.click-here-to-shop-button:hover,
+.click-here-to-shop-button:active,
+.click-here-to-shop-button:focus {
+    background: rgb(28, 28, 209);
+    color: white;
+}
+
+/* Buttons */
 .btn-blue {
     background: cornflowerblue;
     color: white;
@@ -217,12 +225,6 @@ h2 {
     color: white !important;
 }
 
-.click-here-to-shop-button:hover,
-.click-here-to-shop-button:active,
-.click-here-to-shop-button:focus,
-.social-networks:hover,
-.social-networks:active,
-.social-networks:focus,
 .btn-blue:hover,
 .btn-blue:active,
 .btn-blue:focus {
@@ -508,7 +510,7 @@ textarea[name="message"] {
     color: #021527;
     text-align: center;
     font-size: medium;
-    padding: 0.5rem 0 0.5rem;
+    padding: 0.5rem;
     border-top: 1px solid #fcf4f4;
 }
 
@@ -520,6 +522,7 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+/* Social Networks */
 #social-networks {
     display: flex;
     justify-content: space-evenly;
@@ -531,6 +534,13 @@ footer {
 #social-networks i {
     font-size: 1.4rem;
     color: cornflowerblue;
+}
+
+.social-networks:hover,
+.social-networks:active,
+.social-networks:focus {
+    background: rgb(28, 28, 209);
+    color: white;
 }
 
 /* ---- Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) ---- */
