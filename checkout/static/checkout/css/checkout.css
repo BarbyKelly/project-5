@@ -1,5 +1,26 @@
-/* All code for checkout.css from Boutique Ado walk-through */
+/* Base code for checkout.css from Boutique Ado walk-through */
+/* Checkout Form Container - to fix width of the form on screens eg 991px - fixed with chatGPT's guidance */
+.checkout_form_container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 13px;
+    box-sizing: border-box;
+}
 
+/* Checkout separator - fixed with chatGPT's guidance */
+.order_checkout_separator {
+    border: 0;
+    height: 1px;
+    background-color: #e9f0f7;
+    margin-top: 1rem;
+}
+
+/* Text-info - match with color of the website */
+.text-info {
+    color: cornflowerblue !important;
+}
+
+/* Stripe */
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;
