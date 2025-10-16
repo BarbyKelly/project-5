@@ -787,6 +787,8 @@ At the moment default message mentions only username and/or password being incor
 
 - Users can Sign Up and Sign In via social media links, Google account and similar
 
+- Admin has an option to update prices in bulk for similar products
+
 ### About Creators
 
 - App added to share details about the people who created Art & Photos for the Boutique. Maybe painted images of each creator.

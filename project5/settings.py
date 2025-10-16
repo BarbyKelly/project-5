@@ -118,15 +118,19 @@ CSP_DIRECTIVES = {
     "connect-src": (
         "'self'",
         "https://api.stripe.com",
+        "https://js.stripe.com",
+        "https://hooks.stripe.com",
     ),
     "frame-src": (
         "https://js.stripe.com",
+        "https://hooks.stripe.com",
     ),
     "base-uri": ("'self'",),
     "object-src": ("'none'",),
     "form-action": (
         "'self'",
-        "https://js.stripe.com"),
+        "https://js.stripe.com",
+    ),
     "manifest-src": ("'self'",),
 }
 
