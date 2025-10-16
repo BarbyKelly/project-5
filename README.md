@@ -401,9 +401,12 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ## Font
 
-- Code for **Cormorant Garamond** font from [Google Fonts](https://fonts.google.com/selection/embed):
+- From [Google Fonts](https://fonts.google.com/)
+
+  - Main font: **Cormorant Garamond**
 
   ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
+
 
 [Back to Contents](#contents)
 
@@ -1118,13 +1121,12 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 ## Known Bugs
 
-- Username not showing up when logged in
+- **Order Number**
+  - The numeric part of the Order Number (eg '1') appears smaller font than the letters (eg 'ABC') on:
+    - Order Details page, and on
+    - 'Success!' pop up: 
 
-- Sign In menu closes after person has signed in. At the moment dropdown stays open even when other nav links are clicked on:
-
-!['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
-
-- Search icon not displayed for smaller screens
+    ![Order Number digit](docs/readme_images/order_number_digit.png)
 
 [Back to Bugs](#bugs)
 

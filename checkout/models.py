@@ -1,5 +1,3 @@
-import uuid
-
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -13,6 +11,8 @@ from profiles.models import UserProfile
 class Order(models.Model):
     order_number = models.CharField(
         max_length=32, null=False, editable=False)
+    date = models.DateTimeField(
+        auto_now_add=True)
     user_profile = models.ForeignKey(
         UserProfile, on_delete=models.SET_NULL,
         null=True, blank=True, related_name='orders')
@@ -22,24 +22,22 @@ class Order(models.Model):
         max_length=254, null=False, blank=False)
     phone_number = models.CharField(
         max_length=20, null=False, blank=False)
-    country = CountryField(
-        blank_label='Country *', null=False, blank=False)
-    postcode = models.CharField(
-        max_length=20, null=True, blank=True)
-    town_or_city = models.CharField(
-        max_length=40, null=False, blank=False)
     street_address1 = models.CharField(
         max_length=80, null=False, blank=False)
     street_address2 = models.CharField(
         max_length=80, null=True, blank=True)
+    town_or_city = models.CharField(
+        max_length=40, null=False, blank=False)
     county = models.CharField(
         max_length=80, null=True, blank=True)
-    date = models.DateTimeField(
-        auto_now_add=True)
-    postage_cost = models.DecimalField(
-        max_digits=6, decimal_places=2, null=False, default=0)
+    postcode = models.CharField(
+        max_length=20, null=True, blank=True)
+    country = CountryField(
+        blank_label='Country *', null=False, blank=False)
     order_total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0)
+    postage_cost = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0)
     original_cart = models.TextField(
@@ -47,11 +45,25 @@ class Order(models.Model):
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default='')
 
+    PREFIX = "ABCK"
+
+    # Order Number - Short and site-specific - fixed with ChatGPT
     def _generate_order_number(self):
         """
-        Generate a random, unique order number using UUID
+        Generate a unique Order Number with a site-specific prefix
+        followed by a sequential number, e.g. ABCK1, ABCK2, ...
         """
-        return uuid.uuid4().hex.upper()
+        previous_order = Order.objects.filter(order_number__startswith=self.PREFIX).order_by('-id').first()
+        if previous_order:
+            try:
+                # Extracting number from previous Order Number if it had the prefix
+                previous_number = int(previous_order.order_number.replace(self.PREFIX, ''))
+            except ValueError:
+                previous_number = 0
+        else:
+            previous_number = 0
+        new_number = previous_number + 1
+        return f'{self.PREFIX}{new_number}'
 
     def update_total(self):
         """

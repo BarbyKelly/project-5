@@ -25,7 +25,8 @@
 .stripe-style-input {
     box-sizing: border-box;
     height: 40px;
-    padding: 10px 12px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: white;
@@ -86,4 +87,51 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+/* Order Confirmation styling - added with ChatGPT's guidance */
+.order-confirmation-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    color: black;
+    font-weight: 450;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+.order-confirmation-wrapper h3,
+.order-confirmation-wrapper h5 {
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.order-confirmation-wrapper table td,
+.order-confirmation-wrapper table th {
+    padding: 0.3rem 0.5rem;
+    vertical-align: middle;
+}
+
+.order-confirmation-wrapper .table thead th {
+    border-bottom: 1px solid #e6edf4;
+}
+
+.order-confirmation-wrapper p {
+    color: black;
+    margin-bottom: 0.2rem;
+}
+
+.order-confirmation-wrapper p {
+    text-align: right !important;
+    padding-left: 1rem;
+    line-height: 1.6;
+}
+
+.order-confirmation-wrapper h5 {
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+}
+
+.order-confirmation-wrapper td.text-right {
+    text-align: right !important;
 }

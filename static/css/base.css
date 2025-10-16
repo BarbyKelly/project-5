@@ -1,9 +1,5 @@
-/* base.css followed from Code Institute's walk-through "Boutique Ado",
-and PP2 "Estonia Quiz" */
-
-/* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
-
+/* base.css followed from Code Institute's walk-through "Boutique Ado", and developer's PP2 "Estonia Quiz" */
+/* base.css edited with guidance from ChatGPT, to ensure best practices and styles to work together with bootstrap4 */
 html {
     height: 100%;
 }
