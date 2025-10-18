@@ -421,29 +421,45 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
     ![Favicon](docs/readme_images/favicon.png)
 
-- **Navbar**
+- **Navigation Menu**
+  - **Navbar**
+    - Global navigation appearing on all pages, consisting of:
+      - **Logo**:
+        - Clicking **Logo** returns user to the **Home** page or refreshes it if already on it
+      - **User Icon**:
+        - With **Sign In** and **Sign Up** options
+      - **Cart**
+      - **Search**:
+        - Allows Users to search for Products
+        - Search Icon displayed on all screen sizes
+  
+          ![Search Icon](<docs/readme_images/search_icon.png>)
 
-  - Displayed on all pages, consisting of:
-    - Logo:
-      - Clicking **Logo** brings user back to **Home** page or refreshes Home page if User is already on it
-    - User Icon:
-      - With **Sign In** and **Sign Up** options
-    - Cart
-    - Search Icon
-    - Burger Menu:
-      - With dropdown menu of NavLinks
-      - On larger screens, NavLinks are displayed instead of Burger Menu
-    - Hovering effect for all Navbar items and dropdowns
+        - Clicking the Search Icon opens the Search Form below the Navbar:
+
+          ![Search Form](docs/readme_images/search__form.png)
+
+        - Keyword search supported     
+        - Empty search results display:
+          - All Products
+          - Error message near Search Icon: "Search criteria not entered!"
+      
+      - **Burger Menu**:
+        - Dropdown menu of NavLinks
+        - On larger screens, NavLinks are displayed instead of the Burger Menu
+      - Hovering effect for all Navbar items and dropdowns
 
 - **Footer**:
-  - Copyright
+  - Copyright (year of the project)
   - Developer's name
   - Project type
-  - Disclaimer: no real transactions
-  - Privacy Policy
-  - Social Media links
+  - Disclaimer: No real transactions
+  - Clickable **Privacy Policy**, opens Privacy Policy in a new tab
+  - Social Media links:
+    - Clickable **Facebook**, **Twitter** and **YouTube** links: open respective pages in a new tab
+      (general pages, not personalised for website)
 
-- **Home Page**
+### Home Page
 
   ![Home Page - mobile first](docs/readme_images/home_page_pixel7_opt_50.png)
 
@@ -459,280 +475,131 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ### Art
 
-- Hovering effect for Art NavLink (on larger screens) displays dropdown menu of Art categories
-- Clickable Art NavLink
-- Clickable dropdown menu options
-- Hover effect for dropdown menu items
-- Click Art NavLink opens up Art page with all of the Art available in the Boutique
-- Click Art category from dropdown menu, opens up page with the selected category of Art
-- When Art page is open with all or some of the products:
-  - 'Products Home' link (below Navbar, above products on the left) is clickable
-  - Click it opens up page with all of the Boutique's products, Art and Photos
-  - Number of products eg 18 products, is displayed beside 'Products Home' link
+- **Page Navigation**
+  - Hovering effect for Art NavLink (on larger screens) displays dropdown menu of Art categories:
+    - Animal Art, Name Art, Winter Art, Variety of Art
+  - Clicking Art opens page with all Art
 
-#### Badges
+- **Badges**
+  - Displayed below Navbar for all Art or selected category
+  - Clickable to filter products by category
 
-- Displayed below Navbar for all Art or selected category of Art
-- For all screen sizes
-- Change color when hovered
-- Pointer appears on badge when hovered
-- Clickable
-- Clicking badge opens up selected Art category
-- Or refreshes the page if only one category of Art is displayed
-- Options for Badges if all Art displayed: Variety of Art, Winter Art, Name Art, Animal Art 
+- **Sorting**
+  - 'Sort by' option displayed on the right below badge(s):
 
-#### Sorting
+    ![Options for sorting](docs/readme_images/sort_by_options_opt_100.png)
 
-- 'Sort by' option displayed on the right below badge(s):
+  - Sorting options: Price, Name, Author, Category
 
-![Options for sorting](docs/readme_images/sort_by_options_opt_100.png)
+- **Product Cards**
+  - On hover, pointer appears and product is raised up to highlight which product is hovered 
+  - Card includes: Image, Name, Price, Author, Badge
+  - Click on card opens product page
 
-- Placeholder 'Sort by...' is displayed
-- Options to sort by:
-  - Price (low to high)
-  - Price (high to low)
-  - Name (A-Z)
-  - Name (Z-A)
-  - Author (A-Z)
-  - Author (Z-A)
-  - Category (A-Z)
-  - Category (Z-A)
-- Sorting options is highlighted on hover
-- Clicking Sorting option sorts products as required, and all of the Art is displayed in requested order
-- User may choose eg 'Variety of Art', 10 products displayed, and then opt to sort the category by Author (A-Z),
-  which results in all 10 Variety of Art products sorted by Author A-Z
-
-#### Art/product cards
-
-- On hover, pointer appears and Art product is raised up to highlight which product is hovered 
-- Card includes:
-  - Image
-  - Name
-  - Price
-  - Author
-  - Badge
-- Product card is clickable
-- Clicing product card opens up a page with the selected product
-- Details displayed on product page:
-  - Image
-  - Name
-  - Price
-  - Author
-  - Badge
-  - Description
-  - Size options:
-    - Default size option - 13x10cm
-    - 13x10cm
-    - 10x13cm
-    - 18x13cm
-    - 13x18cm
-    - 45x30cm
-    - 30x45cm
-
-  - Quantity:
-    - By default quantity of 1 is displayed in the input field
-    - Quantity can be increased/decreased using either arrows or by typing
-    - Arrows:
-      - On hover, arrows appear at the right end of input box
-      - Arrows are clickable
-      - Arrow up increases Quantity by 1
-        - Max quantity 50 per product:
-          - Arrow up is still clickable, when Quantity 50 is displayed
-          - Blue background color appears behind 50, when User clicks on arrow up while 50 is displayed
-          - Quantity would not increase beyond 50
-          - [Future feature below to improve feedback to User re Quantity](#quantity)
-      - Arrow down decreases Quantity by 1
-        - Min quantity 1:
-          - Arrow down is still clickable, when Quantity 1 is displayed
-          - Blue background color appears behind 1, when User clicks down arrow to reduce below 1
-          - Quantity would not dencrease below 1
-          - [Future feature below to improve feedback to User re Quantity](#quantity)
-
-    - Typing Quantity values:
-      - User can click in input box and type in any number
-      - If value entered is more than 50, pop up appears: "Value must be less than or equal to 50.":
-
-        ![Less than or equal to 50](docs/readme_images/less_than_or_equal_to_fifty_opt_50.png)
-
-      - If User leaves the value above 50, and clicks on 'Add to Cart', same pop up appears
-
-      - When User types a value less than 1, pop up appears: "Value must be greater than or equal to 1.":
-
-        ![Greater than or equal to 1](docs/readme_images/greater_than_or_equal_to_one_opt_50.png)
-
-  - Buttons below quantity:
-    - 'Continue Shopping' and 'Add to Cart'
-      - Clicking **Continue Shopping** brings User to the page with all of the Products, Art and Photos
-      - Clicking **Add to Cart**, adds the product to the cart, with selected size and quantity
-
-
-### Search Icon/Search Form
-
-- Search is for Products only, not for the whole site
-- Search Icon displayed on all screen sizes
-  - On the right, at the end of the Navbar - for larger screens
-  - On smaller screens, on the left of Burger Menu button, close to the right side
-
-  ![Search Icon](<docs/readme_images/search_icon.png>)
-
-- Search Form opens when User clicks on Search Icon:
-
-  ![Search Form](docs/readme_images/search__form.png)
-
-  - Search Form opens below the Search Icon and Burger Menu, below the Navbar
-  - User may type in Search Form
-  - Placeholder 'Search our Boutique' is displayed in Search Form, unless User types in at least one character
-  - User may use Search Form to find Art and Photos in the Boutique, with keywords eg 'hedgehog':
-
-    ![Search for 'Hedgehog'](docs/readme_images/search_hedgehog.png)
-
-  - Blue Search Icon at the end of the Form is clickable to start search
-  - Or User can press 'Enter' on keyboard to start search or tap on screen
-  - Empty search can be started without typing anything in Search Form:
-    - Empty search results in:
-      - All of the Products being displayed, and
-      - An error message near Search Icon notifying User: "Search criteria not entered!"
-      - User has an option to click **x** in top right corner of the message, to close Error alert
-
-      ![Error message](docs/readme_images/error_for_empty_search.png)
-
-  - Clicking **Search Icon** in the Navbar closes Search Form (unless User chooses to activate Search)
-
+- **Product Page**
+  - Displays image, name, price in €, badge, author, description
+  - Quantity input (1-50) with arrows and manual entry
+  - Buttons:
+      - **Continue Shopping**: returns User to all Products (Art and Photos)
+      - **Add to Cart**: adds product to cart with selected quantity
 
 [Back to Features](#features)
 
 [Back to Contents](#contents)
 
 
-### Navigation Menu
-
-#### Navbar
-
-- All Navigation Menu items are clickable and displayed below Logo on a larger screens, beside each other:
-
-  ![Nav bar](docs/readme_images/nav_bar.png)
-
-- Collapsed/burger-menu is displayed on smaller screens:
-
-  ![All Items Dropdown Menu](docs/readme_images/burger_menu.png)
-
-- When User clicks on 'All Items', dropdown opens:
-  - All Items
-    - By Category
-    - By Price
-    - By Author
-    - All Items
-
-- Previously opened dropdown menu closes, if another Button is clicked 
-
-### Art
-
-- When User clicks on 'Art', dropdown opens:
-
-![Art Dropdown Menu](docs/readme_images/art_menu_dropdown.png)
-
-- Art
-  - Animal Art
-  - Name Art
-  - Winter Art
-  - Variety of Art
-  - All Ar
-
 ### Photos
 
-- When User clicks on 'Art', dropdown opens:
+- All features and functionality are identical to [Art](#art), except for categories:
 
-![Photos Dropdown Menu](docs/readme_images/photos_dropdown.png)
+  ![Photos Dropdown Menu](docs/readme_images/photos_dropdown.png)
 
-- Photos
-  - Beach
-  - Rainbows
-  - Animals
-  - Sky
-  - Variety of Photos
-  - All Photos
+  - Beach, Rainbows, Animals, Sky, Variety of Photos
+
 
 ### How To...?
 
 - 'How To...?' page displays links to various YouTube channels, showing different styles of doing art
 
-![How To...? page](docs/readme_images/how_to_page_opt_50.png)
+  ![How To...? page](docs/readme_images/how_to_page_opt_50.png)
 
-### Sign In
+### Newsletter
 
-![Sign In page](docs/readme_images/sign_in_form.png)
+  ![Newsletter](docs/readme_images/newsletter.png)
 
-- Displaying **Sign In** form
-- And an option to **Sign Up**
-- To click **Home** button
-- Or **Sign In** button
-- And to choose 'Forgot Your Password?", which opens up:
-  - **Password Reset** page:
-    - User can enter email address,
-    - Click **Back to Sign In**, 
-    - Or click **Reset My Password**
-
-### Sign Up
-
-![Sign Up](docs/readme_images/sign_up_form.png)
-
-- Displaying **Sign Up** form
-- And an option to **Sign In** if User already has an account
-- Option to click **Back to Sign In** button
-- Or **Sign Up** button
-
-### Cart
-
-![Cart page](docs/readme_images/cart_page.png)
-
-- Displaying 'Shopping Cart' page:
-  - If cart is empty:
-    - Message: 'Your cart is empty'
-    - with a button below: 'Back to shopping'
-  - If items placed in the cart by User:
-    - list of products in the cart with image, title, size, and SKU
-    - price of each item
-    - quantity of each item
-    - option to update quantity or remove product
-    - cost of subtotal of each type of item
-    - cart total
-    - postage cost
-    - grand total
-    - buttons below: 'Continue shopping' and 'Secure Checkout'
+- Subscription form
+- Email address field
+- Click **Back to Shopping**
+- Or click **Subscribe**
 
 ### Contact Us
 
 ![Contact Us](docs/readme_images/contact_us.png)
 
-- User can click **Contact Us**
-- Fill in Contact Form
-- Click **Back to Shopping**
-- Or click **Submit Contact Form**
+- Clickable **Contact Us**
+- Contact Form
+- Buttons:
+  - **Back to Shopping**
+  - **Submit Contact Form**
 
-### Newsletter
+### User Menu
+- **Sign In**
 
-![Newsletter](docs/readme_images/newsletter.png)
+  ![Sign In page](docs/readme_images/sign_in_form.png)
 
-- Newsletter page has an option to fill in Subscription form
-- User can enter their email address
-- Click **Back to Shopping**
-- Or click **Subscribe**
+  - Displays **Sign In** form
+  - Option to **Sign Up**
+  - Buttons:
+    - **Home**: returns User to Home page
+    - **Sign In**: signs User in (if credentials are correct)
+  - Option **Forgot Your Password?**, which opens:
+    - **Password Reset** page:
+      - Email address field
+      - Buttons:
+        - **Back to Sign In**: returns User to Sign In page 
+        - **Reset My Password**: submits password reset request
+  - **Username** displayed for signed in Users, with options:
+    - **My Profile**: opens up User's Profile page
+      - View and update default postage information
+      - View order history
+      - Button: **Update Information**
+    - **Sign Out**: signs User out
 
-### Footer
+  - **Admin Only** (additional permissions):
+    - **Product Management**: add, edit and delete products
 
-  - Copyright with year of the project
-  - Developer's name
-  - Stating it is an E-commerce Project
-  - Disclaimer: Site is not for real transactions
-  - Privacy policy:
-    - User can click **Privacy Policy** to access it
-  - Social Media links:
-    - Clickable
-    - General **Facebook**, **Twitter** and **YouTube** pages open after click/tap
-    - Mock Facebook page has been set up for the site. Developer understands Facebook can delete the Mock up page,
-      therefore Developer kept the general Facebook link instead
-  - Footer is same for all pages
-  - Footer is displayed for all pages
+- **Sign Up**
+
+  ![Sign Up](docs/readme_images/sign_up_form.png)
+
+  - Displays **Sign Up** form
+  - Option to **Sign In** if User account exist
+  - Buttons:
+    - **Back to Sign In**: returns User to Sign In page
+    - **Sign Up**: register new account
+
+### Cart
+
+![Cart page](docs/readme_images/cart_page.png)
+
+- Displays **Shopping Cart** page
+- If cart is empty:
+  - Message: **Your cart is empty**
+  - Button **Back to shopping** brings User to all Products (Art and Photos)
+- If item(s) in cart:
+  - List of products with image, title, SKU, price, quantity, subtotal
+  - Cart total, postage, and grand total
+  - Buttons:
+    - **Continue shopping**: returns User to all products
+    - **Secure Checkout**: opens up Checkout page
+
+  - **Checkout**
+    - Accessible via Cart
+    - Users can complete purchase (disclaimer: no real transactions, website for study purposes only)
+    - Payment handled via Stripe integration
+    - **Order Confirmation**
+      - Accessible after completing checkout
+      - Displaying order number, summary of purchased items, totals, and postage cost
 
 [Back to Features](#features)
 
@@ -741,7 +608,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ## Future Features
 
-- Active/chosen Menu Item is underlined or otherwise highlighted
+- Active/chosen Menu Item is highlighted as active
 - Registered Site User may save items for later, or as their favorites, to access these under their account
 - Registered User is notified of saved items in their cart when they return to the website
 
@@ -1131,6 +998,10 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 - **Country**
   - Country name stopped displaying on Order Form, after Order Form was edited. Country at least shows up on Order confirmation.
+
+- **Size checkout/models.py**
+  Developer removed Size from most of the website, except from checkout/models.py, due to time constraint, in case migrations affect project too much, and Developer would not be able to fix it before the deadline. 
+  Developer sees the need to add some form of Size to each product. As the products are all different sizes, it would be time consuming to add their unique sizes at this stage.
 
 [Back to Bugs](#bugs)
 
