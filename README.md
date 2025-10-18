@@ -24,9 +24,10 @@ Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-bouti
 
 Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/project-5)
 
-Responsiveness tested with [am I responsive](https://ui.dev/amiresponsive)
+Responsiveness test...
 
-![Mockup created with Canvas](docs/readme_images/mockup_created_with_canvas.png)
+Am I Responsive image... update
+
 
 
 # Contents
@@ -1127,6 +1128,9 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
     - 'Success!' pop up: 
 
     ![Order Number digit](docs/readme_images/order_number_digit.png)
+
+- **Country**
+  - Country name stopped displaying on Order Form, after Order Form was edited. Country at least shows up on Order confirmation.
 
 [Back to Bugs](#bugs)
 

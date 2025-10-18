@@ -58,7 +58,7 @@
                             <tbody>
                                 {% for item in order.lineitems.all %}
                                 <tr>
-                                    <td>{{ item.product.name }}{% if item.product_size %}{% endif %}</td>
+                                    <td>{{ item.product.name }}</td>
                                     <td class="text-right">{{ item.quantity }} @ €{{ item.product.price|floatformat:2 }}  </td>
                                     <td class="text-right">€{{ item.lineitem_total|floatformat:2 }}</td>
                                 </tr>
