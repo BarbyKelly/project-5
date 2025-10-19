@@ -15,11 +15,6 @@
     margin-top: 1rem;
 }
 
-/* Text-info - match with color of the website */
-.text-info {
-    color: cornflowerblue !important;
-}
-
 /* Stripe */
 .StripeElement,
 .stripe-style-input {

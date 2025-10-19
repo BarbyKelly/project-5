@@ -1,4 +1,4 @@
-# Product has Sizes - removed - with ChatGPT's guidance
+# Contexts.py - base from Boutique Ado. 'Product has Sizes' - removed - with ChatGPT's guidance
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404

@@ -31,19 +31,27 @@ img {
 a.nav-link,
 a.signup-link,
 a.signin-link,
-a.forgot-password-link,
 .allauth-form-inner-content a {
+    color: cornflowerblue !important;
+}
+
+a.forgot-password-link {
     color: #FFFFFF !important;
+}
+
+a.forgot-password-link:hover {
+    color: cornflowerblue !important;
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 a.nav-link:hover,
 a.signup-link:hover,
 a.signin-link:hover,
-a.forgot-password-link:hover,
 .allauth-form-inner-content a:hover {
-    color: #FFFFFF !important;
+    color: cornflowerblue !important;
     text-decoration: underline;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 a.text-muted {
@@ -52,6 +60,11 @@ a.text-muted {
 
 a.text-muted:hover {
     color: #FFFFFF;
+}
+
+/* Text-info - match with color of the website */
+.text-info {
+    color: cornflowerblue !important;
 }
 
 /* Buttons - fixed with ChatGPT */
@@ -295,7 +308,7 @@ h2 {
 /* Product card, detail page card, quantity group, button group - learned from chatGPT */
 .product_card {
     position: relative;
-    cursor: pointer;
+    max-height: 350px;
     z-index: 1;
     transition: all 0.2s;
     border: 1px solid transparent;
@@ -304,15 +317,25 @@ h2 {
     overflow: hidden;
     background-color: #FFFFFF;
     border-radius: 0.4rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
 }
 
 .detail_page_card {
-    margin-top: 1rem;
+    position: relative;
     width: 100%;
-    max-width: 100%;
+    max-height: none;
+    margin-top: 2rem;
+    height: auto;
+    overflow: visible;
     background-color: #FFFFFF;
-    padding: 0.4rem;
+    padding: 0.6rem;
     border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
 }
 
 .detail_page_card .image_inner_box {
@@ -321,7 +344,7 @@ h2 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-height: none;
+    max-height: 250px;
     padding: 3px;
     margin-bottom: 0.1rem;
 }
@@ -357,38 +380,12 @@ h2 {
     border: 1px solid black;
     transition: all 0.2s ease-in-out;
     color: #FFFFFF;
-}
-
-/* Card styling for Cart - fixed with ChatGPT's guidance */
-.detail_page_card.cart_card {
-    width: 95%;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0.2rem;
-}
-
-.cart_card .quantity_group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
-}
-
-.cart_card .quantity_group input.qty_input {
-    width: 40px;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.cart_card .cart_totals {
-    text-align: center;
-    font-size: 0.8rem;
-}
+} 
 
 /* Product card - fixed with ChatGPT's guidance */
 .product_card:hover {
     border: 1px solid #474d54;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
     border-radius: 0.1rem;
     transform: translateY(-2px);
 }
@@ -428,16 +425,53 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.button_group {
+.quantity_group {
     display: flex;
-    gap: 0.8rem;
-    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 100%;
+}
+
+.item_qty_cart:hover {
+    background-color: #72ace6;
+}
+
+.button_group {
+    display: flex !important;
+    justify-content: center !important;
     flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem; 
 }
 
 .button_group .btn {
-    min-width: 100px;
+    min-width: 60px;
     flex: none;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.cart_totals .btn {
+    display: inline-block;
+    min-width: 60px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+
+.cart_totals .btn {
+    display: inline-block;
+    min-width: 60px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+    text-align: center; 
 }
 
 /* Image Container - styling fixed with ChatGPT's guidance */
@@ -492,10 +526,24 @@ a.category-badge span.badge:hover {
     right: 10px;
 }
 
-.btt-link,
-.update-link,
-.remove-item {
+.btt-link {
     cursor: pointer;
+}
+
+/* Cart - 'Remove item' button - fixed with chatGPT's guidance */
+.remove_item {
+    background-color: #eaecee;
+    color: cornflowerblue;
+    border: 1px solid #cccccc;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.remove_item:hover {
+    background-color: #72ace6;
 }
 
 input[name='q']::placeholder {
@@ -797,21 +845,6 @@ footer {
 
     body {
         height: calc(100vh - 116px);
-    }
-
-    /* Cart - fixed with ChatGPT's guidance */
-    .detail_page_card.cart_card {
-        height: 45%;
-        max-height: 45%;
-        width: 65%;
-        max-width: 65%;
-        margin: 0;
-        padding: 0.2rem;
-    }
-
-    .cart_totals a.btn {
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
     }
 }
 

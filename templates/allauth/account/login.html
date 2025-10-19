@@ -20,7 +20,7 @@
 {% block inner_content %}
   <!-- Inner content block improved with chatGPT's guidance, for better SEO -->
   <section class="account_login container mt-4 pt-4 text-center" aria-labelledby="signin-title">
-    <h1 id="signin-title" class="logo-font mb-3">{% trans "Sign In" %}</h1>
+    <h1 id="signin-title" class="logo-font text-white mb-3">{% trans "Sign In" %}</h1>
     <hr>
 
     {% get_providers as socialaccount_providers %}
@@ -71,7 +71,7 @@
       </div>
 
       <p class="mt-2">
-        <a class="text-primary font-weight-bold" href="{% url 'account_reset_password' %}">
+        <a class="text-primary font-weight-bold text-white" href="{% url 'account_reset_password' %}">
           {% trans "Forgot Your Password?" %}
         </a>
       </p>

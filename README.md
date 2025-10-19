@@ -995,6 +995,12 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   Developer removed Size from most of the website, except from checkout/models.py, due to time constraint, in case migrations affect project too much, and Developer would not be able to fix it before the deadline. 
   Developer sees the need to add some form of Size to each product. As the products are all different sizes, it would be time consuming to add their unique sizes at this stage.
 
+- **Product Details Page**
+  - Buttons are not centered on any screen sizes
+  - Product card appears too wide on tablet screens (around 767px and below)
+  - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
+  - Due to time constraints, CSS was not fully adjusted to the new background image
+
 [Back to Bugs](#bugs)
 
 [Back to Contents](#contents)
