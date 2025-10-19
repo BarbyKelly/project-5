@@ -1,9 +1,5 @@
 /* base.css followed from Code Institute's walk-through "Boutique Ado", and developer's PP2 "Estonia Quiz" */
 /* base.css edited with guidance from ChatGPT, to ensure best practices and styles to work together with bootstrap4 */
-html {
-    height: 100%;
-}
-
 /* General styling */
 * {
     margin: 0;
@@ -11,7 +7,7 @@ html {
     box-sizing: border-box;
 }
 
-body {
+html, body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +17,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #FFFFFF;
-    color: #555555;
+    color: #111111;
     text-align: left;
     line-height: 1;
 }
@@ -29,6 +25,54 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Links Nav and Form - fixed with ChatGPT's guidance so text visible better with background image */
+a.nav-link,
+a.signup-link,
+a.signin-link,
+a.forgot-password-link,
+.allauth-form-inner-content a {
+    color: #FFFFFF !important;
+}
+
+a.nav-link:hover,
+a.signup-link:hover,
+a.signin-link:hover,
+a.forgot-password-link:hover,
+.allauth-form-inner-content a:hover {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+a.text-muted {
+    color: #e3e3e3;
+}
+
+a.text-muted:hover {
+    color: #FFFFFF;
+}
+
+/* Buttons - fixed with ChatGPT */
+button,
+.btn,
+input[type="submit"],
+input[type="button"] {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    color: #000000;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
 }
 
 /* Styling of Headings and Logo */
@@ -111,6 +155,19 @@ h2 {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     will-change: transform, box-shadow;
+}
+
+/* Navbar links - fixed with ChatGPT's guidance */
+.navbar a.nav-link,
+.navbar .dropdown-item {
+    color: #000;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar a.nav-link:hover,
+.navbar .dropdown-item:hover {
+    color: #000;
+    background-color: cornflowerblue;
 }
 
 /* ----- Search - styling fixed with chatGPT's guidance ----- */
@@ -251,7 +308,7 @@ h2 {
     pointer-events: none;
 }
 
-/* Product card - clickable (not just image, and badge) - copied from chatGPT after csp fix stopped image click */
+/* Product card, detail page card, quantity group, button group - learned from chatGPT */
 .product_card {
     position: relative;
     cursor: pointer;
@@ -261,36 +318,156 @@ h2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 0.4rem;
 }
 
+.detail_page_card {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.detail_page_card .image_inner_box {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: none;
+    padding: 3px;
+    margin-bottom: 0.1rem;
+}
+
+.detail_page_card .image_inner_box img {
+    max-width: 60%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.detail_page_card input[type="number"] {
+    width: 70px;
+    min-width: 65px;
+    max-width: 80px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    padding: 3px 5px;
+    font-size: 1.1rem;
+}
+
+.detail_page_card input[type="submit"] {
+    flex: 1 1 auto;
+    min-width: 2rem;
+    background: #FFFFFF;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.detail_page_card input[type="submit"]:hover {
+    background: cornflowerblue;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+    color: #FFFFFF;
+}
+
+/* Card styling for Cart - fixed with ChatGPT's guidance */
+.detail_page_card.cart_card {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+.cart_card .quantity_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+.cart_card .quantity_group input.qty_input {
+    width: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.cart_card .cart_totals {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Product card - fixed with ChatGPT's guidance */
 .product_card:hover {
     border: 1px solid #474d54;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.16);
-    border-radius: 0.4rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 0.1rem;
     transform: translateY(-2px);
 }
 
 .product_card * {
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .product_card a {
-    pointer-events: auto;
     cursor: pointer !important;
+}
+
+.product-details-container.card-body {
+    padding: 0.2rem;
+}
+
+/* Product count above listings - fixed with ChatGPT's guidance */
+.products_count {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.products_count a {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+}
+
+.products_count a:hover {
+    color: cornflowerblue !important;
+}
+
+.quantity_group input.qty_input {
+    width: 60px;
+    min-width: 50px;
+    max-width: 65px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button_group {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button_group .btn {
+    min-width: 100px;
+    flex: none;
 }
 
 /* Image Container - styling fixed with ChatGPT's guidance */
 .image_container {
     width: 100%;
-    border-radius: 0.3rem;
+    border-radius: 0.1rem;
     display: flex;
     justify-content: center;
-    padding: 8px;
+    padding: 4px;
 }
 
 .image_inner_box {
     width: 90%;
-    max-height: 260px;
+    max-height: 200px;
     background-color: #FFFFFF;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
     border-radius: 0.2rem;
@@ -553,13 +730,13 @@ footer {
 
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
 @media (max-width: 575.98px) {
-  .container {
-    max-width: 570px;
-  }
+    .container {
+        max-width: 570px;
+    }
 
-  .navbar {
-    font-size: medium;
-  }
+    .navbar {
+        font-size: medium;
+    }
 }
 
 /* Media Queries for 'S' screens (landscape phones, tablets less than 768px) */
@@ -629,6 +806,21 @@ footer {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    /* Cart - fixed with ChatGPT's guidance */
+    .detail_page_card.cart_card {
+        height: 45%;
+        max-height: 45%;
+        width: 65%;
+        max-width: 65%;
+        margin: 0;
+        padding: 0.2rem;
+    }
+
+    .cart_totals a.btn {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
     }
 }
 

@@ -608,18 +608,17 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ## Future Features
 
-- Active/chosen Menu Item is highlighted as active
+- **Navigation/UX/Interface**
+  - Active/chosen Menu Item stays highlighted while open
 - Registered Site User may save items for later, or as their favorites, to access these under their account
 - Registered User is notified of saved items in their cart when they return to the website
 
-- 'How To...?' page to include videos related to Photos, Photography
+- 'How To...?' page to include videos related to Photos, Photography, Art lessons by kids
 - Improved Descriptions for all products, to improve search for Users, and add more keywords
 - Add an option to search Art and Photos by special celebrations: Easter, Christmas, Halloween, Birthday, Anniversary, Valentine's Day etc.
   (with improved Descriptions, this option will work, like now when looking for Winter, rainbow)
 - Filter to search products with multiple options eg Stone Art - Birthday - Age 5
 - Option to choose art based on what tools were used eg pencil, paint, water-color, marker, paper, stone, canvas
-
-- Username is displayed when signed in
 
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
 

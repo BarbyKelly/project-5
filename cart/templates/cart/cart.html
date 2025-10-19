@@ -1,4 +1,5 @@
 <!-- cart.html code followed from Code Institute's Walk-Through Boutique Ado (bag) -->
+<!-- Edited with ChatGPT's guidance, to add card, so cart details are visible with the background image -->
 {% extends "base.html" %}
 {% load static %}
 {% load cart_tools %}
@@ -13,102 +14,100 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mt-1 mb-2">
-        <div class="row">
-            <div class="col">
-                <h3 class="logo-font mt-3 mb-5 cart font-weight-bold">Shopping Cart</h3>
+    <div class="container mt-4 mb-2">
+        <div class="card detail_page_card cart_card p-2">
+            <div class="row">
+                <div class="col">
+                    <h3 class="logo-font mt-2 mb-2 cart font-weight-bold">Shopping Cart</h3>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                {% if cart_items %}
-                    <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless cart-table">
-                            <thead class="text-black">
-                                <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-
-                            {% for item in cart_items %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        {% if item.product.image %}
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                        {% else %}
-                                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                                        {% endif %}
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
-                                        <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
-                                            {% csrf_token %}
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <input class="form-control form-control-sm qty_input" type="number"
-                                                        name="quantity" value="{{ item.quantity }}" min="1" max="50"
-                                                        data-item_id="{{ item.item_id }}"
-                                                        id="id_qty_{{ item.item_id }}">
+            <div class="row">
+                <div class="col">
+                    {% if cart_items %}
+                        <div class="table-responsive rounded">
+                            <table class="table table-sm table-borderless cart-table">
+                                <thead class="text-black">
+                                    <tr>
+                                        <th scope="col">Product Info</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in cart_items %}
+                                    <tr>
+                                        <td class="p-3 w-25">
+                                            {% if item.product.image %}
+                                                <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                            {% else %}
+                                                <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                            {% endif %}
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">${{ item.product.price }}</p>
+                                        </td>
+                                        <td class="py-3 w-25">
+                                            <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
+                                                {% csrf_token %}
+                                                <div class="form-group quantity_group">
+                                                    <div class="input-group">
+                                                        <input class="form-control form-control-sm qty_input" type="number"
+                                                            name="quantity" value="{{ item.quantity }}" min="1" max="50"
+                                                            data-item_id="{{ item.item_id }}"
+                                                            id="id_qty_{{ item.item_id }}">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                            <tr>
-                                <td colspan="5" class="pt-5 text-right">
-                                    <h5><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
-                                    <h5>Postage: €{{ postage|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if free_postage_delta > 0 %}
-                                        <p class="mb-1 text-danger">
-                                            You may get free postage by spending just <strong>€{{ free_postage_delta }}</strong> more
-                                        </p>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                        <span class="icon">
-                                            <i class="fas fa-caret-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Continue Shopping</span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-blue rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
-                                        <span class="icon">
-                                            <i class="fa-solid fa-lock"></i>
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                {% else %}
-                    <p class="lead mb-5">Your cart is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Back To Shopping</span>
-                    </a>
-                {% endif %}
+                                            </form>
+                                            <a class="update-link text-info"><small>Update</small></a>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Cart totals - edited with ChatGPT's guidance -->
+                        <div class="cart_totals text-right mt-2">
+                            <h5><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h5>Postage: €{{ postage|floatformat:2 }}</h6>
+                            <h4 class="mt-2"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_postage_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    Free postage by spending just <strong>€{{ free_postage_delta }}</strong> more
+                                </p>
+                            {% endif %}
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-caret-left"></i>
+                                </span>
+                                <span class="text-uppercase">Continue Shopping</span>
+                            </a>
+                            <a href="{% url 'checkout' %}" class="btn btn-blue rounded-0 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                            </a>
+                        </div>
+                    {% else %}
+                        <p class="lead mb-5">Your cart is empty</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Back To Shopping</span>
+                        </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
