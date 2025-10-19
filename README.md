@@ -149,7 +149,6 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
 - **Home**
   - Click **Home** NavLink to get back to Home page or to refresh Home page.
-  - Click **Click Here To Shop** button on Home page
 
 - **Art**
   - Hover on Art NavLink (on larger screens) for Art dropdown menu to be displayed
@@ -461,13 +460,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ### Home Page
 
-  ![Home Page - mobile first](docs/readme_images/home_page_pixel7_opt_50.png)
-
-  - Features only on Home page:
-    - Background image
-    - **Click here to shop** button:
-      - All of the products are displayed on scrollable page after clicking on **Click here to shop**
-      - Button is displayed near bottom left
+- Displays all of Boutique's Art and Photos
  
 [Back to Features](#features)
 

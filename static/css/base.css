@@ -243,22 +243,6 @@ h2 {
     width: 1.5rem;
 }
 
-/* Click here to shop - button */
-.click-here-to-shop-button {
-    bottom: 220px;
-    left: 50px;
-    background: cornflowerblue;
-    color: white;
-    min-width: 150px;
-}
-
-.click-here-to-shop-button:hover,
-.click-here-to-shop-button:active,
-.click-here-to-shop-button:focus {
-    background: rgb(28, 28, 209);
-    color: white;
-}
-
 /* Buttons */
 .btn-blue {
     background: cornflowerblue;
@@ -488,7 +472,14 @@ h2 {
     margin: 0 auto;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge span.badge {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    border-color: #ede9e9 !important;
+}
+
+a.category-badge span.badge:hover {
     background: rgb(28, 28, 209) !important;
     color: #ffffff !important;
 }
@@ -915,21 +906,11 @@ footer {
   .container {
     max-width: 1350px;
   }
-
-  .click-here-to-shop-button {
-    font-size: large;
-    min-width: 200px;
-  }
 }
 
 /* Media Queries for 'XXL' screens (large desktops, more than 1400px */
 @media (min-width: 1399.99px) {
   .container {
     min-width: 1350px;
-  }
-
-  .click-here-to-shop-button {
-    font-size: large;
-    min-width: 200px;
   }
 }

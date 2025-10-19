@@ -1,4 +1,5 @@
 # Code for urls.py from Code Institute's Walk-Through Boutique Ado
+# Edited with ChatGPT's guidance - Developer decided to make Home page Products (Home) Page instead
 
 """project5 URL Configuration
 
@@ -20,11 +21,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
+from products import views as products_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('', include('home.urls')),
+    path('', products_views.all_products, name='home'),
+    # path('', include('home.urls')),
     path('howto/', include('howto.urls'), name='howto-urls'),
     path('products/', include('products.urls')),
     path('cart/', include('cart.urls')),
