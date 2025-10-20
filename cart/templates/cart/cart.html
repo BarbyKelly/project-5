@@ -88,7 +88,7 @@
                                 <strong>Get Free postage by spending just €{{ free_postage_delta }} more</strong>
                             </p>
                         {% endif %}
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 ml-2">
+                        <a href="{% url 'products_home' %}" class="btn btn-outline-black rounded-0 ml-2">
                             <span class="icon">
                                 <i class="fas fa-caret-left"></i>
                             </span>
@@ -103,7 +103,7 @@
                     </div>
                 {% else %}
                     <p class="text-white front-weight-bold lead mb-5">Your cart is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products_home' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>

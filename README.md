@@ -1223,11 +1223,20 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her family and friends; mentor Lauren-Nicole Popich; Student Care, especially Kim, facilitator Kay Welfare, tutors, Slack members, chatGPT, and online content creators.
+- Developer is grateful for any guidance and support provided by her closest people;
+  her mentor Lauren-Nicole Popich;
+  Code Institute for the opportunity and their Student Care, especially Kim and Nikki, facilitator Kay Welfare, tutors, Slack members, and online content creators.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project, for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo. Great team effort. And for asking Developer to increase prices for their Art. 
+- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project,
+  for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo.
+  Great team effort. 
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README, that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through, where Secret key was hidden at a later stage.
-Developer changed the key asap and hid it, as advised by her mentor.
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README,
+  that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through,
+  where Secret key was hidden at a later stage.
+  Developer changed the key asap and hid it, as advised by her mentor.
+
+- Special thanks to ChatGPT, for helping Developer near the end of the project. Developer learned a lot through the process and it was great to 
+  have faster access to what works with Bootstrap4.
 
 [Back to Contents](#contents)

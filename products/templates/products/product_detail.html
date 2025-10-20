@@ -38,7 +38,7 @@
 
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
-                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <a class="text-muted" href="{% url 'products_home' %}?category={{ product.category.name }}">
                                 <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                             </a>
                         </p>
@@ -72,7 +72,7 @@
                                 </div>
                                 <!-- Buttons - fixed with ChatGPT's guidance -->
                                 <div class="button_group">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 text-uppercase">
+                                    <a href="{% url 'products_home' %}" class="btn btn-outline-black rounded-0 text-uppercase">
                                         <i class="fas fa-chevron-left"></i>Back to Shop
                                     </a>
                                     <input type="submit" class="btn btn-blue rounded-0 text-uppercase" value="Add to Cart">
