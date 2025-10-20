@@ -284,6 +284,7 @@ h2 {
 
 .text-black {
     color: #000 !important;
+    text-shadow: 1px 1px 3px rgba(140, 182, 224, 0.5);
 }
 
 .border-black {
@@ -418,9 +419,9 @@ h2 {
 }
 
 .quantity_group input.qty_input {
-    width: 60px;
-    min-width: 50px;
-    max-width: 65px;
+    width: 40px;
+    min-width: 40px;
+    max-width: 45px;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -453,23 +454,25 @@ h2 {
     margin: 0;
 }
 
-.cart_totals .btn {
-    display: inline-block;
-    min-width: 60px;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
-    margin-right: 0.3rem;
-    margin-top: 0.2rem;
+.cart-table,
+.cart_totals {
+    display: block;
+    max-width: 550px;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    margin: 0 auto;
     box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.4rem;
 }
 
 .cart_totals .btn {
     display: inline-block;
     min-width: 60px;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
-    margin-right: 0.3rem;
-    margin-top: 0.2rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.7rem;
+    margin: 0 auto;
     box-sizing: border-box;
     text-align: center; 
 }

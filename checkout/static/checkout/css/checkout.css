@@ -1,10 +1,21 @@
 /* Base code for checkout.css from Boutique Ado walk-through */
 /* Checkout Form Container - to fix width of the form on screens eg 991px - fixed with chatGPT's guidance */
+/* Checkout background color for clarity added with chatGPT's guidance */ 
+/* Order summary */
+.order-summary {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 13px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+}
+
 .checkout_form_container {
     max-width: 550px;
     margin: 0 auto;
     padding: 0 13px;
     box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
 }
 
 /* Checkout separator - fixed with chatGPT's guidance */
@@ -13,6 +24,40 @@
     height: 1px;
     background-color: #e9f0f7;
     margin-top: 1rem;
+}
+
+/* Target the label for 'Create an account/Sign In' section - targeting label fixed with ChatGPT's guidance */
+label[for="id-save-info"] {
+    color: #FFFFFF !important;
+}
+
+label[for="id-save-info"] a {
+    color: #FFFFFF;
+}
+
+label[for="id-save-info"] a:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Text styling for Order Summary and Checkout Form - added with ChatGPT's guidance, to lift text more */
+.order-summary p,
+.order-summary h2,
+.order-summary small,
+.order-summary strong {
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.order-summary .small {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.order-summary {
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.4rem;
+    padding: 1rem 1.1rem;
 }
 
 /* Stripe */
