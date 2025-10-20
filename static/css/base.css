@@ -27,13 +27,6 @@ img {
     height: auto;
 }
 
-/* Links Nav and Form - fixed with ChatGPT's guidance so text visible better with background image */
-a.nav-link,
-a.signup-link,
-a.signin-link,
-.allauth-form-inner-content a {
-    color: cornflowerblue !important;
-}
 
 a.forgot-password-link {
     color: #FFFFFF !important;
@@ -45,7 +38,6 @@ a.forgot-password-link:hover {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-a.nav-link:hover,
 a.signup-link:hover,
 a.signin-link:hover,
 .allauth-form-inner-content a:hover {
@@ -146,28 +138,24 @@ h2 {
     display: block !important;
 }
 
+.navbar-toggler:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
+    background: transparent;
+    cursor: pointer;
+}
+
 /* Show parent as active, when one of it's dropdown items is active */
 .navbar .dropdown-item.active {
-    color: cornflowerblue !important;
-    background-color: transparent !important;
+    color: #000000 !important;
+    background-color: rgba(100,149,237,0.3) !important;
+    border-radius: 3px;
 }
 
 /* Header Icons wrapper - fixed with chatGPT's guidance */
 .header_icons {
     display: flex;
     align-items: center;
-}
-
-/* Hover effect for clickable Navbar icons and Logo - fixed with chatGPT */
-.nav-link:hover,
-.navbar-toggler:hover,
-.main-logo-link:hover {
-    cursor: pointer;
-    transform: scale(1.09);
-    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    will-change: transform, box-shadow;
 }
 
 /* Navbar links - fixed with ChatGPT's guidance */
@@ -177,10 +165,15 @@ h2 {
     transition: color 0.2s ease-in-out;
 }
 
-.navbar a.nav-link:hover,
 .navbar .dropdown-item:hover {
     color: #000;
     background-color: cornflowerblue;
+}
+
+.navbar a.nav-link:hover,
+.main-logo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
 }
 
 /* ----- Search - styling fixed with chatGPT's guidance ----- */
@@ -386,9 +379,9 @@ h2 {
 /* Product card - fixed with ChatGPT's guidance */
 .product_card:hover {
     border: 1px solid #474d54;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
     transform: translateY(-2px);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.13);
 }
 
 .product_card * {
