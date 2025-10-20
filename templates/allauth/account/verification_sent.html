@@ -5,10 +5,23 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block inner_content %}
-    <div class="row page-title">
-        <h2 class="logo-font mt-3 mb-4">{% trans "Verify Your E-mail Address" %}</h2>
-        <hr>
+    <div class="verification-page mt-5">
+        <div class="row page-title">
+            <h2 class="logo-font mb-2 text-white text-center">{% trans "Verify Your E-mail Address" %}</h2>
+            <hr>
+        </div>
+        <p class="text-white">
+            {% blocktrans %}
+                We have sent an e-mail to you for verification.
+                Please follow the link provided in the email to finalize the signup process.
+                Feel free to
+            {% endblocktrans %}
+                <a href="{% url 'contact' %}" class="verification-page-link">Contact Us</a>
+            {% blocktrans %}
+                if you do not receive the verification e-mail within an hour.
+            {% endblocktrans %}
+            
+        </p>
+        <p class="text-white">Kelly's Art & Photo Boutique</p>
     </div>
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Please follow the link provided to finalize the signup process. If you do not see the verification e-mail in your main inbox, check your spam folder. Please contact us if you do not receive the verification e-mail within a few minutes.{% endblocktrans %}</p>
-
 {% endblock %}

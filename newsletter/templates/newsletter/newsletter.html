@@ -13,29 +13,31 @@
 {% block content %}
 {% load crispy_forms_tags %}
 <div class="overlay"></div>
-<div class="container mb-2 mt-2">
-    <div class="row">
-        <div class="col">
-            <h2 class="logo-font mt-3 font-weight-bold">Subscribe to Our Newsletter</h2>
-            <p class="text-white font-weight-bold">Please fill in the form below, if you would like to subscribe!</p>
+<div class="container">
+    <div class="newsletter-page">
+        <div class="row">
+            <div class="col">
+                <h2 class="logo-font font-weight-bold text-white">Subscribe to Our Newsletter</h2>
+                <p class="text-white font-weight-bold">Please fill in the form below to subscribe!</p>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <form class="mt-2 text-black font-weight-bold" method="POST">
-                {{ subscription_form|crispy }}
-                {% csrf_token %}
-                <!-- Buttons: 'Back to Products' and 'Submit' -->
-                <div class="submit-button text-center mt-3 mb-1">
-                    <a href="{% url 'products_home' %}" class="btn btn-outline-black my-2">
-                        <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
-                        <span>Back to Shop</span>
-                    </a>
-                    <button type="submit" class="btn btn-outline-black my-1" id="submit-button">
-                        <span>Subscribe</span>
-                    </button>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-12">
+                <form class="mt-2 text-white font-weight-bold" method="POST">
+                    {{ subscription_form|crispy }}
+                    {% csrf_token %}
+                    <!-- Buttons: 'Back to Products' and 'Submit' -->
+                    <div class="submit-button text-center mt-3 mb-1">
+                        <a href="{% url 'products_home' %}" class="btn btn-outline-black my-2">
+                            <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span>Back to Shop</span>
+                        </a>
+                        <button type="submit" class="btn btn-outline-black my-1" id="submit-button">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
