@@ -1001,6 +1001,10 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
   - Due to time constraints, CSS was not fully adjusted to the new background image
 
+- **Newsletter Subscription confirmation emails**
+  - With Django backend in local development, confirmation emails show up in terminal
+  - Subscribers appear under 'Subscribers'in Django Admin
+
 [Back to Bugs](#bugs)
 
 [Back to Contents](#contents)
