@@ -20,48 +20,49 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container mt-1 mb-2">
-    <div class="row">
-        <div class="col-12 mt-2">
-            <!-- Message after submit is clicked. Taken from previous contact_success.html and edited with tips from chat gpt -->
-            {% if submitted %}
-                <!-- Success message shown only after valid submission -->
-                <div class="alert alert-success font-weight-bold text-center my-4" role="alert" style="background-color: cornflowerblue; color: white">
-                    {{ confirmation_text }}
-                </div>
-
-                <!-- Button to return to shopping -->
-                <div class="text-center">
-                    <a href="{% url 'products_home' %}" class="btn btn-outline-black my-2">
-                        <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
-                        <span>Back to Shop</span>
-                    </a>
-                </div>
-            {% else %}
-                <!-- Show Contact Form before submission or if errors in the filled form -->
-                <div class="row">
-                    <div class="col">
-                        <h1 class="logo-font mt-2">Contact Our Boutique</h1>
+    <div class="contact-page text-white">
+        <div class="row">
+            <div class="col-12 mt-2">
+                <!-- Message after submit is clicked. Taken from previous contact_success.html and edited with tips from chat gpt -->
+                {% if submitted %}
+                    <!-- Success message shown only after valid submission -->
+                    <div class="alert alert-success font-weight-bold text-center my-4" role="alert" style="background-color: cornflowerblue; color: white">
+                        {{ confirmation_text }}
                     </div>
-                </div>
-                <p class="text-white font-weight-bold">Please fill in the form below for any queries!</p>
 
-                <form class="mt-2 font-weight-bold text-black" method="POST">
-                    {{ contact_form|crispy }}
-                    {% csrf_token %}
-
-                    <!-- 'Back to Shop' and 'Submit' Buttons -->
-                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center mb-2">
-                        <a href="{% url 'products_home' %}" class="btn btn-outline-black d-flex align-items-center my-2 mb-sm-0">
+                    <!-- Button to return to shop -->
+                    <div class="text-center">
+                        <a href="{% url 'products_home' %}" class="btn btn-outline-black my-2">
                             <span class="mr-1"><i class="fa-solid fa-chevron-left"></i></span>
                             <span>Back to Shop</span>
                         </a>
-                        <button type="submit" class="btn btn-outline-black d-flex align-items-center justify-content-center my-2 mb-sm-0 ml-sm-2" id="submit-button">
-                            <span>Submit Contact Form</span>
-                        </button>
                     </div>
-                </form>
-            {% endif %}
-   
+                {% else %}
+                    <!-- Show Contact Form before submission or if errors in the filled form -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="logo-font mt-2 ">Contact Our Boutique</h1>
+                        </div>
+                    </div>
+                    <p class="text-white text-center text-center font-weight-bold">Please fill in the form below for any queries!</p>
+
+                    <form class="mt-2 font-weight-bold text-white" method="POST">
+                        {{ contact_form|crispy }}
+                        {% csrf_token %}
+
+                        <!-- 'Back to Shop' and 'Submit' Buttons -->
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <a href="{% url 'products_home' %}" class="btn btn-outline-black mr-3">
+                                <span><i class="fa-solid fa-chevron-left"></i></span>
+                                <span>Back to Shop</span>
+                            </a>
+                            <button type="submit" class="btn btn-outline-black justify-content-center" id="submit-button">
+                                <span>Submit Form</span>
+                            </button>
+                        </div>
+                    </form>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

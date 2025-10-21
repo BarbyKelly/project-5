@@ -1,3 +1,5 @@
+# Base code from Boutique Ado
+# Flag image - remove with ChatGPT's guidance
 from django import forms
 from .models import UserProfile
 
@@ -8,7 +10,10 @@ class UserProfileForm(forms.ModelForm):
         model = UserProfile
         exclude = ('user',)
         widgets = {
-            'default_country': CountrySelectWidget(),
+            # Disable flags - code copied from ChatGPT
+            'default_country': CountrySelectWidget(
+                attrs={'class': 'border-black rounded-0 profile-form-input'}
+            ),
         }
 
     def __init__(self, *args, **kwargs):
