@@ -22,91 +22,20 @@ html, body {
     line-height: 1;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-a.forgot-password-link {
-    color: #FFFFFF !important;
-}
-
-a.forgot-password-link:hover {
-    color: cornflowerblue !important;
-    text-decoration: underline;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-a.signup-link:hover,
-a.signin-link:hover,
-.allauth-form-inner-content a:hover {
-    color: cornflowerblue !important;
-    text-decoration: underline;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-a.text-muted {
-    color: #e3e3e3;
-}
-
-a.text-muted:hover {
-    color: #FFFFFF;
-}
-
-/* Text-info - match with color of the website */
-.text-info {
-    color: cornflowerblue !important;
-}
-
-/* Buttons - fixed with ChatGPT */
-button,
-.btn,
-input[type="submit"],
-input[type="button"] {
-    color: #000000;
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    transition: all 0.2s ease-in-out;
-}
-
-button:hover,
-.btn:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-    color: #000000;
-    background-color: cornflowerblue;
-    border: 1px solid cornflowerblue;
-    cursor: pointer;
-}
-
-/* Styling of Headings and Logo */
-
-h1 {
-    font-size: 2.6rem;
-    padding-top: 5px;
-}
-
-h2 {
-    font-size: 2rem;
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
-    font-weight: bold;
+    height: auto;
+    margin-top: 5rem;
+    max-width: 400px;
 }
 
 /* Styling of Navbar, NavLinks, Logo, and reduction of repetition fixed with ChatGPT's guidance. */
-/* Logo */
-.boutique-logo {
-    width: auto;
-    max-width: 6rem;
-    height: auto;
-}
-
-/* Header */
-.header-container {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
 /* Navbar - base */
 .navbar {
     width: 100%;
@@ -176,6 +105,99 @@ h2 {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.16);
 }
 
+/* Logo */
+.boutique-logo {
+    width: auto;
+    max-width: 3.1rem;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.6rem;
+    padding-top: 5px;
+}
+
+h2 {
+    font-size: 2rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Header */
+.header-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Username - length on smaller screens fixed with ChatGPT's guidance */
+.navbar .username {
+    display: inline-block;
+    max-width: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+/* Forgot password link - fixed with ChatGPT's guidance */
+a.forgot-password-link {
+    color: #FFFFFF !important;
+}
+
+a.forgot-password-link:hover {
+    color: cornflowerblue !important;
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+a.signup-link:hover,
+a.signin-link:hover,
+.allauth-form-inner-content a:hover {
+    color: cornflowerblue !important;
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+a.text-muted {
+    color: #e3e3e3;
+}
+
+a.text-muted:hover {
+    color: #FFFFFF;
+}
+
+/* Text-info - match with color of the website */
+.text-info {
+    color: cornflowerblue !important;
+}
+
+/* Buttons - fixed with ChatGPT */
+button,
+.btn,
+input[type="submit"],
+input[type="button"] {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    color: #000000;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+
 /* ----- Search - styling fixed with chatGPT's guidance ----- */
 /* Search Form - hidden by default - fixed with chatGPT's guidance */
 .search_form {
@@ -219,25 +241,6 @@ h2 {
 .search_form button {
     flex-shrink: 0;
     margin-left: 0.4rem;
-}
-
-/* No underline effect for Search Icon */
-#search_toggle::after {
-    content: none;
-}
-
-/* Container styling */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 5rem;
-    max-width: 400px;
 }
 
 /* from Bulma */
@@ -778,24 +781,25 @@ footer {
 
 /* ---- Media Queries learned from PP2 (for PP2 learned from https://www.youtube.com/watch?v=K24lUqcT0Ms) ---- */
 /* ---- Media Queries edited with chatGPT's guidance ---- */
-/* Media Queries for 'XXS' screens (phones, less than 376px */
-@media (max-width: 376px) {
-  .container {
-    max-width: 376px;
-  }
-.boutique-logo {
-    max-width: 3.1rem;
-  }
+/* Media Queries for 'XXS' screens (phones, less than 376px) */
+@media (min-width: 376px) {
+    .boutique-logo {
+        max-width: 3.2rem;
+    }
 }
 
 /* Media Queries for 'XS' screens (portrait phones, tablets, less than 576px */
-@media (max-width: 575.98px) {
-    .container {
-        max-width: 570px;
+@media (min-width: 576px) {
+    .boutique-logo {
+        max-width: 3.5rem;
     }
-
+   
     .navbar {
         font-size: medium;
+    }
+
+    .navbar .username {
+        max-width: 90px;
     }
 }
 

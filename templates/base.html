@@ -128,8 +128,11 @@
             {% if request.user.is_authenticated %}
               <!-- Signed in User dropdown - fixed with chatGPT's guidance -->
               <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="signed-in-user-dropdown" role="button"
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Signed in User dropdown">
-                 <i class="fa-solid fa-user mr-2"></i>{{ request.user.username }}
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Signed in User dropdown"
+                 title="{{ request.user.username }}"">
+                 <i class="fa-solid fa-user mr-2"></i>
+                 <!-- Span - to limit long username from pushing Navbar down, and covering top of other pages - fixed with ChatGPT's guidance -->
+                 <span class="username">{{ request.user.username }}</span>
               </a>
 
               <div class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="signed-in-user-dropdown">
