@@ -549,6 +549,28 @@ input[name='q']::placeholder {
     color: #555555;
 }
 
+/* Product Management */
+.product-mgmt {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+}
+
+textarea.author_field {
+    height: 40px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+textarea.description-field {
+    height: 40px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
 /* ----- Bootstrap Toasts from Boutique Ado ------ */
 
 .message-container {
@@ -800,6 +822,13 @@ footer {
 
     .navbar .username {
         max-width: 90px;
+    }
+}
+
+/* Media Queries for 'S' screens (landscape phones, tablets more than 768px) */
+@media (min-width: 768px) {
+    .product-mgmt {
+        max-width: 900px;
     }
 }
 

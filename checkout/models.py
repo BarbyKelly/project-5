@@ -100,8 +100,6 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(
         Product, null=False, blank=False,
         on_delete=models.CASCADE)
-    product_size = models.CharField(
-        max_length=10, null=True, blank=True) # 13x10cm, 10x13cm, 18x13cm, 13x18cm, 45x30cm, 30x45cm
     quantity = models.IntegerField(
         null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(

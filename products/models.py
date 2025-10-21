@@ -23,7 +23,6 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     author = models.TextField(max_length=50)
     description = models.TextField(max_length=300)
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=False, blank=False)
 
