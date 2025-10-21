@@ -100,6 +100,27 @@ label[for="id-save-info"] a:hover {
     border: 1px solid #000;
 }
 
+#payment-form select[name="country"] option[value=""] {
+    display: none;
+}
+
+#payment-form select[name="country"]:invalid {
+    color: #999999;
+}
+
+#payment-form select[name="country"] {
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.7rem;
+    background-color: #FFFFFF;
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+#payment-form select[name="country"]::-ms-expand {
+    display: none;
+}
+
 select,
 select option {
     color: #000000;

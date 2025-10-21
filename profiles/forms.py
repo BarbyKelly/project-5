@@ -1,11 +1,15 @@
 from django import forms
 from .models import UserProfile
 
+from django_countries.widgets import CountrySelectWidget
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         exclude = ('user',)
+        widgets = {
+            'default_country': CountrySelectWidget(),
+        }
 
     def __init__(self, *args, **kwargs):
         """
@@ -32,3 +36,6 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+        if 'default_country' in self.fields:
+            self.fields['default_country'].empty_label = 'Country'

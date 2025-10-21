@@ -18,10 +18,10 @@
     <div class="overlay"></div>
     <div class="container mt-1">
         <div class="row">
-            <div class="col">
+            <div class="col text-white">
                 <h2 class="mt-3 center">Thank You for shopping</h2>
                 <hr>
-                <p class="text-black">A confirmation email with your Order details will be sent to <strong>{{ order.email }}</strong>.</p>
+                <p>A confirmation email with your Order details will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
 
@@ -76,7 +76,7 @@
                         {{ order.county }}<br>
                         {{ order.town_or_city }}<br>
                         {% if order.postcode %}{{ order.postcode }}<br>{% endif %}
-                        {{ order.country }}
+                        {{ order.country.name }}
                     </p>
                     <hr>
                     <hr>
