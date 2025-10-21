@@ -19,62 +19,62 @@
 
 {% block inner_content %}
   <!-- Inner content block improved with chatGPT's guidance, for better SEO -->
-  <section class="account_login container mt-4 pt-4 text-center" aria-labelledby="signin-title">
-    <h1 id="signin-title" class="logo-font text-white mb-3">{% trans "Sign In" %}</h1>
-    <hr>
+  <section class="account_login container mt-4 pt-2 text-center" aria-labelledby="signin-title">
+    <div class="sign-in-page text-white">
+      <h1 id="signin-title" class="logo-font text-white mb-3">{% trans "Sign In" %}</h1>
+      {% get_providers as socialaccount_providers %}
+      {% if socialaccount_providers %}
+        <p>
+          {% blocktrans with site.name as site_name %}
+            Please sign in with one of your existing third party accounts.
+            Or, <a href="{{ signup_url }}">Sign Up</a>
+            for a {{ site_name }} account and Sign In below:
+          {% endblocktrans %}
+        </p>
 
-    {% get_providers as socialaccount_providers %}
-    {% if socialaccount_providers %}
-      <p>
-        {% blocktrans with site.name as site_name %}
-          Please sign in with one of your existing third party accounts.
-          Or, <a href="{{ signup_url }}">Sign Up</a>
-          for a {{ site_name }} account and Sign In below:
-        {% endblocktrans %}
-      </p>
+        <div class="socialaccount_ballot">
+          <ul class="socialaccount_providers">
+            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+          </ul>
+          <div class="login-or" role="separator" aria-label="or">{% trans 'or' %}</div>
+        </div>
 
-      <div class="socialaccount_ballot">
-        <ul class="socialaccount_providers">
-          {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-        </ul>
-        <div class="login-or" role="separator" aria-label="or">{% trans 'or' %}</div>
-      </div>
+        {% include "socialaccount/snippets/login_extra.html" %}
 
-      {% include "socialaccount/snippets/login_extra.html" %}
-
-    {% else %}
-      <!-- Option to sign up if no account yet. Style edited with ChatGPT's guidance -->
-      <p>
-        {% blocktrans trimmed with url=signup_url %}
-          No account yet? Then please
-          <a class="text-primary font-weight-bold" href="{{ url }}">Sign Up.</a>
-        {% endblocktrans %}
-      </p>
-    {% endif %}
-
-    <!-- Sign in form with added asterisk. Learned from ChatGPT how to add * to input fields when input fields not in this html template -->
-    <form class="login mt-2" method="POST" action="{% url 'account_login' %}" novalidate>
-      {% csrf_token %}
-      {{ form|crispy }}
-      {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% else %}
+        <!-- Option to sign up if no account yet. Style edited with ChatGPT's guidance -->
+        <p>
+          {% blocktrans trimmed with url=signup_url %}
+            No account yet? Then please
+            <a class="text-primary font-weight-bold" href="{{ url }}">Sign Up.</a>
+          {% endblocktrans %}
+        </p>
       {% endif %}
 
-      <!-- Div added for buttons with chatGPT's guidance -->
-      <div class="d-flex justify-content-center mt-4">
-        <a class="btn btn-outline-black rounded-0 mr-2" href="{% url 'products_home' %}">
-          {% trans "Home" %}
-        </a>
-        <button class="primaryAction btn btn-primary rounded-0" type="submit">
-          {% trans "Sign In" %}
-        </button>
-      </div>
+      <!-- Sign in form with added asterisk. Learned from ChatGPT how to add * to input fields when input fields not in this    html template -->
+      <form class="login mt-2" method="POST" action="{% url 'account_login' %}" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
 
-      <p class="mt-2">
-        <a class="text-primary font-weight-bold text-white" href="{% url 'account_reset_password' %}">
-          {% trans "Forgot Your Password?" %}
-        </a>
-      </p>
-    </form>
+        <!-- Div added for buttons with chatGPT's guidance -->
+        <div class="d-flex justify-content-center mt-4">
+          <a class="btn btn-outline-black rounded-0 mr-2" href="{% url 'products_home' %}">
+            {% trans "Home" %}
+          </a>
+          <button class="primaryAction btn btn-primary rounded-0" type="submit">
+            {% trans "Sign In" %}
+          </button>
+        </div>
+
+        <p class="mt-2">
+          <a class="text-primary font-weight-bold text-white" href="{% url 'account_reset_password' %}">
+            {% trans "Forgot Your Password?" %}
+          </a>
+        </p>
+      </form>
+    </div>  
   </section>
 {% endblock %}

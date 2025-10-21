@@ -1,3 +1,4 @@
+<!-- Base code form Boutique Ado -->
 {% extends "account/base.html" %}
 
 {% load i18n %}
@@ -18,32 +19,34 @@
 {% block inner_content %}
   <!-- Inner content block improved with chatGPT's guidance, for better SEO -->
   <section class="account_signup container mt-3 pt-3 text-center" aria-labelledby="signup-title">
-    <h1 id="signup-title" class="logo-font mb-1 text-white">
-      {% trans "Sign Up" %}
-    </h1>
+    <div class="sign-up-page text-white">
+      <h1 id="signup-title" class="logo-font mb-1 text-white">
+        {% trans "Sign Up" %}
+      </h1>
 
-    <p>
-      {% blocktrans %}
-        Already have an account? Then please <a href="{{ login_url }}">Sign In</a>
-      {% endblocktrans %}
-    </p>
+      <p>
+        {% blocktrans %}
+          Already have an account? Then please <a href="{{ login_url }}">Sign In</a>
+        {% endblocktrans %}
+      </p>
 
-    <form class="signup mt-2" id="signup_form" method="post" action="{% url 'account_signup' %}">
-      {% csrf_token %}
-      {{ form|crispy }}
-      {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-      {% endif %}
+      <form class="signup mt-2" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
 
-      <!-- Div for buttons added based on Sign In fix -->
-      <div class="d-flex justify-content-center mt-4">
-        <a class="btn btn-reverse btn-outline-black rounded-0 mr-2" href="{% url 'account_login' %}">
+        <!-- Div for buttons added based on Sign In fix -->
+        <div class="d-flex justify-content-center mt-4">
+          <a class="btn btn-reverse btn-outline-black rounded-0 mr-2" href="{% url 'account_login' %}">
           {% trans "Back to Sign In" %}
-        </a>
-        <button class="btn btn-outline-black rounded-0" type="submit">
-          <span>{% trans "Sign Up" %}</span>
-        </button>
-      </div>
-    </form>
+          </a>
+          <button class="btn btn-outline-black rounded-0" type="submit">
+            <span>{% trans "Sign Up" %}</span>
+          </button>
+        </div>
+      </form>
+    </div>
   </section>
 {% endblock %}

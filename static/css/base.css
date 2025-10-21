@@ -571,6 +571,18 @@ textarea.description-field {
     resize: vertical;
 }
 
+/* Sign In, Sign Up, Sign Out pages */
+.sign-in-page,
+.sign-up-page,
+.sign-out-page {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+}
+
 /* ----- Bootstrap Toasts from Boutique Ado ------ */
 
 .message-container {
