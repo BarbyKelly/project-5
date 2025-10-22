@@ -1,58 +1,53 @@
 <!-- Code for toasts folder and files copied from Code Institute's Boutique Ado walk-through -->
-<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
-    <div class="arrow-up arrow-success"></div>
-    <div class="w-100 toast-capper bg-success"></div>
-    <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto">Success!</strong>
-        <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
+<!-- Success toast - edited with ChatGPT's guidance -->
+<div class="toast custom-toast cart_toast rounded-0 border-top-0" data-autohide="false">
+    <div class="toast-header bg-white text-dark justify-content-between align-items-center">
+        <span class="cart_toast_message">
+            <!-- Blue checkmark to inform User of the Update success - fixed with ChatGPT's guidance-->
+            <i class="fa-solid fa-check text-primary mr-1"></i>
+            <strong>Quantity Updated</strong>
+        </span>
+        <button type="button" class="close cart_toast_close" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <div class="toast-body bg-white">
+    {% if grand_total and not on_profile_page %}
+        <div class="cart-notification-wrapper mb-0">
+            {% for item in cart_items %}
+                <div class="row">
+                    <div class="col-3 my-1">
+                        {% if item.product.image %}
+                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        {% else %}
+                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-9">
+                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small text-black">Qty: {{ item.quantity }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         <div class="row">
             <div class="col">
-                {{ message }}
-                <hr class="mt-1 mb-3">
+                <strong><p class="cart-toast-total mt-1 mb-1 text-black font-weight-bold">
+                    Total{% if free_postage_delta > 0 %} (Exc. postage){% endif %}:
+                    <span class="float-right">€{{ total|floatformat:2 }}</span>
+                </p></strong>
+                {% if free_postage_delta > 0 %}
+                    <p class="toast-free-postage mb-0 p-2 shadow-sm text-black text-center">
+                        If you spend <strong>€{{ free_postage_delta }}</strong> more you can get free postage!
+                    </p>
+                {% endif %}
+                <a href="{% url 'view_cart' %}" class="btn btn-blue btn-block rounded-0 btn-sm">
+                    <span class="text-uppercase">Secure Checkout</span>
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                </a>
             </div>
         </div>
-        {% if grand_total and not on_profile_page %}
-            <p class="logo-font bg-white text-black py-1">Your cart ({{ product_count }})</p>
-            <div class="cart-notification-wrapper">
-                {% for item in cart_items %}
-                    <div class="row">
-                        <div class="col-3 my-1">
-                            {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}
-                        </div>
-                        <div class="col-9">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col">
-                    <strong><p class="mt-3 mb-1 text-black">
-                        Total{% if free_postage_delta > 0 %} (Exc. postage){% endif %}:
-                        <span class="float-right">€{{ total|floatformat:2 }}</span>
-                    </p></strong>
-                    {% if free_postage_delta > 0 %}
-                        <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
-                            If you spend <strong>€{{ free_postage_delta }}</strong> more you can get free postage!
-                        </p>
-                    {% endif %}
-                    <a href="{% url 'view_cart' %}" class="btn btn-blue btn-block rounded-0">
-                        <span class="text-uppercase">Proceed To Secure Checkout</span>
-                        <span class="icon">
-                            <i class="fa-solid fa-lock"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        {% endif %}
+    {% endif %}
     </div>
 </div>

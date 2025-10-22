@@ -31,7 +31,7 @@ html, body {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 4rem;
     max-width: 400px;
 }
 
@@ -450,6 +450,7 @@ input[type="button"]:hover {
     margin: 0;
 }
 
+/* Cart */
 .cart-table,
 .cart_totals {
     display: block;
@@ -471,6 +472,73 @@ input[type="button"]:hover {
     margin: 0 auto;
     box-sizing: border-box;
     text-align: center; 
+}
+
+.empty-cart {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+}
+
+/* ---- Cart toast - fixed with ChatGPT's guidance to improve mobile view ---- */
+.cart_toast {
+    max-width: 90%;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+.cart_toast .cart-notification-wrapper {
+    background-color: #FFFFFF;
+    padding: 0.2rem;
+    border-radius: 0.13rem;
+}
+
+.cart_toast .cart-notification-wrapper .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Remove the border from the last item in the cart - learned from ChatGPT */
+.cart_toast .cart-notification-wrapper .row:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0.09rem;
+}
+
+.cart_toast .cart-notification-wrapper img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 0.1rem;
+}
+
+/* Cart toast message - learned from ChatGPT */
+.cart_toast_message i.fas {
+    color: #6b81c0;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+
+/* Cart toast close button - fixed with chatGPT's guidance to override Bootstrap defaults */
+.cart_toast_close {
+    color: #333333 !important;
+    opacity: 1 !important;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.cart-toast-total {
+    background-color: #FFFFFF !important;
+}
+
+.toast-free-postage {
+    background-color: #FFFFFF !important;
+    color: #6485ea !important;
+    text-shadow: none;
 }
 
 /* Image Container - styling fixed with ChatGPT's guidance */

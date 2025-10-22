@@ -16,13 +16,8 @@
     <div class="container mt-4 mb-2"> 
         <div class="row">
             <div class="col">
-                <h3 class="logo-font mt-2 mb-4 cart text-white">Cart</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
                 {% if cart_items %}
+                    <h3 class="logo-font mt-2 mb-4 cart text-white">Cart</h3>
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless cart-table">
                             <thead class="text-white">
@@ -102,13 +97,16 @@
                         </a>
                     </div>
                 {% else %}
-                    <p class="text-white front-weight-bold lead mb-5">Your cart is empty</p>
-                    <a href="{% url 'products_home' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Back To Shop</span>
-                    </a>
+                    <div class="empty-cart">
+                        <h3 class="logo-font mt-2 mb-4 cart text-white text-center">Cart</h3>
+                        <p class="text-white font-weight-bold mb-5 text-center">Your cart is empty</p>
+                        <a href="{% url 'products_home' %}" class="btn btn-outline-black rounded-0">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Back To Shop</span>
+                        </a>
+                    </div>
                 {% endif %}
             </div>
         </div>
