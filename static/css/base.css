@@ -450,6 +450,55 @@ input[type="button"]:hover {
     margin: 0;
 }
 
+/* Newsletter page */
+.newsletter-page {
+    max-width: 400px;
+    margin: 1rem;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+/* Subscription form - added with ChatGPT's guidance */
+/* Email input box border - required field */
+input.is-invalid {
+    border-color: #5a7caf !important;
+    box-shadow: 0 0 0 0.2rem rgba(99, 111, 130, 0.25);
+    background-image: none !important;
+} 
+
+/* Error text - email field */
+.invalid-feedback {
+    color: #FFFFFF !important;
+}
+
+/* Email Verification page */
+.verification-page {
+    max-width: 500px;
+    margin-left: 1rem;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+}
+
+.verification-page-link:hover {
+    color: cornflowerblue !important;
+    text-decoration: underline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Subscription success page */
+.subscription-success-page {
+    display: block;
+    max-width: 400px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+}
+
 /* Cart */
 .cart-table,
 .cart_totals {
@@ -691,6 +740,17 @@ textarea.description-field {
     border-radius: 0.2rem;
 }
 
+/* Subscription success page */
+.subscription-success-page {
+    display: block;
+    max-width: 400px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+}
+
 /* ----- Bootstrap Toasts from Boutique Ado ------ */
 
 .message-container {
@@ -853,31 +913,6 @@ textarea[name="message"] {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
-}
-
-/* Newsletter page */
-.newsletter-page {
-    max-width: 400px;
-    margin: 1rem;
-    background-color: rgba(24, 38, 62, 0.4);
-    border-radius: 0.4rem;
-    padding: 1rem;
-}
-
-/* Email Verification page */
-.verification-page {
-    max-width: 500px;
-    margin-left: 1rem;
-    background-color: rgba(24, 38, 62, 0.4);
-    border-radius: 0.4rem;
-    padding: 1rem;
-    line-height: 1.4rem;
-}
-
-.verification-page-link:hover {
-    color: cornflowerblue !important;
-    text-decoration: underline;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer - styling based on previous project: [quiz](https://github.com/BarbyKelly/quizproject/blob/main/assets/css/style.css)*/

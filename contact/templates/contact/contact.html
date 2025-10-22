@@ -3,6 +3,12 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+<!-- Meta block learned from https://github.com/kera-cudmore/seaside-sewing/blob/main/contact/templates/contact/contact.html -->
+{% block extra_meta %}
+    <meta name="description" content="Kelly's Art & Photo Boutique - Contact our Boutique. An online shop selling variety of art and photos. ">
+    <meta name="keywords" content="Contact Boutique, contact us, Kelly's Art & Photo Boutique, art, photos, drawings, online shop, shop, kids' art">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,22 +17,16 @@
     </div>
 {% endblock %}
 
-<!-- Meta block learned from https://github.com/kera-cudmore/seaside-sewing/blob/main/contact/templates/contact/contact.html -->
-{% block extra_meta %}
-    <meta name="description" content="Kelly's Art & Photo Boutique - Contact our Boutique. An online shop selling variety of art and photos. ">
-    <meta name="keywords" content="Contact Boutique, contact us, Kelly's Art & Photo Boutique, art, photos, drawings, online shop, shop, kids' art">
-{% endblock %}
-
 {% block content %}
 <div class="overlay"></div>
-<div class="container mt-1 mb-2">
+<div class="container mt-3 mb-2">
     <div class="contact-page mt-1 text-white">
         <div class="row">
             <div class="col-12">
                 <!-- Message after submit is clicked. Taken from previous contact_success.html and edited with tips from chat gpt -->
                 {% if submitted %}
                     <!-- Success message shown only after valid submission -->
-                    <div class="alert alert-success font-weight-bold text-center my-4" role="alert" style="background-color: cornflowerblue; color: white">
+                    <div class="alert alert-success font-weight-bold text-center role="alert">
                         {{ confirmation_text }}
                     </div>
 

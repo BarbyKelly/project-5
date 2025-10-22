@@ -11,24 +11,20 @@
     <meta name="keywords" content="Subscribe to our Boutique's Newsletter. Kelly's Art & Photo Boutique, art, photos, drawings, online shop, shop, boutique">
 {% endblock %}
 
-{% block content %}
-    <div class="row page-title">
-        <h3>Subscribe to our Newsletter</h3>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
     </div>
+{% endblock %}
 
-    <ul>
-        {% for newsletter in newsletters %}
-            <li>{{ newsletter.title }} - {{ newsletter.created_on }}</li>
-        {% endfor % }
-    </ul>
-    <div class="row">
-        <div class="col-10 offset-1 text-center">
-            <h4>Thank you for Subscribing</h4>
-            <a href="{% url 'products_home' %}" class="btn btn-outline-black my-2">
-                <span class="icon mr-1">
-                    <i class="fa-solid fa-shop"></i>
-                </span>
-                <span>Back to Shop</span>
+{% block content %}
+    <div class="container">
+        <div class="subscription-success-page justify-content-center text-center text-white mt-1">
+            <h4 class="font-weight-bold">Thank you for subscribing to our Newsletter</h4>
+            <a href="{% url 'products_home' %}" class="btn btn-outline-black" aria-label="Back to Shop">
+                Back to Shop
             </a>
         </div>
     </div>
