@@ -79,7 +79,7 @@
                         <h5>Postage: €{{ postage|floatformat:2 }}</h6>
                         <h4 class="mt-2"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                         {% if free_postage_delta > 0 %}
-                            <p class="mb-1 text-black font-weight-bold">
+                            <p class="mb-1 text-white font-weight-bold">
                                 <strong>Get Free postage by spending just €{{ free_postage_delta }} more</strong>
                             </p>
                         {% endif %}

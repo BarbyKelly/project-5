@@ -1,8 +1,7 @@
 # Cart views.py based on Boutique Ado.
-# Size removed with chatGPT's guidance
+# Size removed and views edit with chatGPT's guidance
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
-
 from products.models import Product
 
 
@@ -25,10 +24,18 @@ def add_to_cart(request, item_id):
 
     if item_id in cart:
         cart[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+        messages.success(
+            request,
+            f'Updated "{product.name}" quantity to {cart[item_id]}',
+            extra_tags='cart_update'
+        )
     else:
         cart[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your cart')
+        messages.success(
+            request,
+            f'Added "{product.name}" to your cart.',
+            extra_tags='cart_add'
+        )
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -43,12 +50,22 @@ def adjust_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
+    item_id = str(item_id)
+
     if quantity > 0:
         cart[item_id] = quantity
-        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+        messages.success(
+            request,
+            f'Updated "{product.name}" quantity to {cart[item_id]}',
+            extra_tags='cart-update'
+        )
     else:
         cart.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
+        messages.success(
+            request,
+            f'Removed "{product.name}" from your cart',
+            extra_tags='cart-remove'
+        )
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
@@ -62,8 +79,13 @@ def remove_from_cart(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)
         cart = request.session.get('cart', {})
+        item_id = str(item_id)
         cart.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
+        messages.success(
+            request,
+            f'Removed "{product.name}" from your cart',
+            extra_tags='cart-remove'
+        )
         request.session['cart'] = cart
         return HttpResponse(status=200)
 

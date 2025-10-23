@@ -1,4 +1,5 @@
 <!-- Base for base.html from Boutique Ado, like most of this project. -->
+<!-- Meta, JS and toast fixed with ChatGPT's guidance -->
 {% load static %}
 
 <!DOCTYPE html>
@@ -208,23 +209,41 @@
       </nav>
     </header>
 
-    {% if messages %}
-        <div class="message-container">
-          {% for message in messages %}
-            {% with message.level as level %}
-              {% if level == 40 %}
-                {% include 'includes/toasts/toast_error.html' %}
-              {% elif level == 30 %}
-                {% include 'includes/toasts/toast_warning.html' %}
-              {% elif level == 25 %}
-                {% include 'includes/toasts/toast_success.html' %}
-              {% else %}
-                {% include 'includes/toasts/toast_info.html' %}
-              {% endif %}
-            {% endwith %}
-          {% endfor %}
-        </div>
-    {% endif %}
+    <!-- Toast container (ensuring each toast is displayed only on relevant page) - fixed with ChatGPT's guidance -->
+    <div class="message-container">
+      {% if messages %}
+        {% for message in messages %}
+          {% with message.tags as tags %}
+
+            {% if 'cart' in tags %}
+              <!-- Cart Toast (item added or qty updated) - fixed with ChatGPT's guidance -->
+              <div class="toast cart_toast custom-toast" role="alert">
+                <div class="cart-message-wrapper p-2">
+                  <div class="toast-body cart_toast_message">
+                    <i class="fa-solid fa-check"></i> {{ message }}
+                  </div>
+                  <button type="button" class="btn-close cart_toast_close" data-dismiss="toast"  aria-label="Close"></button>
+                </div>
+              </div>
+
+              {% elif 'login' in tags %}
+                <!-- Sign In Toast - fixed with ChatGPT's guidance -->
+                  <div class="toast signin_toast custom-toast" role="alert">
+                    <div class="signin-message-wrapper p-3">
+                      <div class="toast-body signin-message-wrapper p-2">
+                        <div class="toast-body signin_toast_message">
+                          {{ message }}
+                        </div>
+                      </div>
+                    <button type="button" class="btn-close signin_toast_close" data-dismiss="toast"  aria-label="Close"></button>
+                </div>
+              </div>
+            {% endif %}
+
+          {% endwith %}
+        {% endfor %}
+      {% endif %}
+    </div>
 
     {% block page_header %}
     {% endblock %}
@@ -233,8 +252,18 @@
     {% endblock %}
 
     {% block postloadjs %}
+    <!-- JS fixed and delay added with ChatGPT's guidance -->
     <script type="text/javascript">
-      $('.toast').toast('show');
+      document.addEventListener('DOMContentLoaded', function  () {
+        var toastE1List = [].slice.call(document.querySelectorAll('.toast'));
+        toastE1List.forEach(function (toastE1) {
+          var toast = new bootstrap.Toast(toastE1, {
+            delay: 4000,
+            autohide: true
+          });
+          toast.show()
+        });
+      });
     </script>
     {% endblock %}
 
