@@ -26,15 +26,13 @@ def add_to_cart(request, item_id):
         cart[item_id] += quantity
         messages.success(
             request,
-            f'Updated "{product.name}" quantity to {cart[item_id]}',
-            extra_tags='cart_update'
+            f'Updated "{product.name}" quantity to {cart[item_id]}'
         )
     else:
         cart[item_id] = quantity
         messages.success(
             request,
-            f'Added "{product.name}" to your cart.',
-            extra_tags='cart_add'
+            f'Added "{product.name}" to your cart'
         )
 
     request.session['cart'] = cart
@@ -56,15 +54,13 @@ def adjust_cart(request, item_id):
         cart[item_id] = quantity
         messages.success(
             request,
-            f'Updated "{product.name}" quantity to {cart[item_id]}',
-            extra_tags='cart-update'
+            f'Updated "{product.name}" quantity to {cart[item_id]}'
         )
     else:
         cart.pop(item_id)
         messages.success(
             request,
-            f'Removed "{product.name}" from your cart',
-            extra_tags='cart-remove'
+            f'Removed "{product.name}" from your cart'
         )
 
     request.session['cart'] = cart
@@ -83,8 +79,7 @@ def remove_from_cart(request, item_id):
         cart.pop(item_id)
         messages.success(
             request,
-            f'Removed "{product.name}" from your cart',
-            extra_tags='cart-remove'
+            f'Removed "{product.name}" from your cart'
         )
         request.session['cart'] = cart
         return HttpResponse(status=200)

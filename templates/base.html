@@ -215,31 +215,28 @@
         {% for message in messages %}
           {% with message.tags as tags %}
 
-            {% if 'cart' in tags %}
-              <!-- Cart Toast (item added or qty updated) - fixed with ChatGPT's guidance -->
-              <div class="toast cart_toast custom-toast" role="alert">
-                <div class="cart-message-wrapper p-2">
-                  <div class="toast-body cart_toast_message">
-                    <i class="fa-solid fa-check"></i> {{ message }}
-                  </div>
-                  <button type="button" class="btn-close cart_toast_close" data-dismiss="toast"  aria-label="Close"></button>
-                </div>
+            <!-- Messages/toasts - fixed with ChatGPT's guidance -->
+            <div class="toast {{ tags }} custom-toast" role="alert">
+              <div class="toast-body p-3">
+                {% if 'cart' in tags %}
+                  <i class="fa-solid fa-check"></i>
+                {% endif %}
+                {% if 'profile' in tags %}
+                  <i class="fa-solid fa-user"></i>
+                {% endif %}
+                {% if 'signin_success' in tags %}
+                  <i class="fa-solid fa-check"></i>
+                {% endif %}
+                {% if 'signout' in tags %}
+                  <i class="fa-solid fa-check"></i>
+                {% endif %}
+                {% if 'signin_failed' in tags %}
+                  <i class="fa-solid fa-xmark"></i>
+                {% endif %}
+                {{ message }}
               </div>
-
-              {% elif 'login' in tags %}
-                <!-- Sign In Toast - fixed with ChatGPT's guidance -->
-                  <div class="toast signin_toast custom-toast" role="alert">
-                    <div class="signin-message-wrapper p-3">
-                      <div class="toast-body signin-message-wrapper p-2">
-                        <div class="toast-body signin_toast_message">
-                          {{ message }}
-                        </div>
-                      </div>
-                    <button type="button" class="btn-close signin_toast_close" data-dismiss="toast"  aria-label="Close"></button>
-                </div>
-              </div>
-            {% endif %}
-
+              <button type="button" class="btn-close cart_toast_close" data-dismiss="toast"  aria-label="Close"></button>
+            </div>
           {% endwith %}
         {% endfor %}
       {% endif %}
