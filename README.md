@@ -733,47 +733,19 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
 ## Lighthouse
 
-Lighthouse tests with Google developer tools:
+Lighthouse tests results (Google developer tools):
 
-- Kelly's Art & Photo Boutique 'Home' Page lighthouse test:
+- 'Home' Page test:
 
-  ![Lighthouse test, Home](docs/readme_images/lighthouse_home.png)
+  ![Lighthouse test, Home](docs/readme_images/lighthouse_test_results.png)
 
-- Kelly's Art & Photo Boutique 'All Products' Page lighthouse test:
-
-  ![Lighthouse test, All Products](docs/readme_images/lighthouse_all_products.png)
-
-- Kelly's Art & Photo Boutique 'Art' Page lighthouse test:
-
-  ![Lighthouse test, Art](docs/readme_images/lighthouse_art.png)
-
-- Kelly's Art & Photo Boutique 'Photos' Page lighthouse test:
-
-  ![Lighthouse test, Photos](docs/readme_images/lighthouse_photos.png)
-
-- Kelly's Art & Photo Boutique 'How To...?' Page lighthouse test:
-
-  ![Lighthouse test, How To...?](docs/readme_images/lighthouse_how_to.png)
-
-- Kelly's Art & Photo Boutique 'Sign In' Page lighthouse test:
-
-  ![Lighthouse test, Sign In](docs/readme_images/lighthouse_sign_in.png)
-
-- Kelly's Art & Photo Boutique 'Sign Up' Page lighthouse test:
-
-  ![Lighthouse test, Sign Up](docs/readme_images/lighthouse_sign_up.png)
-
-- Kelly's Art & Photo Boutique 'Cart' Page lighthouse test:
-
-  ![Lighthouse test, Cart](docs/readme_images/lighthouse_cart.png)
-
-- Kelly's Art & Photo Boutique 'Contact Us' Page lighthouse test:
-
-  ![Lighthouse test, Contact Us](docs/readme_images/lighthouse_contact.png)
-
-- Kelly's Art & Photo Boutique 'Newsletter' Page lighthouse test:
-
-  ![Lighthouse test, Newsletter](docs/readme_images/lighthouse_newsletter.png)
+- Developer applied the following ideas from ChatGPT to improve Lighthouse Scores:
+  - Added lazy-load for products images
+  - Limited number of products displayed on the Home page
+  
+- After changing Home page for 'Products' Home page, and therefore more images loading on the Home page,
+  Performance and Best Practices scores declined
+- Due to time constraints, Developer did not improve the last Lighthouse scores
 
 
 [Back to Validation](#validation)
