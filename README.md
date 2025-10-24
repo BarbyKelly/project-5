@@ -28,6 +28,11 @@ Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/
 
 Responsiveness test results created with [Canva.com](https://www.canva.com/mockups/collection/)
 
+- Disclaimer: due to late changes to website design, and finding new time-consuming errors,
+  parts of README reflect   previous versions eg future features may already be in place. And previous bugs may be already fixed.
+  - Not all README images and links have been checked this time to see if they work or match the updated version,
+    due to late changes and time constraint.
+
 
 # Contents
 
@@ -51,7 +56,7 @@ Responsiveness test results created with [Canva.com](https://www.canva.com/mocku
 - [Font](#font)
 
 [Features](#features)
-- [Existing Features](#existing-features)
+- [Existing Features](#existing-features-mobile-first-approach)
 - [Future Features](#future-features)
 
 [Languages Used](#languages-used)
@@ -753,17 +758,26 @@ Lighthouse tests results (Google developer tools):
 
 ## HTML
 
-- HTML validator test with [W3C Markup Validation](https://validator.w3.org/) failed
+- HTML validator test with [W3C Markup Validation](https://validator.w3.org/):
+
+  ![HTML validator](docs/readme_images/html_validation.png)
+
+  - To validate HTML for Django project, Developer turned off filters, as base is passed on from base.html,
+    therefore each HTML page would not have 'DOCTYPE', lang="en", and without those, HTML validator shows up errors
 
 ## CSS
 
-- CSS validator validation with [W3C Markup Validation](https://validator.w3.org/) failed
+- CSS validator validation with [W3C Markup Validation](https://validator.w3.org/)
+
+  ![CSS validation](docs/readme_images/css_validation.png)
+
+  - To validate CSS for Django project, Developer turned off filters, similar to HTML validation
 
 ## Python
 
 - Developer checked some of Python files with [CI Python Linter Test](https://pep8ci.herokuapp.com/)
 
-![CI Python Linter test](docs/readme_images/ci_python_linter.png)
+  ![CI Python Linter test](docs/readme_images/ci_python_linter.png)
 
 [Back to Validation](#validation)
 
@@ -771,7 +785,7 @@ Lighthouse tests results (Google developer tools):
 
 # Testing
 
-Due to large volume of Tests done, Testing is reported in a separate [Testing.md](TESTING.md) file.
+Due to large volume of Tests done, Testing is reported in a separate [Testing.md](TESTING_RESULTS.md) file.
 
 # Bugs
 

@@ -1,93 +1,103 @@
 # Testing
-* Frame for Testing Results copied from ChatGPT; all tests, notes, observations, screenshots done by the Developer*
+* Frame for Testing Results copied from ChatGPT; all tests, notes, observations, screenshots done by the Developer
+* Disclaimer: due to late changes to website design, and having to fix new errors eg toasts before deadline,
+    testing results are more compact than previous testing file (TESTING.md).
 
 ## Pages & Core Features
 
-### Navbar & Logo
-- [ ] Logo displays correctly and links to Home
-- [ ] All Navbar links visible, clickable, and responsive
-- [ ] Collapsed Navbar menu works on small screens
-- [ ] Search Bar: placeholder visible, disappears on typing
-- [ ] Search Bar: returns correct results for valid input
-- [ ] Search Bar: error message for empty/invalid input
+- [V] Favicon displays correctly
+- [V] 'Back to 'Shop' button works on all pages where it is displayed
 
-### Home / All Items / Art / Photos Pages
-- [ ] Products display with image, name, price
-- [ ] Clicking product links to detail page
-- [ ] Filters / categories work correctly
-- [ ] Responsive layout on all screen sizes
+### Navbar & Logo
+- [V] Logo displays correctly and links to Home
+- [V] All Navbar links visible, clickable, and responsive
+- [V] Collapsed Navbar menu works on small screens
+- [V] Search Icon displayed on all screens
+- [V] Search Bar opens correctly via Search Icon
+- [V] Search Bar: placeholder visible, disappears on typing
+- [V] Search Bar: returns correct results for valid input
+- [V] Search Bar: error message for empty/invalid input
+
+### Home (Products) / Art / Photos Pages
+- [V] Products display with image, name, price
+- [V] Clicking product links to detail page
+- [V] Filters / categories work correctly
+- [V] Responsive layout on all screen sizes
 
 ### How To...? Page
-- [ ] All links open the correct video
-- [ ] Video opens in a new tab
-- [ ] Layout and links responsive
+- [V] All links open the correct video
+- [V] Video opens in a new tab
+- [V] Layout and links responsive
 
 ### Contact Us Page
-- [ ] Form fields display (Full Name, Email, Subject, Message)
-- [ ] Required validation works for all fields
-- [ ] Confirmation message appears after submission
-- [ ] 'Back to Boutique' button works
+- [V] Form fields display (Full Name, Email, Subject, Message)
+- [V] Required validation works for all fields
+- [V] Confirmation message appears after submission
 
 ### Newsletter
-- [ ] Email field visible and required
-- [ ] Confirmation message appears after submitting
-- [ ] Error message for invalid email
+- [V] Email field visible and required
+- [V] Confirmation message appears after submitting
+- [V] Error message for invalid email
 
 ### 404 Page
-- [ ] Custom error page displayed
-- [ ] Link back to Home works
+- [V] Custom error page displayed
+- [V] Link back to Home works
 
 ## User Account
 
 ### Sign In / Sign Out
-- [ ] Accessible from Navbar & Side Menu
-- [ ] Required fields validation
-- [ ] Incorrect credentials handled
-- [ ] Sign Out works
+- [V] Accessible from Navbar
+- [V] Required fields validation
+- [V] Incorrect credentials handled
+- [V] Sign Out works
 
 ### Sign Up
-- [ ] Accessible from Sign In page
-- [ ] Required fields validation
-- [ ] Confirmation appears after sign up
+- [V] Accessible from Sign In page and User Dropdown Menu
+- [V] Required fields validation
+- [V] Confirmation appears after sign up
 
 ### Profile
-- [ ] Editable postage info fields
-- [ ] Update notifications appear
-- [ ] Order history accessible
-- [ ] Links back to Home/Profile work
+- [V] Editable postage info fields
+- [V] Update notification appears
+- [V] Order history accessible
 
 ## Cart & Checkout
 
 ### Cart
-- [ ] Add to Cart works
-- [ ] Toast notification shows product name, image, quantity
-- [ ] Update Quantity works and updates total
-- [ ] Remove item works
-- [ ] Scrollable toast for multiple items
-- [ ] Free postage message appears correctly
+- [V] Add to Cart works
+- [V] Toast notification re added to cart works correctly
+- [V] Update Quantity works and updates total
+- [V] Remove item works
+- [V] Free postage message appears correctly
+
 
 ### Checkout
-- [ ] All required fields validated
-- [ ] Payment & order submission works
-- [ ] Confirmation page displays order summary
-- [ ] Links back to Home/Profile work
+- [V] All required fields validated
+- [V] Payment & order submission works
+- [V] Confirmation page displays order summary
+- [V] Links back to Home/Profile work
 
 ## Admin / Product Management
 
-- [ ] Admin Sign In works
-- [ ] Product Management: add, edit, delete products
-- [ ] Product images display correctly
-- [ ] Orders & users viewable
-- [ ] Links and navigation work as expected
+- [V] Admin Sign In works
+- [V] Product Management: add, edit, delete products - it worked at the time of testing.
+        Did not try within past few days due to time constraint, and previously 
+        django added an extra code to products, which caused img not being displayed.
+- [V] Product images display correctly
+- [V] Orders & users viewable
+- [V] Links and navigation work as expected
 
 ## UI / Responsiveness / Visuals
 
-- [ ] Branding colors consistent (blue, black, white)
-- [ ] Fonts readable
-- [ ] Layout responsive on desktop, tablet, mobile
-- [ ] Buttons hover states consistent
-- [ ] Forms styled consistently
-- [ ] Toasts / notifications readable, scrollable, closable
-- [ ] Images display correctly in galleries, products, toasts
+- [V] Branding colors consistent (blue, black, white)
+- [V] Fonts readable
+- [V] Layout responsive on desktop, tablet, mobile
+- [V] Buttons hover states consistent
+- [V] Navbar items lifted on hover
+- [V] Forms styled consistently and following similar theme
+- [V] Toasts / notifications readable, usually displayed a few seconds
+- [V] Images display correctly in galleries, products, toasts
 
 ## Notes / Screenshots
+
+- Website seems to function well
