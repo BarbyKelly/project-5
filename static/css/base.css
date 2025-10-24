@@ -700,32 +700,6 @@ textarea.description-field {
     border-radius: 0.2rem;
 }
 
-/* Profile page */
-.profile-page {
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 13px;
-    box-sizing: border-box;
-    background-color: rgba(24, 38, 62, 0.4);
-    border-radius: 0.2rem;
-}
-
-.profile-order-history {
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 13px;
-    box-sizing: border-box;
-    background-color: rgba(24, 38, 62, 0.4);
-    border-radius: 0.2rem;
-}
-
-/* Profile order history table - fixed with ChatGPT's guidance */
-.profile-order-history table {
-    width: 100%;
-    table-layout: fixed;
-    word-wrap: break-word;
-}
-
 .country-select-flag {
     display: none;
 }

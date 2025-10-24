@@ -1,8 +1,4 @@
-.order-history {
-    max-height: 416px; /* height of profile form + submit button */
-    overflow-y: auto;
-}
-
+# Profile.css fixed with ChatGPT's guidance, to solve Default postage and Order History layout issues
 #profile-update-form .form-control {
     color: cornflowerblue;
 }
@@ -18,4 +14,36 @@
 
 #id_default_country option:first-child {
     color: #555555;
+}
+
+/* Profile page - fixed with ChatGPT's guidance, to balance width of Profile details and order history */
+.profile-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-page {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+}
+
+.profile-order-history {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgba(24, 38, 62, 0.4);
+    border-radius: 0.2rem;
+}
+
+/* Profile order history table - fixed with ChatGPT's guidance */
+.profile-order-history .table-responsive {
+    margin: 0 auto;
+    width: 100%;
+    word-wrap: break-word;
 }
