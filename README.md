@@ -24,10 +24,9 @@ Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-bouti
 
 Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/project-5)
 
-Responsiveness test...
+![Canva Mockup](docs/readme_images/canva_mockup_opt_150.png)
 
-Am I Responsive image... update
-
+Responsiveness test results created with [Canva.com](https://www.canva.com/mockups/collection/)
 
 
 # Contents
