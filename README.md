@@ -988,13 +988,6 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
     ![Order Number digit](docs/readme_images/order_number_digit.png)
 
-- **Country**
-  - Country name stopped displaying on Order Form, after Order Form was edited. Country at least shows up on Order confirmation.
-
-- **Size checkout/models.py**
-  Developer removed Size from most of the website, except from checkout/models.py, due to time constraint, in case migrations affect project too much, and Developer would not be able to fix it before the deadline. 
-  Developer sees the need to add some form of Size to each product. As the products are all different sizes, it would be time consuming to add their unique sizes at this stage.
-
 - **Product Details Page**
   - Buttons are not centered on any screen sizes
   - Product card appears too wide on tablet screens (around 767px and below)

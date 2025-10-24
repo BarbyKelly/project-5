@@ -3,6 +3,7 @@ from django.contrib.auth.signals import user_logged_in, user_logged_out
 from django.contrib import messages
 
 
+# ---- Sign In - message toasts ----
 # Sign In - message
 def sign_in_toast(sender, request, user, **kwargs):
     """
@@ -14,7 +15,7 @@ def sign_in_toast(sender, request, user, **kwargs):
     )
 
 # Connect the signal to Username
-user_logged_in.connect(sign_out_toast)
+user_logged_in.connect(sign_in_toast)
 
 
 # Sign Out - message
