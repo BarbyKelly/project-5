@@ -111,3 +111,8 @@
     npx eslint . --fix
 
 ## Notes / Screenshots
+
+- **Newsletter Subscription confirmation emails**
+ - In local development, confirmation emails appear in the terminal instead of sending real emails
+ - Subscribers are saved correctly in Django under 'Subscribers' and are only accessible to Django Admin
+ - Terminal shows the correct testing time; Django shows 1 hour behind. Developer left it as-is due to time constraints

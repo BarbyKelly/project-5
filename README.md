@@ -826,6 +826,7 @@ Due to large volume of Tests done, Testing is reported in a separate [Testing.md
 
 ## Fixed Bugs
 
+**NavLinks (Art & Photos)
 - When developer clicked on any of Art or Photos nav-links, 0 items were displayed on all occasions, and NavLinks did not change color, 
   therefore it was hard to know which tab was open. Screenshot of when Developer expected to see 'All Art' displayed, 
   instead displayed were '0 products, with a heading 'All items':
@@ -1002,9 +1003,8 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 ## Known Bugs
 
 - **Order Number**
-  - The numeric part of the Order Number (eg '1') appears smaller font than the letters (eg 'ABC') on:
-    - Order Details page, and on
-    - 'Success!' pop up: 
+  - The numeric part of the Order Number appears smaller font than the letters on:
+    - Order Details page, and 'Success!' pop up: 
 
     ![Order Number digit](docs/readme_images/order_number_digit.png)
 
@@ -1012,11 +1012,7 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   - Buttons are not centered on any screen sizes
   - Product card appears too wide on tablet screens (around 767px and below)
   - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
-  - Due to time constraints, CSS was not fully adjusted to the new background image
-
-- **Newsletter Subscription confirmation emails**
-  - With Django backend in local development, confirmation emails show up in terminal
-  - Subscribers appear under 'Subscribers'in Django Admin
+  - Due to time constraints, CSS was not fully adjusted suit background image on all pages
 
 [Back to Bugs](#bugs)
 
@@ -1070,188 +1066,75 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
 
 # Credits
 
-- CODE
+**Code/Base Projects**
 
-  - Code for Kelly's Art & Photo Boutique is mainly based on Code Institute's Walk-through project ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
-  The developer has credited Walk-through mainly on top of html files, 
-  due to enormous number of files.
+- Main code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project
+  ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
+- Other helpful projects:
+  - ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
+  - ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
+  - [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
 
-  - Other projects, that Developer found helpful to make this project, have been credited in some files and below:
+**README**
 
-  ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
+- Template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog) and
+  Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
+- [Canva](https://www.canva.com/mockups) used to create Mockups
 
-  ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
+**Images & Media**
 
-  [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
+- Background image and product photos taken by the Developer
+- Art created by developer's children
 
-[Back to Credits](#credits)
+**Image Optimization**
 
-[Back to Contents](#contents)
+- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
 
-- README
+**Fonts & Icons**
 
-  - General README template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog). README for BookBlog was based on: [findMEreadME](https://github.com/brodsa/findMEreadME/blob/main/README.md#content)
-
-  - Final README based on Developer's Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
-
-  - Developer used [Canvas](https://www.canva.com/mockups) to create Mockups of the website. ChatGPT guided to Canvas.
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-- ICONS
-
-  - Free Icons for Search and Social Media, from: [fontawesome.com](https://fontawesome.com/search?ic=free)
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-- LOGO
-
-  - As Kelly's Photo & Art Boutique displays Art made by the developer's kids, the developer asked her kids to come up with a logo. 
-  Website's Logo was designed by developer's 10 year old daughter Aoife. With developer's guidance, Aoife used Balsamiq Wireframes to create the Logo. Aoife chose colors based on Developer's wish for 'cornflower blue'.
-  Developer used ![Color contrast check](https://coolors.co/contrast-checker/9fc5f8-134f5c) to check and slightly adjust contrast of colors. And together, developer and Aoife chose icons for Logo. Developer adjusted the layout of the Title on the Logo. Developer's 6 year old daughter Ciara watched every step, and gave her approval.
-  Logo has Aoife's art work, Ciara's art work, and photo by the developer. 
-  Website's finalised logo:
-
-  ![Logo for Kelly's Art and Photo Boutique](docs/readme_images/logo_wireframe_by_aoife_ten_opt_50.png)
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-- FONT
-
-  - Developer read [this article](https://webflow.com/blog/professional-fonts?utm_source=google&utm_medium=search&  utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Tier4&utm_term=dsa-1480385100845___703207072761__&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnUfvRW_kuHUD-8GkB-9fEIf5ugmRlHpgHIsqWgaPlIm8EvOsCXomWIaAtElEALw_wcB) to figure out which font to use
-
-  - Code for "Cormorant Garamond" font from [Google Fonts](https://fonts.google.com/selection/embed):
+- Font: "Cormorant Garamond" via [Google Fonts](https://fonts.google.com/selection/embed):
 
   ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
-[Back to Credits](#credits)
+- Free Icons from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
-[Back to Contents](#contents)
+**Wireframes**
 
+- Created using [Balsamiq](https://balsamiq.com/wireframes/), including Logo
 
-- WIREFRAMES
+- **Privacy Policy**
 
-  - Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
+- Created with lessons from [Boutique Ado](https://github.com/Code-Institute-Solutions/) and
 
-[Back to Credits](#credits)
+  [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy
 
-[Back to Contents](#contents)
+- **How To...?' Links**
 
-- PRIVACY POLICY
+- YouTube links for art tutorials, shared by Developer. No personal benefit or connection to these sites
 
-  - Privacy Policy created based on lessons for Code Institute's walk-through [Boutique Ado](https://github.com/Code-Institute-Solutions/) 
+- **ChatGPT**
 
-  [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy.
+- Used near the end of the project for guidance on fixing code, CSP fix, Bootstrap rules, performance (SEO) improvements, 
+  frame for TESTING_RESULTS.md, and README formatting
 
-[Back to Credits](#credits)
+- **Business Model**
 
-[Back to Contents](#contents)
-
-- 'HOW TO...?' LINKS
-
-  - Disclaimer: Boutique's admin shared selection of YouTube video links that she or her kids found helpful for creating art. No personal benefit from those or any other youtube channels shared on this website
+- Inspired by [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model), guided by mentor Lauren-Nicole Popich 
 
 [Back to Credits](#credits)
-
 [Back to Contents](#contents)
-
-- PRODUCTS AND IMAGES
-
-  - All of the photos used for the website, were taken by the developer
-
-  - All of the Art was made by developer's kids, at school, preschool, in art class, or at home
-
-  - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
-    All converted images have 'opt' in the name to show they were optimized
-
-[Back to Credits](#credits)
-
-[Back to Contents](#contents)
-
-- ChatGPT
-
-  - Closer to the end of the project 5, Developer found out it is ok to check code and get guidance from ChatGPT.
-  Developer had no previous coding experience with ChatGPT, as she thought students were supposed to avoid it.
-  Learning to use ChatGPT was an interesting experience.
-  ChatGPT helped to understand the updated guidelines for Django, Bootstrap, styling, and even helped to solve git commit issue, when
-  security changes started to see vs code as a threat, and commits wouldn't go through.
-  Changing permissions, and path with ChatGPT's guidance, git commit error got fixed.
-  Something similar, would have usually been fixed with tutor's help.
-  
-  Developer found ChatGPT helpful in general.
-  Even with all of the knowledge packed into ChatGPT, it was very important to check if suggestions matched Developer's vision,
-  and trying to solve the issues first herself.
-  Treating ChatGPT like a tutor, was useful.
-  Before ChatGPT, Developer couldn't imagine getting so many errors fixed without tutor's help.
-  It was lovely to be able to ask guidance at any time.
-
-  - Performance improvement (after Lighthouse test)
-
-    - Starting Performance score: 71
-
-      ![Lighthouse score before performance fixes](docs/readme_images/lh_score_before_performance_fixes.png)
-
-    - Developer shared initial Lighthouse score results with ChatGPT
-    - Steps the Developer implemented based on ChatGPT's guidance:
-      - Added 'defer' to the Stripe JS script in base.html
-      - Updated {% for product in products %} loops in products.html, to improve loading time for images
-      - Optimized background image file size (472KB to 190KB)
-      - Uploaded optimized image to AWS S3
-      - Deleted previous background image from both local media and AWS
-      - In base.css, replaced the original local background image:
-
-        background-image: url('/media/website_background.jpg');
-
-        with the optimized AWS-hosted image:
-
-        background-image: url('https://kellys-art-and-photo-boutique.s3.eu-north-1.amazonaws.com/media/website_background_opt_200.jpg');
-
-      - Result: Lighthouse Performance score improved to 93
-
-        ![Lighthouse score after performance fixes with ChatGPT's guidance](docs/readme_images/lh_score_after_performance_fixes.png)
-
-  - Best Practices Score improved with ChatGPT's guidance
-
-    - Starting Lighthouse score: 79
-
-      ![LH report for Best Practices](docs/readme_images/lh_bp_starting_score.png)
-    
-    - Steps suggested by ChatGPT to improve Content Security Policy(CSP):
-
-      ![Steps for CSP fix, by ChatGPT](docs/readme_images/lh_bp_csp_steps.png)
-
-      ![Security and CSP fix](docs/readme_images/security_and_csp_from_chatgpt.png)
-
-  - README styling:
-    - ChatGPT guided Developer how to reduce nesting, and to use **bold** instead of headings, where many subcategories
-    - Developer wished to link exact parts of Testing.md to README. ChatGPT showed how that could be done eg (testing.md#sign-up-page-testing)
-
-
-- Business Model
-
-  - Developer learned from [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model) how to write Business Model for Kelly's Art & Photo Boutique. Mentor Lauren-Nicole Popich guided developer to this project, as an example for Business model.
-   
 
 # Acknowledgements
 
-- Developer is grateful for any guidance and support provided by her closest people;
-  her mentor Lauren-Nicole Popich;
-  Code Institute for the opportunity and their Student Care, especially Kim and Nikki, facilitator Kay Welfare, tutors, Slack members, and online content creators.
+- Developer is grateful for guidance and support provided by her mentor Lauren-Nicole Popich;
+  Code Institute staff and online resources.
 
-- Special thank you to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part of this e-commerce project,
-  for creating a unique Logo based on Developer's ideas for the project, and Aoife's vision for the logo.
-  Great team effort. 
+- Special thanks to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part
+  of this e-commerce project, and being involved with website's Logo.
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested to mention in README,
-  that the secret key was visible at the start of the project, as the developer was following the steps from Boutique Ado walk-through,
-  where Secret key was hidden at a later stage.
-  Developer changed the key asap and hid it, as advised by her mentor.
+- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested noting in README,
+  that the secret key was initially visible during development, following Boutique Ado walk-through steps.
+  Developer changed and hid the key as advised.
 
 - Special thanks to ChatGPT, for helping Developer near the end of the project. Developer learned a lot through the process and it was great to 
   have faster access to what works with Bootstrap4.
