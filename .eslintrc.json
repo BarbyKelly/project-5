@@ -1,0 +1,24 @@
+// Code copied exactly from ChatGPT to use eslintrc to check js files automatically
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "globals": {
+        "$": "readonly",
+        "jQuery": "readonly",
+        "Stripe": "readonly"
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-unused-vars": "warn",
+        "no-undef": "error",
+        "no-console": "off",
+        "no-extra-semi": "warn"
+    },
+    "ignorePatterns": [
+        "staticfiles/**",
+        "**/*.min.js",
+        "**/vendor/**"
+    ]
+}

@@ -98,6 +98,16 @@
 - [V] Toasts / notifications readable, usually displayed a few seconds
 - [V] Images display correctly in galleries, products, toasts
 
-## Notes / Screenshots
+## Automatic Testing/Validation
 
-- Website seems to function well
+- [V] ESLint set up for JS testing (all steps and code learned from ChatGPT):
+    ### Set up JS automatic testing:
+    ![eslint.json from ChatGPT](docs/readme_images/eslint.json_from_chatGPT.png)
+
+    ### Check all JS files - Run ESLint:
+    npx eslint .
+
+    ### Auto-fix minor JS issues:
+    npx eslint . --fix
+
+## Notes / Screenshots

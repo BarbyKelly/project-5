@@ -67,6 +67,7 @@ Responsiveness test results created with [Canva.com](https://www.canva.com/mocku
 - [Lighthouse](#lighthouse)
 - [HTML](#html)
 - [CSS](#css)
+- [JS](#js)
 - [Python](#python)
 
 [Testing](#testing)
@@ -772,6 +773,40 @@ Lighthouse tests results (Google developer tools):
   ![CSS validation](docs/readme_images/css_validation.png)
 
   - To validate CSS for Django project, Developer turned off filters, similar to HTML validation
+
+## JS
+
+**Automated linting and validation steps for all JavaScript (JS) files:**
+- Steps, for faster js validation for the whole project, followed from ChatGPT:
+  - Installed ESLint v9, ran "npx eslint .", initial warnings displayed:
+    
+    ![npx eslint v9 results](docs/readme_images/v9_eslint_results.png)
+
+  - Developer opted to add /* jshint esversion: 6 */ on top of js files
+    to reduce the amount of warnings displayed, as this previously 
+    worked when Developer tested js files with [jshint.com](https://jshint.com/).
+  - ChatGPT suggested to uninstall v9 and install v6 instead
+  - v6 results:
+
+    ![npx eslint v6 results](docs/readme_images/v6_eslint_results.png)
+
+  - To validate js faster, instead of adding to each js file
+    /* jshint esversion: 6 */ or similar, ChatGPT suggested the following code:
+
+    ![eslint.json from ChatGPT](docs/readme_images/eslint.json_from_chatGPT.png)
+  
+  - As guided, Developer ran:
+
+    "$ npx eslint . --fix" to fix
+    to fix the semi-colon error.
+
+  - Final testing showed no js errors:
+
+  ![eslint final result](docs/readme_images/npx_eslint_final_result.png)
+  
+[Back to Validation](#validation)
+
+[Back to Contents](#contents)
 
 ## Python
 
