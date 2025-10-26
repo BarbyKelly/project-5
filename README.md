@@ -1,42 +1,44 @@
 # Project 5 - Kelly's Art & Photo Boutique
 
-[Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/) was created as part of Code Institute's project,
+Live Site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
+
+Github Repository: [Project 5 Code](https://github.com/BarbyKelly/project-5)
+
+## About
+
+Website was created as part of Code Institute's project,
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
 Developer mainly based her project on Code Institute's Walk-through:
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
+
+**Disclaimer:** This website has no real-time commercial intention.
+No real orders, payments or deliveries.
  
 Aim of Kelly's Art & Photo Boutique:
-- built for educational purposes only
-- to create a Site where selection of Art and Photos are displayed
-- sharing Art made by Developer's kids, and Photos taken by the Developer
-- option for Site users to browse products, search and choose products
-- test out purchasing products (without real transactions)
-- option to Sign up and Sign in
-- check out 'How To...?" videos with art lessons by selected YouTubers
-- sign up for a Newsletter
-- fill in a Contact form
+- Built for educational purposes only
+- Create a Site where selection of kids' Art and Developer's Photos are displayed
 
-This website has no real-time commercial intention.
-No real orders, payments or deliveries.
+**Summary of Features for Site Users:**
+- Browse products, search and choose items
+- Test out purchasing products (no real transactions)
+- Sign Up and Sign In, to access User Account and Order History
+- Check out 'How To...?" videos with art lessons by selected YouTubers
+- Subscribe up to a Newsletter(no actual Newsletters sent)
+- Submit a Contact form
 
-Deployed site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
+**Responsiveness** test results created with [Canva.com](https://www.canva.com/mockups/collection/):
 
-Github: [https://github.com/BarbyKelly/project-5](https://github.com/BarbyKelly/project-5)
+![Canva Mockup](docs/readme_images/canva_mockup_opt_100.png)
 
-![Canva Mockup](docs/readme_images/canva_mockup_opt_150.png)
+**Kelly's Boutique** Mobile App Icon Preview:
 
-Responsiveness test results created with [Canva.com](https://www.canva.com/mockups/collection/)
-
-- Disclaimer: due to late changes to website design, and finding new time-consuming errors,
-  parts of README reflect   previous versions eg future features may already be in place. And previous bugs may be already fixed.
-  - Not all README images and links have been checked this time to see if they work or match the updated version,
-    due to late changes and time constraint.
+![Kelly's Boutique](docs/readme_images/kellys_boutique_app_opt_100.jpg)
 
 
 # Contents
 
-[Business Model for Kelly's Art & Photo Boutique](#business-model-for-kellys-art--photo-boutique)
+[Business Model](#business-model)
 - [Direct Audience](#direct-audience)
 - [Indirect Audience](#indirect-audience)
 
@@ -51,9 +53,6 @@ Responsiveness test results created with [Canva.com](https://www.canva.com/mocku
 - [Marketing](#marketing)
 
 [Design](#design)
-- [Images](#images)
-- [Color](#color)
-- [Font](#font)
 
 [Features](#features)
 - [Existing Features](#existing-features-mobile-first-approach)
@@ -86,36 +85,33 @@ Responsiveness test results created with [Canva.com](https://www.canva.com/mocku
 
 [Acknowledgements](#acknowledgements)
 
-# Business Model for Kelly's Art & Photo Boutique
+# Business Model
 
 ## Direct Audience
 
 The following groups are considered Direct Audience, as they are most likely to purchase, commission or order products from Kelly's Art & Photo Boutique:
   
   - Online Users searching for:
-    - Original Art (e.g., Name Art, Seasonal Art such as winter, Animal Art etc.) 
+    - Original Art (e.g. Name Art, Seasonal Art such as winter, Animal Art etc.) 
     - Children's Art
     - Handmade Art
-    - Photos (e.g., Sky, Beach, Animals, Rainbows, Variety etc.)
+    - Photos (e.g. Sky, Beach, Animals, Rainbows, Variety etc.)
 
   - Educational Institutions: 
     - Schools and higher education providers seeking examples of art/photos or decorations for their institutions
-    - Crèches and preschools incorporating childrens' art into projects
+    - Crèches and preschools incorporating children's art into projects
 
   - Healthcare and Care Homes:
-    - Nursing homes and healthcare Practices searching for artwork or photos for waiting rooms, wards,
+    - Nursing homes and healthcare practices searching for artwork or photos for waiting rooms, wards,
       and community spaces
     - Clinics and treatment areas where children and adults are tested or treated, to create a brighter more welcoming, 
-      more homely/relatable atmosphere, and maybe inspire patients
-
-  - Treatment Centers, Therapists:
-    - Looking for artwork or photos to enhance the ambiance of the waiting rooms, therapy areas or playrooms, sensory sections
+      more homely atmosphere
 
   - Hospitality and Accommodation Providers:
     - Restaurants, cafes, hotels, B&B's, Airbnb's, searching art or photos for specific ambiance
   
   - Individuals, couples, families, friends:
-    - People seeking handmade and original gifts for variety of occasions eg graduation, first school day, birthday, anniversary, just to say 'Thank you'
+    - People seeking handmade and original gifts for variety of occasions (e.g. graduation, first school day, birthday, anniversary)
 
   - Beauty and Spa businesses:
     - Salons, spas, wellness centers, looking for certain type of Art/Photos to complement their relaxing atmosphere
@@ -137,8 +133,6 @@ Groups that are influenced by the display or recommendation of the products made
   - Influencers or Promoters, who share or recommend products from the boutique, on social media, blogs, 
     local networks, sharing boutique's reels/page
 
-[Back to Business Model](#business-model-for-kellys-art--photo-boutique)
-
 [Back to Contents](#contents)
 
 # User Experience
@@ -153,111 +147,88 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Click **Logo** (to bring them back to Home Page or refresh Home Page)
 
 - **Home**
-  - Click **Home** NavLink to get back to Home page or to refresh Home page.
+  - Click to view all products displayed on the Home page
 
 - **Art**
-  - Hover on Art NavLink (on larger screens) for Art dropdown menu to be displayed
-  - Click Art NavLink which opens up Art page with all of the Art available in the Boutique
-  - Choose to click any item in dropdown menu, to select Art by specific category
-  - Hover on badges (for all screen sizes) to highlight any badge that pointer is on
-  - Click badges to choose an Art category
-  - Choose to sort Art by Price, Name, Author, or Category
-  - Select Art by: Animal, Name, Winter, or Variety
+  - On larger screens, hover to display the dropdown menu
+  - Click to open page with all Boutique's Art
+  - Sort by Price, Name, Author, or Category
+  - Filter by category via dropdown menu or badges (Animal, Name, Winter, or Variety)
 
 - **Photos**
-  - Hover on Photos NavLink (on larger screens) for Photos dropdown menu to be displayed
-  - Click Photos NavLink, which opens up Photos page with all of the Photos available in the Boutique
-  - Choose to click any item in dropdown menu to select Photos by specific category
-  - Hover on badges (for all screen sizes) to highlight any badge that pointer is on
-  - Click badges to choose particular Photos category
-  - Choose to sort products by Price, Name, Author, or Category
-  - Select Art by: Animal, Name, Winter, or Variety
-  - Choose photos by: Beach, Rainbow, Animal, Sky, or Variety
+  - On larger screens, hover to display the dropdown menu
+  - Click to open page with all Boutique's Photos
+  - Sort by Price, Name, Author, or Category
+  - Filter by category via dropdown menu or badges (Beach, Rainbow, Animal, Sky or Variety)
 
 - **How To...?**
-  - Click **How To...?** NavLink, to access 'How To...?' page
-  - Select any of the YouTube links to watch by clicking on them
-  - YouTube videos opening up in the new tab, leaving Kelly's Art & Photo Boutique's open in a previous tab
+  - Click to open page with curated YouTube Art tutorials
+  - Click any video link to watch; videos open in a new tab
 
 - **Newsletter**
-  - Click **Newsletter** NavLink to open up Newsletter page with form
-  - Fill in the form (email only) to sign up for Boutique's Newsletter
-  - Click **Back to Boutique**
-  - Click **Subscribe** to subscribe to the Newsletter
+  - Click to open the Newsletter sign up form (no actual Newsletter sent)
+  - Fill in email and click **Subscribe** 
+  - Click **Back to Shop** to return Home
 
 - **Contact Us**
-  - Click **Contact Us** NavLink to open up 'Contact Us' page
-  - Fill in form to contact Boutique
-  - Click **Back to Boutique**
-  - Click **Submit Contact Form**
+  - Click to open page with Contact Form
+  - Fill in form and click **Submit Contact Form**
+  - Click **Back to Shop** to return Home
 
 - **User Icon**
-  - Click **User Icon**, to access **Sign In** or **Sign Up**
+  - Click to **Sign In** or **Sign Up**
 
-    - **Sign In**
+    - **Sign In** Page
 
-    ![Sign In page](docs/readme_images/sign_in_page.png)
+      ![Sign In page](docs/readme_images/sign_in_page_opt_50.png)
 
-      - Click **Sign In** to access 'Sign In' page with a Sign In Form
-      - Click link: **Sign Up**
-        - Where Users can create an account
-        > Detailed **Sign Up** form features and testing available in [testing.md#sign-up-page-testing](testing.md#sign-up-page-testing) 
-      - Fill the 'Sign In' form
-
-      - **Sign In form**
-        - Fill in **Username or Email**, and **Password**:
-        - Tick **Remember Me** box:
-        - Click **Home** button to return to Home page
-        - Click **Sign In** button to sign in:
-        - Click **Forgot Your Password?**:
-            - Fill in **Password Reset** form:
-              - Click **Reset My Password**
-              - Click **Back to Sign In** button
-              > Detailed **Sign In** form features and testing available in [testing.md#sign-in-page-testing](testing.md#sign-in-page-testing)
+      - Access the Sign In form
+      - Optionally reset **Password** or navigate to **Sign Up**
+      - Fill in required fields and click **Sign In**
+      - Click **Home** button to return Home
 
     - **Sign Up**
 
-      ![Sign Up](docs/readme_images/sign_up.png)
+      ![Sign Up](docs/readme_images/sign_up_page_opt_50.png)
 
-      - Click **Sign Up** to access 'Sign Up' page and 'Sign Up' form:
-      - Click **Sign In here**
-        > Detailed **Sign In** form features and testing available in [testing.md#sign-in-page-testing](testing.md#sign-in-page-testing)
-      - Fill the 'Sign Up' form
-        - **Sign Up** form
-          - Fill in E-mail address, E-mail address confirmation, Username, Password and Password (again)
-          - Opt to click 'Back to Sign In' button to return to 'Sign In' form
-          - Click 'Sign Up' button to Sign Up
-          > Detailed **Sign Up** form features and testing available in [testing.md#sign-up-page-testing](testing.md#sign-up-page-testing) 
+      - Access Sign Up form
+      - Optionally click **Sign In here**
+      - Fill in required fields and click **Sign Up** to create an account
 
 - **Cart**
-  - Click **Cart** NavLink to open Shopping Cart page
-    - Click **Back to Shopping** if no items in the cart
-    - Click **Proceed to Secure Checkout** in the pop-up, after adding an item into the cart:
+  - Click the **Cart** icon in the Navbar to open the Cart page
+  - Add, remove, or update items as desired
+  - Click **Back to Shop** to continue browsing
+  - Click **Secure Checkout** to proceed with purchase
+  - Notice informative pop-up when:
 
-    ![Added to cart pop up](docs/readme_images/proceed_to_checkout_opt_50.png)
+    - Added an item to the Cart:
 
-    - Click **Continue Shopping**
-    - Click **Secure Checkout**
+      ![Added to Cart pop-up](docs/readme_images/added_to_cart.png)
+    
+    - Updated an item in the Cart:
 
-    ![Shopping Cart](docs/readme_images/shopping_cart_opt_50.png)
+      ![Updated Item quantity](docs/readme_images/update_quantity_pop_up.png)
+
+    - Removed an item from the Cart:
+
+      ![Removed an Item](docs/readme_images/removed_an_item.png)
 
 
-- **Search Icon/Search Form**
-  - Click **Search Icon** to open up Search Form
-  - Type in Search Form
-  - Click Blue Search Icon (part of the form) or press Enter, to start search
-  - Search Art and Photos in the Boutique with keywords eg 'rainbow':
+- **Search Icon**
+  - Click to open **Search Form**
+    - Type keywords and click Search or press Enter to search products e.g. 'rainbow':
 
-    ![Search results for 'Rainbow'](docs/readme_images/search_results_rainbow_opt_50.png)
+      ![Search results 'rainbow'](docs/readme_images/search_results_for_rainbow_opt_50.png)
 
-  - Click Blue Search Icon (part of the form) or press Enter, without typing in Search Form
-    - Use 'x' in top right corner to close Error alert, when Search Form was left empty
-  - Click Search Icon in the Navbar to close Search Form
+    - 'Empty' search results in pop-up alert
+    - Click on Search Icon in the Navbar to close Search Form
 
 - **Burger Icon/Menu** (on smaller screens)
 
-  - Click Burger Icon to open dropdown menu
-  - Choose any of the items from the dropdown menu and click them
+  - Click to open dropdown menu, and hover over menu items
+
+### 
 
 - **User** who is not an Admin of Kelly's Art & Photo Boutique, **may not**:
   - Add, edit or delete products
@@ -287,8 +258,6 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - User may click **Privacy Policy** to open it up
   - May click **Social Media** icons to open up their home pages
 
-[Back to User Experience](#user-experience)
-
 [Back to Contents](#contents)
 
 
@@ -314,8 +283,6 @@ Disclaimer: There may be variations between Wireframes and the finished project.
 
 ![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
-[Back to Wireframes](#wireframes)
-
 [Back to Contents](#contents)
 
 # ERD, SEO and Marketing
@@ -332,7 +299,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
   ![ERD](docs/readme_images/kelly's_art_and_photo_boutique_erd.png)
 
-[Back to Contents](#contents)
 
 ## SEO
 
@@ -340,8 +306,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
   With tutors help, developer fixed robots.txt and sitemap.xml
 
 - Google Lighthouse tests helped Developer to improve SEO score.
-
-[Back to Contents](#contents)
 
 ## Marketing
 
@@ -360,18 +324,9 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
   Disclaimer: Reel is demonstrated via YouTube, in case sample business page for Facebook is taken down by Facebook 
 
-[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
-
-[Back to Contents](#contents)
-
 ### Keyword Research
 
 - Developer used keywords suitable for the project eg photo, art, boutique, shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor
-
-[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
-
-[Back to Contents](#contents)
-
 
 ### Similar Businesses
 
@@ -384,8 +339,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
   [Kids and Art](https://kidsandart.org/store-artwork/)
 
   >To date Developer did not come across a website with same combination as hers: parent's photos and their kids' art in one online shop.
-
-[Back to ERD, SEO and Marketing](#erd-seo-and-marketing)
 
 [Back to Contents](#contents)
 
@@ -466,10 +419,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 ### Home Page
 
 - Displays all of Boutique's Art and Photos
- 
-[Back to Features](#features)
-
-[Back to Contents](#contents)
 
 ### Art
 
@@ -501,11 +450,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
       - **Continue Shopping**: returns User to all Products (Art and Photos)
       - **Add to Cart**: adds product to cart with selected quantity
 
-[Back to Features](#features)
-
-[Back to Contents](#contents)
-
-
 ### Photos
 
 - All features and functionality are identical to [Art](#art), except for categories:
@@ -527,7 +471,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 - Subscription form
 - Email address field
-- Click **Back to Shopping**
+- Click **Back to Sho**
 - Or click **Subscribe**
 
 ### Contact Us
@@ -537,7 +481,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 - Clickable **Contact Us**
 - Contact Form
 - Buttons:
-  - **Back to Shopping**
+  - **Back to Shop**
   - **Submit Contact Form**
 
 ### User Menu
@@ -578,18 +522,20 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ### Cart
 
-![Cart page](docs/readme_images/cart_page.png)
+![Cart page](docs/readme_images/cart_opt_50.png)
 
 - Displays **Shopping Cart** page
 - If cart is empty:
   - Message: **Your cart is empty**
-  - Button **Back to shopping** brings User to all Products (Art and Photos)
+  - Button **Back to Shop** brings User to all Products (Art and Photos)
 - If item(s) in cart:
   - List of products with image, title, SKU, price, quantity, subtotal
   - Cart total, postage, and grand total
   - Buttons:
     - **Continue shopping**: returns User to all products
     - **Secure Checkout**: opens up Checkout page
+  - Refreshing the page or browser session ending, may empty the Cart.
+    This is expected behavior for session-based Cart (based on code for 'Bag' in the Boutique Ado)
 
   - **Checkout**
     - Accessible via Cart
@@ -598,8 +544,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
     - **Order Confirmation**
       - Accessible after completing checkout
       - Displaying order number, summary of purchased items, totals, and postage cost
-
-[Back to Features](#features)
 
 [Back to Contents](#contents)
 
@@ -635,8 +579,6 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 - Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
 - Admin: option to update prices in bulk for similar products
 - 'About' app added to share details about creators, optionally painted images of each creator.
-
-[Back to Features](#features)
 
 [Back to Contents](#contents)
 
@@ -676,7 +618,6 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
   ![Chat GPT](docs/readme_images/chat_gpt_check.png)
 
 [Back to Contents](#contents)
-
 
 # Validation
 
@@ -721,10 +662,6 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 - Final testing showed no JS errors:
 
   ![eslint final result](docs/readme_images/npx_eslint_final_result.png)
-  
-[Back to Validation](#validation)
-
-[Back to Contents](#contents)
 
 ## Python
 
@@ -733,8 +670,6 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
   ![CI Python Linter test](docs/readme_images/ci_python_linter.png)
 
 - All tested files passed without major issues, and mainly indentation adjustments were needed
-
-[Back to Validation](#validation)
 
 [Back to Contents](#contents)
 
@@ -801,10 +736,6 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   - Replaced the old block corejs with the working version from the walkthrough 
 - Result: Plus and minus buttons worked as expected, updating quantities correctly
 
-[Back to Bugs](#bugs)
-
-[Back to Contents](#contents)
-
 ## Known Bugs
 
 - **Order Number**
@@ -822,8 +753,6 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 - **404 Page Styling**
   - No background-color box
   - Button green (success) instead of blue to match website.
-
-[Back to Bugs](#bugs)
 
 [Back to Contents](#contents)
 
@@ -930,7 +859,6 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 - Inspired by [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model), guided by mentor Lauren-Nicole Popich 
 
-[Back to Credits](#credits)
 [Back to Contents](#contents)
 
 # Acknowledgements

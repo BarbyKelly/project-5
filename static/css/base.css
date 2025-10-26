@@ -513,6 +513,10 @@ input.is-invalid {
     border-radius: 0.4rem;
 }
 
+.cart-table img {
+    width: 60%;
+}
+
 .cart_totals .btn {
     display: inline-block;
     min-width: 60px;

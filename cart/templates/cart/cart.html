@@ -22,18 +22,18 @@
                         <table class="table table-sm table-borderless cart-table">
                             <thead class="text-white">
                                 <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
-                                    <th scope="col">Remove</th>
+                                    <th scope="col" aria-label="Product image"></th>
+                                    <th scope="col" aria-label="Price per item">Price</th>
+                                    <th scope="col" aria-label="Quantity of item">Qty</th>
+                                    <th scope="col" aria-label="Item total">Total</th>
+                                    <th scope="col" aria-label="Remove item from cart"></th>
                                 </tr>
                             </thead>
 
                             {% for item in cart_items %}
                             <tr class="text-white">
                                 <!-- Product image -->
-                                <td class="p-3 w-25">
+                                <td class="p-3">
                                     {% if item.product.image %}
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                     {% else %}
@@ -45,7 +45,7 @@
                                     <p class="my-0">${{ item.product.price }}</p>
                                 </td>
                                 <!-- Quantity input -->
-                                <td class="py-3 w-25">
+                                <td class="py-3">
                                     <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group quantity_group">
