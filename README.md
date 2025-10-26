@@ -606,84 +606,35 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 
 ## Future Features
 
-- **Navigation/UX/Interface**
-  - Active/chosen Menu Item stays highlighted while open
-- Registered Site User may save items for later, or as their favorites, to access these under their account
-- Registered User is notified of saved items in their cart when they return to the website
+- **Navigation & UX**
 
-- 'How To...?' page to include videos related to Photos, Photography, Art lessons by kids
-- Improved Descriptions for all products, to improve search for Users, and add more keywords
-- Add an option to search Art and Photos by special celebrations: Easter, Christmas, Halloween, Birthday, Anniversary, Valentine's Day etc.
-  (with improved Descriptions, this option will work, like now when looking for Winter, rainbow)
-- Filter to search products with multiple options eg Stone Art - Birthday - Age 5
-- Option to choose art based on what tools were used eg pencil, paint, water-color, marker, paper, stone, canvas
+- Active menu item stays highlighted while open
+- Option to Search the whole website, not just Products
+- Min and Max quantity noted under the relevant field
 
-- Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
-
-- Users can use search box to search all parts of the website, not just products
-
-- Password Reset form would notify User if their email is not registered for an Account. Presently any email address is accepted on Password Reset form 
-
-- Clickable Contact details below 'Password Reset' form, instead of just text as it is at the moment: 
-
-  ![No 'contact us' details](docs/readme_images/password_reset_form.png)
-
-- Clickable Contact details below 'Password Reset' email notice, instead of just text as it is at the moment:
-
-  ![alt text](docs/readme_images/password_reset_email_sent.png)
-
-- For Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
-
-- All required fields marked with asterisk
-
-- On smaller screens, Search Icon was displayed before:
-
-  ![Search Icon](docs/readme_images/search_icon.png)
-
-  Due to Developer changing Nav bar items around, Search Icon is no longer displayed on smaller screens. Developer is aware this needs to be fixed.
-
-- When User has added an item into Cart, at the moment 'Proceed to Secure Checkout' is displayed below the cart content. 'Back to shopping' button needs to be added beside it.
-
-- Asterisks to mark all mandatory fields on all forms.
-
-- 'Sign In' form: if incorrect details entered, pop up to display: 'The Username/email and/or password entered are incorrect. Please try again.'
-At the moment default message mentions only username and/or password being incorrect.
-
-!['Sign In' dropdown remains open](docs/readme_images/sign_in_menu_remains_open.png)
-
-- Links in 'How To ...?' to include lessons how to take better photos
-
+**User Account Features**
+- Registered Site Users may save items for later, or mark as favorites
+- Registered Users notified of saved cart items on their return
+- Alert before User clicks 'Update Information'
+- Prevent from updating when required fields are empty
 - Users can Sign Up and Sign In via social media links, Google account and similar
+- Improved 'Order History' layout under 'My Account'
+- Google Pay, PayPal
+- Only downloadable products (which would change the target audience, and marketing)
 
-- Admin has an option to update prices in bulk for similar products
+**Products & Filters**
 
-### About Creators
+- Improved product descriptions (removal of unnecessary #'s)
+- Search products by special celebrations/occasions
+- Filter products using multiple criteria eg Stone Art - Birthday - Age 5
+- Filter art based on tools (pencil, paint, water-color, marker, paper, stone, canvas)
 
-- App added to share details about the people who created Art & Photos for the Boutique. Maybe painted images of each creator.
-
-### 'My Profile'
-
-- to include email field
-
-- fields to have a label above them or on the left
-
-- alert set up to notify User that they are about to change their 'Default Postage Information'
-
-- 'Phone Number' field to accept numbers only
-
-- Set up restrictions, so User can not delete all 'Default Postage Information' and click on 'Update Information' when fields are left blank
-
-- Instead of displaying 'Thank You for shopping' when User clicks on previous Order, in Order History, would be nice to display: "Your Order nr ..."
-
-### Size options
-
-- Limited to Landscape style or Portrait style, instead of both options available like now
-- Image to reflect the size option that User has chosen, before they add the product into cart 
-
-### Quantity
-
-- Message to pop up for User: "Minimum quantity 1", when User tries to reduce minimum quantity below 1
-- Alert to pop up: "Maximum quantity 50 per product", when User has quantity of 50 in insert box, and tries to click on upward arrow to quantity beyond 50 
+**Other Features**
+- Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
+- 'How To...?' page to include videos related to Photos, Photography, Art lessons by kids
+- Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
+- Admin: option to update prices in bulk for similar products
+- 'About' app added to share details about creators, optionally painted images of each creator.
 
 [Back to Features](#features)
 
@@ -722,85 +673,52 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 - [Font Awesome](https://fontawesome.com/icons)
 - [Chat GPT](https://chatgpt.com/)
 
-  Chat GPT only used near the end of the project, to:
-  - fix Newsletter app error. It was not used to generate the code itself
-  - understand why responsiveness test would not work
-
   ![Chat GPT](docs/readme_images/chat_gpt_check.png)
-
 
 [Back to Contents](#contents)
 
 
 # Validation
 
-* For testing, in many places developer used "Kelly's Boutique" instead of "Kelly's Art & Photo Boutique", to reduce the number of characters, and make it easier read.
+**Lighthouse**
 
-## Lighthouse
+- Lighthouse scores improved after adding lazy-loading for product images, and limiting the number of products displayed on the Home page
+- After changing Home page for (Products)Home page, Lighthouse scores declined slightly, as Home page now included images of all the products
 
-Lighthouse tests results (Google developer tools):
-
-- 'Home' Page test:
+- Due to time constraints, Developer did not further optimize performance after the last test
 
   ![Lighthouse test, Home](docs/readme_images/lighthouse_test_results.png)
 
-- Developer applied the following ideas from ChatGPT to improve Lighthouse Scores:
-  - Added lazy-load for products images
-  - Limited number of products displayed on the Home page
-  
-- After changing Home page for 'Products' Home page, and therefore more images loading on the Home page,
-  Performance and Best Practices scores declined
-- Due to time constraints, Developer did not improve the last Lighthouse scores
-
-
-[Back to Validation](#validation)
-
-[Back to Contents](#contents)
-
 ## HTML
 
-- HTML validator test with [W3C Markup Validation](https://validator.w3.org/):
+- HTML validation completed with [W3C Markup Validation](https://validator.w3.org/)
+- To validate Django HTML templates, the Developer disabled filters in the W3C validator,
+  because templates inherit from base.html.
+  Therefore each HTML page would not have 'DOCTYPE', lang="en", which triggers false validation errors
 
   ![HTML validator](docs/readme_images/html_validation.png)
-
-  - To validate HTML for Django project, Developer turned off filters, as base is passed on from base.html,
-    therefore each HTML page would not have 'DOCTYPE', lang="en", and without those, HTML validator shows up errors
 
 ## CSS
 
 - CSS validator validation with [W3C Markup Validation](https://validator.w3.org/)
-
+- Similar to HTML validation, the Developer turned off filters when validating CSS,
+  to reduce false validation errors
+  
   ![CSS validation](docs/readme_images/css_validation.png)
 
-  - To validate CSS for Django project, Developer turned off filters, similar to HTML validation
+## JavaScript (JS)
 
-## JS
+- JS files were linted using ESLINT and [jshint.com](https://jshint.com/)
+- Initially with ESLint v9, then reverted to v6 for compatibility
+- With ChatGPT's guidance .eslintrc.json configuration file was added, to improve testing efficiency:
 
-**Automated linting and validation steps for all JavaScript (JS) files:**
-- Steps, for faster js validation for the whole project, followed from ChatGPT:
-  - Installed ESLint v9, ran "npx eslint .", initial warnings displayed:
-    
-    ![npx eslint v9 results](docs/readme_images/v9_eslint_results.png)
-
-  - Developer opted to add /* jshint esversion: 6 */ on top of js files
-    to reduce the amount of warnings displayed, as this previously 
-    worked when Developer tested js files with [jshint.com](https://jshint.com/).
-  - ChatGPT suggested to uninstall v9 and install v6 instead
-  - v6 results:
-
-    ![npx eslint v6 results](docs/readme_images/v6_eslint_results.png)
-
-  - To validate js faster, instead of adding to each js file
-    /* jshint esversion: 6 */ or similar, ChatGPT suggested the following code:
-
-    ![eslint.json from ChatGPT](docs/readme_images/eslint.json_from_chatGPT.png)
+  ![eslint.json from ChatGPT](docs/readme_images/eslint.json_from_chatGPT.png)
   
-  - As guided, Developer ran:
+- As guided, Developer ran:
 
-    "$ npx eslint . --fix" to fix
-    to fix the semi-colon error.
+  "$ npx eslint . --fix"
 
-  - Final testing showed no js errors:
+- Final testing showed no JS errors:
 
   ![eslint final result](docs/readme_images/npx_eslint_final_result.png)
   
@@ -810,9 +728,11 @@ Lighthouse tests results (Google developer tools):
 
 ## Python
 
-- Developer checked some of Python files with [CI Python Linter Test](https://pep8ci.herokuapp.com/)
+- Developer checked selected Python files using [CI Python Linter Test](https://pep8ci.herokuapp.com/)
 
   ![CI Python Linter test](docs/readme_images/ci_python_linter.png)
+
+- All tested files passed without major issues, and mainly indentation adjustments were needed
 
 [Back to Validation](#validation)
 
@@ -820,181 +740,66 @@ Lighthouse tests results (Google developer tools):
 
 # Testing
 
-Due to large volume of Tests done, Testing is reported in a separate [Testing.md](TESTING_RESULTS.md) file.
+Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 # Bugs
 
 ## Fixed Bugs
 
-**NavLinks (Art & Photos)
-- When developer clicked on any of Art or Photos nav-links, 0 items were displayed on all occasions, and NavLinks did not change color, 
-  therefore it was hard to know which tab was open. Screenshot of when Developer expected to see 'All Art' displayed, 
-  instead displayed were '0 products, with a heading 'All items':
+**NavLinks (Art & Photos)**
 
-    ![0 products displayed](docs/readme_images/0_products_displayed.png)
+- Issue: Clicking Art or Photos NavLinks, displayed 0 items, and NavLinks did not change color,
+  therefore it was hard to know which tab was open.
+- Reason: Categories in main-nav.html did not match categories in categories.json and Django categories:
 
-  Developer took these steps to fix main-nav links:
+  ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
 
-  1. Developer realised, in templates/main-nav.html, she had set up different categories for Art and Photos, than categories in categories.json or Django categories:
+  ![Django categories](docs/readme_images/django categories.png)
 
-    ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
+- Fix:
+  - Matched categories in main-nav with Django categories and categories.json
+  - Fixed 'beach-photos' vs 'beach_photos'
+  - Updated titles for Art and Photos
+- Result: Art and Photos displayed correctly.
 
-    ![Django categories](docs/readme_images/django categories.png)
 
-  therefore, Art and Photos categories couldn't display, under Art and Photos NavLinks
+**Sign In Menu**
 
-  2. Developer matched categories in main-nav with Django categories and categories.json
-
-  3. Art and Photos displayed now correctly, except for Beach Photos.
-  None of the 'Beach Photos' were displayed. Developer noticed 'beach-photos' instead of expected: 'beach_photos' in Django Categories:
-
-    ![beach-photo instead of beach_photo](docs/readme_images/beach-photo instead of beach_photo.png)
-
-  Developer fixed the category name from 'beach-photo' to 'beach_photo', then Beach Photos were displayed on the website as expected:
-
-    ![beach photos displayed ok](docs/readme_images/beach_photos_displayed_ok_opt_50.png)
-
-  4. Developer removed 'photo' from selection of photo titles to make wording look better on the screen (previously: 'Beach photo' title displayed for one photo, and 'Beach photo' displayed for more than one photo, instead of 'Beach Photos')
-
-  5. Developer updated all of the new names/titles for Art and Photos in main-nav.html, categories.json, and Django Categories. 
-
-  6. 'Sky' photos didn't display under 'All Photos'. Developer checked main-nav.html, and noticed sky_photos and animal_photos were still displayed in category, for 'All Photos'. Developer changed sky_photos for sky, and animal_photos for animal, and 'Sky' photos were displayed under 'All Photos' then.
-
-  7. When logged in as an admin, Sign In was still showing in the Navbar, and all of the options for admin were displayed at all times:
+- Issue: when logged in as an Admin, 'Sign In' remained visible in Navbar, and all of the options for Admin were displayed at all times:
 
    ![Sign In not ok in Navbar](docs/readme_images/sign_in_not_ok.png)
-  
-  Click on other NavLinks, opened those links, yet Sign In menu remained open, and blocked top of other pages:
 
-  ![Sign In menu blocking top part](docs/readme_images/sign_in_menu_blocking_top.png)
+- Cause: Located in main_nav.html with guidance from ChatGPT, template was always rendering 'Sign In', signed in or not:
 
-  When Developer clicked on Sign In NavLink to see if that would close the Sign In menu, Homepage opened instead.
+- Fix: Adjusted styling for Navbar/NavLinks
 
-  Solving:
-
-  Issue located in main_nav.html with Chat GPT's help:
-
-  ![Issue in main_nav.html](docs/readme_images/main_nav_sign_in_issue.png)
-
-  ChatGPT guided Developer to see she was always rendering 'Sign In', signed in or not. 
-  Which meant after being signed in, extra links were added as inside the same <li>.
-
-  Developer fixed the styling for Navbar/NavLinks, to see if all would work together after Sign In fix, and ChatGPT guided Developer to reduce repetition of styling in main-nav.html.
-
-  Sign In before and after fix, including updated styling:
-
-  ![Sign In after fix](sign_in_fix.png)
-
-  As a result of the fix, when Admin was signed in:
+- Result: when Admin was signed in:
   - 'Sign In' NavLink was no longer displayed,
   - Username replaced 'Sign In' NavLink,
   - Options for Signed In Admin were available via dropdown menu
-  - 'Sign Up' was no longer displayed for Signed In user/admin
+  - 'Sign Up' was no longer displayed for Signed in User/Admin
 
-  ChatGPT was a great help for fixing this error, and improving styling to match Django and Bootstrap.
+**Fixture Load (django.core.serializers.base.DeserializationError: Problem installing fixture)**
 
-[Back to Contents](#contents)
+- Issue: Running 'python manage.py loaddata categories' produced "django.core.serializers.base.DeserializationError: Problem installing fixture..." in terminal
+- Cause: categories.json had a field 'author', while in admin.py/Django categories there was no 'author' field set up.
+- Fix: Removed 'author' field from categories.json and 'python manage.py loaddata categories'
+- Result: command worked ok then
 
-[Back to Bugs](#bugs)
+**Cart - qty update issue**
 
-### Fixed "django.core.serializers.base.DeserializationError: Problem installing fixture"
+- Issue: Product quantities were not updating accurately in the Cart.
+  Cart showed €0.00, when it had items in it.
+  Plus and Minus buttons didn't work, only Quantity box arrows responded to increase/decrease in Quantity 
+- Cause: Incorrect placement of <div class="input-group-prepend"> and <div class="input-group-append"> in cart.html,
+  and outdated JavaScript logic in the Cart quantity script
+- Fix: 
+  - Compared the project's vs Boutique Ado walk-through:
 
-- Developer ran command: 'python manage.py loaddata categories' and "django.core.serializers.base.DeserializationError: Problem installing fixture..." appeared in the terminal.
+    ![Comparing codes with Diffchecker](docs/readme_images/bug_fix_plus_minus.png)
 
-- Earlier that day, tutor Oisin guided developer how to fix 'keyword: title' error, relating to json files
-
-- Developer was able to follow similar steps to figure out the error:
-
-- Developer broke down terminal error messages into 3 main (puzzle) pieces, to understand where was the error located:
-
-#### Keyerror: author:
-
-  ![keyerror: author](docs/readme_images/keyerror author.png)
-
-#### No field_name author:
-
-  ![no field_name author](docs/readme_images/no field_name author.png)
-
-#### Fixtures categories.json:
-
-  ![fixtures categories.json](docs/readme_images/fixtures categories.json.png)
-
-- Developer had been focusing on field 'author' in categories.json file. Seeing 'author' is in categories.json file, so why would it come up as an error, 'no field_name author'
-
-- After looking at these 3 parts of terminal messages, and checking out fields in Django for Adding 'Categories':
-
-#### Django Add Categories:
-
-  ![Django Add Categories](docs/readme_images/django admin categories.png)
-
-developer realised issue was that categories.json had a field 'author', while in admin.py/Django categories there was no 'author' field set up
-
-- Developer removed 'author' field from categories.json and 'python manage.py loaddata categories' command worked then ok:
-
-  ![load categories command worked](docs/readme_images/load categories command worked.png)
-
-- Fixing this bug/error was a great lesson for the developer, she learned how to better understand Terminal messages, and saw more value in them
-
-- This error/bug also helped Developer to realize, she had added products to Django and hadn't updated categories.json accordingly, to reflect
-changes made via Django Products.
-
-- Product amounts were not updating in the basket: 
-developer adjusted <div class="input-group-prepend"> and <div class="input-group-append"> in cart.html. 
-
-Developer was able to update the amount of certain products in the cart, yet couldn't increase or decrease products when putting it into cart:
-
-  ![Increase/decrease buttons not working](docs/readme_images/buttons_clicking_but_quantity_remains_the_same_opt.png)
-
-Button still didn't work, after adusting cart.html, or quantity_input_script.html:
-
-  ![Fixed var plusDisabled](docs/readme_images/fix var plusDisabled.png)
-
-Arrows up and down in Quantity box, worked ok, and increased or decreased Quantity as needed, and Subtotal accordingly.
-
- 
-- nothing in the cart when clicking on add to cart
-
-- cart shows €0.00 on the website, but when you click to open the cart, it has items in
-
-- Plus and minus buttons would not work, when developer tried to adjust item quantities in the cart. 
-  Developer could only increase the item quantities with arrows:
-
-  ![Plus and minus buttons not working](docs/readme_images/bug_plus_minus_opt_50.png)
-
-  Developer thought issue is in base.html, scripts must be not correct. As plus and minus buttons had worked when she followed Boutique Ado walk-through for her walk-through project.
-  Developer used [Diffchecker](https://www.diffchecker.com/) to compare her project 5's code vs Boutique Ado walk-through lesson,
-  and then compared the script codes vs the Boutique Ado version that had worked for the developer:
-
-  ![Comparing codes with Diffchecker](docs/readme_images/bug_fix_plus_minus.png)
-
-  Developer went back to lesson "Base Template Part 1":
-
-  ![Base template changes](docs/readme_images/walk_through_instructions.png)
-
-  to see where she may have made an error. Developer found that she had used the updated code when she created her walk-through project, but had used different version of code for project 5.
-
-  Developer adjusted block corejs code in her project 5, to match the one that worked for her walk-through project. This fixed the error. Plus and minus buttons were fixed, developer was able to increase or decrease the number of particular item in the cart with plus and minus buttons:
-
-  ![Plus and minus buttons work](docs/readme_images/plus_minus_work_opt_50.png)
-
-  - Developer noticed how "All Photos" and "All Art", showed 0 items, while "All Items" displayed all items. She couldn't find 
-    what was causing the error. Developer's coursemate Patrick Hladun found an error: two of the product categories had the same "pk":9 
-  ![pk error](docs/readme_images/pk_error.png)
-
-    Developer fixed conflict between pk numbers, and used ![jsonformatter.com](https://jsonformatter.org/) to help her to fix rest of categories.json, as "author": "author" was missing under pk:1, and pk:6 "author": "author" was missing one of these: '}':
-    
-    ![error line 1](docs/readme_images/error_line1.png)
-    
-    After fixing these errors, json file validation worked as expected:
-
-  ![JSON working ok](docs/readme_images/fixed_pk.png)
-
-- Developer noticed Logo had 'Art', while NavLinks had 'Drawings'. Developer replaced 'Drawing' with 'Art' in fixtures: categories.json, in django categories, and in index.html (Home page), and in main.nav html (templates), and then 'Art' was displayed instead of 'Drawings':
-
-  ![Before: NavLink 'Drawings' instead of Art](<docs/readme_images/bug, art vs drawings.png>)
-
-
-  ![After: NavLink 'Art'](<docs/readme_images/word drawings replaced with art.png>)
+  - Replaced the old block corejs with the working version from the walkthrough 
+- Result: Plus and minus buttons worked as expected, updating quantities correctly
 
 [Back to Bugs](#bugs)
 
@@ -1013,6 +818,10 @@ Arrows up and down in Quantity box, worked ok, and increased or decreased Quanti
   - Product card appears too wide on tablet screens (around 767px and below)
   - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
   - Due to time constraints, CSS was not fully adjusted suit background image on all pages
+
+- **404 Page Styling**
+  - No background-color box
+  - Button green (success) instead of blue to match website.
 
 [Back to Bugs](#bugs)
 
