@@ -2,7 +2,7 @@
 
 Live Site: [Kelly's Art & Photo Boutique](https://kellys-art-and-photo-boutique-913058c0223e.herokuapp.com/)
 
-Github Repository: [Project 5 Code](https://github.com/BarbyKelly/project-5)
+Github Repository: [Project 5](https://github.com/BarbyKelly/project-5)
 
 ## About
 
@@ -17,7 +17,7 @@ No real orders, payments or deliveries.
  
 Aim of Kelly's Art & Photo Boutique:
 - Built for educational purposes only
-- Create a Site where selection of kids' Art and Developer's Photos are displayed
+- Create a Site where selection of kids' Art and developer's Photos are displayed
 
 **Summary of Features for Site Users:**
 - Browse products, search and choose items
@@ -55,7 +55,7 @@ Aim of Kelly's Art & Photo Boutique:
 [Design](#design)
 
 [Features](#features)
-- [Existing Features](#existing-features-mobile-first-approach)
+- [Existing Features](#existing-features)
 - [Future Features](#future-features)
 
 [Languages Used](#languages-used)
@@ -87,33 +87,36 @@ Aim of Kelly's Art & Photo Boutique:
 
 # Business Model
 
+This business model identifies the key audiences (direct and indirect) for Kelly's Art & Photo Boutique,<br>
+and describes how they may interact with or be influenced by the products.
+
 ## Direct Audience
 
 The following groups are considered Direct Audience, as they are most likely to purchase, commission or order products from Kelly's Art & Photo Boutique:
   
-  - Online Users searching for:
+  - Online users searching for:
     - Original Art (e.g. Name Art, Seasonal Art such as winter, Animal Art etc.) 
     - Children's Art
     - Handmade Art
     - Photos (e.g. Sky, Beach, Animals, Rainbows, Variety etc.)
 
-  - Educational Institutions: 
+  - Educational institutions: 
     - Schools and higher education providers seeking examples of art/photos or decorations for their institutions
     - Crèches and preschools incorporating children's art into projects
 
-  - Healthcare and Care Homes:
+  - Healthcare and care homes:
     - Nursing homes and healthcare practices searching for artwork or photos for waiting rooms, wards,
       and community spaces
     - Clinics and treatment areas where children and adults are tested or treated, to create a brighter more welcoming, 
       more homely atmosphere
 
-  - Hospitality and Accommodation Providers:
-    - Restaurants, cafes, hotels, B&B's, Airbnb's, searching art or photos for specific ambiance
+  - Hospitality and accommodation providers:
+    - Restaurants, cafes, hotels, B&Bs, Airbnbs seeking art or photos to create a specific ambiance
   
   - Individuals, couples, families, friends:
     - People seeking handmade and original gifts for variety of occasions (e.g. graduation, first school day, birthday, anniversary)
 
-  - Beauty and Spa businesses:
+  - Beauty and spa businesses:
     - Salons, spas, wellness centers, looking for certain type of Art/Photos to complement their relaxing atmosphere
 
 
@@ -122,16 +125,18 @@ The following groups are considered Direct Audience, as they are most likely to 
 Groups that are influenced by the display or recommendation of the products made by Kelly's Art & Photo Boutique:
 
 - Business owners and interior designers:
-  - Seeing products of Kelly's Art & Photo Boutique displayed in someone's living space, business,
-    accommodation, Healthcare Provider, in Educational institution
+  - Seeing products of Kelly's Art & Photo Boutique displayed in homes, businesses,
+    accommodation, healthcare providers, or educational institutions
   
 - Visitors, friends, guests:
-  - Individuals or groups exposed to art and photos in homes, schools, hospitality and accommodation places,
-    hospitals, nursing homes, businesses, may be interested in requiring art from Kelly's Art & Photo Boutique
+  - Individuals or groups exposed to art and photos in homes, schools, hospitality, healthcare or business settings,
+    may be interested in purchasing art from Kelly's Art & Photo Boutique
 
-- Influencers and Promoters:
-  - Influencers or Promoters, who share or recommend products from the boutique, on social media, blogs, 
-    local networks, sharing boutique's reels/page
+- Influencers and promoters:
+  - Share or recommend products from the boutique via social media, blogs, and
+    local networks
+
+This business model helps Admin to guide marketing, UX, and feature decisions and future directions for Kelly's Art & Photo Boutique
 
 [Back to Contents](#contents)
 
@@ -141,7 +146,7 @@ Groups that are influenced by the display or recommendation of the products made
 
 Users may opt to tap, click, hover, open, fill various items listed below:
 
-### Navbar
+**Navbar**
 
 - **Logo**
   - Click **Logo** (to bring them back to Home Page or refresh Home Page)
@@ -228,35 +233,35 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
   - Click to open dropdown menu, and hover over menu items
 
-### 
+**User Permissions**
 
-- **User** who is not an Admin of Kelly's Art & Photo Boutique, **may not**:
+- **User** who is not an admin of Kelly's Art & Photo Boutique, **may not**:
   - Add, edit or delete products
   - Access Product Management
  
 - **Users once signed in** may:
   - Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
-  - Access 'My Profile' via 'My Account'
-  - Under their profile Update their Default postage information
-  - See their Order History
-  - Sign Out by clicking on 'Sign Out' under 'Sign In' tab
+  - Access **My Profile** via **My Account**
+  - Under their profile **update** their default postage information
+  - See their **Order History**
+  - Sign Out by clicking **Sign Out** under **User** icon
 
-- **Extra permissions for An Admin**
-  Admin may:
-  - Access 'Product Management' once signed in
-  - Add, edit and delete products via django, or directly on website when logged in as Admin (via Product Management)
-  - Follow SKU system already in place: 
-    dr33(add a unique number in the end) for Art,
-    ph88(add a unique number in the end) for Photos
+- **Admin Access**
 
-  - Admin may change the SKU system if needed
-  - Admin may click Shopping cart and see if admin has any products in the cart (for testing)
-  - Admin can create test purchases and delete them after
-  - Admin may click all items on the website like other users
+  When signed in via the **User** icon on the website, the Admin has additional functionality and permissions not available to regular users:
+  - Access **Product Management**
+  - Manage products via the **Product Management** page:
+    - Add, edit or delete products using the **Add a Product** form
+  
+  Indirect UX for the Admin (via the **Django Admin Panel**):
+  - In addition to on-site permissions, the Admin may:
+    - Manage products, categories, orders, subscribers, email addresses, groups, users, contact forms, how-to's, sites, and social accounts 
+    - Change the SKU system
+    - Create test purchases and delete them after testing
 
 - **Footer**
-  - User may click **Privacy Policy** to open it up
-  - May click **Social Media** icons to open up their home pages
+  - Users may click **Privacy Policy** to open it
+  - May click **Social Media** icons to open up their respective home pages
 
 [Back to Contents](#contents)
 
@@ -265,277 +270,275 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
 Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 
-Disclaimer: There may be variations between Wireframes and the finished project.
+**Disclaimer:**
 
-## Home Page
+These Wireframes represent the initial design vision for the Boutique.<br>
+There are variations between the wireframes and the finished project,<br>
+reflecting changes, and refinements made during development.
+
+
+**Home Page**
 
 ![Wireframe, Homepage](docs/readme_images/home_page_wireframe_boutique_opt_50.png)
 
-## All Items Menu
+**All Items Menu**
 
 ![Wireframe, All Items Menu](docs/readme_images/all_items_menu_wireframe_boutique_opt_50.png)
 
-## Art Menu
+**Art Menu**
 
 ![Wireframe, Art Menu](docs/readme_images/art_menu_wireframe_boutique_opt_50.png)
 
-## Photos Menu
+**Photos Menu**
 
 ![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
 [Back to Contents](#contents)
 
+
 # ERD, SEO and Marketing
 
 ## ERD
 
-ERD is created as a visualization of the Kelly's Art & Photo Boutique's database structure.
+**Disclaimer:**
+
+The ERD diagrams were created to visualize the initial database structure of the Kelly's Art & Photo Boutique.<br>
+There may be variations between the ERD and the final database structure implemented in the project.
 
 - ERD steps learned from: [LucidChart Tutorial: How to Create an ERD](https://youtu.be/RBZtPhZkUZM?feature=shared)
 
 - [LucidCharts](https://www.lucidchart.com/pages) used to create ERD
 
-- Disclaimer: There may be variations between ERD and the finished database structure of the project.
-
-  ![ERD](docs/readme_images/kelly's_art_and_photo_boutique_erd.png)
+![ERD](docs/readme_images/kelly's_art_and_photo_boutique_erd.png)
 
 
 ## SEO
 
-- SEO tests helped Developer to see robots.txt file was not ok.
-  With tutors help, developer fixed robots.txt and sitemap.xml
+- SEO tests helped the developer identify issues with the robots.txt file.
+  With tutor guidance, the developer fixed robots.txt and sitemap.xml.
 
-- Google Lighthouse tests helped Developer to improve SEO score.
+- Google Lighthouse tests, with ChatGPT's guidance, helped the developer to improve the SEO score.
+
 
 ## Marketing
 
-### Facebook Mockup
+**Facebook Mockup**
 
-- Developer set up Facebook Mockup to show how the website would look on Facebook:
+- Developer set up a Facebook Mockup page to show how the website would look on Facebook:
 
-  ![Facebook Mockup](docs/readme_images/facebook_page_post_opt_500.jpg)
+  <p>
+    <img src="docs/readme_images/facebook_page_post_top_opt_150.jpg" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/facebook_page_post_opt_150.jpg" width="30%" style="vertical-align: top; display: inline-block; "/>
+  </p>
 
-### Facebook Reel
+  <!-- Note: Code for <p> to make both images align on top in README Marketing section learned from ChatGPT -->
 
-- Developer created a [Facebook Reel](https://youtu.be/F123AhI8RGA), with Stone Art,
-  to show one of the options how she would advertise the arrival of a new  collection:
+**Disclaimer:**
+The mockup images demonstrate the concept for Boutique's Facebook page; 
+actual Facebook page may be different
 
-  All of the displayed stone Art in the Reel, was created by Developer's daughter Aoife, age 10
 
-  Disclaimer: Reel is demonstrated via YouTube, in case sample business page for Facebook is taken down by Facebook 
+**Facebook Reel**
 
-### Keyword Research
+- **Disclaimer:**
 
-- Developer used keywords suitable for the project eg photo, art, boutique, shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor
+  The reel is hosted on YouTube to demonstrate the concept, in case the sample Facebook page is removed or unavailable
 
-### Similar Businesses
+- Developer created a [Facebook Reel](https://youtu.be/F123AhI8RGA) featuring Stone Art,
+  to demonstrate how she would advertise the arrival of a new  collection.<br>
+  All displayed Stone Art in the Reel was created by the developer's daughter Aoife, age 10
+
+  
+**Keyword Research**
+
+- Developer used keywords suitable for the project, such as: photo, art, boutique,
+  shop, handmade, original, Kelly's Art & Photo Boutique, gifts, décor
+
+
+**Similar Businesses**
 
 - Developer found the following businesses relevant to her sample business:
 
   [Gallerix.ie](  https://gallerix.ie/)
-
   [JamArtFactory.com](https://jamartfactory.com/)
-
   [Kids and Art](https://kidsandart.org/store-artwork/)
 
-  >To date Developer did not come across a website with same combination as hers: parent's photos and their kids' art in one online shop.
+  > To date, the developer has not found any website combining parent's photos and their kids' art in one online shop.
 
 [Back to Contents](#contents)
 
 
 # Design
 
-## Images
+**Images**
 
-- **Background** image by the Developer
+- **Background** image: photo taken by the developer
 
-- **Logo** created together with Developers kids, by using Wireframe and Developer's photo and her kids art:
+- **Logo** created using a Wireframe, combining Aoife's vision for the Logo,<br>
+  guidance and color suggestions from the developer for Logo to suit the website's color scheme.<br>
+  Input from Ciara on design preferences, a photo taken by the developer, and art by Aoife and Ciara.
 
   ![Logo](docs/readme_images/logo.png)
 
-## Color
+- **Disclaimer**
 
-- Base color **cornflower** for the website from: [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
+  Some image quality reduced due to resizing for website, README and TESTING_RESULTS.md
 
-## Font
 
-- From [Google Fonts](https://fonts.google.com/)
+**Color**
 
-  - Main font: **Cormorant Garamond**
+- **Base color** for the initial wesbite design: Cornflower. Sourced from [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
+
+- **Color Palette** for the website, derived from the actual site colors:
+
+- ![Color Palette](docs/readme_images/color_palette.png)
+
+  Palette created with [Website Color Extractor folge.me](https://folge.me/tools/website-color-extractor)
+
+
+**Font**
+
+- **Main font**: Cormorant Garamond, sourced from [Google Fonts](https://fonts.google.com/)
 
   ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
-
 [Back to Contents](#contents)
+
 
 # Features
 
-## Existing Features (mobile-first approach)
+## Existing Features
 
-- **Favicon**
+### Favicon
 
-  - Favicon displayed in the browser tab for Kelly's Art & Photo Boutique:
+  - Favicon, made of website's Logo, displayed in the browser tab:
 
     ![Favicon](docs/readme_images/favicon.png)
 
-- **Navigation Menu**
-  - **Navbar**
-    - Global navigation appearing on all pages, consisting of:
-      - **Logo**:
-        - Clicking **Logo** returns user to the **Home** page or refreshes it if already on it
-      - **User Icon**:
-        - With **Sign In** and **Sign Up** options
-      - **Cart**
-      - **Search**:
-        - Allows Users to search for Products
-        - Search Icon displayed on all screen sizes
-  
-          ![Search Icon](<docs/readme_images/search_icon.png>)
+### Navbar
 
-        - Clicking the Search Icon opens the Search Form below the Navbar:
+![Navbar-mobile](docs/readme_images/navbar_mobile.png)
 
-          ![Search Form](docs/readme_images/search__form.png)
+ - Hovering effect for all Navbar items and dropdowns
 
-        - Keyword search supported     
-        - Empty search results display:
-          - All Products
-          - Error message near Search Icon: "Search criteria not entered!"
+- **Logo**
+
+  - Links back to Home
+
+- **User Icon**
+
+  - Clicking the User Icon, opens account options:
+    - **Sign In / Sign Up** for new or returning users
+      - Sign In page displays the form to enter credentials
+      - Sign Up page with a from to create a new account
+    - For **Signed-in users** **Username** is displayed, with options:
+        - **My Profile**: View and update default postage information, view order history
+        - **Sign Out**: sign out of the account
+        - **Admin** only:
+          - **Product Management**: to add, edit and delete products
+
+- **Cart Icon**
+
+  - Click on Cart Icon opens the cart, for user to see if any items in the cart
+
+- **Search Icon**
+
+  - Click on Search Icon opens the **Search Form**, allowing keyword search for products
+  - Empty search results Home page displayed with a pop-up Error message
+
+    ![Search Form](docs/readme_images/search_form.png)
       
-      - **Burger Menu**:
-        - Dropdown menu of NavLinks
-        - On larger screens, NavLinks are displayed instead of the Burger Menu
-      - Hovering effect for all Navbar items and dropdowns
+- **Burger Menu**:
+  
+  - Click on Burger Menu opens dropdown menu with NavLinks (on larger screens, Burger Menu is replaced with NavLinks)
 
-- **Footer**:
-  - Copyright (year of the project)
-  - Developer's name
-  - Project type
-  - Disclaimer: No real transactions
-  - Clickable **Privacy Policy**, opens Privacy Policy in a new tab
-  - Social Media links:
-    - Clickable **Facebook**, **Twitter** and **YouTube** links: open respective pages in a new tab
-      (general pages, not personalised for website)
 
 ### Home Page
 
-- Displays all of Boutique's Art and Photos
+- Displays all of Boutique's products on individual Product Cards
+- 
+- **Product Card**:
+  - Includes: image, name of the product, price, author, and category badge
+  - Hover effect raises the product card and changes the pointer to indicate clickability  
+  - Clicking a product opens the individual **Product Detail Page**
+- **Product Detail Page**:
+  - Displays the selected product's **image, name, price in €, category badge, author, and description**
+  - Includes a Quantity selector (1-50) with arrows and manual input
+  - Buttons:
+      - **Back to Shop**: returns user to Home page
+      - **Add to Cart**: adds product to cart with selected quantity, with a pop-up message
+  - **Admin users only**: Product cards include options to **Edit Product** and **Delete Product** 
 
-### Art
+### Art Page
 
-- **Page Navigation**
-  - Hovering effect for Art NavLink (on larger screens) displays dropdown menu of Art categories:
+- Click on **Art** NavLink opens page with all Art
+- **Products Home** link displayed top left:
+  - Click on it returns user to **Home** page
+- **Category Navigation**
+  - On larger screens, hovering over **Art** in the Navbar displays dropdown options:
     - Animal Art, Name Art, Winter Art, Variety of Art
-  - Clicking Art opens page with all Art
+  - Badges for each Art category are displayed
+    - Clicking on a **badge** filters Art by that category:
 
-- **Badges**
-  - Displayed below Navbar for all Art or selected category
-  - Clickable to filter products by category
+    ![Categorize by badge](docs/readme_images/categorize_by_badge_opt_50.png)
 
-- **Sorting**
-  - 'Sort by' option displayed on the right below badge(s):
-
-    ![Options for sorting](docs/readme_images/sort_by_options_opt_100.png)
-
-  - Sorting options: Price, Name, Author, Category
-
-- **Product Cards**
-  - On hover, pointer appears and product is raised up to highlight which product is hovered 
-  - Card includes: Image, Name, Price, Author, Badge
-  - Click on card opens product page
-
-- **Product Page**
-  - Displays image, name, price in €, badge, author, description
-  - Quantity input (1-50) with arrows and manual entry
-  - Buttons:
-      - **Continue Shopping**: returns User to all Products (Art and Photos)
-      - **Add to Cart**: adds product to cart with selected quantity
-
-### Photos
-
-- All features and functionality are identical to [Art](#art), except for categories:
-
-  ![Photos Dropdown Menu](docs/readme_images/photos_dropdown.png)
-
-  - Beach, Rainbows, Animals, Sky, Variety of Photos
+- Hovering effects and clickable product cards work the same as on the **Home Page**
+- **Sorting Options**
+  - 'Sort by' is displayed in the middle of the screen (on the right for larger screens) below badges:
+    - Sort products by **Price, Name, Author**, or **Category**
 
 
-### How To...?
+### Photos Page
 
-- 'How To...?' page displays links to various YouTube channels, showing different styles of doing art
+- Click on **Photos** NavLink opens page with all Photos
+- **Category Navigation**
+  - On larger screens, hovering over **Photos** in the Navbar displays dropdown options:
+    - Beach, Rainbows, Animals, Sky, Variety of Photos
+  - Badges for each Photo category are displayed
+    - Clicking on a **badge** filters Photos by that category
+- Hovering effects, clickable product cards, and sorting options work the same way as on the **Art Page**
+ 
 
-  ![How To...? page](docs/readme_images/how_to_page_opt_50.png)
+### How To...? Page
 
-### Newsletter
+- Selection of clickable **YouTube channels**, to demonstrate various styles of creating Art
+  **Disclaimer**:
+  Developer has no personal connection or input to any of the channels promoted on this page
 
-  ![Newsletter](docs/readme_images/newsletter.png)
+  ![How To...? page](docs/readme_images/how_to_page_opt50.png)
 
-- Subscription form
-- Email address field
-- Click **Back to Sho**
-- Or click **Subscribe**
+### Newsletter Page
 
-### Contact Us
+- **Subscription form** displayed with email address field
+- Buttons to click on: **Back to Shop** or **Subscribe**
 
-![Contact Us](docs/readme_images/contact_us.png)
+  ![Newsletter](docs/readme_images/newsletter_page_opt_50.png)
 
-- Clickable **Contact Us**
-- Contact Form
-- Buttons:
-  - **Back to Shop**
-  - **Submit Contact Form**
+### Contact Us Page
 
-### User Menu
-- **Sign In**
+- **Contact Our Boutique** form displayed, with required field
+- Buttons: **Back to Shop** and **Submit Form**
 
-  ![Sign In page](docs/readme_images/sign_in_form.png)
+  ![Contact Us](docs/readme_images/contact_us_page_opt_50.png)
 
-  - Displays **Sign In** form
-  - Option to **Sign Up**
-  - Buttons:
-    - **Home**: returns User to Home page
-    - **Sign In**: signs User in (if credentials are correct)
-  - Option **Forgot Your Password?**, which opens:
-    - **Password Reset** page:
-      - Email address field
-      - Buttons:
-        - **Back to Sign In**: returns User to Sign In page 
-        - **Reset My Password**: submits password reset request
-  - **Username** displayed for signed in Users, with options:
-    - **My Profile**: opens up User's Profile page
-      - View and update default postage information
-      - View order history
-      - Button: **Update Information**
-    - **Sign Out**: signs User out
+### Cart Page
 
-  - **Admin Only** (additional permissions):
-    - **Product Management**: add, edit and delete products
+- Displays the user's **Cart**
 
-- **Sign Up**
+  **Empty Cart**
 
-  ![Sign Up](docs/readme_images/sign_up_form.png)
-
-  - Displays **Sign Up** form
-  - Option to **Sign In** if User account exist
-  - Buttons:
-    - **Back to Sign In**: returns User to Sign In page
-    - **Sign Up**: register new account
-
-### Cart
-
-![Cart page](docs/readme_images/cart_opt_50.png)
-
-- Displays **Shopping Cart** page
-- If cart is empty:
   - Message: **Your cart is empty**
-  - Button **Back to Shop** brings User to all Products (Art and Photos)
-- If item(s) in cart:
-  - List of products with image, title, SKU, price, quantity, subtotal
-  - Cart total, postage, and grand total
+  - Button: **Back to Shop** returns user to Home page
+
+  **Cart with Products**
+  - Lists products with **image, price, quantity,** and **total**
+  - **X** beside Total to remove any product from the Cart
+  - Adjustable **Quantity** box (1-50) 
+  - Displays **Cart Total, Postage,** and **Grand Total**
   - Buttons:
-    - **Continue shopping**: returns User to all products
-    - **Secure Checkout**: opens up Checkout page
-  - Refreshing the page or browser session ending, may empty the Cart.
-    This is expected behavior for session-based Cart (based on code for 'Bag' in the Boutique Ado)
+    - **Back to Shop**: returns user to all products aka **Home Page**
+    - **Secure Checkout**: opens **Checkout Page^^
+  - Note: Refreshing the page or ending the browser session, may empty the Cart (expected for session-based Cart)
 
   - **Checkout**
     - Accessible via Cart
@@ -545,10 +548,29 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
       - Accessible after completing checkout
       - Displaying order number, summary of purchased items, totals, and postage cost
 
+  ![Cart page](docs/readme_images/cart_opt_50.png)
+
+### Footer
+
+  - At the bottom of each screen, and consits of:
+    - Copyright (year of the project)
+    - Developer's name, and Project type
+    - Disclaimer: No real transactions
+    - Clickable **Privacy Policy**, click on which opens Privacy Policy in a new tab
+    - Social Media links:
+      - Clickable **Facebook**, **Twitter** and **YouTube** links: open respective pages in a new tab
+        (general pages, not personalized for website)
+
 [Back to Contents](#contents)
 
 
 ## Future Features
+
+- **Rename "Home" to "Shop"**
+
+- As the current Home page displays all products, and several buttons reference **Back to Shop**,<br>
+  renaming Home page would improve consistency across the site.
+- Due to time constraints before submission, the developer retained the "Home" NavLink as is for now
 
 - **Navigation & UX**
 
@@ -557,9 +579,9 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 - Min and Max quantity noted under the relevant field
 
 **User Account Features**
-- Registered Site Users may save items for later, or mark as favorites
-- Registered Users notified of saved cart items on their return
-- Alert before User clicks 'Update Information'
+- Registered Site users may save items for later, or mark as favorites
+- Registered users notified of saved cart items on their return
+- Alert before user clicks 'Update Information'
 - Prevent from updating when required fields are empty
 - Users can Sign Up and Sign In via social media links, Google account and similar
 - Improved 'Order History' layout under 'My Account'
@@ -576,7 +598,7 @@ ERD is created as a visualization of the Kelly's Art & Photo Boutique's database
 **Other Features**
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
 - 'How To...?' page to include videos related to Photos, Photography, Art lessons by kids
-- Admin: System would suggest a new unique SKU, based on existing products, when Admin is adding a new product
+- Admin: System would suggest a new unique SKU, based on existing products, when admin is adding a new product
 - Admin: option to update prices in bulk for similar products
 - 'About' app added to share details about creators, optionally painted images of each creator.
 
@@ -626,28 +648,28 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 - Lighthouse scores improved after adding lazy-loading for product images, and limiting the number of products displayed on the Home page
 - After changing Home page for (Products)Home page, Lighthouse scores declined slightly, as Home page now included images of all the products
 
-- Due to time constraints, Developer did not further optimize performance after the last test
+- Due to time constraints, developer did not further optimize performance after the last test
 
   ![Lighthouse test, Home](docs/readme_images/lighthouse_test_results.png)
 
-## HTML
+**HTML**
 
 - HTML validation completed with [W3C Markup Validation](https://validator.w3.org/)
-- To validate Django HTML templates, the Developer disabled filters in the W3C validator,
+- To validate Django HTML templates, the developer disabled filters in the W3C validator,
   because templates inherit from base.html.
   Therefore each HTML page would not have 'DOCTYPE', lang="en", which triggers false validation errors
 
   ![HTML validator](docs/readme_images/html_validation.png)
 
-## CSS
+**CSS**
 
 - CSS validator validation with [W3C Markup Validation](https://validator.w3.org/)
-- Similar to HTML validation, the Developer turned off filters when validating CSS,
+- Similar to HTML validation, the developer turned off filters when validating CSS,
   to reduce false validation errors
   
   ![CSS validation](docs/readme_images/css_validation.png)
 
-## JavaScript (JS)
+**JavaScript (JS)**
 
 - JS files were linted using ESLINT and [jshint.com](https://jshint.com/)
 - Initially with ESLint v9, then reverted to v6 for compatibility
@@ -655,7 +677,7 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
   ![eslint.json from ChatGPT](docs/readme_images/eslint.json_from_chatGPT.png)
   
-- As guided, Developer ran:
+- As guided, developer ran:
 
   "$ npx eslint . --fix"
 
@@ -663,7 +685,7 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 
   ![eslint final result](docs/readme_images/npx_eslint_final_result.png)
 
-## Python
+**Python**
 
 - Developer checked selected Python files using [CI Python Linter Test](https://pep8ci.herokuapp.com/)
 
@@ -700,7 +722,7 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 **Sign In Menu**
 
-- Issue: when logged in as an Admin, 'Sign In' remained visible in Navbar, and all of the options for Admin were displayed at all times:
+- Issue: when logged in as an admin, 'Sign In' remained visible in Navbar, and all of the options for admin were displayed at all times:
 
    ![Sign In not ok in Navbar](docs/readme_images/sign_in_not_ok.png)
 
@@ -708,11 +730,11 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 - Fix: Adjusted styling for Navbar/NavLinks
 
-- Result: when Admin was signed in:
+- Result: when admin was signed in:
   - 'Sign In' NavLink was no longer displayed,
   - Username replaced 'Sign In' NavLink,
-  - Options for Signed In Admin were available via dropdown menu
-  - 'Sign Up' was no longer displayed for Signed in User/Admin
+  - Options for Signed In admin were available via dropdown menu
+  - 'Sign Up' was no longer displayed for Signed in user/admin
 
 **Fixture Load (django.core.serializers.base.DeserializationError: Problem installing fixture)**
 
@@ -738,21 +760,35 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 ## Known Bugs
 
+**Disclaimer**
+- Due to approaching the submission date, the following bugs are still present on the website
+
 - **Order Number**
-  - The numeric part of the Order Number appears smaller font than the letters on:
+  - The numeric part of the Order Number appears in a smaller font than the letters on:
     - Order Details page, and 'Success!' pop up: 
 
-    ![Order Number digit](docs/readme_images/order_number_digit.png)
+      ![Order Number digit](docs/readme_images/order_number_digit.png)
 
 - **Product Details Page**
   - Buttons are not centered on any screen sizes
   - Product card appears too wide on tablet screens (around 767px and below)
   - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
-  - Due to time constraints, CSS was not fully adjusted suit background image on all pages
+  - CSS was not fully adjusted to suit the late addition of background image to all pages
 
 - **404 Page Styling**
   - No background-color box
-  - Button green (success) instead of blue to match website.
+  - Button green (success) instead of blue to match the website's style
+
+- **Pop-ups and Dropdown Menus**
+  - Occasionally, pop-ups or dropdown menus remain open when the user clicks elsewhere on the page, instead of them closing automatically
+
+- **Alignment issues**
+  - Some text and buttons are not properly centered on certain forms or pages
+
+- **Cart missing product name**
+  - Late changes to the cart layout (to fit all items on mobile screens without image disappearing),
+    resulted in the product name no longer being displayed beside the product.
+  - Essential details eg product image, price, and quantity are still visible 
 
 [Back to Contents](#contents)
 
@@ -821,7 +857,7 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 **Images & Media**
 
-- Background image and product photos taken by the Developer
+- Background image and product photos taken by the developer
 - Art created by developer's children
 
 **Image Optimization**
@@ -848,7 +884,7 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 - **How To...?' Links**
 
-- YouTube links for art tutorials, shared by Developer. No personal benefit or connection to these sites
+- YouTube links for art tutorials, shared by the developer. No personal benefit or connection to these sites
 
 - **ChatGPT**
 
@@ -863,17 +899,25 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 # Acknowledgements
 
-- Developer is grateful for guidance and support provided by her mentor Lauren-Nicole Popich;
-  Code Institute staff and online resources.
+- Developer is grateful for guidance and support provided by her mentor Lauren-Nicole Popich,
+  **Code Institute's** staff, and online resources.
 
-- Special thanks to developer's daughters Aoife and Ciara, for allowing their beautiful art to be part
-  of this e-commerce project, and being involved with website's Logo.
+- Special thanks to the developer's daughters, Aoife and Ciara, for allowing their beautiful art to be part
+  of this e-commerce project, and for being involved with website's **Logo**.
 
-- Developer understands the importance of hiding Secret Keys. Mentor Lauren-Nicole Popich suggested noting in README,
+- Developer understands the importance of hiding **Secret Keys**. Mentor Lauren-Nicole Popich suggested noting in the README,
   that the secret key was initially visible during development, following Boutique Ado walk-through steps.
   Developer changed and hid the key as advised.
 
-- Special thanks to ChatGPT, for helping Developer near the end of the project. Developer learned a lot through the process and it was great to 
-  have faster access to what works with Bootstrap4.
+- Special thanks to **ChatGPT**, for helping the developer near the end of the project.
+  The developer learned a lot through the process and appreciated the faster access to what works with Bootstrap4.
 
 [Back to Contents](#contents)
+
+--------
+
+**Disclaimer:**
+Every effort has been made by the developer to ensure this README accurately reflects the current version of "Kelly's Art & Photo Boutique".
+As the project has evolved, details such as UX, features, design elements, or file structures may have been updated.
+All links, setup instructions, and forking or cloning steps were correct at the time of writing the README.
+However, future updates, platform changes may affect the accuracy of some details.

@@ -1,5 +1,5 @@
 # Code for urls.py from Code Institute's Walk-Through Boutique Ado
-# Edited with ChatGPT's guidance - Developer decided to make Home page Products (Home) Page instead
+# Edited with ChatGPT's guidance - the developer decided to make Home page the main Products Page instead
 
 """project5 URL Configuration
 

@@ -1,7 +1,9 @@
 # Testing
-* Frame for Testing Results copied from ChatGPT; all tests, notes, observations, screenshots done by the Developer
-* Disclaimer: due to late changes to website design, and having to fix new errors eg toasts before deadline,
-    testing results are more compact than previous testing file (TESTING.md).
+* Frame for Testing Results copied from ChatGPT
+* All tests, notes, observations, screenshots created by the developer<br>
+* **Disclaimer:**
+Due to late changes to website design before the deadline,<br>
+testing results are more compact than previous testing file (TESTING.md).
 
 ## Pages & Core Features
 
@@ -115,4 +117,3 @@
 - **Newsletter Subscription confirmation emails**
  - In local development, confirmation emails appear in the terminal instead of sending real emails
  - Subscribers are saved correctly in Django under 'Subscribers' and are only accessible to Django Admin
- - Terminal shows the correct testing time; Django shows 1 hour behind. Developer left it as-is due to time constraints
