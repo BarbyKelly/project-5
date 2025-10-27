@@ -827,15 +827,12 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 # Forking Repository
 
 - Go to [Github](https://github.com/)
-- If you want to fork one of your own repos, then DO NOT login under your own name, as fork option is not available
-
-  ![How fork looks when logged in](docs/readmeimages/notpossibletofork.png)
-
+- If you want to fork one of your own repos, then DO NOT login under your own name,
+  as fork option is not available (as per the developer's experience)
 - Search Github or Google for the repo that you would like to fork
 - Open the repo you want to fork
 - On the same line as the Repo's name, on the right, click on the arrow beside the Fork
 - Click on: + Create a new fork
-
 - Choose a name for the repo
 - Add description if you desire
 - Choose if you want to Copy the main branch only
