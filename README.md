@@ -205,19 +205,14 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Add, remove, or update items as desired
   - Click **Back to Shop** to continue browsing
   - Click **Secure Checkout** to proceed with purchase
-  - Notice informative pop-up when:
+  - Notice informative pop-ups when user:
+    - Added, Updated, or Removed Cart item    
 
-    - Added an item to the Cart:
-
-      ![Added to Cart pop-up](docs/readme_images/added_to_cart.png)
-    
-    - Updated an item in the Cart:
-
-      ![Updated Item quantity](docs/readme_images/update_quantity_pop_up.png)
-
-    - Removed an item from the Cart:
-
-      ![Removed an Item](docs/readme_images/removed_an_item.png)
+      <p>
+        <img src="docs/readme_images/added_to_cart.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+        <img src="docs/readme_images/update_quantity_pop_up.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+        <img src="docs/readme_images/removed_an_item.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+      </p>
 
 
 - **Search Icon**
@@ -387,7 +382,7 @@ actual Facebook page may be different
 
 **Color**
 
-- **Base color** for the initial wesbite design: Cornflower. Sourced from [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
+- **Base color** for the initial website design: Cornflower. Sourced from [Create.vista.com](https://create.vista.com/colors/color-names/cornflower/)
 
 - **Color Palette** for the website, derived from the actual site colors:
 
@@ -514,19 +509,35 @@ actual Facebook page may be different
 
   ![Newsletter](docs/readme_images/newsletter_page_opt_50.png)
 
+- Feedback to user on the screen after subscribing
+- Confirmation email sent
+
+  <p>
+    <img src="docs/readme_images/thank_you_for_subscribing_to_newsletter.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/newsletter_subscription_confirmation_email.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+  </p>
+
 ### Contact Us Page
 
-- **Contact Our Boutique** form displayed, with required field
+- **Contact Our Boutique** form displayed, with required fields
 - Buttons: **Back to Shop** and **Submit Form**
 
   ![Contact Us](docs/readme_images/contact_us_page_opt_50.png)
+
+- Feedback on the screen after submitting form
+- **Message** available to Admin via Django Admin panel
+- No instant confirmation email to user
+
+  <p>
+    <img src="docs/readme_images/contact_us_feedback_opt_50.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/contact_forms_on_django_admin.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+  </p>
 
 ### Cart Page
 
 - Displays the user's **Cart**
 
   **Empty Cart**
-
   - Message: **Your cart is empty**
   - Button: **Back to Shop** returns user to Home page
 
@@ -540,13 +551,16 @@ actual Facebook page may be different
     - **Secure Checkout**: opens **Checkout Page^^
   - Note: Refreshing the page or ending the browser session, may empty the Cart (expected for session-based Cart)
 
-  - **Checkout**
-    - Accessible via Cart
-    - Users can complete purchase (disclaimer: no real transactions, website for study purposes only)
-    - Payment handled via Stripe integration
-    - **Order Confirmation**
-      - Accessible after completing checkout
-      - Displaying order number, summary of purchased items, totals, and postage cost
+  **Postage**
+  - Free **Postage** if 
+
+### Checkout
+  - Accessible via Cart
+  - Users can complete purchase (disclaimer: no real transactions, website for study purposes only)
+  - Payment handled via Stripe integration
+  - **Order Confirmation**
+    - Accessible after completing checkout
+    - Displaying order number, summary of purchased items, totals, and postage cost
 
   ![Cart page](docs/readme_images/cart_opt_50.png)
 
@@ -600,7 +614,11 @@ actual Facebook page may be different
 - 'How To...?' page to include videos related to Photos, Photography, Art lessons by kids
 - Admin: System would suggest a new unique SKU, based on existing products, when admin is adding a new product
 - Admin: option to update prices in bulk for similar products
-- 'About' app added to share details about creators, optionally painted images of each creator.
+- 'About' app added to share details about creators, optionally painted images of each creator
+
+**500 Server Error Page**
+- Set up personalized **500 Server Error Page** with a link for user's access Kelly's Art & Photo Boutique
+- Matching the scheme of the website
 
 [Back to Contents](#contents)
 
@@ -636,8 +654,6 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 - [Favicon](https://favicon.io/favicon-converter/)
 - [Font Awesome](https://fontawesome.com/icons)
 - [Chat GPT](https://chatgpt.com/)
-
-  ![Chat GPT](docs/readme_images/chat_gpt_check.png)
 
 [Back to Contents](#contents)
 
@@ -709,9 +725,9 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   therefore it was hard to know which tab was open.
 - Reason: Categories in main-nav.html did not match categories in categories.json and Django categories:
 
-  ![main-nav categories](docs/readme_images/main-nav categories for art and photos.png)
+  ![main-nav categories](docs/readme_images/main_nav_categories_for_art_and_photos.png)
 
-  ![Django categories](docs/readme_images/django categories.png)
+  ![Django categories](docs/readme_images/django_categories.png)
 
 - Fix:
   - Matched categories in main-nav with Django categories and categories.json

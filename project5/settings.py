@@ -209,7 +209,8 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 1
+# Site id fixed with ChatGPT's guidance
+SITE_ID = int(os.environ.get("SITE_ID", 2))   # 3 = Local 127.0.0.1:8000
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -299,7 +300,7 @@ if 'USE_AWS' in os.environ:
 
 
 # Stripe
-FREE_POSTAGE_THRESHOLD = 33
+FREE_POSTAGE_THRESHOLD = 55
 STANDARD_POSTAGE_PERCENTAGE = 11
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
