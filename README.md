@@ -6,14 +6,14 @@ Github Repository: [Project 5](https://github.com/BarbyKelly/project-5)
 
 ## About
 
+**Disclaimer:** This website has no real-time commercial intention.
+No real orders, payments or deliveries.
+
 Website was created as part of Code Institute's project,
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
 Developer mainly based her project on Code Institute's Walk-through:
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
-
-**Disclaimer:** This website has no real-time commercial intention.
-No real orders, payments or deliveries.
  
 Aim of Kelly's Art & Photo Boutique:
 - Built for educational purposes only
@@ -24,7 +24,7 @@ Aim of Kelly's Art & Photo Boutique:
 - Test out purchasing products (no real transactions)
 - Sign Up and Sign In, to access User Account and Order History
 - Check out 'How To...?" videos with art lessons by selected YouTubers
-- Subscribe up to a Newsletter(no actual Newsletters sent)
+- Subscribe to a Newsletter (no actual Newsletters sent)
 - Submit a Contact form
 
 **Responsiveness** test results created with [Canva.com](https://www.canva.com/mockups/collection/):
@@ -214,7 +214,6 @@ Users may opt to tap, click, hover, open, fill various items listed below:
         <img src="docs/readme_images/removed_an_item.png" width="30%" style="vertical-align: top; display: inline-block; "/>
       </p>
 
-
 - **Search Icon**
   - Click to open **Search Form**
     - Type keywords and click Search or press Enter to search products e.g. 'rainbow':
@@ -354,7 +353,7 @@ actual Facebook page may be different
 
 - Developer found the following businesses relevant to her sample business:
 
-  [Gallerix.ie](  https://gallerix.ie/)
+  [Gallerix.ie](https://gallerix.ie/)
   [JamArtFactory.com](https://jamartfactory.com/)
   [Kids and Art](https://kidsandart.org/store-artwork/)
 
@@ -425,10 +424,10 @@ actual Facebook page may be different
   - Clicking the User Icon, opens account options:
     - **Sign In / Sign Up** for new or returning users
       - Sign In page displays the form to enter credentials
-      - Sign Up page with a from to create a new account
+      - Sign Up page with a form to create a new account
     - For **Signed-in users** **Username** is displayed, with options:
         - **My Profile**: View and update default postage information, view order history
-        - **Sign Out**: sign out of the account
+        - **Sign Out**: Sign Out of the account
         - **Admin** only:
           - **Product Management**: to add, edit and delete products
 
@@ -552,21 +551,36 @@ actual Facebook page may be different
   - Note: Refreshing the page or ending the browser session, may empty the Cart (expected for session-based Cart)
 
   **Postage**
-  - Free **Postage** if 
+  - Charged when **Cart Total** is less than €55 
+  - Free **Postage** if Cart Total at least €55
+
+    ![Cart page](docs/readme_images/cart_opt_50.png)
 
 ### Checkout
-  - Accessible via Cart
-  - Users can complete purchase (disclaimer: no real transactions, website for study purposes only)
-  - Payment handled via Stripe integration
-  - **Order Confirmation**
-    - Accessible after completing checkout
-    - Displaying order number, summary of purchased items, totals, and postage cost
+  - Accessible via Cart: **Secure Checkout** button
+  - **Order Summary** and **Checkout Form** displayed
+    - User cannot make changes to **Order Summary** in **Checkout**
+    - User may click on **Adjust Cart** if they wish to edit Order details
 
-  ![Cart page](docs/readme_images/cart_opt_50.png)
+    - **Checkout Form** includes: Name, Email, Phone Number; Postage Details; and Payment field
+      - Form includes required and optional fields
+      - Users can complete purchase (**Disclaimer**: no real transactions, website for study purposes only)
+      - Payment handled via Stripe integration
+      - Click on **Complete Order** button completes the Order
+
+    - **Order Confirmation**
+      - Displayed after completing checkout, including Thank you message with User's email address, pop-up, and **Order Details**
+      - **Order Details**: order number, summary of purchased items, totals, and postage cost
+      - Confirmation email sent to User
+
+        <p>
+          <img src="docs/readme_images/order_confirmation_page_opt_50.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+          <img src="docs/readme_images/order_confirmation_email.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+        </p>
 
 ### Footer
 
-  - At the bottom of each screen, and consits of:
+  - At the bottom of each screen, and consists of:
     - Copyright (year of the project)
     - Developer's name, and Project type
     - Disclaimer: No real transactions
@@ -605,7 +619,7 @@ actual Facebook page may be different
 **Products & Filters**
 
 - Improved product descriptions (removal of unnecessary #'s)
-- Search products by special celebrations/occasions
+- Search products by special celebrations or occasions
 - Filter products using multiple criteria eg Stone Art - Birthday - Age 5
 - Filter art based on tools (pencil, paint, water-color, marker, paper, stone, canvas)
 
@@ -805,6 +819,11 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   - Late changes to the cart layout (to fit all items on mobile screens without image disappearing),
     resulted in the product name no longer being displayed beside the product.
   - Essential details eg product image, price, and quantity are still visible 
+
+- **Cart pop-up missing Checkout button (UX change/possible regression)**
+  - Users must click on **Cart** to access Checkout
+  - Previous version displayed **Checkout** link in toast
+
 
 [Back to Contents](#contents)
 
