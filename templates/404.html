@@ -23,11 +23,11 @@
 {% block content %}
 
 <main class="d-flex" id="account-body">
-    <div class="container-fluid border rounded text-center fof d-flex flex-column text-black align-items-center m-auto">
-        <h3 class="font-weight-bold pt-5">Error 404: Page Not Found</h3>
+    <div class="container-fluid text-center fof d-flex flex-column text-white align-items-center m-auto p-3">
+        <h3 class="text-white font-weight-bold pt-5">Error 404: Page Not Found</h3>
         <p class="font-weight-bold mb-3 text-md-center">Check if URL is correct.</p>
-        <p class="mb-3">Reload the Page</p>
-        <p class="mb-3">Or click the button below to access our Boutique:</p>
+        <p class="font-weight-bold mb-3">Reload the Page</p>
+        <p class="font-weight-bold mb-3">Or click the button below to access our Boutique:</p>
         <a href="{% url 'products_home' %}" class="btn font-weight-bold active pl-2 pr-2">Back to Shop</a>
     </div>
 </main>

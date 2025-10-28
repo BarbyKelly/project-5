@@ -44,8 +44,15 @@ testing results are more compact than previous testing file (TESTING.md).
 
 ### How To...? Page
 
-- [V] All links open the correct video
+- [V] All links open the correct video on YouTube
 - [V] Video opens in a new tab
+- [V] Kelly's Art & Photo Boutique remains open in previous tab
+- [V] Corresponding YouTube link appears bottom left corner on **How To...?** page when user hovers on a link 
+
+![Click on a link on "How To...?" page](docs/readme_images/how_to_page_click.png)
+
+![Video open in a new tab](docs/readme_images/youtube_video_link_new_tab.png)
+
 - [V] Layout and links responsive
 
 ### Newsletter
