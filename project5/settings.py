@@ -210,7 +210,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 # Site id fixed with ChatGPT's guidance
-SITE_ID = int(os.environ.get("SITE_ID", 2))   # 3 = Local 127.0.0.1:8000
+SITE_ID = int(os.environ.get("SITE_ID", 1))   # 3 = Local 127.0.0.1:8000
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
