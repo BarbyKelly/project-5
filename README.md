@@ -131,7 +131,7 @@ Groups that are influenced by the display or recommendation of the products made
   - Share or recommend products from the boutique via social media, blogs, and
     local networks
 
-This business model helps Admin to guide marketing, UX, and feature decisions and future directions for Kelly's Art & Photo Boutique
+This business model helps Admin to guide marketing, UX, and future directions for Kelly's Art & Photo Boutique
 
 [Back to Contents](#contents)
 
@@ -154,12 +154,14 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Click to open page with all Boutique's Art
   - Sort by Price, Name, Author, or Category
   - Filter by category via dropdown menu or badges (Animal, Name, Winter, or Variety)
+  - Signed in Admin has an option to **Edit** and **Delete** products
 
 - **Photos**
   - On larger screens, hover to display the dropdown menu
   - Click to open page with all Boutique's Photos
   - Sort by Price, Name, Author, or Category
   - Filter by category via dropdown menu or badges (Beach, Rainbow, Animal, Sky or Variety)
+  - Signed in Admin has an option to **Edit** and **Delete** products
 
 - **How To...?**
   - Click to open page with curated YouTube Art tutorials
@@ -172,7 +174,7 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
 - **Contact Us**
   - Click to open page with Contact Form
-  - Fill in form and click **Submit Contact Form**
+  - Fill in form and click **Submit Form**
   - Click **Back to Shop** to return Home
 
 - **User Icon**
@@ -192,8 +194,9 @@ Users may opt to tap, click, hover, open, fill various items listed below:
       ![Sign Up page](docs/readme_images/sign_up_page_opt_50.png)
 
       - Access Sign Up form
-      - Optionally click **Sign In here**
+      - Option to click **Sign In** if already have an account
       - Fill in required fields and click **Sign Up** to create an account
+      - Click on **Back to Sign In** to return to sign in page
 
 - **Cart**
   - Click the **Cart** icon in the Navbar to open the Cart page
@@ -201,7 +204,7 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Click **Back to Shop** to continue browsing
   - Click **Secure Checkout** to proceed with purchase
   - Notice informative pop-ups when user:
-    - Added, Updated, or Removed Cart item    
+    - Adds, Updates, or Removes Cart item    
 
       <p>
         <img src="docs/readme_images/added_to_cart.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
@@ -220,7 +223,8 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
 - **Burger Icon/Menu** (on smaller screens)
 
-  - Click to open dropdown menu, and hover over menu items
+  - Click to open dropdown menu with NavLinks
+  - Hover over menu items
 
 **User Permissions**
 
@@ -229,19 +233,19 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Access Product Management
  
 - **Users once signed in** may:
-  - Notice a pop up: "Success! Successfully signed in as ..." displayed on top right
-  - Access **My Profile** via **My Account**
-  - Under their profile **update** their default postage information
-  - See their **Order History**
-  - Sign Out by clicking **Sign Out** under **User** icon
+  - Notice a pop up: "Successfully signed in as ..." displayed top right
+  - Access **My Profile**
+    - **Update** their default postage information
+    - See their **Order History**
+  - Sign Out by clicking **Sign Out**
 
 - **Admin Access**
 
   When signed in via the **User** icon on the website, the Admin has additional functionality and permissions not available to regular users:
   - Access **Product Management**
   - Manage products via the **Product Management** page:
-    - Add, edit or delete products using the **Add a Product** form
-    - Pop-ups displayed to notify Admin of Addition, Edit, Delete being complete
+    - Add products using the **Add a Product** form
+    - Pop-up displayed to notify Admin of product added
   
   Indirect UX for the Admin (via the **Django Admin Panel**):
   - In addition to on-site permissions, the Admin may:
@@ -265,7 +269,6 @@ Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/)
 These Wireframes represent the initial design vision for the Boutique.<br>
 There are variations between the wireframes and the finished project,<br>
 reflecting changes, and refinements made during development.
-
 
 **Home Page**
 
@@ -317,7 +320,7 @@ There may be variations between the ERD and the final database structure impleme
 - Developer set up a Facebook Mockup page to show how the website would look on Facebook:
 
   <p>
-    <img src="docs/readme_images/facebook_page_post_top_opt_150.jpg" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/facebook_page_post_top_opt_150.jpg" width="30%" style="vertical-align: top; display: inline-block; margin-right: 4%;" />
     <img src="docs/readme_images/facebook_page_post_opt_150.jpg" width="30%" style="vertical-align: top; display: inline-block; "/>
   </p>
 
@@ -350,7 +353,9 @@ actual Facebook page may be different
 - Developer found the following businesses relevant to her sample business:
 
   [Gallerix.ie](https://gallerix.ie/)
+
   [JamArtFactory.com](https://jamartfactory.com/)
+
   [Kids and Art](https://kidsandart.org/store-artwork/)
 
   > To date, the developer has not found any website combining parent's photos and their kids' art in one online shop.
@@ -381,9 +386,9 @@ actual Facebook page may be different
 
 - **Color Palette** for the website, derived from the actual site colors:
 
-- ![Color Palette](docs/readme_images/color_palette.png)
+  ![Color Palette](docs/readme_images/color_palette.png)
 
-  Palette created with [Website Color Extractor folge.me](https://folge.me/tools/website-color-extractor)
+    Palette created with [Website Color Extractor folge.me](https://folge.me/tools/website-color-extractor)
 
 
 **Font**
@@ -425,7 +430,7 @@ actual Facebook page may be different
         - **My Profile**: View and update default postage information, view order history
         - **Sign Out**: Sign Out of the account
         - **Admin** only:
-          - **Product Management**: to add, edit and delete products
+          - **Product Management**: to add products
 
 - **Cart Icon**
 
@@ -440,18 +445,19 @@ actual Facebook page may be different
       
 - **Burger Menu**:
   
-  - Click on Burger Menu opens dropdown menu with NavLinks (on larger screens, Burger Menu is replaced with NavLinks)
+  - Click on Burger Menu opens dropdown menu with NavLinks
+  - On larger screens, Burger Menu is replaced with NavLinks
 
 
 ### Home Page
 
-- Displays all of Boutique's products on individual Product Cards
+- Displays all of Boutique's products each on their individual Product Card
 - Currently called **Home**; referred to as **Shop** on buttons
 
 - **Product Card**:
   - Includes: image, name of the product, price, author, and category badge
   - Hover effect raises the product card and changes the pointer to indicate clickability  
-  - Clicking a product opens the individual **Product Detail Page**
+  - Clicking a product card opens the individual **Product Detail Page**
 - **Product Detail Page**:
   - Displays the selected product's **image, name, price in €, category badge, author, and description**
   - Includes a Quantity selector (1-50) with arrows and manual input
@@ -493,7 +499,8 @@ actual Facebook page may be different
 ### How To...? Page
 
 - Selection of clickable **YouTube channels**, to demonstrate various styles of creating Art
-  **Disclaimer**:
+
+- **Disclaimer**:
   Developer has no personal connection or input to any of the channels promoted on this page
 
   ![How To...? page](docs/readme_images/how_to_page_opt50.png)
@@ -544,7 +551,7 @@ actual Facebook page may be different
   - Displays **Cart Total, Postage,** and **Grand Total**
   - Buttons:
     - **Back to Shop**: returns user to all products aka **Home Page**
-    - **Secure Checkout**: opens **Checkout Page^^
+    - **Secure Checkout**: opens **Checkout Page**
   - Note: Refreshing the page or ending the browser session, may empty the Cart (expected for session-based Cart)
 
   **Postage**
@@ -581,7 +588,7 @@ actual Facebook page may be different
     - Copyright (year of the project)
     - Developer's name, and Project type
     - Disclaimer: No real transactions
-    - Clickable **Privacy Policy**, click on which opens Privacy Policy in a new tab
+    - Clickable **Privacy Policy**; Privacy Policy opens in a new tab
     - Social Media links:
       - Clickable **Facebook**, **Twitter** and **YouTube** links: open respective pages in a new tab
         (general pages, not personalized for website)
@@ -598,13 +605,13 @@ actual Facebook page may be different
 
 ## Future Features
 
-- **Rename "Home" to "Shop"**
+**Rename "Home" to "Shop"**
 
-- As the current Home page displays all products, and several buttons reference **Back to Shop**,<br>
-  renaming Home page would improve consistency across the site.
-- Due to time constraints before submission, the developer retained the "Home" NavLink as is for now
+  - As the current Home page displays all products, and several buttons reference **Back to Shop**,<br>
+    renaming Home page would improve consistency across the site.
+  - Due to time constraints before submission, the developer retained the "Home" NavLink as is for now
 
-- **Navigation & UX**
+**Navigation & UX**
 
 - Active menu item stays highlighted while open
 - Option to Search the whole website, not just Products
@@ -617,8 +624,7 @@ actual Facebook page may be different
 - Prevent from updating when required fields are empty
 - Users can Sign Up and Sign In via social media links, Google account and similar
 - Improved 'Order History' layout under 'My Account'
-- Google Pay, PayPal
-- Only downloadable products (which would change the target audience, and marketing)
+- Options to pay via Google Pay, PayPal
 
 **Products & Filters**
 
@@ -626,6 +632,7 @@ actual Facebook page may be different
 - Search products by special celebrations or occasions
 - Filter products using multiple criteria eg Stone Art - Birthday - Age 5
 - Filter art based on tools (pencil, paint, water-color, marker, paper, stone, canvas)
+- Only downloadable products (which would change the target audience, and marketing)
 
 **Other Features**
 - Live classes with Site Visitors, creating Art, discussing techniques, sharing ideas
@@ -635,7 +642,7 @@ actual Facebook page may be different
 - 'About' app added to share details about creators, optionally painted images of each creator
 
 **500 Server Error Page**
-- Set up personalized **500 Server Error Page** with a link for users access Kelly's Art & Photo Boutique
+- Set up personalized **500 Server Error Page** with a link for users to access Kelly's Art & Photo Boutique
 - Matching the scheme of the website
 
 [Back to Contents](#contents)
@@ -655,7 +662,7 @@ actual Facebook page may be different
 
 # Sites, Apps Used
 
-Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
+The following Sites/Apps were the main ones used to create Kelly's Art & Photo Boutique:
 
 - [Code Institute](https://codeinstitute.net/)
 - [GitHub](https://github.com/)
@@ -680,7 +687,7 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 **Lighthouse**
 
 - Lighthouse scores improved after adding lazy-loading for product images, and limiting the number of products displayed on the Home page
-- After changing Home page for (Products)Home page, Lighthouse scores declined slightly, as Home page now included images of all the products
+- After changing Home page for (Products) Home page, Lighthouse scores declined slightly, as Home page now included images of all the products
 
 - Due to time constraints, developer did not further optimize performance after the last test
 
@@ -732,6 +739,8 @@ Developer used the following Sites/Apps to create Kelly's Art & Photo Boutique:
 # Testing
 
 Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
+
+[Back to Contents](#contents)
 
 # Bugs
 
@@ -796,8 +805,7 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 ## Known Bugs
 
-**Disclaimer**
-- Due to approaching the submission date, the following bugs are still present on the website
+**Disclaimer** Due to approaching the submission date, the following bugs are still present on the website
 
 - **Order Number**
   - The numeric part of the Order Number appears in a smaller font than the letters on:
@@ -859,7 +867,7 @@ To deploy this project to Heroku:
 - Scroll down and click **Deploy Branch**
 - Once deployment finishes, click **View App** to open the live site
 
-This project's deployment was tested with **Django 4.2"
+This project's deployment was tested with **Django 4.2**
 
 [Back to Contents](#contents)
 
@@ -899,7 +907,6 @@ This project's deployment was tested with **Django 4.2"
   - Other helpful projects:
     - ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
     - ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
-    - [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
 
 **README**
 
