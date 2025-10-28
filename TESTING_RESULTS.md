@@ -78,6 +78,9 @@ testing results are more compact than previous testing file (TESTING.md).
 - [V] Incorrect credentials handled
 - [V] **Remember Me** option works
 - [V] Username displayed in Navbar when Signed In
+
+![Username displayed when Signed In](docs/readme_images/username_signed_in.png)
+
 - [V] **My Account** and **Sign Out** available when Signed In
 - [V] **Forgot Your Password** works
 
