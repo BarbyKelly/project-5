@@ -12,7 +12,7 @@ Github Repository: [Project 5](https://github.com/BarbyKelly/project-5)
 Website was created as part of Code Institute's project,
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
 
-Developer mainly based her project on Code Institute's Walk-through:
+Developer mainly based her project on Code Institute's walkthrough:
 [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1_sourcecode).
  
 Aim of Kelly's Art & Photo Boutique:
@@ -63,11 +63,6 @@ Aim of Kelly's Art & Photo Boutique:
 [Sites, Apps Used](#sites-apps-used)
 
 [Validation](#validation)
-- [Lighthouse](#lighthouse)
-- [HTML](#html)
-- [CSS](#css)
-- [JS](#js)
-- [Python](#python)
 
 [Testing](#testing)
 
@@ -648,7 +643,7 @@ actual Facebook page may be different
 
 # Languages Used
 
-![Languages Used](docs/readme_images/languages_used.png)
+![Languages Used](docs/readme_images/languages.png)
 
 - HTML
 - Python
@@ -797,6 +792,8 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   - Replaced the old block corejs with the working version from the walkthrough 
 - Result: Plus and minus buttons worked as expected, updating quantities correctly
 
+[Back to Contents](#contents)
+
 ## Known Bugs
 
 **Disclaimer**
@@ -813,10 +810,6 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   - Product card appears too wide on tablet screens (around 767px and below)
   - Project is mobile-first. Media Queries were primarily written using max-width, which caused slight layout issues
   - CSS was not fully adjusted to suit the late addition of background image to all pages
-
-- **404 Page Styling**
-  - No border-box
-  - Improvements needed with spacing of text and the button
 
 - **Pop-ups and Dropdown Menus**
   - Occasionally, pop-ups or dropdown menus remain open when the user clicks elsewhere on the page, instead of them closing automatically
@@ -844,24 +837,29 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 - **Confirm email address**
   - Email address displayed in Cornflower blue, while "text-white" is set up in html
   - After clicking on the link in verification email, **Confirm email address** page opens asking to confirm again.
-  - User account is confirmed after click on **Confirm** 
+  - User account is confirmed after click on **Confirm**
 
+- **Color of Order Number in Order History, Forgot your password link, Sign Up link and Sign In link**
+  - Current blue shade is hard to see against the new background and border-box. Hover effect improves visibility for some, but not all
 
 [Back to Contents](#contents)
 
 # Deployment
 
-- Ensure env.py is set up properly
-- Check gitignore
-- Set "DEBUG = 'DEVELOPMENT' in os.environ" in settings.py
-- Login to Heroku
-- Click on settings in the Menu
-- Click on Reveal Config Vars
-- Check if these look ok
-- Click on Deploy in the main menu
-- Scroll down to the end and click on Deploy Branch
-- Once Heroku has finished deploying your app, "View app" appears at the bottom of the page
-- Click on "View app"
+To deploy this project to Heroku:
+
+- Ensure **env.py** is set up properly
+- Confirm **.gitignore** excludes sensitive files
+- Set in settings.py: **DEBUG = 'DEVELOPMENT' in os.environ**
+- Ensure **Procfile** and **requirements.txt** are present and up to date  
+- Login to **Heroku**
+- Navigate to the **Settings** tab
+- Click **Reveal Config Vars** and verify that all environment variables are correct
+- Go to the **Deploy** tab
+- Scroll down and click **Deploy Branch**
+- Once deployment finishes, click **View App** to open the live site
+
+This project's deployment was tested with **Django 4.2"
 
 [Back to Contents](#contents)
 
@@ -896,7 +894,7 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 **Code/Base Projects**
 
-  - Main code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project
+  - Main code for Kelly's Art & Photo Boutique was based on Code Institute's walkthrough project
     ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
   - Other helpful projects:
     - ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
@@ -907,16 +905,16 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
   - Template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog) and
     Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
-  - [Canva](https://www.canva.com/mockups) used to create Mockups
+  - [Canva](https://www.canva.com/mockups) was used to create mockups
 
 **Images & Media**
 
-  - Background image and product photos taken by the developer
-  - Art created by developer's children
+  - Background image and product photos were taken by the developer
+  - Art was created by developer's children
 
-  **Image Optimization**
+**Image Optimization**
 
-  - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
+- Images were optimized using [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
 
 **Fonts & Icons**
 
@@ -924,27 +922,27 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
     ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
-  - Free Icons from: [fontawesome.com](https://fontawesome.com/search?ic=free)
+  - Free Icons were sourced from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
 **Wireframes**
 
-  - Created using [Balsamiq](https://balsamiq.com/wireframes/), including Logo
+  - Created using [Balsamiq](https://balsamiq.com/wireframes/), including the Logo
 
 - **Privacy Policy**
 
-  - Created with lessons from [Boutique Ado](https://github.com/Code-Institute-Solutions/) and
+  - Created using lessons from [Boutique Ado](https://github.com/Code-Institute-Solutions/) and
 
-    [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy
+    [Privacy Policy Generator ](https://www.privacypolicygenerator.info/)
 
 - **How To...?' Links**
 
-  - YouTube links for art tutorials, shared by the developer. No personal benefit or connection to these sites
+  - YouTube links for art tutorials were shared by the developer. No personal benefit or connection to these sites
 
 - **ChatGPT**
 
   - Used near the end of the project for guidance on fixing code, CSP fix, Bootstrap rules, performance (SEO) improvements, 
-      frame for TESTING_RESULTS.md, and README formatting.
-- Credited in all files where the Developer asked for guidance from ChatGPT, even if small amount of changes were made
+    the frame for TESTING_RESULTS.md, and README formatting.
+  - Credited in all files where guidance from ChatGPT was applied, even if the changes were minor
 
 - **Business Model**
 

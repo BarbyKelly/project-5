@@ -83,7 +83,7 @@ MIDDLEWARE = [
 ]
 
 
-# Content Security Policy (CSP) for Django-csp - copied exactly from ChatGPT - to improve Best Practices
+# Content Security Policy (CSP) for Django-csp - followed from ChatGPT - to improve Best Practices
 CSP_DIRECTIVES = {
     "default-src": ("'self'",),
     "script-src": (
@@ -137,7 +137,7 @@ CSP_DIRECTIVES = {
 
 # Security settings for styling to work locally and otherwise - fixed with ChatGPT's guidance
 if 'DEVELOPMENT' in os.environ:
-    # Local development - copied from ChatGPT
+    # Local development - adapted from ChatGPT
     DEBUG = True
     SECURE_HSTS_SECONDS = 0
     SECURE_SSL_REDIRECT = False
@@ -150,7 +150,7 @@ if 'DEVELOPMENT' in os.environ:
     DEFAULT_FROM_EMAIL = '2025studentproject@gmail.com'
 
 else:
-    # Production - copied from ChatGPT
+    # Production - followed from ChatGPT
     DEBUG = False
     SECURE_HSTS_SECONDS = 31536000
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True

@@ -162,7 +162,7 @@
     });
 
     // Make entire card clickable, except Superuser links
-    // Code copied from chatGPT, when csp change started to block image click
+    // Code adapted from chatGPT, when csp change started to block image click
     $('.product_card').click(function(e) {
         if(!$(e.target).closest('a').length) {
             window.location.href = $(this).data('url');

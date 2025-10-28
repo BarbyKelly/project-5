@@ -1,4 +1,4 @@
-// Code copied exactly from ChatGPT to use eslintrc to check js files automatically
+// Code adapted from ChatGPT to use eslintrc to check js files automatically
 {
     "env": {
         "browser": true,

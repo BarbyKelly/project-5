@@ -10,7 +10,7 @@ class UserProfileForm(forms.ModelForm):
         model = UserProfile
         exclude = ('user',)
         widgets = {
-            # Disable flags - code copied from ChatGPT
+            # Disable flags - code adapted from ChatGPT
             'default_country': CountrySelectWidget(
                 attrs={'class': 'border-black rounded-0 profile-form-input'}
             ),

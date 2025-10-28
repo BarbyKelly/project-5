@@ -18,7 +18,7 @@
                 <div class="product_card detail_page_card mb-4 mt-md-4">
                     <div class="image_container">
                         <div class="image_inner_box">
-                            <!-- Lightbox copied from ChatGPT - to fix image click after CSP addition -->
+                            <!-- Lightbox adapted from ChatGPT - to fix image click after CSP addition -->
                             {% if product.image %}
                                 <a href="{{ product.image.url }}" data-lightbox="product" data-title="{{ product.name }}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">

@@ -1,5 +1,5 @@
 /* stripe_elements.js file and comments, like rest of
-   stripe code, copied from CI's walk-through project
+   stripe code, adapted from CI's walk-through project
    Boutique Ado, credit in ReadMe */
 /* 
     Core logic/payment flow for this comes from:
