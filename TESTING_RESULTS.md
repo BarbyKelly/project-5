@@ -47,11 +47,12 @@ testing results are more compact than previous testing file (TESTING.md).
 - [V] All links open the correct video on YouTube
 - [V] Video opens in a new tab
 - [V] Kelly's Art & Photo Boutique remains open in previous tab
-- [V] Corresponding YouTube link appears bottom left corner on **How To...?** page when user hovers on a link 
+- [V] Corresponding YouTube link appears bottom left corner on **How To...?** page when user hovers on a link
 
-![Click on a link on "How To...?" page](docs/readme_images/how_to_page_click.png)
-
-![Video open in a new tab](docs/readme_images/youtube_video_link_new_tab.png)
+<p>
+    <img src="docs/readme_images/how_to_page_click.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/youtube_video_link_new_tab.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+</p>
 
 - [V] Layout and links responsive
 
@@ -137,11 +138,24 @@ testing results are more compact than previous testing file (TESTING.md).
 - [V] Payment & order submission works
 - [V] Confirmation page displays order summary
 - [V] Buttons **Adjust Cart**, **Complete Order** work as expected
+- [V] Screenshot demonstrating **Free Postage** working based on **Cart Total**
+- [V] On longer pages such as **Checkout**, the fixed Navbar remains visible while the page content scrolls beneath it,
+    creating an elegant scrolling effect
+
+![Checkout page with free postage](docs/readme_images/checkout_free_postage_op_50.png)
 
 ### 404 Page
 
 - [V] Custom error page displayed
-- [V] Link **Back to Shop** works
+- [V] Hover effect on button **Back to Shop** works
+- [V] Boutique's website link displayed bottom left during button hover
+- [V] **Back to Shop** brings user back to Home page
+
+
+<p>
+    <img src="docs/readme_images/404_error_page_opt_50.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/404_error_page_btn_hover_opt_50.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+</p>
 
 
 ## Admin / Product Management
@@ -183,24 +197,16 @@ testing results are more compact than previous testing file (TESTING.md).
 
 ![Burger Menu](docs/readme_images/burger_menu_dropdown.png)
 
-- On larger screens: **Art Menu** and **Photos Menu**
+- On larger screens: **Art Menu** and **Photos Menu**:
 
-![Art Dropdown menu](docs/readme_images/art_dropdown_menu.png)
-
-
-![Photos Dropdown menu](docs/readme_images/photos_dropdown_menu.png)
+<p>
+    <img src="docs/readme_images/art_dropdown_menu.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/photos_dropdown_menu.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+</p>
 
 - On all screens: **User Menu**
 
-![Signed In User menu](docs/readme_images/user_menu_signed_in.png)
-
-![Hover effect, Signed In User menu](docs/readme_images/hover_effect_signed_in_user_menu.png)
-
-
-### Checkout
-
-- [V] Screenshot demonstrating **Free Postage** working based on **Cart Total**
-- [V] Longer pages, like **Checkout**, scroll behind the Navbar as expected, and can be seen beyond Navbar,
-    for added effect
-
-![Checkout page with free postage](docs/readme_images/checkout_free_postage_op_50.png)
+<p>
+    <img src="docs/readme_images/user_menu_signed_in.png" width="30%" style="vertical-align: top; display: inline-block; margin-right: 3%;" />
+    <img src="docs/readme_images/hover_effect_signed_in_user_menu.png" width="30%" style="vertical-align: top; display: inline-block; "/>
+</p>
