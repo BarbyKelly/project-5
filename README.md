@@ -6,8 +6,8 @@ Github Repository: [Project 5](https://github.com/BarbyKelly/project-5)
 
 ## About
 
-**Disclaimer:** This website has no real-time commercial intention.
-No real orders, payments or deliveries.
+> **_Disclaimer:_** This website has no real-time commercial intention.
+> No real orders, payments, deliveries or Newsletters.
 
 Website was created as part of Code Institute's project,
 for Diploma in Full Stack Software Development (E-commerce Applications) course.
@@ -194,7 +194,7 @@ Users may opt to tap, click, hover, open, fill various items listed below:
 
     - **Sign Up**
 
-      ![Sign Up](docs/readme_images/sign_up_page_opt_50.png)
+      ![Sign Up page](docs/readme_images/sign_up_page_opt_50.png)
 
       - Access Sign Up form
       - Optionally click **Sign In here**
@@ -218,7 +218,7 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Click to open **Search Form**
     - Type keywords and click Search or press Enter to search products e.g. 'rainbow':
 
-      ![Search results 'rainbow'](docs/readme_images/search_results_for_rainbow_opt_50.png)
+      ![Search results for 'rainbow'](docs/readme_images/search_results_for_rainbow_opt_50.png)
 
     - 'Empty' search results in pop-up alert
     - Click on Search Icon in the Navbar to close Search Form
@@ -246,6 +246,7 @@ Users may opt to tap, click, hover, open, fill various items listed below:
   - Access **Product Management**
   - Manage products via the **Product Management** page:
     - Add, edit or delete products using the **Add a Product** form
+    - Pop-ups displayed to notify Admin of Addition, Edit, Delete being complete
   
   Indirect UX for the Admin (via the **Django Admin Panel**):
   - In addition to on-site permissions, the Admin may:
@@ -273,19 +274,19 @@ reflecting changes, and refinements made during development.
 
 **Home Page**
 
-![Wireframe, Homepage](docs/readme_images/home_page_wireframe_boutique_opt_50.png)
+![Homepage layout Wireframe](docs/readme_images/home_page_wireframe_boutique_opt_50.png)
 
 **All Items Menu**
 
-![Wireframe, All Items Menu](docs/readme_images/all_items_menu_wireframe_boutique_opt_50.png)
+![All Items Menu Wireframe](docs/readme_images/all_items_menu_wireframe_boutique_opt_50.png)
 
 **Art Menu**
 
-![Wireframe, Art Menu](docs/readme_images/art_menu_wireframe_boutique_opt_50.png)
+![Art Menu Wireframe](docs/readme_images/art_menu_wireframe_boutique_opt_50.png)
 
 **Photos Menu**
 
-![Wireframe, Photos Menu](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
+![Photos Menu Wireframe](docs/readme_images/photos_menu_wireframe_boutique_opt_50.png)
 
 [Back to Contents](#contents)
 
@@ -450,7 +451,8 @@ actual Facebook page may be different
 ### Home Page
 
 - Displays all of Boutique's products on individual Product Cards
-- 
+- Currently called **Home**; referred to as **Shop** on buttons
+
 - **Product Card**:
   - Includes: image, name of the product, price, author, and category badge
   - Hover effect raises the product card and changes the pointer to indicate clickability  
@@ -461,7 +463,7 @@ actual Facebook page may be different
   - Buttons:
       - **Back to Shop**: returns user to Home page
       - **Add to Cart**: adds product to cart with selected quantity, with a pop-up message
-  - **Admin users only**: Product cards include options to **Edit Product** and **Delete Product** 
+  - **Admin users only**: Product cards include options to **Edit Product** and **Delete Product**
 
 ### Art Page
 
@@ -589,6 +591,13 @@ actual Facebook page may be different
       - Clickable **Facebook**, **Twitter** and **YouTube** links: open respective pages in a new tab
         (general pages, not personalized for website)
 
+### Error Page
+
+  - **404 Page: Page Not Found**
+    - Customized 404 Error Page, with website's background image and color scheme
+    - Displays instructions what might help to fix the Error, and a button **Back to Shop**
+    - Tested to ensure it displays for invalid URLs and when typed 404 at the end of the website's URL
+
 [Back to Contents](#contents)
 
 
@@ -631,7 +640,7 @@ actual Facebook page may be different
 - 'About' app added to share details about creators, optionally painted images of each creator
 
 **500 Server Error Page**
-- Set up personalized **500 Server Error Page** with a link for user's access Kelly's Art & Photo Boutique
+- Set up personalized **500 Server Error Page** with a link for users access Kelly's Art & Photo Boutique
 - Matching the scheme of the website
 
 [Back to Contents](#contents)
@@ -806,14 +815,14 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
   - CSS was not fully adjusted to suit the late addition of background image to all pages
 
 - **404 Page Styling**
-  - No background-color box
-  - Button green (success) instead of blue to match the website's style
+  - No border-box
+  - Improvements needed with spacing of text and the button
 
 - **Pop-ups and Dropdown Menus**
   - Occasionally, pop-ups or dropdown menus remain open when the user clicks elsewhere on the page, instead of them closing automatically
 
 - **Alignment issues**
-  - Some text and buttons are not properly centered on certain forms or pages
+  - Some text and buttons are not properly centered on certain Forms or Pages, and some Forms could be lower from the Navbar
 
 - **Cart missing product name**
   - Late changes to the cart layout (to fit all items on mobile screens without image disappearing),
@@ -823,6 +832,19 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 - **Cart pop-up missing Checkout button (UX change/possible regression)**
   - Users must click on **Cart** to access Checkout
   - Previous version displayed **Checkout** link in toast
+
+- **Keyword Search**
+  - On some occasions, **Keyword Search** displays "0 Products" when there should be at least one result
+    - Example: searching for **"animal"** returns 0 products
+    - Other keywords, like **"rainbow"** and **"winter"**, work correctly
+
+- **Sign Up page, Back to Sign In button**
+  - **Back to Sign In** button becomes highlighted after filling in password details on **Sign Up** form, instead of highlighting **Sign Up** button more 
+
+- **Confirm email address**
+  - Email address displayed in Cornflower blue, while "text-white" is set up in html
+  - After clicking on the link in verification email, **Confirm email address** page opens asking to confirm again.
+  - User account is confirmed after click on **Confirm** 
 
 
 [Back to Contents](#contents)
@@ -874,58 +896,59 @@ Testing is reported in a separate [TESTING_RESULTS.md](TESTING_RESULTS.md) file.
 
 **Code/Base Projects**
 
-- Main code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project
-  ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
-- Other helpful projects:
-  - ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
-  - ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
-  - [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
+  - Main code for Kelly's Art & Photo Boutique is based on Code Institute's Walk-through project
+    ["Boutique Ado"] (https://github.com/Code-Institute-Solutions/boutique_ado_v1) 
+  - Other helpful projects:
+    - ["Seaside Sewing by Kera Cudmore](https://github.com/kera-cudmore/seaside-sewing)
+    - ["Vegan Sneaker Store by Denis Klopotan](https://github.com/denisklopotan/vegan-sneaker-store/)
+    - [Chirpy Chooks by Kay Welfare](https://chirpy-chooks.herokuapp.com/)
 
 **README**
 
-- Template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog) and
-  Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
-- [Canva](https://www.canva.com/mockups) used to create Mockups
+  - Template derived from developer's Project 4 [BookBlog](https://github.com/BarbyKelly/blog) and
+    Project 2 ["Estonia Quiz" README](https://raw.githubusercontent.com/BarbyKelly/Estonia-Quiz/refs/heads/main/README.md)
+  - [Canva](https://www.canva.com/mockups) used to create Mockups
 
 **Images & Media**
 
-- Background image and product photos taken by the developer
-- Art created by developer's children
+  - Background image and product photos taken by the developer
+  - Art created by developer's children
 
-**Image Optimization**
+  **Image Optimization**
 
-- Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
+  - Images optimized with [Simple Image Resizer](https://www.simpleimageresizer.com/resize-image-to-50-kb)
 
 **Fonts & Icons**
 
-- Font: "Cormorant Garamond" via [Google Fonts](https://fonts.google.com/selection/embed):
+  - Font: "Cormorant Garamond" via [Google Fonts](https://fonts.google.com/selection/embed):
 
-  ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
+    ![Google Fonts](docs/readme_images/font_embed_opt_50.png)
 
-- Free Icons from: [fontawesome.com](https://fontawesome.com/search?ic=free)
+  - Free Icons from: [fontawesome.com](https://fontawesome.com/search?ic=free)
 
 **Wireframes**
 
-- Created using [Balsamiq](https://balsamiq.com/wireframes/), including Logo
+  - Created using [Balsamiq](https://balsamiq.com/wireframes/), including Logo
 
 - **Privacy Policy**
 
-- Created with lessons from [Boutique Ado](https://github.com/Code-Institute-Solutions/) and
+  - Created with lessons from [Boutique Ado](https://github.com/Code-Institute-Solutions/) and
 
-  [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy
+    [Privacy Policy Generator ](https://www.privacypolicygenerator.info/) was used to create Privacy Policy
 
 - **How To...?' Links**
 
-- YouTube links for art tutorials, shared by the developer. No personal benefit or connection to these sites
+  - YouTube links for art tutorials, shared by the developer. No personal benefit or connection to these sites
 
 - **ChatGPT**
 
-- Used near the end of the project for guidance on fixing code, CSP fix, Bootstrap rules, performance (SEO) improvements, 
-  frame for TESTING_RESULTS.md, and README formatting
+  - Used near the end of the project for guidance on fixing code, CSP fix, Bootstrap rules, performance (SEO) improvements, 
+      frame for TESTING_RESULTS.md, and README formatting.
+- Credited in all files where the Developer asked for guidance from ChatGPT, even if small amount of changes were made
 
 - **Business Model**
 
-- Inspired by [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model), guided by mentor Lauren-Nicole Popich 
+  - Inspired by [Sensical.ie project by David Calikes](https://github.com/davidcalikes/sensical.ie#prior-business-model), guided by mentor Lauren-Nicole Popich 
 
 [Back to Contents](#contents)
 
